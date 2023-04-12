@@ -108,10 +108,10 @@ class: top, left
 
 Termine:
 * 14 Termine
-* Mittwoch 13:50 - 15:20
+* Mittwoch 09:10 - 10:40
 
 Begleitende Vorlesung:
-* Dienstag 10:50-12:20 (Audimax / P3)
+* Freitag 13:05-14:35 (Audimax / P3)
 * Dozentin: Prof. Dr. Nina Sarubin ([nina.sarubin@charlotte-fresenius-uni.de](mailto:nina.sarubin@charlotte-fresenius-uni.de))
 
 Materialien:
