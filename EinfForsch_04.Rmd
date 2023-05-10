@@ -233,6 +233,7 @@ class: top, left
 
 ##### Reliabilität
 
+<small>
 **Definition:**
 
 * Eine Erhebungsmethode ist (vollständig) reliabel, wenn sie das Merkmal ohne Messfehler misst.
@@ -249,6 +250,8 @@ Es lassen sich 3-4 Arten der Reliabilität unterscheiden:
 
 * (**Testhalbierungs- (Split Half-)Reliabilität**) $\rightarrow$ analog zur innreren Konsistenz (nur Trennung in 2 Teile)
 
+</small>
+
 ---
 class: top, left
 ### Erhebungsmethoden der psychologischen Forschung
@@ -256,6 +259,8 @@ class: top, left
 ####  Qualitätskriterien von Erhebungsmethoden
 
 ##### Validität
+
+<small>
 
 **Definition:**
 
@@ -269,6 +274,7 @@ Eine Erhebungsmethode ist valide, wenn sie das Merkmal, das sie messen soll, auc
 * **Kriteriumsvalidität**
   * Erhebungsmethode erzeugt Daten, die mit Kriterien des Merkmals korrelieren (z.B. Intelligenztest und Schulnoten)
 
+</small>
 ---
 class: top, left
 ### Erhebungsmethoden der psychologischen Forschung
@@ -365,6 +371,8 @@ class: top, left
 
 ##### Beispiele für (Verhaltens-)beobachtung in der Psychologie:
 
+<small> 
+
 **Das Marshmellow Experiment (Mischel, 1989)** ([**Link**](https://www.youtube.com/watch?v=QX_oy9614HQ))
 
 * Experiment zum Belohnungsaufschub und zur Impulskontrolle
@@ -382,7 +390,9 @@ class: top, left
   * Andere Person kommt hinzu, die „Rocky“ für sein Verhalten lobt und ihn mit Süßigkeiten belohnt.
   * Andere Person kommt hinzu, tadelt jedoch „Rocky“ und bestraft ihn mit Schlägen und Drohungen.
   * Geschehen bleibt unkommentiert, keine weitere Person tritt auf.
-  
+
+</small>
+
 ---
 class: top, left
 ### Erhebungsmethoden der psychologischen Forschung
@@ -435,6 +445,8 @@ class: top, left
 
 ##### Annahmen der (Verhaltens-)beobachtung:
 
+<small>
+
 **Was wird beobachtet? -  Kriterien für gute Beobachtungseinheiten:**
 
 * Jede Beobachter:in kann Beobachtungseinheit **zuverlässig identifizieren**.
@@ -450,6 +462,8 @@ class: top, left
 * Beobachtungseinheiten können klar voneinander **abgegrenzt** werden („unterbricht andere“ vs. „redet dazwischen“)
 
 **Tipp:** Beobachtungsplan in einem „Probedurchgang“ testen
+
+</small>
 
 ---
 class: top, left
@@ -565,21 +579,25 @@ class: top, left
 
 ##### Formen und Rahmenbedingungen für Beobachtungen
 
+<small>
+
 **Wie wird Beobachtung registriert? - Time vs. Event Sampling**
 
 **Event Sampling:**
 
 Registrierung von Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerkmals über den gesamten Beobachtungszeitraum hinweg
-* es können auch seltene Ereignisse erfasst werden
-* erlaubt Überprüfung von Hypothesen zum Zusammenhang aufeinanderfolgender Ereignisse (Kontingenz)
+  * es können auch seltene Ereignisse erfasst werden
+  * erlaubt Überprüfung von Hypothesen zum Zusammenhang aufeinanderfolgender Ereignisse (Kontingenz)
 
 **Time Sampling** (Spezialfall des event sampling):
 
-* Unterteilung des Beobachtungszeitraums in gleich lange Zeitintervalle
-* Registrierung ob Verhaltensmerkmal im Zeitintervall gezeigt wird
-* Möglichkeit, Pausen einzubauen (z.B. nur in jedem 2. Zeitintervall beobachten)
-* Beobachterrotation möglich (z.B. Beobachter:in 1 im 1. Zeitintervall,  Beobachter:in 2 im 2. Zeitintervall)
-* oft akustischer oder vibrierender Signalgeber notwendig
+  * Unterteilung des Beobachtungszeitraums in gleich lange Zeitintervalle
+  * Registrierung ob Verhaltensmerkmal im Zeitintervall gezeigt wird
+  * Möglichkeit, Pausen einzubauen (z.B. nur in jedem 2. Zeitintervall beobachten)
+  * Beobachterrotation möglich (z.B. Beobachter:in 1 im 1. Zeitintervall,  Beobachter:in 2 im 2. Zeitintervall)
+  * oft akustischer oder vibrierender Signalgeber notwendig
+
+</small>
 
 ---
 class: top, left
@@ -591,10 +609,14 @@ class: top, left
 
 **Wie wird Beobachtung registriert? - Konstruktion von Ratingskalen**
 
+<small>
+
 * unipolare vs. bipolare Skala
 * Anzahl der Abstufungen: abhängig von Differenzierungsfähigkeit der Beobachter:in und Variation des Merkmals
 * Je mehr Merkmale zu beurteilen sind, desto geringer sollte die Anzahl an Stufen sein
 * Markierung und verbale Verankerung der Skalen: um Abstufungen der Skalen deutlich zu machen, werden diese numerisch/grafisch markiert oder verbal verankert.
+
+</small>
 
 .pull-left[
 
@@ -653,7 +675,7 @@ df = data.frame(Beobachtungsfehler = c("Beobachterdrift",
 
 df %>%
   kbl() %>%
-  kable_styling(font_size = 17) %>%
+  kable_styling(font_size = 15) %>%
   kable_classic(full_width = T)
 ```
 
@@ -794,7 +816,7 @@ df$Rater2 = c("Nein", "Ja", "Nein", "Ja", "Ja", "Ja", "Ja", "Ja", "Nein", "Nein"
 
 df %>%
   kbl() %>%
-  kable_styling(font_size = 18) %>%
+  kable_styling(font_size = 16) %>%
   kable_classic(full_width = T)
 ```
 
@@ -825,7 +847,7 @@ df$Rater2 = c(4, 2, 5, 2, 5, 1, 6, 3, 2, 1)
 
 df %>%
   kbl() %>%
-  kable_styling(font_size = 18) %>%
+  kable_styling(font_size = 16) %>%
   kable_classic(full_width = T)
 ```
 
@@ -891,7 +913,7 @@ df$Rater2 = c("Nein", "Ja", "Nein", "Ja", "Ja", "Ja", "Ja", "Ja", "Nein", "Nein"
 
 df %>%
   kbl() %>%
-  kable_styling(font_size = 18) %>%
+  kable_styling(font_size = 16) %>%
   kable_classic(full_width = T)
 ```
 ]
