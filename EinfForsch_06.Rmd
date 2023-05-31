@@ -68,7 +68,7 @@ class: middle, left
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 6: Das Experiment: Alternativerklärungen und Kontrollbedingungen
-##### 17.05.2022 | Prof. Dr. phil. Stephan Goerigk
+##### 17.05.2023 | Prof. Dr. phil. Stephan Goerigk
 
 ---
 class: top, left
