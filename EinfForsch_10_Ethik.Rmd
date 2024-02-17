@@ -1,0 +1,510 @@
+---
+title: "Einheit"
+subtitle: "⚔<br/>with xaringan"
+author: "Dr. Caroline Zygar-Hoffmann"
+institute: "RStudio, PBC"
+date: "2024/01/24 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: [xaringan-themer.css, style.css, "hygge"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+library(MASS)
+library(ggpubr)
+library(xaringanthemer)
+library(xaringanExtra)
+
+style_duo_accent(
+  primary_color = "#621C37",
+  secondary_color = "#EE0071",
+  background_image = "blank.png"
+)
+
+xaringanExtra::use_xaringan_extra(c("tile_view"))
+
+use_scribble(
+  pen_color = "#EE0071",
+  pen_size = 4
+  )
+
+knitr::opts_chunk$set(
+  fig.retina = TRUE,
+  warning = FALSE,
+  message = FALSE
+)
+
+# library(RefManageR)
+# BibOptions(
+# check.entries = FALSE, 
+# bib.style = "authoryear", 
+# cite.style = "authoryear", 
+# style = "markdown",
+# hyperlink = FALSE, 
+# dashed = FALSE)
+# myBib = ReadBib("/Users/stephangoerigk/Desktop/Universität/CFH/Lehre/Bachelor/Einführung in die Forschungsmethoden der Psychologie und Psychotherapie/EFPP_Folien/myBib.bib")
+```
+
+name: Title slide
+class: middle, left
+<br><br><br><br><br><br><br>
+# Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
+
+### Einheit 10: Forschungsethik
+##### 26.01.2024 | Dr. Caroline Zygar-Hoffmann
+
+---
+class: top, left
+name: content
+### Heutige Themen
+
+#### [Forschungsethik](#Ethik)
+
+#### [Informed Consent](#IC)
+
+#### [Berufsethische Richtlinien des BDP und der DGPs](#bdp)
+
+#### [Open Science](#OS)
+
+#### [Take-Aways](#take-away)
+
+---
+class: top, left
+### Literatur für die heutige Sitzung
+
+.center[
+```{r, echo=FALSE,out.width="30%",fig.cap="Kapitel 4 in Döring, N. & Bortz, J. (2016). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften. Pearson.",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/doering.png")
+``` 
+]
+
+---
+class: top, left
+name: Ethik
+<div class="footer"><span>https://www.akek.de/geschichte-der-forschungsethik/ <br> https://www.uniklinikum-jena.de/ethikkommission/Geschichte+der+Ethik_Kommission.html</span></div>
+
+### Forschungsethik
+
+* Es kann einen Konflikt des Forschungsinteresses mit Normen und Werten geben
+
+.pull-left[
+* Beispiele:
+  - Stammzellenforschung
+  - Gentechnik
+  - Forschung zu Rüstungszwecken
+  - Datenschutz
+  
+* Forschungsethik beschäftigt sich mit Fragen nach 
+  - Verantwortung
+  - Zumutbarkeit
+  - Auswirkung auf Einzelne
+  - gesellschaftliche Auswirkung
+]
+
+.pull-right[
+* Psychologische Beispiele mit forschungsethischen Problemen:
+  - Konditionierungsversuche am "kleinen Albert" (Säugling) in den 20er Jahren (https://www.youtube.com/watch?v=-wtL5Io3sS8)
+  - Forschungsverbrechen während des Nationalsozialismus (https://www.youtube.com/watch?v=nnsUvaB_Ek4&t=550s)
+  - Milgram-Experiment in den 60er/70er Jahren (https://www.youtube.com/watch?v=Kzd6Ew3TraA&t=56s)
+]
+
+
+---
+class: top, left
+
+### Forschungsethik
+
+* Meilenstein: **Belmont Report (1976)** als Reaktion auf unethische klinische Forschung: https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html
+
+* 3 Prinzipien:
+  - **Achtung der Menschenwürde**: Studienteilnehmer als autonome, selbstbestimmte Individuen, die Information zur Zustimmung oder Ablehnung der Teilnahme benötigen
+  - **Benefizienz/Fürsorge**: Anderen nicht schaden, Risiken minimieren und Nutzen maximieren $\rightarrow$ Pflicht zu Nutzen-Risiko-Analyse (auf individueller und gesellschaftlicher Ebene)
+  - **Gerechtigkeit**: gerechte Auswahl der Studienteilnehmer, faire Entschädigung, Forschungsergebnisse müssen für alle zugänglich sein
+
+---
+class: top, left
+name: IC
+
+### Informed Consent
+
+#### Definition
+
+* Das Einholen eines informierten Einverständnisses („informed consent“ = IC) für die Teilnahme an einer wissenschaftlichen Studie gehört zu den Standards guter wissenschaftlicher Praxis
+
+* Die Entscheidung, an einer Studie teilzunehmen, soll **freiwillig** und **unter Abwägung aller Risiken** alleinig von den potenziellen Teilnehmer:innen getroffen werden können
+
+* Ethikkommissionen begutachten ICs kritisch auf Vollständigkeit und Verständlichkeit 
+
+IC aus besteht aus zwei Teilen:
+
+* **Teilnahmeinformation**, d. h. einem Informationsschreiben, um was es in der Studie geht
+
+* **Einverständniserklärung**, mit der explizit die Einwilligung in die Teilnahme zur Studie gegeben wird
+
+---
+class: top, left
+### Informed Consent
+
+#### Zu vermittelnde Informationen (BDP & DGPs, 2016)
+
+1. der Zweck der Forschung
+2. die erwartete Dauer der Untersuchung und das Vorgehen
+3. das Recht darauf, die Teilnahme abzulehnen oder zu beenden, auch wenn die Untersuchung schon begonnen hat
+4. absehbare Konsequenzen der Nichtteilnahme oder der vorzeitigen Beendigung der Teilnahme
+5. absehbare Faktoren, von denen man vernünftigerweise erwarten kann, dass sie die Teilnahmebereitschaft beeinflussen (z. B. potenzielle Risiken, Zufallsbefunde)  
+6. der voraussichtliche Erkenntnisgewinn durch die Forschungsarbeit
+7. die Gewährleistung von Vertraulichkeit und Anonymität sowie ggf. deren Grenzen
+8. Bonus für die Teilnahme 
+9. An wen Proband:innen sich mit Fragen zum Forschungsvorhaben und zu ihren Rechten als Forschungsteilnehmerinnen und Forschungsteilnehmer wenden können.
+
+---
+class: top, left
+### Informed Consent
+
+#### Informed Consent bei Onlinestudien
+
+* Gewährleistung einer angemessenen Aufklärung besonders anspruchsvoll
+
+* direktes Beantworten aufkommender Fragen sowie das Wiederauffinden der Studie und der Kontaktinformationen ist erschwert
+
+* IC wird i.d.R. nur auf einer einzelnen Webseite eingeholt, wodurch Umsetzung des IC als andauerndem Prozess mit der Möglichkeit, Fragen zu stellen, nicht gewährleistet ist
+
+* Technisch komplexe Studien (z.B. Datenspeicherung, Verschlüsselung, etc.)
+  * IC-Dokumente werden häufig nicht vollständig gelesen
+  * IC-Dokumente werden nur unzureichend verstanden
+
+$\rightarrow$ Zweifel, ob tatsächlich ein informiertes Einverständnis eingeholt wird
+
+$\rightarrow$ Besonderes Augenmerk bei digitaler Datenerhebung notwendig
+
+---
+class: top, left
+name: bdp
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+*"Diese Richtlinien stellen die fachlichen und ethischen Leitlinien der Berufsausübung für Psychologinnen und Psychologen in Deutschland dar und sind zugleich die Berufsordnung des Berufsverbandes der Psychologinnen und Psychologen."*
+
+**Link:** https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "650px"}
+knitr::include_graphics("bilder/bdp_dgps.png")
+```
+]
+
+$\rightarrow$ Wir betrachten genauer Abschnitt 7: Psychologie in Forschung und Lehre
+
+
+
+---
+class: top, left
+name: richtlinien
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.1. Wissenschaftsfreiheit und gesellschaftliche Verantwortung
+
+* Grundrecht der Wissenschaftsfreiheit (Art. 5, Abs. 3 GG) geht einher mit Verantwortung für Form und Inhalt der wissenschaftlichen Tätigkeit
+
+* Grenze dort, wo Grundrechte verletzt werden $\rightarrow$ Ethische Verantwortung gegenüber Mitmenschen und der natürlichen Umwelt
+
+* Forschung und Lehre von Fremdbestimmung und wissenschaftsfremder Parteilichkeit freihalten
+
+* Anerkennung der wissenschaftlichen Leistungen anderer
+
+* Bereitschaft, eigene Irrtümer durch überzeugende Argumente, welcher Herkunft auch immer, zu korrigieren
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+####  Kapitel 7.2. Grundsätze guter wissenschaftlicher Praxis
+
+.center[
+*"Grundlegend für die Berufsausübung in Forschung und Lehre ist die unbedingte Redlichkeit in der Suche nach und bei der Weitergabe von wissenschaftlichen Erkenntnissen."*
+]
+
+* Verfolgung allgemein gültiger Regeln methodischen Vorgehens und der Überprüfbarkeit von Ergebnissen
+
+* Wissenschaftliches Vorgehen darstellen, begründen und zu Kritik zugänglich zu machen $\rightarrow$ z.B. durch peer-review
+
+* Bereits im Forschungsprozess alle verfügbaren Informationen und Gegenargumente angemessen berücksichtigen $\rightarrow$ Offenheit für Kritik
+
+* Dokumentation und Veröffentlichung der Forschungsergebnisse, unabhängig von Ergebnis (d.h. auch wenn sie der eigenen Theorie widersprechen) $\rightarrow$ Open Science
+
+* Beiträge anderer adäquat würdigen
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(1) Forschung mit Menschen:**
+
+* Psychologische Forschung ist auf die Teilnahme von Menschen als Versuchspersonen angewiesen. 
+
+* Psychologinnen und Psychologen sind sich der Besonderheit der Rollenbeziehung zwischen Versuchsleiterin bzw. Versuchsleiter und Versuchsteilnehmerin bzw. Versuchsteilnehmer und der daraus resultierenden Verantwortung bewusst. 
+
+* Sie stellen sicher, dass durch die Forschung **Würde und Integrität der teilnehmenden Personen** nicht beeinträchtigt werden. 
+
+* Sie treffen alle geeigneten Maßnahmen, um **Sicherheit und Wohl der an der Forschung teilnehmenden Personen** zu gewährleisten, und versuchen, Risiken auszuschließen.
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(2) Förmliche Bewilligungen:**
+
+* Falls Forschungsprojekte einer förmlichen ethischen Bewilligung unterliegen, liefern Psychologinnen und Psychologen präzise Informationen über ihr Forschungsvorhaben. 
+
+* Sie beginnen erst mit dem Forschungsprojekt, nachdem sie eine Bewilligung erhalten haben. 
+
+* Sie führen ihr Forschungsprojekt in Übereinstimmung mit dem bewilligten Vorgehen durch.
+
+$\rightarrow$ Ethikantrag an eine Ethikkomission
+
+---
+class: top, left
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**Eine Ethikkommission prüft insbesondere, ob**
+
+* Vorkehrungen zur Minimierung des Probanden-Risikos getroffen wurden
+
+* ein angemessenes Verhältnis zwischen Nutzen und Risiken des Vorhabens besteht
+
+* die Einwilligung hinreichend belegt ist
+
+* die Durchführung des Vorhabens den einschlägigen gesetzlichen Bestimmungen (vor allem den Datenschutz-Bestimmungen) Rechnung trägt
+
+**Anfänge:**
+* 1972: Die DFG macht die Zuwendung von Forschungsmitteln von der Beurteilung des Forschungsvorhabens durch eine Ethik-Kommission abhängig
+* 1973: Die ersten deutschen Ethik-Kommissionen werden an den Universitäten Ulm und Göttingen eingerichtet.
+  
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(3) Auf Aufklärung basierende Einwilligung in die Forschung **
+
+**(4) Auf Aufklärung basierende Einwilligung für das Aufnehmen von Stimmen oder Bildern im Rahmen eines Forschungsvorhabens**
+
+$\rightarrow$ siehe Informed Consent
+
+**(5) Klientinnen und Klienten/Patientinnen und Patienten, Schülerinnen und Schüler, Studierende sowie Psychologinnen und Psychologen unterstellte Personen als Forschungsteilnehmerinnen und -teilnehmer:** Für Teilnehmergruppen dürfen keine Nachteile bei Nichtteilnahme entstehen. 
+
+**(6) Verzicht auf eine auf Aufklärung basierende Einwilligung in die Forschung:** Unter bestimmten Bedingungen kann auf eine auf Aufklärung basierte Einwilligung verzichtet werden.
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(7) Anreize zur Teilnahme an Forschungsvorhaben:** Müssen angemessen sein. Falls Therapie die Gegenleistung ist, müssen Art der Dienstleistung, Risiken, Verpflichtungen und Grenzen erläutert werden.
+
+**(8) Täuschung in der Forschung:** Nur Täuschen, wenn wirklich notwendig, darf keine ernsthafte physische und/oder psychische Belastungen erzeugen, so früh wie möglich aufklären
+
+**(9) Aufklärung der Forschungsteilnehmerinnen und Forschungsteilnehmer:** Psychologinnen und Psychologen informieren die an ihren Untersuchungen Teilnehmenden so bald wie möglich über das Ziel, die Ergebnisse und Schlussfolgerungen aus ihrer Forschungsarbeit, und sie unternehmen geeignete Schritte, um jedes Missverständnis, das teilnehmende Personen haben könnten und das ihnen bewusst ist, zu korrigieren.
+
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(10) Verantwortungsvoller Umgang mit Tieren in der Forschung:** Beispiel: Pawlow's Hunde hatten Implantate, um den Speichel aufzufangen und das Volumen messen zu können. Ist das ethisch vertretbar?  
+
+**(11) Darstellung von Forschungsergebnissen:** Psychologinnen und Psychologen erfinden und fälschen keine Daten. 
+Falls später Fehler gefunden werden $\rightarrow$ korrigieren
+
+**(12) Plagiate:** Psychologinnen und Psychologen präsentieren keine Arbeiten oder Daten anderer als ihre eigenen, auch nicht, wenn diese Quelle zitiert wird. 
+
+**(13) Kennzeichnung des Leistungsanteils an einer Forschungsarbeit in Publikationen:** Psycholog:innen beanspruchen die Verantwortlichkeit für eine Forschungsarbeit, inklusive der Autorenschaft, nur dann, wenn sie die Arbeit selbst durchgeführt haben oder maßgeblich daran beteiligt waren.
+
+
+---
+class: top, left
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(14) Weitergabe von Forschungsdaten zum Zweck der Überprüfung:** Daten sollen zur Verfügung gestellt werden, aber Achtung: Datenschutzrichtlinien einhalten! $\rightarrow$ Lernen Sie im zweiten Semester in der Vorlesung "Wissenschaftliches Arbeiten"
+
+**(15) Gutachter:innen:** Vertraulichkeit respektieren
+
+**(16) Online-Forschung:** Dies alles gilt auch für Online-Forschung, mit Besonderheiten
+
+---
+class: top, left
+name: OS
+
+### Open Science 
+
+**Auswahl aktueller Probleme in der Psychologie (und in anderen Wissenschaftsdisziplinen):** https://www.youtube.com/watch?v=42QuXLucH3Q 
+* Hoher Anteil falscher Ergebnisse in der veröffentlichten Wissenschaft $\rightarrow$ Replikationskrise
+* Geringe statistische Power
+* Falsche Anreize die zu fragwürdigen Forschungspraktiken führen ("questionable research practices" = QRPs)
+ 
+**Open Science ist Teil guter wissenschaftlicher Praxis und eine Lösung für aktuelle Probleme**
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "650px"}
+knitr::include_graphics("bilder/openscience.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>https://openeconomics.zbw.eu/knowledgebase/ziele-von-open-science/?cat=51</span></div>
+
+### Open Science
+
+**Ziele**
+
+* Wissenschaftlichen Fortschritt beschleunigen
+
+* Überprüfbarkeit von Forschungsqualität verbessern und Vertrauen steigern
+
+* Ressourcenverschwendung vermeiden
+
+* Ungleichheit verringern, auch beim Zugang zur Wissenschaft 
+
+* Öffentlich geförderte Forschung öffentlich zugänglich machen
+
+---
+class: top, left
+<div class="footer"><span>https://openeconomics.zbw.eu/knowledgebase/einfuehrung-open-science/</span></div>
+
+### Open Science 
+
+.pull-left[
+```{r eval = TRUE, echo = F, out.width = "350px"}
+knitr::include_graphics("bilder/openscience_pillars.png")
+```
+]
+
+.pull-right[
+* **Open Access** von Veröffentlichungen für Zugang zur Wissenschaft $\rightarrow$ keine Bezahlung dafür Forschungsergebnisse lesen zu dürfen 
+* **Open Data** (offene Forschungsdaten, soweit unter Wahrung des Datenschutzes möglich) zur Prüfung der Reproduzierbarkeit, Finden von Fehlern, Nachnutzung
+* **Open Methodology** (auch **Open Materials** genannt) und **Open Research Software** zur Prüfung der Reproduzierbarkeit (an denselben Daten) und Replizierbarkeit (an neuen Daten)
+* **Open Peer Review** zur Prüfung des Qualitätssicherungsprozesses
+* **Open Educational Ressources** um Verständnis von Wissenschaft zu ermöglichen
+
+Außerdem **Präregistrierung:** Vor der Datenerhebung Bedingungen (u.a. Hypothesen, Messinstrument, Analyse) der Studie öffentlich einsehbar festhalten
+]
+
+
+
+---
+class: top, left
+
+### Take-Aways
+.content-box-gray[
+
+* Die 3 ethischen Prinzipien im Belmont-Report sind die **Achtung der Menschenwürde**, **Benefizienz** und **Gerechtigkeit**
+
+* Eine informierte (!) Einwilligung stellt sicher, dass die Entscheidung, an einer Studie teilzunehmen **freiwillig** und **unter Abwägung aller Risiken** alleinig von den potenziellen Teilnehmer:innen getroffen werden kann
+
+* Grundrecht der Wissenschaftsfreiheit geht einher mit **Verantwortung für Form und Inhalt der wissenschaftlichen Tätigkeit**
+
+* Die berufsethische Richtlinien des BDP und der DGPs legen **16 Grundsätze für Forschung und Publikation** fest
+
+* **Open Science** ist Teil guter wissenschaftlicher Praxis und eine Lösung für aktuelle Probleme in der Psychologie
+]
+
+**[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
+<br>
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/x3vA7Uf2KxC3AcEL9)**
+
+---
+class: top, left
+
+### Nächste Woche: Zusammenfassung + Fragestunde
+
+**Damit die Zeit in dieser Stunde gut genutzt werden kann, würde ich Sie bitten Ihre Fragen zur Vorlesung in folgenden Dokument zu sammeln:** https://docs.google.com/document/d/1tWKYDSsRBc7MxoYnH4Cm6tyCBMkouVYJc0NMcGWDKFY/edit
+
+Je nach Fragen-Aufkommen werde ich dann Fragen priorisieren und versuchen daraus eine interaktive Lern-Möglichkeit für alle zu schaffen.
+
+Ich habe ChatGPT um ein Bild für die Fragestunde gebeten. Hier das Ergebnis:
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "350px"}
+knitr::include_graphics("bilder/qa.png")
+```
+]
+
+---
+class: top, left
+
+### Einladung zur Podiumsdiskussion an der Bayerischen Akademie der Wissenschaften
+
+Podiumsdiskussion: "Wie robust kann/muss Wissenschaft sein?"
+
+Wann: 06.02.2024 um 18:30
+Wo: Bayerische Akademie der Wissenschaften, Alfons-Goppel-Str. 11 (Residenz), 80539 München 
+
+Informationen/Flyer: https://badw.de/veranstaltungen.html?tx_badwdb_events%5Baction%5D=show&tx_badwdb_events%5Bcontroller%5D=Events&tx_badwdb_events%5Bevent_id%5D=889&cHash=9ddaa7eb837e52efafb7c208e8073f5c
+
+Anmeldung: https://meta-rep.de/badw/ 
+Live-Stream: https://badw.de
+
+---
+class: top, left
+
+### Einladung zur Podiumsdiskussion an der Bayerischen Akademie der Wissenschaften
+
+Podiumsdiskussion: "Wie robust kann/muss Wissenschaft sein?"
+
+Die Sozial-, Verhaltens-, Lebens- und Kognitionswissenschaften sind seit einiger Zeit mit dem Problem konfrontiert, dass wissenschaftliche Ergebnisse häufig wenig robust und wiederholbar sind. Die Auswirkungen von Unsicherheit und Wiederholbarkeit von Forschungsergebnissen auf Fragen der Wissenschaft, Gesellschaft und Öffentlichkeit werden Hauptgegenstand der Diskussion sein: Wie robust können wissenschaftliche Befunde unter den aktuellen Voraussetzungen sein? Wie verlässlich müssen oder sollen Ergebnisse sein, um sie öffentlich zu kommunizieren und gegebenenfalls zum Anlass für gesellschaftliche oder politische Maßnahmen zu machen? Diskutieren werden Vertreterinnen und Vertreter der Wissenschaft, der Forschungsförderung (Deutsche Forschungsgemeinschaft) und der Medien (Süddeutsche Zeitung).
+
+Die Veranstaltung ist öffentlich und richtet sich an Interessierte mit und ohne wissenschaftlichen Hintergrund. Veranstalter sind das junge Kolleg der Bayerischen Akademie der Wissenschaften und das von der Deutschen Forschungsgemeinschaft geförderte Schwerpunktprogramm „META-REP“. Veranstaltungsort ist die Bibliothek der Bayerischen Akademie der Wissenschaften in München (Anmeldung über: https://meta-rep.de/badw). Falls Sie nicht vor Ort sein können, bieten wir einen Live-Stream an, Informationen hierzu finden Sie unter https://badw.de (zum Live-Stream ist keine Anmeldung erforderlich).
+
+<!-- library(renderthis)  -->
+<!-- to_pdf("EinfForsch_10_Ethik.Rmd", complex_slides = TRUE) -->
+
+
+```{r eval=FALSE, include=FALSE}
+# https://rviews.rstudio.com/2021/11/18/deploying-xaringan-slides-a-ten-step-github-pages-workflow/
+```
