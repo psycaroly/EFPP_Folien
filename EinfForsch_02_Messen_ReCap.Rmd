@@ -1,0 +1,99 @@
+---
+title: "Einheit 2 - ReCap"
+subtitle: "⚔<br/>with xaringan"
+author: "Dr. Caroline Zygar-Hoffmann"
+institute: "RStudio, PBC"
+date: "2024/04/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: [xaringan-themer.css, style.css, "hygge"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+library(MASS)
+library(ggpubr)
+library(xaringanthemer)
+library(xaringanExtra)
+
+style_duo_accent(
+  primary_color = "#621C37",
+  secondary_color = "#EE0071",
+  link_color = "#7da5f5",
+  background_image = "blank.png"
+)
+
+xaringanExtra::use_xaringan_extra(c("tile_view"))
+
+use_scribble(
+  pen_color = "#EE0071",
+  pen_size = 4
+  )
+
+knitr::opts_chunk$set(
+  fig.retina = TRUE,
+  warning = FALSE,
+  message = FALSE
+)
+
+```
+
+name: Title slide
+class: middle, left
+<br><br><br><br><br><br><br>
+# Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
+
+### Einheit 2: Messen in der Psychologie ReCap
+##### 02.05.2024 | Dr. Caroline Zygar-Hoffmann
+
+---
+class: top, left
+
+### Video zur klassischen Testtheorie
+
+https://youtu.be/iDiW7p_ytnM?si=M9GhPtTV5fqhl5GH&t=44
+
+---
+class: top, left
+
+### Reliabilität und Validität
+
+.center[
+```{r, echo=FALSE,fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/Guetekriterien_aufgabe.png")
+``` 
+]
+
+Ordnen Sie zu:
+* reliabel und valide
+* nicht reliabel und nicht valide
+* reliabel, aber nicht valide
+* valide, aber nicht reliabel
+
+---
+class: top, left
+
+### Reliabilität und Validität
+
+.center[
+```{r, echo=FALSE,fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/KTT_blanc.png")
+``` 
+]
+
+Was könnten a), b) und c) darstellen?

@@ -1,9 +1,9 @@
 ---
-title: "Einheit"
+title: "Einheit 9"
 subtitle: "⚔<br/>with xaringan"
 author: "Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/01/10 (updated: `r Sys.Date()`)"
+date: "2024/07/03 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -33,6 +33,7 @@ library(xaringanExtra)
 
 style_duo_accent(
   primary_color = "#621C37",
+    link_color = "#7da5f5",
   secondary_color = "#EE0071",
   background_image = "blank.png"
 )
@@ -49,16 +50,6 @@ knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE
 )
-
-# library(RefManageR)
-# BibOptions(
-# check.entries = FALSE, 
-# bib.style = "authoryear", 
-# cite.style = "authoryear", 
-# style = "markdown",
-# hyperlink = FALSE, 
-# dashed = FALSE)
-# myBib = ReadBib("/Users/stephangoerigk/Desktop/Universität/CFH/Lehre/Bachelor/Einführung in die Forschungsmethoden der Psychologie und Psychotherapie/EFPP_Folien/myBib.bib")
 ```
 
 name: Title slide
@@ -67,7 +58,7 @@ class: middle, left
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 9: Digitale Datenerhebung, Big Data und Machine-Learning
-##### 12.01.2024 | Dr. Caroline Zygar-Hoffmann
+##### 04.07.2024 | Dr. Caroline Zygar-Hoffmann
 
 
 ---
@@ -77,11 +68,13 @@ name: content
 
 #### [Digitale Datenerhebung](#intro)
 
-#### [Ambulatory Assessment](#AA)
+#### [Ambulatory Assessment & Ecological Momentary Interventions](#AA)
 
 #### [Big Data und Machine-Learning](#ML)
 
-#### [Take-Aways](#take-away)
+#### Take-Aways und Schlüssel-/Fachbegriffe
+* [Take-Aways](#take-away)
+* [Schlüssel-/Fachbegriffe](#words)
 
 ---
 class: top, left
@@ -89,27 +82,11 @@ name: intro
 
 ### Digitale Datenerhebung
 
-#### Globale Entwicklung der Digitalisierung
-
-* Global zunehmende Digitalisierung
-
-* 2014/15 besaßen über 60% der Bevölkerung in den USA ein Smartphone (Pew Research Center, 2014, 2015)
-
-* Steigender Anteil von Menschen mit Internetzugang:
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "650px"}
-knitr::include_graphics("bilder/growdigit.png")
-```
-]
-
----
-class: top, left
-### Digitale Datenerhebung
-
 #### Digitalisierung traditioneller Datenerhebungsmethoden
 
-* Fragebögen und Tests können nicht nur in Paper Pencil Format, sondern auch in digitaler Form präsentiert werden
+* Fragebögen und Tests wurden früher im Paper Pencil Format vorgegeben
+
+* Mittlerweile ist die digitale Form vorherrschend
 
 **Methode: Surveytools**
 
@@ -121,10 +98,7 @@ class: top, left
   
   * Nach Ende der Datenerhebung $\rightarrow$ direkter Export der Daten ins digitale Format
   
-**Vorteil:**
-
-* Keine Übertragungsfehler
-* Analyse kann direkt starten
+$\rightarrow$ Erstellen digitaler Umfragen wird im Modul Empirisch-wissenschaftliches Arbeiten gelernt (2. Semester)
 
 ---
 class: top, left
@@ -162,49 +136,35 @@ $\rightarrow$ Surveys werden über Exceltabelle konfiguiert, mächtig und dadurc
 class: top, left
 ### Digitale Datenerhebung
 
-#### Digitalisierung traditioneller Datenerhebungsmethoden
-
-**Ausfüllen durch Proband:innen am Computer/Smartphone:**
-
-.pull-left[
-.center[
-```{r eval = TRUE, echo = F, out.width = "380px"}
-knitr::include_graphics("bilder/unipark3.png")
-```
-]
-]
-.pull-right[
-.center[
-```{r eval = TRUE, echo = F, out.width = "450px"}
-knitr::include_graphics("bilder/unipark2.png")
-```
-]
-]
-
-$\rightarrow$ Erstellen digitaler Umfragen wird im Modul Empirisch-wissenschaftliches Arbeiten gelernt (2. Semester)
-
----
-class: top, left
-### Digitale Datenerhebung
-
 #### Möglichkeiten und Vorteile digitaler Datenerhebung
 
 Möglichkeit Daten unabhängig von der physischen Distanz zwischen den Forschungseinrichtungen und den Teilnehmer:innen zu erheben 
 
-Dabei lassen sich zwei Klassen von Vorteilen unterscheiden:
+**Beispiele für Vorteile sind:**
 
-* Quantitativ: Steigerung Effizienz bzw. besser Verhältnis von Aufwand zu Kosten und erleichterte Datenerhebung 
-* Qualitativ: Neuartige Forschungsmöglichkeiten und -themen
-  
-**Beispiele für derartige Vorteile sind:**
-
-* Stichprobengröße und Teststärke
+.pull-left[
+.pull-left[
 * Zeitökonomie
+
+* Keine Übertragungsfehler von Papier in den Computer
+
+* Direkter Export der Antworten ins Datensatzformat, d.h. Analyse kann direkt starten
+]
+.pull-right[
 * Wegfall von kopräsenter Versuchsleitung und Versuchsleitereffekten
-* Diversifizierung der Stichproben  
-* Transparenz und Überprüfbarkeit
+
 * Verringerung des Reaktivitätsproblems
+]
+]
+
+.pull-right[
+* größere Stichprobengrößen erreichbar und damit höhere Teststärke
+
+* Diversifizierung der Stichproben indem internetbasiert rekrutiert wird
+
 * Erreichbarkeit von Stichproben mit hochspezifischen Merkmalen
+]
+
 
 ---
 class: top, left
@@ -214,126 +174,79 @@ class: top, left
 
 Digitale Datenerhebung bietet der psychologischen Forschung nicht nur Möglichkeiten und Vorzüge, sondern ist auch mit Risiken und potenziellen Nachteilen behaftet.
 
-Dabei lassen sich zwei Klassen von Nachteilen unterscheiden:
+**Beispiele für Nachteile sind:**
 
-* Güte der Untersuchung 
-* Aspekte der Forschungsethik
-  
-**Beispiele für derartige Nachteile sind:**
+* Verringerung der Repräsentativität der Stichproben hinsichtlich Technologieaffinität
 
-* Verringerung der Repräsentativität der Stichproben und der Generalisierbarkeit der Befunde
-* Erschwerte Kontrolle über die Bedingungen der Datenerhebung (die Einhaltung von Instruktionen)
-* Erschwerte Prüfung der Identifizierbarkeit
+* Erschwerte Kontrolle über die Bedingungen der Datenerhebung (z.B. die Einhaltung von Instruktionen, Einhalten der Datenqualität)
+
 * Erschwerter Schutz der Teilnehmenden
+
 * Erschwerte Überprüfung des Verständnisses wichtiger Informationen
-* Datenschutz
+
+* Erschwerte Prüfung der Identifizierbarkeit
+
+* erschwerter Datenschutz und erschwerte informierte Einwilligung
 
 ---
 class: top, left
 name: AA
 
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
 #### Was ist Ambulatory Assessment?
 
-* **Wiederholte Erfassung** der aktuellen Gedanken, Emotionen, Verhaltensweisen, physiologischen Zustände und des Kontexts von Menschen **in ihrer natürlichen Umgebung** und möglichst im Moment in dem Sie auftreten ("Real-time Data Capturing" bzw. "Real-time Monitoring")
+* **Wiederholte Erfassung** der aktuellen Gedanken, Emotionen, Verhaltensweisen, physiologischen Zustände und des Kontexts von Menschen **in ihrer natürlichen Umgebung** und möglichst im Moment in dem sie auftreten ("Real-time Data Capturing" bzw. "Real-time Monitoring")
 
 * Typischerweise (aber nicht notwendigerweise) über elektronische tragbare Geräte 
 
 * Der Begriff "Ambulatory Assessment" (Ebner-Priemer & Trull, 2009) umfasst eine Reihe methodischer Ansätze
-  - "Experience Sampling Method" (ESM, Larson & Csikszentmihalyi, 1983), auch "Ecological Momentary Assessment" (EMA, Shiffmann et al., 2008), "Ambulatory Self-reporting" (Conner & Feldman Barrett, 2012), "Continuous Unified Electronic Diary Method" (Ellis-Davies, Sakkalou, Fowler, Hilbrink, & Gattis, 2012)
+  - "Experience Sampling Method" (ESM, Larson & Csikszentmihalyi, 1983), auch "Ecological Momentary Assessment" (EMA, Shiffmann et al., 2008)
   - "Daily Diaries" (Gunthert & Wenze, 2012)
   - "Mobile Sensing"
   - "Ambient Sensing"
   
-* Die verschiedenen Begriffe betonen unterschiedliche Aspekte der Forschung (z.B. was wird erfasst, wie oft wird erfasst) und werden auch in verschiedenen Subdisziplinen häufiger oder weniger häufig genutzt
-
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives vs. Passives Ambulatory Assessment
-
-In der AA-Forschung unterscheiden wir zwei Formen der Datenerhebung:
-
-1) **Aktives AA**, bei dem Selbstauskunftsdaten erhoben werden
-
-  * verlangt von den Teilnehmern, dass sie bewusst Informationen bereitstellen
-  
-  * Beispiel: Stimmung bewerten, nachdem Frage auf dem Smartphone erscheint
-
-
-2) **Passives AA**, bei dem Beobachtungsdaten erhoben werden
-
-  * Informationen werden durch Wearables oder Logdateien ohne aktive Beteiligung der Teilnehmer gesammelt.
-  
-  * Beispiel: Herzfrequenz, Aktivität, Smartphone-Nutzung oder Engagement in sozialen Medien
+* Die verschiedenen Begriffe betonen unterschiedliche Aspekte der Forschung (z.B. was wird erfasst, wie und wie oft wird erfasst) und werden auch in verschiedenen Subdisziplinen häufiger oder weniger häufig genutzt
 
 ---
 class: top, left
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives vs. Passives Ambulatory Assessment
-
-Eine Studie zum Schlafverhalten kann z.B. ein Schlaftagebuch mit Selbstauskunft und einen Beschleunigungssensor umfassen:
-
-1) **Aktives AA**: Datenerhebung, indem den Teilnehmern Fragen gestellt werden, z.B. mit Hilfe einer EMA-App:
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "550px"}
-knitr::include_graphics("bilder/activeema-1.png")
-```
-]
-
-2) **Passives AA**: Daten werden automatisch gesammelt, zum Beispiel durch ein Wearable:
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "550px"}
-knitr::include_graphics("bilder/passiveema-1.png")
-```
-]
-
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: ESM/EMA Sampling
+#### ESM/EMA Sampling Pläne
 
 ESM/EMA kann zwei unterschiedlichen Messregimen folgen:
 
-1) **Time-contingent sampling** bzw. **Signal-contingent sampling** 
+**1) Time-contingent sampling** bzw. **Signal-contingent sampling** 
 
 Teilnehmer antworten auf Fragen zu einem bestimmten Zeitpunkt, wenn sie durch ein Signal dazu aufgefordert werden ("Beeps")
   
-* Fixed scheme: Teilnehmer werden zu festen Zeitpunkten aufgefordert, z. B. um 9:30 und 16:30 Uhr
-* Random scheme: Aufforderungen werden zu zufälligen Zeitpunkten gesendet, aber i.d.R. in vorher festgelegten Intervallen
-  * Vorteil 1:  Teilnehmer erhalten nicht mehrere Aufforderungen innerhalb eines begrenzten Zeitrahmens
-  * Vorteil 2:  Teilnehmer werden nicht durch Aufforderungen zu unpassenden Zeiten belästigt (z.B. 20:00 - 07:30)
+* **Fixed scheme:** Teilnehmer werden zu festen Zeitpunkten aufgefordert, z. B. um 9:30 und 16:30 Uhr $\rightarrow$ für die Versuchspersonen vorhersehbar, höhere Antwortquote, aber höhere Reaktivität
+
+* **Random scheme:** Aufforderungen werden zu zufälligen Zeitpunkten gesendet, aber i.d.R. in vorher festgelegten Intervallen $\rightarrow$ bessere Abdeckung des gesamten Alltags, ggf. geringere Reaktivität, aber auch geringere Antwortquote
 
 ---
 class: top, left
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives AA: ESM/EMA Sampling
+#### ESM/EMA Sampling Pläne
 
 ESM/EMA kann zwei unterschiedlichen Messregimen folgen:
 
-2) **Event-contingent sampling**
+**2) Event-contingent sampling**
 
 Teilnehmer antworten auf Fragen, wenn ein bestimmtes Ereignis eintritt, z.B. eine Panikattacke oder Alkoholkonsum
   
-* Möglichkeit 1: Teilnehmer bitten, Fragen auszufüllen, sobald das Ereignis eintritt
-* Möglichkeit 2: Kombination Aktives + Passives EMA
+* Möglichkeit 1: Teilnehmer bitten, Fragebogen selbst zu starten sobald das Ereignis eintritt
+
+* Möglichkeit 2: Kombination ESM/EMA mit Sensing:
   * z.B. Stellen der Frage, wenn bestimmtes Aktivitätslevel überstiegen wird
   * z.B. Stellen der Frage, wenn bestimmte GPS Location erreicht wird
 
 ---
 class: top, left
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives AA: Beispiele
+#### ESM/EMA: Beispiele
 
 ```{r eval = TRUE, echo = F, out.width = "30%"}
 knitr::include_graphics("bilder/tellmi3.png")
@@ -349,15 +262,15 @@ knitr::include_graphics("bilder/tellmi1.png")
 class: top, left
 <div class="footer"><span>Russell, J. A. (1980). A circumplex model of affect. Journal of personality and social psychology, 39(6), 1161.<br>Russell, J. A., Weiss, A., & Mendelsohn, G. A. (1989). Affect grid: a single-item scale of pleasure and arousal. Journal of personality and social psychology, 57(3), 493.</span></div>
 
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives AA: Beispiele
+#### ESM/EMA: Beispiele
 
 **Multi-dimensionale Stimmungsmessung**
 
 .pull-left[
 .center[
-```{r eval = TRUE, echo = F, out.width = "400px"}
+```{r eval = TRUE, echo = F, out.width = "350px"}
 knitr::include_graphics("bilder/affect_grid.png")
 ```
 ]
@@ -370,7 +283,7 @@ knitr::include_graphics("bilder/affect_grid.png")
   * Valenz (von unangenehm bis angenehm) 
   * Erregung/Aktivierung (von niedriger bis hoher Erregung). 
   
-* Kombination ordnet die affektiven Zustände auf einem von vier Quadranten an $\rightarrow$ Messung über ein "Affect Grid" (Bild links)
+* Kombination ordnet die affektiven Zustände auf einem von vier Quadranten an  $\rightarrow$ Messung über ein "Affect Grid" (Bild links)
 
 * Nachteil: Konzepte von Valenz und Erregung können den Befragten schwer zu vermitteln sein
 ]
@@ -379,225 +292,33 @@ knitr::include_graphics("bilder/affect_grid.png")
 
 ---
 class: top, left
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives AA: Warum ESM/EMA?
+#### Was sind Ecological Momentary Interventions (EMI)?
 
-**Zur Minimierung von Gedächtnisfehlern**
+* EMI: **mobilbasierte Interventionen**, die den Menschen in ihrem **Alltag**, also in ihrer natürlichen Umgebung, und auf einen **konkreten Moment/Tag** bezogen angeboten werden (in "Echtzeit")
 
-* Klinische Forschung: Selbstauskunftsfragebögen, um das Vorhandensein und den Schweregrad von Symptomen in der jüngsten Vergangenheit zu bewerten (z.B. letzte 14 Tage)
+* Unterschied zu IMI (vgl. Vorlesung von Patricia Garatva) liegt vor allem im *momentary*-Teil, d.h. dass die Interventionen an bestimmten Momenten/Tagen vorgegeben werden
 
-* Retrospektive Selbstberichte sind zwar nützlich, aber nicht ohne Nachteile
+* Begriff auch eher in der Forschung üblich als in der psychotherapeutischen Praxis
 
-  * greifen auf die Erinnerung der Befragten zurück
-  * Diese kann verzerrt sein  (Moore, Depp, Wetherell, & Lenze, 2016). 
-
-ESM/EMA Lösung: Messung des aktuellen Zustands statt Reflexion über vergangene Erfahrungen 
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Maximierung der ökologischen Validität**
-
-* Erhebung von Daten in realen Umgebungen, in denen die Teilnehmer ihren täglichen Aktivitäten nachgehen
-
-* Keine Datenerhebung in kontrollierten Laboren oder Forschungseinrichtungen
-
-  * Folge 1: bessere Verallgemeinerbarkeit auf die gelebte Erfahrung der Probanden in der realen Welt
-
-  * Folge 2: praktische Anwendungen, die aus EMA Daten abgeleitet werden, haben größere Relevanz für reale Situationen 
+* Personalisierung möglich hinsichtlich Timing und Art der Intervention:
+  * **Timing:** z.B. wenn ESM/EMA deutliche Veränderungen in relevanten pathologischen Prozessen widerspiegelt
+  * **Art:** Auf eine Art und Weise, die in Anbetracht dessen, was über die Person bekannt ist, maximal effektiv ist
 
 ---
 class: top, left
-### Ambulatory Assessment (AA)
+### Ambulatory Assessment & Ecological Momentary Interventions
 
-#### Aktives AA: Warum ESM/EMA?
+#### Beispiel für Einsatz von EMI in der Partnerschaftsforschung
 
-**Idiographische Forschung vorantreiben**
-
-* Ergebnisse auf Gruppenebene lassen sich nicht unbedingt auf einzelne Mitglieder der Gruppe verallgemeinern
-
-* Aktives AA ermöglicht Erhebung großer Mengen quantitativer Daten auf individueller Ebene (Unterschied z.B. zum qualitativen Interview)
-
-* ermöglicht ein besseres Verständnis von Faktoren, die Variabilität innerhalb und zwischen Individuen erklären
-
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Idiographische Forschung vorantreiben**
-
-Veranschaulichung, wie sich Prozesse auf Gruppenebene und auf individueller Ebene dramatisch unterscheiden können $\rightarrow$ "**Simpson's Paradox**": 
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "700px"}
-knitr::include_graphics("bilder/idiographic-1.png")
-```
-]
-
-* Beziehung zwischen x und y ist in der Gruppe negativ (durch absteigende Regressionslinie dargestellt)
-* aber positiv für Individuen (durch Ellipsen markiert).
-
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Das dynamische Zusammenspiel zwischen Symptomen verstehen**
-
-* In der Netzwerktheorie der Psychopathologie (Borsboom, 2017) werden psychische Störungen als Netzwerke von Symptomen konzeptualisiert
-
-* Wiederkehrende Kausalschleifen halten das Netzwerk in einem "gestörten" Zustand  (z.B. Schlafprobleme -> Müdigkeit -> Grübeln -> Schlafprobleme)
-
-* Ziel Identifizierung patientenspezifischer Symptomnetzwerke
-  * Zentrale Symptome können mit personalisierten Interventionen angegangen werden
-  * Selbsterhaltende Schleifen durchbrechen
-
-* Identifizierung dieser Netzwerke erfordert wiederholte Bewertungen von Symptomen im realen Leben (aktives AA)
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Das dynamische Zusammenspiel zwischen Symptomen verstehen**
-
-Phasen der Entwicklung psychischer Störungen nach der Netzwerktheorie (Boorsbom, 2017):
-
-.pull-left[
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "450px"}
-knitr::include_graphics("bilder/borrsbom1.png")
-```
-]
-]
-
-.pull-right[
-* **Phase 1:** Asymptomatische Phase - das Netzwerk ist inaktiv 
-* **Phase 2:** Externes Ereignis (E1) aktiviert einige der Symptome 
-* **Phase 3:** Symptome aktivieren ihrerseits verbundene Symptome 
-* **Phase 4:** Ist das Netzwerk stark vernetzt, führt die Beseitigung des externen Ereignisses nicht zu einer Erholung: Das Netzwerk ist selbsterhaltend und verharrt in seinem aktiven Zustand
-]
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Das dynamische Zusammenspiel zwischen Symptomen verstehen**
-
-Resilientes vs. anfälliges Netzwerk (Boorsbom, 2017):
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "650px"}
-knitr::include_graphics("bilder/borrsbom2.png")
-```
-]
-
-* Ein schwach vernetztes Netzwerk (oberes Feld) ist widerstandsfähig. 
-* Symptome können durch externe Ereignisse aktiviert werden, aber die Symptom-Symptom-Interaktionen sind nicht stark genug, um zu einer sich selbst erhaltenden Symptomaktivität zu führen. 
-* Ein stark vernetztes Netzwerk (unteres Feld) hingegen kann seine eigene Aktivität aufrechterhalten auch wenn das externe Ereignis vorüber ist, und ist dadurch anfällig sich zu einem Störungszustand entwickeln.
-
----
-class: top, left
-### Ambulatory Assessment (AA)
-
-#### Aktives AA: Warum ESM/EMA?
-
-**Ermöglichung von Ecological Momentary Interventions (EMI)**
-
-* EMI: Interventionen, die den Menschen in ihrem Alltag, in Echtzeit und in ihrer natürlichen Umgebung angeboten werden
-
-.center[
 ```{r eval = TRUE, echo = F, out.width = "70%"}
 knitr::include_graphics("bilder/emi_paper.png")
 ```
-]
 
-* Personalisierung möglich hinsichtlich Timing und Art der Intervention:
-  * Timing: Wenn aktives AA deutliche Veränderungen in relevanten pathologischen Prozessen widerspiegelt
-  * Art: Auf eine Art und Weise, die in Anbetracht dessen, was über die Person bekannt ist, maximal effektiv ist
+Ein Beispiel-EMI aus dem Paper: 
 
-
----
-class: top, left
-
-### Ambulatory Assessment (AA)
-
-#### Passives AA: Sensing
-
-.pull-left[
-.center[
-```{r eval = TRUE, echo = F, out.width = "350px"}
-knitr::include_graphics("bilder/ambient.png")
-```
-]
-**Ambient sensing:**
-
-* Sensortechnik bei Teilnehmer:innen zuhause
-* Internet der Dinge
-* Bewegungssensorik, Kameras, etc.
-
-]
-.pull-right[
-.center[
-```{r eval = TRUE, echo = F, out.width = "450px"}
-knitr::include_graphics("bilder/sp.jpg")
-```
-]
-**Mobile sensing:**
-
-* Nutzen der Smartphone Sensortechnik
-* Bewegungsdaten, Smartphone-Nutzungsdaten (Ladezyklen, Bildschirm-Check, etc.)
-* Online-Aktivität
-]
-
----
-class: top, left
-
-### Ambulatory Assessment (AA)
-
-#### Passives AA: Mobile Sensing mit Geotracking
-
-
-.pull-left[
-* Ausnutzung des Global Positioning System (GPS)
-
-* Genaue Position über Breitengrad und Längengrad
-
-* z.B. latitude: 52.37022; longitude: 4.89517
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "450px"}
-knitr::include_graphics("bilder/Latitude_and_Longitude_of_the_Earth.png")
-```
-]
-]
-.pull-right[
-
-Beispiel:
-
-* 4-wöchiges GPS Bewegungsmuster (von 2 Personen)
-
-* links depressiv, rechts nicht depressiv
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "450px"}
-knitr::include_graphics("bilder/fourweekgps-1.png")
-```
-]
-]
+"**Nehmen Sie sich heute in einem ruhigen Moment etwas Zeit zusammen mit Ihrem Partner. Stellen Sie einen Wecker auf 5 Minuten und schauen Sie Ihrem Partner** ***für 5 Minuten in die Augen.*** **Alternativ können Sie auch Videochatten. Konzentrieren Sie sich dabei voll und ganz auf Ihren Partner.**"
 
 ---
 class: top, left
@@ -609,53 +330,36 @@ name: ML
 
 * Idee, Computer einzusetzen, um Diagnostik und Prognostik von  Erkrankungen zu verbessern, ist nicht neu  
 
-* 60er Jahre:
-
-.center[
+.pull-left[
 ```{r eval = TRUE, echo = F, out.width = "750px"}
 knitr::include_graphics("bilder/QvSElnX.png")
 ```
 ]
 
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Computer und mentale Gesundheit
-
-* Arthur Radbow (60er Jahre): Machine Psychiatry aus „Closer than we think“. 
-  * Idee: einen  Computer zu füttern mit allen Wesensäußerungen des Patienten. 
-  * Computer lernt aus den unterschiedlichsten Kombinationen von emotionalen Ausdrücken, Kognitionen und Verhalten, Entscheidungsregeln abzuleiten
-  * Die Kliniker:in kann diese verwenden, um Therapie danach auszurichten. 
-
-.pull-left[
-* Dichte an Informationen,  die wir über Erkrankungen haben – nicht nur über psychische Erkrankungen, sondern generell über Erkrankungen – nimmt exponentiell zu
-
-* Problem: menschliche Kapazität mit diesem Wissen umzugehen ist begrenzt (Schere verfügbares vs. kognitiv verarbeitbares Wissen)
-]
-
 .pull-right[
-```{r eval = TRUE, echo = F, out.width = "650px"}
-knitr::include_graphics("bilder/info.png")
-```
+Arthur Radbow (60er Jahre): Machine Psychiatry aus „Closer than we think“. 
+* Idee: einen  Computer zu füttern mit allen Wesensäußerungen des Patienten. 
+* Computer lernt aus den unterschiedlichsten Kombinationen von emotionalen Ausdrücken, Kognitionen und Verhalten, Entscheidungsregeln abzuleiten
+* Die Kliniker:in kann diese verwenden, um Therapie danach auszurichten. 
 ]
+
+* Dichte an Informationen,  die wir über Erkrankungen haben – nicht nur über psychische Erkrankungen, sondern generell über Erkrankungen – nimmt exponentiell zu
+* **Kapazitätsproblem:** menschliche Kapazität mit diesem Wissen umzugehen ist begrenzt (Schere verfügbares vs. kognitiv verarbeitbares Wissen)
 
 ---
 class: top, left
 ### Big Data und Machine-Learning
 
-#### Big data - Definition
+#### Big Data
 
 .pull-left[
-* große Datenmengen, die zu komplex sind, um sie mit traditionellen Methoden zu verarbeiten.
+* **Definition**: große Datenmengen, die zu komplex sind, um sie mit traditionellen Methoden zu verarbeiten.
 
 * umfasst sowohl strukturierte als auch unstrukturierte Daten, wie z.B. Text, Bilder, Audio- und Videodateien.
 
-* Ziel: Muster, Trends und Verbindungen in den Daten zu erkennen und zu nutzen.
+* Neue Technologien ermöglichen es, big data zu speichern und zu verarbeiten.
 
-* Neue Technologien ermöglichen es, große Datenmengen zu speichern und zu verarbeiten.
-
-* kann in vielen Bereichen wie Finanzen, Gesundheitswesen, Marketing und E-Commerce eingesetzt werden.
+* **Ziel**: Muster, Trends und Verbindungen in den Daten zu erkennen und zu nutzen.
 
 ]
 
@@ -673,7 +377,7 @@ class: top, left
 
 #### Machine Learning
 
-* Computerstrategie, die *automatisch* Methoden und Parameter bestimmt (d.h. lernt), um eine optimale Lösung für ein Problem zu finden
+* Computerstrategie, die **automatisch** Methoden und Parameter bestimmt (d.h. lernt), um eine optimale Lösung für ein Problem zu finden
 
 * Wird nicht von vornherein von einem Menschen programmiert, um eine fixe Lösung zu liefern. 
 
@@ -683,29 +387,6 @@ class: top, left
 
 * Kann für vermeintlich intelligente Zwecke eingesetzt werden (z.B. Sprache, Schrift, Gesichtserkennung, selbstfahrende Autos oder medizinische Entscheidungshilfen).
 
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Machine Learning - grobe Time Line -->
-
-<!-- <small> -->
-
-<!-- * 1940s-1950s: Entstehung der der Idee von neuronalen Netzen als möglichem Ansatz für künstliche Intelligenz (KI)  -->
-
-<!-- * 1950s-1960s: Entwicklung von einfachen neuronalen Netzen und erste Anwendungen in Bereichen wie Handwriting Recognition und Bilderkennung. -->
-
-<!-- * 1970s-1980s: Rückschlag in der Entwicklung von neuronalen Netzen aufgrund von Problemen mit dem Training und der Generalisierung. -->
-
-<!-- * 1980s-1990s: Wiederaufleben des Interesses an neuronalen Netzen durch den Einsatz von "error backpropagation" und anderen verbesserten Trainingsalgorithmen. -->
-
-<!-- * 1990s: Einführung von Support Vector Machines (SVMs) und anderen "shallow" Machine Learning-Methoden. -->
-
-<!-- * 2000s: Einführung von "Big Data" und "Data Mining" als Schlagworte, sowie die Verfügbarkeit von großen Datenmengen und leistungsfähigen Computern. -->
-
-<!-- * 2010s: Explosion des Interesses an "Deep Learning" und der Verfügbarkeit von großen, gut strukturierten Datensätzen und leistungsfähigen Grafikprozessoren (GPUs) für das Training tiefer Netze. -->
-
-<!-- * 2020s: Deep Learning und Machine Learning werden in vielen Bereichen angewendet, wie zum Beispiel Computer Vision, Natur Sprachverarbeitung, Robotics und Medizin. -->
-
-<!-- </small> -->
 
 ---
 class: top, left
@@ -774,30 +455,9 @@ class: top, left
 
 * Die Seifenblase platzte jedoch, als sich die Hoffnungen aufgrund der Beschränkungen der frühen Algorithmen und der damals verfügbaren Rechenleistung nicht erfüllten. 
 
-* Einige dieser Beschränkungen, in denen traditionelle Modelle und Algorithmen nicht optimal funktioniert haben, können nun aufgrund der gestiegenen Rechenleistung, die es Maschinen ermöglicht, aus manchmal sehr komplexen Daten zu lernen, überwunden werden.
+* Einige dieser Beschränkungen können nun aufgrund der gestiegenen Rechenleistung überwunden werden, so dass es Maschinen möglich ist aus manchmal sehr komplexen Daten zu lernen.
 
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Machine Learning - Entwicklungen
-
-Machine Learning Algorithmen sind heute in unser tägliches Leben integriert 
-
-* Internet-Suchen 
-  
-* Produktempfehlungen
-  
-* Spracherkennungsdienste
-  
-* selbstfahrende Autos 
-  
-* Bildklassifikation
-  
-* Sprachmodelle (z.B. DeepL)
-  
-* Generative Modelle (z.B. ChatGPT)
-
+* Machine Learning Algorithmen sind heute in unser tägliches Leben integriert:  Internet-Suchen, Produktempfehlungen, Spracherkennungsdienste, selbstfahrende Autos,  Bildklassifikation, Sprachmodelle (z.B. DeepL), Generative Modelle (z.B. ChatGPT)
 
 ---
 class: top, left
@@ -805,9 +465,9 @@ class: top, left
 
 #### Machine Learning - Entwicklungen im Gesundheitswesen
 
-* Hoffnung, klinische Entscheidungsfindung durch Informationsverabeitung zu verbessern
+* Hoffnung, auch klinische Entscheidungsfindung durch Informationsverabeitung zu verbessern
 
-* Präzisionsmedizin (taylored treatments): Richtige Behandlung für richtige Patient:in zur richtigen Zeit
+* **Präzisionsmedizin (taylored treatments)**: Richtige Behandlung für richtige Patient:in zur richtigen Zeit
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "950px"}
@@ -821,17 +481,15 @@ class: top, left
 
 #### Machine Learning - Entwicklungen im Gesundheitswesen
 
-* Ansatz des maschinellen Lernens  im Gesundheitswesen funktioniert insbesondere gut  bei Aufgaben, bei denen es um Mustererkennung in Bildern geht
+* Ansatz des maschinellen Lernens  im Gesundheitswesen funktioniert insbesondere gut  bei Aufgaben, bei denen es um **Mustererkennung in Bildern** geht
 
 * ML ebenso gut oder besser abgeschnitten als Kliniker, etwa bei 
   * Erkennung von Hautkrebs (Esteva et al. 2017)
   * Lungenkrebs (Yu et al. 2016) 
   * Brustkrebs (z. B. Samsung, RS80A)
   * Augenerkrankungen (Long et al. 2017)
-  
 
-*  Fortschritte treiben das rasche Wachstum kommerzieller Lösungen für maschinelles Lernen im Gesundheitswesen voran
-
+* Und in der Psychologie? **Besonders für das Ziel der Vorhersage sehr relevant!** (für das Ziel der Erklärung weniger) $\rightarrow$ vielversprechende Forschung
 
 ---
 class: top, left
@@ -864,7 +522,7 @@ Man unterscheidet im Machine Learning i.d.R. drei unterschiedliche Anwendungsber
   
 * **Supervised Learning:**
   * Beinhaltet vorgegebene Labels oder Zielvariablen.
-  * Ziel ist es, ein Modell zu entwickeln, das in der Lage ist, neue Datenpunkte richtig vorherzusagen. $\rightarrow$ "Prädiktive Modellierung"
+  * Ziel ist es, ein Modell zu entwickeln, das in der Lage ist, neue Datenpunkte richtig vorherzusagen. $\rightarrow$ "**Prädiktive Modellierung**"
   * Beispiele: Regression, Klassifikation.
   
 * **Reinforcement/Reward Learning:**
@@ -971,7 +629,7 @@ class: top, left
 
 **Genauigkeitsmaße**
 
-* Vorhersagegenauigkeit = **Accuracy**
+* gesamte Vorhersagegenauigkeit = **Accuracy**
 * Vorliegen von tatsächlicher Diagnose korrekt erkennen = **Sensitivität**
 * Abwesenheit von tatsächlicher Diagnose korrekt erkennen = **Spezifität**
 
@@ -996,20 +654,15 @@ class: top, left
 
 ##### Logik der Prädiktiven Modellierung
 
-**Schritt 3:** Generalisierbarkeit und Kreuzvalidierung
+**Schritt 3:**
 
-* Um zu prüfen, ob das trainierte Modell gut funktioniert, müssen wir es validieren
+* **Prüfung der Generalisierbarkeit**: Um zu prüfen, ob das trainierte Modell gut funktioniert, müssen wir es validieren
 
-* **Validierung**: Modell an Fällen erproben die nicht im Trainingsset dabei waren (d.h. an bis dahin unbekannten Personen)
+* **Validierung**: Modell an Fällen erproben die nicht im Trainingsset dabei waren (d.h. an bis dahin unbekannten Personen) $\rightarrow$ entweder man erhebt also neue Daten, oder man teilt einen vorhandenen Datensatz in ein Trainings- und ein Testset 
 
-* VORSICHT: strikte Trennung zwischen Trainings- und Testdaten (Data-Leakage) $\rightarrow$ sonst droht ein **Overfit**
+* VORSICHT: strikte Trennung zwischen Trainings- und Testdaten (Data-Leakage) $\rightarrow$ sonst droht ein **Overfit** (Überanpassung an die Daten)
   * Unfairer Vorteil: Vorhersage von Fällen, die das Modell schon "kennt"
   * Modell würde sonst besser performen, als in der Realität
-
-* Einfachstes Szenario: **Simple Split** $\rightarrow$ Datensatz wird z.B. 50/50 in Tranings- und Testdatensatz geteilt
-  * Problem: Forscher könnte genau so trennen, dass Modell gut funktioniert (das wäre Schummeln)
-  
-* Lösung: (k-fold) **Nested-Cross-Validation** (häufigstes Modell für kleinere Datensätze)
 
 ---
 class: top, left
@@ -1019,24 +672,21 @@ class: top, left
 
 ##### Logik der Prädiktiven Modellierung
 
-**Schritt 3:** Generalisierbarkeit und Kreuzvalidierung
+**Wie trenne ich einen vorhandenen Datensatz in ein Trainings- und Testset?**
+
+* Einfachstes Szenario: **Simple Split** $\rightarrow$ Datensatz wird z.B. 50/50 in Tranings- und Testdatensatz geteilt
+  * Problem: Forscher könnte genau so trennen, dass Modell gut funktioniert (das wäre Schummeln)
 
 .pull-left[
-<small>
-** (k-fold) Nested-Cross-Validation:**
-
-* Datensatz wird in k Folds geteilt (hier k=5)
-
-* Runde 1: Training: 1-4 Folds, Test: 5. Fold
-* Runde 2: Training: 1,2,3,5 Folds, Test: 4. Fold
-* Runde 3: Training: 1,2,4,5 Folds, Test: 3. Fold
-* ...
-
-* Am Ende Gesamtgenauigkeit ausrechnen
+* Lösung: **(k-fold) Nested-Cross-Validation**
+  * Datensatz wird in k Folds geteilt (hier k=5)
+  * Runde 1: Training: 1-4 Folds, Test: 5. Fold
+  * Runde 2: Training: 1,2,3,5 Folds, Test: 4. Fold
+  * Runde 3: Training: 1,2,4,5 Folds, Test: 3. Fold
+  * ...
+  * Am Ende Genauigkeitsmaße ausrechnen
 
 * Vorteil: Kein Overfit + ganzer Datensatz kann ohne Data-Leakage genutzt werden 
-
-</small>
 ]
 .pull-right[
 .center[
@@ -1045,7 +695,7 @@ knitr::include_graphics("bilder/predx.png")
 ```
 ]
 .center[
-```{r eval = TRUE, echo = F, out.width = "550px"}
+```{r eval = TRUE, echo = F, out.width = "350px"}
 knitr::include_graphics("bilder/nested.png")
 ```
 ]
@@ -1109,200 +759,6 @@ knitr::include_graphics("bilder/tesla.jpg")
 * Objective Function: schnell ans Ziel ohne Unfall/Risiko
 ]
 
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Klassen von Machine Learning
-
-**Gradient Descent**
-
-* Lernen = Fehlerveringerung (Trial + Error)
-* Standardmethode zur Modelloptimierung: Gradient Descent
-* Schrittweise (inkrementelle) Modellanpassung veringert den Fehler
-* VORICHT: Lokale Minima müssen vermieden werden
-
-.pull-left[
-.center[
-```{r eval = TRUE, echo = F, out.width = "280px"}
-knitr::include_graphics("bilder/gradient1.png")
-```
-]
-]
-.pull-right[
-.center[
-```{r eval = TRUE, echo = F, out.width = "280px"}
-knitr::include_graphics("bilder/gradient2.png")
-```
-]
-]
-
-
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Machine Learning - Arten -->
-
-<!-- Shallow Learning vs. Deep Learning -->
-
-<!-- * Shallow Learning: -->
-<!--   * Einfachere Modelle, die schneller trainiert und implementiert werden können. -->
-<!--   * In der Regel benötigen sie weniger Daten, um zu trainieren. -->
-<!--   * Geeignet für Probleme mit einfachen Strukturen und klaren Mustern. -->
-<!--   * Beispiele: Regression, Support Vector Machines (SVMs) -->
-
-<!-- * Deep Learning: -->
-<!--   * Komplexere Modelle, die länger trainiert und implementiert werden müssen. -->
-<!--   * In der Regel benötigen sie mehr Daten, um zu trainieren. -->
-<!--   * Geeignet für Probleme mit komplexen Strukturen und unsicheren Mustern. -->
-<!--   * Beispiele: Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Autoencoder. -->
-
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Machine Learning - Arten -->
-<!-- .pull-left[ -->
-<!-- ##### Shallow Learning: -->
-
-<!-- Beispielalgorithmen: -->
-
-<!-- * k-Nearest Neighbors (k-NN) -->
-<!-- * Naive Bayes -->
-<!-- * Linear/Logistic Regression -->
-<!-- * Decision Trees und Random Forest -->
-<!-- * Gradient Boosting -->
-<!-- * Support Vector Machines (SVMs) -->
-<!-- * Principal Component Analysis (PCA) -->
-<!-- ] -->
-<!-- .pull-right[ -->
-<!-- .center[ -->
-<!-- Support Vector Machine: -->
-<!-- ```{r eval = TRUE, echo = F, out.width = "350px"} -->
-<!-- knitr::include_graphics("bilder/svm.png") -->
-<!-- ``` -->
-<!-- ] -->
-<!-- ] -->
-
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Machine Learning - Arten -->
-<!-- .pull-left[ -->
-<!-- ##### Shallow Learning: -->
-
-<!-- Beispielalgorithmen: -->
-
-<!-- * k-Nearest Neighbors (k-NN) -->
-<!-- * Naive Bayes -->
-<!-- * Linear/Logistic Regression -->
-<!-- * Decision Trees und Random Forest -->
-<!-- * Gradient Boosting -->
-<!-- * Support Vector Machines (SVMs) -->
-<!-- * Principal Component Analysis (PCA) -->
-<!-- ] -->
-<!-- .pull-right[ -->
-<!-- .center[ -->
-<!-- Decision Tree: -->
-
-<!-- ```{r eval = TRUE, echo = F, out.width = "350px"} -->
-<!-- knitr::include_graphics("bilder/Unknown.png") -->
-<!-- ``` -->
-<!-- ] -->
-<!-- ] -->
-
-
-
-
-<!-- * Tiefe des Machine Learning-Algorithmus steht nicht unbedingt mit seiner Leistungsfähigkeit in Verbindung  -->
-<!-- * z.B. Random Forest und Gradient Boosting, können auch tiefere Netze verwenden  und somit als "shallow" oder "deep" angesehen werden -->
-
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Machine Learning - Arten -->
-
-<!-- ##### Deep Learning -->
-
-<!-- .pull-left[ -->
-<!-- <small> -->
-
-<!-- * Basiert auf künstlichen neuronalen Netzen, die aus Schichten von Neuronen (sogenannten "Knoten") bestehen. -->
-
-<!-- * Jede Schicht wird trainiert, um bestimmte Merkmale oder Eigenschaften aus den Daten zu extrahieren. -->
-
-<!-- * Die erste Schicht erkennt einfache Merkmale, die nächste Schicht erkennt komplexere Merkmale auf der Grundlage der ersten Schicht, und so weiter. -->
-
-<!-- * Durch das Training der Netze mit großen Mengen an Daten, können die Neuronen selbstständig Muster und Zusammenhänge erkennen. -->
-
-<!-- * Die tiefste Schicht des Netzes (die sogenannte "output layer") trifft schließlich die Entscheidung oder gibt eine Vorhersage ab. -->
-
-<!-- </small> -->
-<!-- ] -->
-
-<!-- .pull-right[ -->
-<!-- .center[ -->
-<!-- ```{r eval = TRUE, echo = F, out.width = "650px"} -->
-<!-- knitr::include_graphics("bilder/nnet.png") -->
-<!-- ``` -->
-<!-- ] -->
-<!-- ] -->
-
-
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Generative Modelle
-.pull-left[
-
-**Generative Adversarial Networks (GAN):**
-
-* Können nach einem Vorbild Content erzeugen
-
-* Klassifikationsalgorithmus tritt gegen generativen Algorithmus an
-  
-* Iterative Annäherung an Zielzustand durch Induktion von Zufälligkeit
-
-* Es können ohne großen Aufwand neue Inhalte kreiert werden
-
-]
-.pull-right[
-.center[
-```{r eval = TRUE, echo = F, out.width = "600px"}
-knitr::include_graphics("bilder/gan.jpeg")
-```
-]
-]
-
-<!-- ### Big Data und Machine-Learning -->
-
-<!-- #### Generative Modelle - Bildtransfer -->
-
-<!-- .center[ -->
-<!-- ```{r eval = TRUE, echo = F, out.width = "800px"} -->
-<!-- knitr::include_graphics("bilder/gan1.jpeg") -->
-<!-- ``` -->
-<!-- ] -->
-
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Generative Modelle - Bildtransfer
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "900px"}
-knitr::include_graphics("bilder/gan2.jpg")
-```
-]
-
----
-class: top, left
-### Big Data und Machine-Learning
-
-#### Generative Modelle - Reperatur kompromittierter MRT Scans
-
-.center[
-```{r eval = TRUE, echo = F, out.width = "900px"}
-knitr::include_graphics("bilder/gan3.jpg")
-```
-]
 
 
 ---
@@ -1354,12 +810,19 @@ class: top, left
 Anforderungen:
 
 * Medizinische KI muss mindestens so genau sein wie menschliche Heuristik
+
 * KI muss mindestens so generalisiert sein wie klinische Entscheidungsfindungen
+
 * KI muss so trainiert werden, dass sie zu einer effektiven Nutzung bestehender Ressourcen führt
+
 * Die Anwendungsindikation von medizinischer KI muss klar definiert ist
+
 * Der Bias von KI muss offen gelegt werden können
+
 * KI muss transparent bezüglich der eigenen Unsicherheit sein, um übermäßiger Technikgläubigkeit vorzubeugen
+
 * KI muss handlungsrelevante Informationen produzieren
+
 * KI muss klinisch kontrolliert werden können (was eine entsprechende Ausbildung im Studium erfordert)
 
 
@@ -1370,42 +833,132 @@ name: take-away
 ### Take-Aways
 .content-box-gray[
 
-* **Digitales Ausfüllen herkömmlicher Messinstrumente** ermöglicht Erhöhung der Effizienz und niedrigere Fehleranfälligkeit.
-
-* **Nachteile digitaler Ergebungen** umfassen einen erschwerten Schutz der Teilnehmer:innen und z.T. komplexe Datenschutzthematik.
-
 * **Ambulatory Assessment (AA)** ist die wiederholte Erfassung von psychologischer (Kontext-)Variablen in natürlicher Umgebung.
-
-* Wir unterscheiden **aktives und passives AA**, beide können auch kombiniert werden.
 
 * Der Zeitpunkt einer ESM/EMA Erhebung kann gemäß dem **Signal-contingent sampling** oder **Event-contingent sampling** vorgegeben werden.
 
-* AA ermöglicht **direkte**, **ökologisch-validere** Messungen zur Erhöhung des **idiographischen** Verständnisses.
-]
-
----
-class: top, left
-### Take-Aways
-.content-box-gray[
-
-* **Kapazitätsproblem:** menschliche Kapazität, effizient mit  Wissenszuwachs umzugehen ist begrenzt.
+* **Ecological Momentary Interventions (EMI)** sind alltagsnahe, auf den Moment/Tag bezogene Interventionen
 
 * **Machine Learning:** Computerfunktionalität, die nicht explizit programmiert wurde, sondern selbstständig "lernt".
 
 * **Unsupervised ML** $\rightarrow$ Mustererkennung, **Supervised ML** $\rightarrow$ Prädiktion, **Reinforcement Learning** $\rightarrow$ Operation
 
-* Vorhersagegenauigkeit eines Prädiktionsmodells muss mittels **Validierung** geprüft werden.
+* Vorhersagegenauigkeit (**Accuracy**, **Sensitivität** und **Spezifität**) eines Prädiktionsmodells muss mittels **Validierung** auf neuen Daten geprüft werden.
 
 * **Overfit:** Überanpassung an die Daten $\rightarrow$ führt zu veringerter Generalisierbarkeit.
+]
 
-* **Generative Modelle** können genutzt werden, um Inhalte zu erzeugen.
+---
+class: top, left
+name: words
+
+### Schlüssel-/Fachbegriffe der heutigen Vorlesung
+.content-box-gray[
+
+.small[
+.pull-left[
+.pull-left[
+
+**Ambulatory Assessment**
+
+**Experience Sampling Methode (ESM)**
+
+**Ecological Momentary Assessment (EMA)**
+
+**Mobile bzw. Ambient Sensing**
+
+**Time-/Signal-contingent sampling**
+
+**Event-contingent sampling**
+]
+
+.pull-right[
+**Fixed scheme**
+
+**Random scheme**
+
+**Ecological Momentary Interventions (EMI)**
+
+**Kapazitätsproblem**
+
+**Big Data**
+
+**Machine Learning (ML)** 
+
+**Perzeptron**
+
+**Präzisionsmedizin (taylored treatments)**
+
+]
+]
+
+.pull-right[
+.pull-left[
+**Unsupervised ML**
+
+**Supervised ML / Prädiktive Modellierung**
+
+**Reinforcement/Reward Learning**
+
+**Trainings- und Testdatensatz**
+
+**Accuracy**
+
+**Sensitivität**
+
+**Spezifität**
+]
+
+.pull-right[
+**Generalisierbarkeit**
+
+**Overfit**
+
+**Kreuzvalidierung (CV)**
+
+**Simple Split**
+
+**(k-fold) Nested-Cross-Validation**
+
+**Generalisierbarkeitspyramide**
+
+**Leave-Site-Out CV**
+
+**External validation**
+
+**Prospective CV**
+]
+]
+]
 ]
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/p1khGEoKS2Q2nkpV6)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/xPmrkc6JtCNdT3of8)**
+
+---
+class: top, left
+
+### Übernächste Woche: Zusammenfassung + Fragestunde
+
+**Damit die Zeit in dieser Stunde gut genutzt werden kann, würde ich Sie bitten Ihre Fragen zur Vorlesung in folgenden Dokument zu sammeln:** https://docs.google.com/document/d/1tWKYDSsRBc7MxoYnH4Cm6tyCBMkouVYJc0NMcGWDKFY/edit
+
+Je nach Fragen-Aufkommen werde ich dann Fragen priorisieren und versuchen daraus eine interaktive Lern-Möglichkeit für alle zu schaffen.
+
+Ich habe ChatGPT um ein Bild für die Fragestunde gebeten. Hier das Ergebnis:
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "350px"}
+knitr::include_graphics("bilder/qa.png")
+```
+]
+
+
+
+```{r eval=FALSE, include=FALSE}
+# https://rviews.rstudio.com/2021/11/18/deploying-xaringan-slides-a-ten-step-github-pages-workflow/
+```
 
 <!-- library(renderthis)  -->
 <!-- to_pdf("EinfForsch_09_Digital.Rmd", complex_slides = TRUE) -->
-
 
