@@ -59,14 +59,7 @@ class: middle, left
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 2: Messen in der Psychologie ReCap
-##### 02.05.2024 | Dr. Caroline Zygar-Hoffmann
-
----
-class: top, left
-
-### Video zur klassischen Testtheorie
-
-https://youtu.be/iDiW7p_ytnM?si=M9GhPtTV5fqhl5GH&t=44
+##### 06.11.2024 | Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left
@@ -84,6 +77,13 @@ Ordnen Sie zu:
 * nicht reliabel und nicht valide
 * reliabel, aber nicht valide
 * valide, aber nicht reliabel
+
+---
+class: top, left
+
+### Video zur klassischen Testtheorie
+
+https://youtu.be/iDiW7p_ytnM?si=M9GhPtTV5fqhl5GH&t=44
 
 ---
 class: top, left

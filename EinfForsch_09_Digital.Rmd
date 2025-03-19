@@ -1,9 +1,9 @@
 ---
 title: "Einheit 9"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/07/03 (updated: `r Sys.Date()`)"
+date: "2025/01/21 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -58,7 +58,7 @@ class: middle, left
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 9: Digitale Datenerhebung, Big Data und Machine-Learning
-##### 04.07.2024 | Dr. Caroline Zygar-Hoffmann
+##### 22.01.2024 | Prof. Dr. Caroline Zygar-Hoffmann
 
 
 ---
@@ -153,7 +153,7 @@ Möglichkeit Daten unabhängig von der physischen Distanz zwischen den Forschung
 .pull-right[
 * Wegfall von kopräsenter Versuchsleitung und Versuchsleitereffekten
 
-* Verringerung des Reaktivitätsproblems
+* ggf. Verringerung des Reaktivitätsproblems
 ]
 ]
 
@@ -201,12 +201,24 @@ name: AA
 * Typischerweise (aber nicht notwendigerweise) über elektronische tragbare Geräte 
 
 * Der Begriff "Ambulatory Assessment" (Ebner-Priemer & Trull, 2009) umfasst eine Reihe methodischer Ansätze
-  - "Experience Sampling Method" (ESM, Larson & Csikszentmihalyi, 1983), auch "Ecological Momentary Assessment" (EMA, Shiffmann et al., 2008)
-  - "Daily Diaries" (Gunthert & Wenze, 2012)
-  - "Mobile Sensing"
-  - "Ambient Sensing"
+  - "Experience Sampling Method" (ESM, Larson & Csikszentmihalyi, 1983), auch "Ecological Momentary Assessment" (EMA, Shiffmann et al., 2008) $\rightarrow$ mehrmals tägliche Erfassung (meist Selbst-/Fremdauskunft)
+  - "Daily Diaries" (Gunthert & Wenze, 2012) $\rightarrow$ tägliche Abendbefragung ("Tagebuch", meist Selbst-/Fremdauskunft)
+  - "Mobile Sensing" $\rightarrow$ Erhebung der Smartphone/Wearable Nutzungs- und Sensordaten
+  - "Ambient Sensing" $\rightarrow$ Erhebung von in der Umgebung eingebauter Sensordaten
   
 * Die verschiedenen Begriffe betonen unterschiedliche Aspekte der Forschung (z.B. was wird erfasst, wie und wie oft wird erfasst) und werden auch in verschiedenen Subdisziplinen häufiger oder weniger häufig genutzt
+
+---
+class: top, left
+<div class="footer"><span>Bergelson, E., Soderstrom, M., Schwarz, I. C., Rowland, C. F., Ramírez-Esparza, N., R. Hamrick, L., ... & Cristia, A. (2023). Everyday language input and production in 1,001 children from six continents. Proceedings of the National Academy of Sciences, 120(52), e2300671120.</span></div>
+
+### Ambulatory Assessment & Ecological Momentary Interventions
+
+#### Mobile Sensing Studie im e ntwicklungspsychologischen Bereich
+
+```{r eval = TRUE, echo = F, out.width = "55%"}
+knitr::include_graphics("bilder/Bergelson.png")
+```
 
 ---
 class: top, left
@@ -220,7 +232,7 @@ ESM/EMA kann zwei unterschiedlichen Messregimen folgen:
 
 Teilnehmer antworten auf Fragen zu einem bestimmten Zeitpunkt, wenn sie durch ein Signal dazu aufgefordert werden ("Beeps")
   
-* **Fixed scheme:** Teilnehmer werden zu festen Zeitpunkten aufgefordert, z. B. um 9:30 und 16:30 Uhr $\rightarrow$ für die Versuchspersonen vorhersehbar, höhere Antwortquote, aber höhere Reaktivität
+* **Fixed scheme:** Teilnehmer werden zu festen Zeitpunkten aufgefordert, z. B. um 9:30 und 16:30 Uhr $\rightarrow$ für die Versuchspersonen vorhersehbar, höhere Antwortquote, aber auch höhere **Reaktivität** durch Verhaltensanpassung kurz vor erwarteter Befragung
 
 * **Random scheme:** Aufforderungen werden zu zufälligen Zeitpunkten gesendet, aber i.d.R. in vorher festgelegten Intervallen $\rightarrow$ bessere Abdeckung des gesamten Alltags, ggf. geringere Reaktivität, aber auch geringere Antwortquote
 
@@ -292,6 +304,20 @@ knitr::include_graphics("bilder/affect_grid.png")
 
 ---
 class: top, left
+<div class="footer"><span>Hall, M., Lappenbusch, L. M., Wiegmann, E., & Rubel, J. A. (2024). To Use or Not to Use: Exploring Therapists’ Experiences with Pre-Treatment EMA-Based Personalized Feedback in the TheraNet Project. Administration and Policy in Mental Health and Mental Health Services Research, 1-18.</span></div>
+
+### Ambulatory Assessment & Ecological Momentary Interventions
+
+#### ESM/EMA: Erfahrungen zu Anwendung im klinischen Kontext
+
+```{r eval = TRUE, echo = F, out.width = "55%"}
+knitr::include_graphics("bilder/hall.png")
+```
+
+---
+class: top, left
+<div class="footer"><span>Heron, K. E., & Smyth, J. M. (2010). Ecological momentary interventions: incorporating mobile technology into psychosocial and health behaviour treatments. British journal of health psychology, 15(1), 1-39.</span></div>
+
 ### Ambulatory Assessment & Ecological Momentary Interventions
 
 #### Was sind Ecological Momentary Interventions (EMI)?
@@ -489,7 +515,7 @@ class: top, left
   * Brustkrebs (z. B. Samsung, RS80A)
   * Augenerkrankungen (Long et al. 2017)
 
-* Und in der Psychologie? **Besonders für das Ziel der Vorhersage sehr relevant!** (für das Ziel der Erklärung weniger) $\rightarrow$ vielversprechende Forschung
+* Und in der Psychologie? **Besonders für das Ziel der Vorhersage sehr relevant!** (für das Ziel der Erklärung weniger, da die Modelle selbst oft eine "Black Box" sind) $\rightarrow$ vielversprechende Forschung
 
 ---
 class: top, left
@@ -519,12 +545,20 @@ Man unterscheidet im Machine Learning i.d.R. drei unterschiedliche Anwendungsber
   * Beinhaltet keine vorgegebenen Labels oder Zielvariablen.
   * Ziel ist es, unbekannte Strukturen oder Muster in den Daten zu entdecken.
   * Beispiele: Clustering, Dimensionality Reduction.
-  
+
+.pull-left[
 * **Supervised Learning:**
   * Beinhaltet vorgegebene Labels oder Zielvariablen.
   * Ziel ist es, ein Modell zu entwickeln, das in der Lage ist, neue Datenpunkte richtig vorherzusagen. $\rightarrow$ "**Prädiktive Modellierung**"
   * Beispiele: Regression, Klassifikation.
-  
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "80%"}
+knitr::include_graphics("bilder/class_regre.png")
+```
+]
+
 * **Reinforcement/Reward Learning:**
   * Beinhaltet ein Agent-System, das in einer Umgebung agiert und Entscheidungen trifft.
   * Ziel ist es, das Verhalten des Agenten so anzupassen, dass es möglichst hohe Belohnungen erhält.
@@ -599,7 +633,7 @@ class: top, left
 ##### Logik der Prädiktiven Modellierung
 
 .pull-left[
-**Schritt 1:**
+**Schritt 1: Training**
 
 * Im Trainingsdatensatz das Modell auf Basis der Aktivierungsmuster im Brainscan trainieren
 
@@ -623,7 +657,7 @@ class: top, left
 ##### Logik der Prädiktiven Modellierung
 
 .pull-left[
-**Schritt 2:**
+**Schritt 2: Evaluierung**
 
 * Prüfen, ob durch das Modell die tatsächliche Diagnose von Personen **im Trainingsdatensatz** vorhersagen kann (d.h. ob in den Daten überhaupt Informationen vorhanden sind, anhand derer eine Vorhersage möglich ist) .
 
@@ -654,7 +688,7 @@ class: top, left
 
 ##### Logik der Prädiktiven Modellierung
 
-**Schritt 3:**
+**Schritt 3: Validierung**
 
 * **Prüfung der Generalisierbarkeit**: Um zu prüfen, ob das trainierte Modell gut funktioniert, müssen wir es validieren
 
@@ -809,21 +843,21 @@ class: top, left
 
 Anforderungen:
 
-* Medizinische KI muss mindestens so genau sein wie menschliche Heuristik
+* Medizinische KI muss mindestens so **genau** sein wie menschliche Heuristik
 
-* KI muss mindestens so generalisiert sein wie klinische Entscheidungsfindungen
+* KI muss mindestens so **generalisiert** sein wie klinische Entscheidungsfindungen
 
-* KI muss so trainiert werden, dass sie zu einer effektiven Nutzung bestehender Ressourcen führt
+* KI muss so trainiert werden, dass sie zu einer **effektiven Nutzung** bestehender Ressourcen führt
 
-* Die Anwendungsindikation von medizinischer KI muss klar definiert ist
+* Die **Anwendungsindikation** von medizinischer KI muss klar definiert ist
 
-* Der Bias von KI muss offen gelegt werden können
+* Der **Bias** von KI muss offen gelegt werden können
 
-* KI muss transparent bezüglich der eigenen Unsicherheit sein, um übermäßiger Technikgläubigkeit vorzubeugen
+* KI muss **transparent** bezüglich der eigenen **Unsicherheit** sein, um übermäßiger Technikgläubigkeit vorzubeugen
 
-* KI muss handlungsrelevante Informationen produzieren
+* KI muss **handlungsrelevante Informationen** produzieren
 
-* KI muss klinisch kontrolliert werden können (was eine entsprechende Ausbildung im Studium erfordert)
+* KI muss **klinisch kontrolliert** werden können (was eine entsprechende Ausbildung im Studium erfordert)
 
 
 ---
@@ -934,12 +968,12 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/xPmrkc6JtCNdT3of8)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/3X8y12D7Gsb9nq2e7)**
 
 ---
 class: top, left
 
-### Übernächste Woche: Zusammenfassung + Fragestunde
+### Sitzung am 05.02.2025: Zusammenfassung + Fragestunde
 
 **Damit die Zeit in dieser Stunde gut genutzt werden kann, würde ich Sie bitten Ihre Fragen zur Vorlesung in folgenden Dokument zu sammeln:** https://docs.google.com/document/d/1tWKYDSsRBc7MxoYnH4Cm6tyCBMkouVYJc0NMcGWDKFY/edit
 

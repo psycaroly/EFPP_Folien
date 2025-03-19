@@ -3,7 +3,7 @@ title: "Einheit 1"
 subtitle: "⚔<br/>with xaringan"
 author: "Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/04/02 (updated: `r Sys.Date()`)"
+date: "2024/10/14 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -56,7 +56,7 @@ class: middle, left
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 1: Psychologie als Wissenschaft
-##### 11.04.2024 | Dr. Caroline Zygar-Hoffmann
+##### 16.10.2024 | Dr. Caroline Zygar-Hoffmann
 
 ---
 <div class="footer"><span>Belinda Fewings, ttps://unsplash.com/de/fotos/6wAGwpsXHE0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash</div>
@@ -113,7 +113,7 @@ class: top, left
 
 #### Was Sie über mich nicht wissen können (bis ich es Ihnen erzähle):
 
-* Mutter eines 1-jährigen Sohns
+* Mutter eines 2-jährigen Sohns
 * "First-Generation-Academic"
 * Migrationshintergrund der Eltern
 
@@ -158,7 +158,7 @@ class: top, left
 **Psychologie kann noch viel mehr!**
 ]
 
-```{r, echo=FALSE,fig.show='hold',fig.align='center'}
+```{r, echo=FALSE,fig.show='hold',fig.align='center', out.width = "50%"}
 knitr::include_graphics("bilder/Karriereperspektiven.png")
 ``` 
 
@@ -170,35 +170,34 @@ knitr::include_graphics("bilder/Karriereperspektiven.png")
 class: top, left
 ### Übersicht Lehrveranstaltung 
 
-**Termine:**
-* 13 Termine
-* Donnerstag 14:35 - 16:05 (Raum: Audimax)
+**14 Termine:** Mittwoch 14:45 - 16:15 (Raum: Audimax)
 
 **Begleitende Vorlesung:**
-* "Einführung in die Psychologie und ihre Geschichte" blockweise montags 13:05 - 16:05 im Audimax
+* "Einführung in die Psychologie und ihre Geschichte" blockweise freitags 13:50 - 17:10 im Audimax
 * Dozentin: Patricia Garatva ([patricia.garatva@charlotte-fresenius-uni.de](mailto:patricia.garatva@charlotte-fresenius-uni.de))
 
 **Materialien:**
-* Folien werden auf [studynet](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=26217) bereitgestellt in 2 Varianten: html (Links zwischen Folien funktionieren) und PDF (Platz für Notizen)
+* Folien werden auf [studynet](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=31904) bereitgestellt in 2 Varianten: html (Links zwischen Folien funktionieren) und PDF (Platz für Notizen)
 * Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
-* Fragenforum für diesen Teil der Vorlesung: https://cfh-efpp.forumieren.de/
 
 **Prüfungsleistung:**
-* Zeitraum für die Prüfungsanmeldung: 24.6.24 - 15.7.24
+* Zeitraum für die Prüfungsanmeldung: 06.01.25 - 03.02.25
 * Schriftliche Prüfung, 120 Minuten (beide Vorlesungen gemeinsam)
+
+**Vorlesungsaufbau:** Theorie + vereinzelte interaktive Elemente + 1 Literatursuch-Aufgabe pro Einheit
 
 ---
 class: top, left
 ### Termine
 
 ```{r echo = F}
-df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:4]
+df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:17, 1:3]
 df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
 df %>%
   kbl() %>%
-  kable_styling(font_size = 18) %>%
+  kable_styling(font_size = 16) %>%
   kable_classic(full_width = T) %>% 
-  row_spec(c(2,6), background = "yellow")
+  row_spec(c(8,11,12), background = "lightgray")
 ```
 
 ---
@@ -216,7 +215,7 @@ class: top, left
 * Beschreibung der basalen Kompetenzen wissenschaftlichen Arbeitens 
 * Fundiertes Belegen von Aussagen, d.h. mit wissenschaftlichen Quellen
 
-$\rightarrow$ Sie sollen hier nicht detailliertes inhaltliches Wissen über konkrete psychologische Subdisziplinen erhalten (dafür werden Sie in jeder Subdisziplin eine eigene Vorlesung besuchen). Stattdessen sollen Sie in der Lage sein zu erklären, ...
+$\rightarrow$ Sie sollen hier nicht detailliertes inhaltliches Wissen über konkrete psychologische Subdisziplinen erhalten (dafür gibt es für jede Subdisziplin eine eigene Vorlesung). Stattdessen sollen Sie in der Lage sein zu erklären, ...
   * wie die Psychologie als Wissenschaft funktioniert
   * mit welchen Erhebungs- und Forschungsmethoden die psychologische Wissenschaft arbeitet
   * wie Sie selbst wissenschaftliche Forschung betreiben und beurteilen können
@@ -247,7 +246,7 @@ Sie lernen in dieser Vorlesung viel Faktenwissen, aber sollen auch viel Verstehe
 
 .pull-left[
 * **Mitdenken**
-* **Nachfragen** (in der Vorlesung und im Fragenforum)
+* **Nachfragen**
 * **Nachlesen** (Übung macht hier viel aus, um auch effizient relevante Informationen rauszulesen, vgl. [Rayner et al., 2016](https://doi.org/10.1177/1529100615623267))
 * **Notizen machen** (am besten auf den Folien, vgl. [Marsh & Sink, 2010](https://doi.org/10.1002/acp.1579); siehe [Friedman, 2014](https://www.issup.net/knowledge-share/resources/2020-09/notes-note-taking) für Tipps WIE man effizient Notizen macht)
 * **Am Ball bleiben** ([Alexander & Hicks, 2016](https://research.bond.edu.au/en/publications/does-class-attendance-predict-academic-performance-in-first-year-))
@@ -256,7 +255,7 @@ Sie lernen in dieser Vorlesung viel Faktenwissen, aber sollen auch viel Verstehe
 
 .pull-right[
 * **Zeit für die Vorlesungsnacharbeitung planen:** Quizzes machen und Gelerntes in eigenen Worten zusammenfassen (vgl. [Donoghue & Hattie, 2021](https://doi.org/10.3389/feduc.2021.581216) und [Dunlosky et al., 2013](https://journals.sagepub.com/doi/abs/10.1177/1529100612453266?journalCode=psia) für Bewertung der Effizienz von Lernstrategien)
-* **Fragen der Kommiliton:innen im Frageforum beantworten** (oder es zumindest versuchen)
+* **Literatur-Such-Aufgaben machen**
 * **Geduld mit sich selbst haben**
 * Sich vor Augen führen (und im Zweifelsfall nachfragen), **warum die Inhalte für Sie als angehende Psycholog:innen relevant** sind
 * **Feedback geben**
@@ -276,8 +275,9 @@ name: content
 * [Definition wissenschaftlicher Psychologie](#definition)
 * [Ziele wissenschaftlicher Psychologie](#ziele)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
+#### Take-Aways, Literaturaufgabe und Schlüssel-/Fachbegriffe
 * [Take-Aways](#take-away)
+* [Literaturaufgabe](#literatur)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
@@ -455,7 +455,7 @@ name: methoden
 
 * Wissenschaftliche Systematik ermöglicht **vergleichbare** Erfassung individueller psychologischer Eigenschaften
 
-> **Welche Methoden der Psychologie fallen Ihnen bereits jetzt ein?**
+> **Welche Erhebungsmethoden der Psychologie fallen Ihnen bereits jetzt ein?**
 
 ---
 class: top, left
@@ -511,7 +511,7 @@ class: top, left
 
 **6.** $\rightarrow$ Ausführliche schriftliche **Dokumentation** des Forschungsprozesses und **Archivierung** des Datenmaterials zwecks Nachvollziehbarkeit und Nachprüfbarkeit
 
-**7.** **Ausgewogene Ergebnisinterpretation** mit Hinweisen und widersprüchliche Befunde und auf Grenzen der Aussagekraft einer Studie
+**7.** **Ausgewogene Ergebnisinterpretation** mit Hinweisen auf widersprüchliche Befunde und auf Grenzen der Aussagekraft einer Studie
 
 **8.** **Wissenschaftliche Veröffentlichung** einer Studie - möglich nach fachkundiger Begutachtung (**peer-review**)
 ]
@@ -528,6 +528,8 @@ class: top, left
 
 .center[
 **Die wissenschaftliche Haltung: Neugierig, skeptisch und bescheiden**
+
+Denn: "Wer nichts weiß, muss alles glauben" (Marie Freifrau Ebner von Eschenbach)
 ]
 
 .pull-left[
@@ -538,7 +540,7 @@ class: top, left
 
 ##### Bescheidenheit:
 * Eigene Anfälligkeit für Biases beachten
-* Einfache Antworten auf komplexe Fragen sind selten
+* Komplexe Fragen: einfache Antworten selten
 * Wissenschaft ist ein iterativer Prozess: Viele Schlussfolgerungen sind unsicher und vorläufig
 * Wahrscheinlichkeit =/= Determinismus
 ]
@@ -767,7 +769,7 @@ Gegenstand der Psychologie:
 
 ...dabei relevant:
 
-* **Gesetzmäßigkeiten**, die alle Menschen betreffen
+* **Gesetzmäßigkeiten**, die alle Menschen betreffen (im Durchschnitt - d.h. probabilistisch)
 * **Individuelle Unterschiede** zwischen Menschen
 
 ...sowie:
@@ -1225,6 +1227,25 @@ class: top, left
 
 ---
 class: top, left
+name: literatur
+
+### Literaturaufgabe
+
+* Suchen Sie sich ein Sprichwort raus, das Sie häufig als zutreffend erlebt haben (falls Ihnen keins einfällt: Fragen Sie Ihren Partner, Freunde, Eltern, jemanden auf einer Party, ChatGPT...)
+
+* Nutzen Sie Google Scholar (https://scholar.google.de/) um mit **englischen Schlagwörtern** nach einer wissenschaftlichen Studie zu dem Thema des Sprichworts suchen
+  - Suchen Sie sich im Idealfall eine psychologische Studie raus (z.B. in dem Sie in das Suchfeld das Wort "psychology" mit einfügen)
+  - Lesen Sie den "Abstract" = Zusammenfassung einer Studie, um zu bestimmen, ob sie passend ist oder nicht
+
+* Beantworten Sie die folgenden Fragen:
+  - Würden Sie sagen, dass es sich um eine psychologische Studie handelt? Warum oder warum nicht?
+  - Können Sie einordnen, ob es in der Studie um Beschreibung, Erklärung oder Vorhersage geht?
+  - Stimmen die Ergebnisse der Studie ganz oder zum Teil oder gar nicht mit dem Sprichwort überein?
+
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 1"](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=32894) unter "Literatursuch-Aufgabe" ab.
+
+---
+class: top, left
 name: words
 
 ### Schlüssel-/Fachbegriffe der heutigen Vorlesung
@@ -1299,8 +1320,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/tqmDNyNg3zowsBLy5)**
-
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/KN5f1FS6CxoZ1T9X7)**
 
 ---
 class: top, left
@@ -1311,6 +1331,83 @@ class: top, left
 knitr::include_graphics("bilder/gerrig.jpg")
 ``` 
 ]
+
+---
+class: top, left
+
+### Einladung zur Podiumsdiskussion: „Entwicklung und Lernen von Kindern und Jugendlichen im digitalen Wandel“, 05.11.24, 16:30 – 18:00 Uhr
+
+Wie verändert der digitale Wandel das Aufwachsen und das Lernen unserer Kinder? Welche Chancen und Herausforderungen bringt die zunehmende Digitalisierung mit sich?
+Expert*innen aus dem Raum Zürich, werden die Auswirkungen der digitalen Medien auf die kognitive und soziale Entwicklung von Kindern und Jugendlichen beleuchten und darüber diskutieren, wie Bildungseinrichtungen und Eltern diesen Veränderungen begegnen können. 
+
+*Podiumsteilnehmende* (alphabetisch): 
+* [Prof. Dr. Ingo Bosse](https://www.hfh.ch/person/ingo-bosse) (Institut für Lernen unter erschwerten Bedingungen, HfH)
+* [Prof. Dr. Silvia Brem](https://www.med.uzh.ch/de/UeberdieFakultaet/fakultaetsmitglieder/bremsilvia.html) (UFSP Plastische Hirnnetzwerke für Entwicklung und Lernen und Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, UZH)
+* [Prof. Dr. Fabio Sticca](https://www.hfh.ch/person/fabio-sticca) (Institut für Verhalten, sozio-emotionale und psychomotorische Entwicklungsförderung, HfH)
+* [Prof. Dr. Daniel Süss](https://www.zhaw.ch/de/ueber-uns/person/suss/) (Psychologisches Institut, ZHAW)
+
+*Moderation*: [Prof. Dr. Alexandra Freund](https://www.psychologie.uzh.ch/de/bereiche/dev/lifespan/team/freund.html) (Psychologisches Institut, UZH), *Kontakt*: Letizia Ventre (info@dsn.uzh.ch)
+
+*Link zur kostenlosen Anmeldung*: https://uzh.zoom.us/webinar/register/WN_4SW_5ZiCToaufIraKxz_dw#/registration 
+
+*Mehr Information*: https://www.developmentalscience.uzh.ch/de/aktivit%C3%A4ten/Podiumsdiskussion.html
+
+
+---
+class: top, left
+
+### Einladung zur Lesung und Diskussionsrunde: „Rätsel des Unbewussten", 08.11.24, 14-15.30 Uhr
+
+Wir laden Sie herzlich zur Lesung und Diskussionsrunde „Rätsel des Unbewussten“ einladen, die am Freitag, den 8. November 2024, von 14:00 bis 15:30 Uhr im Hörsaal 2U01, Leopoldstr. 13, 80802 München stattfinden wird.
+
+Dr. Cécile Loetz und Dr. Jakob Müller, die Köpfe hinter dem Podcast „Rätsel des Unbewussten – Podcast zur Psychoanalyse und Psychotherapie“, werden aus ihrem aktuellen Buch „Mein größtes Rätsel bin ich selbst – Die Geheimnisse der Psyche verstehen“ lesen. Das Buch erzählt aus Perspektive der Therapeut:innen Fallgeschichten aus der Welt der psychodynamischen Verfahren und macht sichtbar, wie psychische Veränderungsprozesse in Therapien möglich werden. Begleitet von Dr. Larissa Vierl (Klinische Psychologie und Psychotherapie, LMU) und Dr. Christian Woll-Weber (Klinische Psychologie des Kindes- und Jugendalters & Beratungspsychologie, LMU) als Moderator:innen möchten wir gemeinsam mit Ihnen – Studierende der Psychologie, Teilnehmer:innen der Aus- und Weiterbildung sowie alle Interessierte – ausgewählte Passagen diskutieren. So bekommen Sie einen spannenden und lebendigen Einblick in die
+Prozesse der tiefenpsychologisch fundierten und analytischen Psychotherapie.
+
+Die Veranstaltung findet in Kooperation zwischen den beiden genannten Lehreinheiten der LMU und dem Psychoanalytischen Forum München (PFM), einem Verbund der Münchener Aus- und Weiterbildungsinstitute mit tiefenpsychologisch fundierter und analytischer
+Psychotherapieausrichtung, statt. Ziel ist es, einen offenen Raum für den Austausch über die vielfältigen Rätsel der Psyche, der Psychoanalyse und der Aus- und Weiterbildung zu schaffen. Die Teilnahme ist kostenlos und erfordert keine Anmeldung.
+  
+---
+class: top, left
+
+### Einladung zur PES-Studie
+
+* Ziel: Psychisches Befinden von Studierenden verschiedener Studiengänge über den Studienverlauf hinweg untersuchen; Vergleich Psychologiestudierende vs. Studierende anderer Studiengänge.
+
+* Erhebungsmethode: längsschnittliche Erhebung (Online-Fragebogen-Studie), 1x/pro Semester
+
+* Bei Teilnahme erhalten Sie 1 VP (Versuchspersonenstunde) !
+
+* Teilnahmevoraussetzungen:
+  - eingeschriebene/r StudentIn im ersten Bachelor-Semester
+  - mind. 18 Jahre alt
+  - deutsche Sprache in Wort und Schrift
+  
+* Link zur Teilnahme: https://hochschulen-fresenius-unipark.de/uc/CFH_PES_01/74c4/?a=
+
+---
+class: top, left
+
+### Einladung zur Onlineveranstaltung Karriereperspektiven
+
+Zielgruppe: Die Onlineveranstaltung richtet sich an Studierende im Bachelor sowie Master. Aufgrund der Tätigkeitsbereiche der Speaker*innen sind die Einblicke insbesondere für Studierende aus den Studiengängen Psychologie; BWL;  sowie Management, Economics and Social Sciences interessant.
+
+Programm mit mehr Informationen: https://cd.wiso.uni-koeln.de/de/team/juniorprofessur-fuer-organizational-behavior/j-prof-dr-annabelle-hofer/onlineveranstaltung-karriereperspektiven
+
+Zeit: Jeweils von 14:15-15:45 Uhr
+28.10.2024; 30.10.2024; 04.11.2024; 06.11.2024; 11.11.2024; 13.11.2024; 14.11.2024
+
+Zoom: https://fernuni-hagen.zoom-x.de/j/65955566890?pwd=bTZLSChMrGPd5MWAQwDK1b18UAXH4t.1
+
+Meeting‐ID: 659 5556 6890
+Kenncode: 64094237
+
+Moderation: Dr. Verena Eichel (FernUniversität in Hagen)
+
+Sprache: Deutsch
+
+Die SpeakerInnen verfügen alle über ein abgeschlossenes Studium in Psychologie. Sie sind in Bereichen wie beispielsweise Consulting, Data Analytics, Gesundheitsmanagement, und Personalmanagement tätig.
+
+Ansprechpartner: Merlin Trümpener (Universität zu Köln), E-Mail: fosteryourcareer@wiso.uni-koeln.de
 
 <!-- library(renderthis)  -->
 <!-- to_pdf("EinfForsch_01_PsychologieAlsWissenschaft.Rmd", complex_slides = TRUE) -->

@@ -1,9 +1,9 @@
 ---
 title: "Einheit 8"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/06/26 (updated: `r Sys.Date()`)"
+date: "2024/01/14 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -57,8 +57,8 @@ class: middle, left
 <br><br><br><br><br><br><br>
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
-### Einheit 10: Forschungsethik und Open Science
-##### 27.06.2024 | Dr. Caroline Zygar-Hoffmann
+### Einheit 8: Forschungsethik und Open Science
+##### 15.01.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left
@@ -75,6 +75,7 @@ name: content
 
 #### Take-Aways und Schlüssel-/Fachbegriffe
 * [Take-Aways](#take-away)
+* [Literatur-Aufgabe](#literatur)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
@@ -85,6 +86,9 @@ name: Ethik
 ### Forschungsethik
 
 * Es kann einen Konflikt des Forschungsinteresses mit Normen und Werten geben
+
+* Forschungsethik: die geteilten Werte und Normen eines Fachs, die das Handeln von Forschenden leiten. Außerdem alle
+Maßnahmen zur Prüfung und Sicherstellung der Einhaltung dieser Normen.
 
 .pull-left[
 * Beispiele:
@@ -196,7 +200,7 @@ knitr::include_graphics("bilder/bdp_dgps.png")
 
 $\rightarrow$ Wir betrachten genauer Abschnitt 7: Psychologie in Forschung und Lehre
 
-
+Dort geht es auch um **Wissenschaftsethik**: die Regeln guter wissenschaftlicher Praxis im Wissenschaftssystem
 
 ---
 class: top, left
@@ -233,7 +237,7 @@ class: top, left
 
 * Wissenschaftliches Vorgehen darstellen, begründen und zu Kritik zugänglich zu machen $\rightarrow$ z.B. durch **peer-review** (Begutachtung durch andere Wissenschaftler:innen)
 
-* Bereits im Forschungsprozess alle verfügbaren Informationen und Gegenargumente angemessen berücksichtigen $\rightarrow$ Offenheit für Kritik
+* Bereits im Forschungsprozess alle verfügbaren Informationen und Gegenargumente angemessen berücksichtigen $\rightarrow$ **Offenheit für Kritik**
 
 * Dokumentation und Veröffentlichung der Forschungsergebnisse, unabhängig von Ergebnis (d.h. auch wenn sie der eigenen Theorie widersprechen) $\rightarrow$ **Open Science**
 
@@ -273,7 +277,7 @@ class: top, left
 
 * Sie führen ihr Forschungsprojekt in Übereinstimmung mit dem bewilligten Vorgehen durch.
 
-$\rightarrow$ Ethikantrag an eine Ethikkomission
+$\rightarrow$ **Ethikantrag** an eine **Ethikkomission**
 
 ---
 class: top, left
@@ -298,7 +302,7 @@ class: top, left
   
 ---
 class: top, left
-<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/</span></div>
+<div class="footer"><span>https://www.dgps.de/die-dgps/aufgaben-und-ziele/berufsethische-richtlinien/ <br> Bildquelle: Seite 206 in Huber, O. (2019). Das psychologische Experiment. </span></div>
 
 ### Berufsethische Richtlinien des BDP und der DGPs
 
@@ -306,13 +310,20 @@ class: top, left
 
 **(3) Auf Aufklärung basierende Einwilligung in die Forschung **
 
+.pull-left[
+
 **(4) Auf Aufklärung basierende Einwilligung für das Aufnehmen von Stimmen oder Bildern im Rahmen eines Forschungsvorhabens**
 
 $\rightarrow$ siehe Informed Consent
 
 **(5) Klientinnen und Klienten/Patientinnen und Patienten, Schülerinnen und Schüler, Studierende sowie Psychologinnen und Psychologen unterstellte Personen als Forschungsteilnehmerinnen und -teilnehmer:** Für Teilnehmergruppen dürfen keine Nachteile bei Nichtteilnahme entstehen. 
+]
 
-**(6) Verzicht auf eine auf Aufklärung basierende Einwilligung in die Forschung:** Unter bestimmten Bedingungen kann auf eine auf Aufklärung basierte Einwilligung verzichtet werden.
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "80%"}
+knitr::include_graphics("bilder/vps.jpg")
+```
+]
 
 ---
 class: top, left
@@ -321,6 +332,8 @@ class: top, left
 ### Berufsethische Richtlinien des BDP und der DGPs
 
 #### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+**(6) Verzicht auf eine auf Aufklärung basierende Einwilligung in die Forschung:** Unter bestimmten Bedingungen kann auf eine auf Aufklärung basierte Einwilligung verzichtet werden.
 
 **(7) Anreize zur Teilnahme an Forschungsvorhaben:** Müssen angemessen sein. Falls Therapie die Gegenleistung ist, müssen Art der Dienstleistung, Risiken, Verpflichtungen und Grenzen erläutert werden.
 
@@ -405,22 +418,20 @@ class: top, left
 ### Open Science 
 
 .pull-left[
-```{r eval = TRUE, echo = F, out.width = "350px"}
+```{r eval = TRUE, echo = F, out.width = "300px"}
 knitr::include_graphics("bilder/openscience_pillars.png")
 ```
 ]
 
 .pull-right[
 * **Open Access** von Veröffentlichungen für Zugang zur Wissenschaft $\rightarrow$ keine Bezahlung dafür Forschungsergebnisse lesen zu dürfen 
-* **Open Data** (offene Forschungsdaten, soweit unter Wahrung des Datenschutzes möglich) zur Prüfung der Reproduzierbarkeit, Finden von Fehlern, Nachnutzung
-* **Open Methodology** (auch **Open Materials** genannt) und **Open Research Software** zur Prüfung der Reproduzierbarkeit (an denselben Daten) und Replizierbarkeit (an neuen Daten)
+* **Open Data** (offene Forschungsdaten, soweit unter Wahrung des Datenschutzes möglich) zur Prüfung der Reproduzierbarkeit, Finden von Fehlern, Nachnutzbarkeit
+* **Open Methodology** (auch **Open Materials** genannt) und **Open Research Software** zur Nachnutzbarkeit sowie Prüfung der Reproduzierbarkeit (an denselben Daten) und Replizierbarkeit (an neuen Daten)
 * **Open Peer Review** zur Prüfung des Qualitätssicherungsprozesses
 * **Open Educational Ressources** um Verständnis von Wissenschaft zu ermöglichen
-
-Außerdem **Präregistrierung:** Vor der Datenerhebung Bedingungen (u.a. Hypothesen, Messinstrument, Analyse) der Studie öffentlich einsehbar festhalten
 ]
 
-
+Wichtig: Außerdem **Präregistrierung:** Planung der Studie (u.a. Hypothesen, Messinstrument, Analyse) vor der Datenerhebung öffentlich einsehbar festhalten
 
 ---
 class: top, left
@@ -436,7 +447,7 @@ class: top, left
 
 * Die berufsethische Richtlinien des BDP und der DGPs legen **16 Grundsätze für Forschung und Publikation** fest
 
-* **Open Science** ist Teil guter wissenschaftlicher Praxis und eine Lösung für aktuelle Probleme in der Psychologie
+* **Open Science** ist Teil guter wissenschaftlicher Praxis, eine Lösung für aktuelle Probleme in der Psychologie und umfasst mehrere Teilbereich, wie z.B. **Open Data**, **Open Materials** und **Präregistrierung**
 ]
 
 ---
@@ -449,6 +460,8 @@ name: words
 .pull-left[
 .pull-left[
 
+**Forschungsethik**
+
 **Belmont-Report**
 
 **Menschenwürde**
@@ -457,18 +470,24 @@ name: words
 
 **Gerechtigkeit**
 
+
+]
+
+.pull-right[
 **Informed Consent**
 
 **Teilnahmeinformation**
 
 **Einverständniserklärung**
+
+**Wissenschaftsethik**
+
+**peer-review**
+]
 ]
 
 .pull-right[
-
-
-
-**peer-review**
+.pull-left[
 
 **Ethikkomission**
 
@@ -478,23 +497,17 @@ name: words
 
 **Plagiate**
 
-]
-]
-
-.pull-right[
-.pull-left[
 **Replikationskrise**
 
 **Open Science**
+]
 
+.pull-right[
 **Open Access**
 
 **Open Data**
 
 **Open Methodology / Open Materials**
-]
-
-.pull-right[
 
 **Open Research Software**
 
@@ -509,7 +522,24 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/bNEJfxx5qwg3Neb26)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/aF8L9EdX7T5ienPD6)**
+
+---
+class: top, left
+name: literatur
+
+### Literaturaufgabe
+
+* Nutzen Sie Google Scholar (https://scholar.google.de/) um mit **englischen Schlagwörtern** nach einer wissenschaftlichen, psychologischen Studie zu suchen, welche Täuschung (engl. "blinding") angewandt hat 
+  * Tipp: Geben Sie dafür die Stichwörter "blinding" und "psychology" zusammen mit einem Forschungsthema ein, welches Sie interessiert
+
+Beantworten Sie dann folgende Fragen:
+* Worüber wurden die Versuchsteilnehmer getäuscht?
+* Wird ein Ethikantrag erwähnt?
+* Welchen Nutzen für die Täuschung sehen Sie in dieser Studie? 
+
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 8"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_38009.html) unter "Literatur-Aufgabe" ab.
+
 
 ---
 class: top, left
