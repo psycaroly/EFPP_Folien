@@ -1,9 +1,9 @@
 ---
 title: "Einheit 2"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/10/23 (updated: `r Sys.Date()`)"
+date: "2025/04/17 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -54,15 +54,39 @@ knitr::opts_chunk$set(
 ```
 
 name: Title slide
-class: middle, left
+class: middle, left, hide_logo
 <br><br><br><br><br><br><br>
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 2: Messen in der Psychologie
-##### 30.10.2024 | Dr. Caroline Zygar-Hoffmann
+##### 24.04.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
-class: top, left
+class: top, left, hide_logo
+### Termine
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
+
+```{r echo = F}
+df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
+df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
+df %>%
+  kbl() %>%
+  kable_styling(font_size = 16) %>%
+  kable_classic(full_width = T) %>% 
+  row_spec(c(4,8,11), background = "lightgray")%>% 
+  row_spec(c(7,9,10,12), background = "yellow")%>% 
+  row_spec(c(2,6,14), background = "white")
+```
+
+---
+class: top, left, hide_logo
 name: content
 ### Heutige Themen
 
@@ -78,7 +102,7 @@ name: content
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: intro
 
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
@@ -109,7 +133,7 @@ $\rightarrow$ man schließt von manifesten **Indikatoren** auf das latente Merkm
 latent: Messfehler, geringes Selbstwertgefühl, schlechtes Gewissen, Belastbarkeit -->
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>https://dorsch.hogrefe.com/stichwort/messen</span></div>
 
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
@@ -118,8 +142,9 @@ class: top, left
 
 * Zuordnung von Zahlen zu Objekten (z.B. Beobachtungsdaten) nach festen Regeln 
 
-* In der Relation der Messwerte muss sich die Relation der gemessenen Objekte widerspiegeln
+* In der Relation der Messwerte muss sich die Relation der gemessenen Objekte widerspiegeln (d.h. wenn z.B. A und B hinsichtlich der gemessenen Variablen gleich sind, sollten sie auch dieselben Zahlen erhalten; wenn A > B, sollte Zahl für A > Zahl für B sein.)
 
+<br>
 Beispiel: „Messung“ von Intelligenz
 
 * Intelligenz nicht direkt beobachtbar (latente Variable, Konstrukt)
@@ -153,7 +178,7 @@ Beispiel: „Messung“ von Angst
 Konkrete Operationalisierung hängt immer vom Kontext, den Ressourcen und der zugrundeliegenden Theorie ab
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
@@ -173,12 +198,12 @@ class: top, left
 
 * Implizite Verfahren $\rightarrow$ siehe Einheit 4
 
-* Dokumentenanalyse $\rightarrow$ siehe Einheit 5
+* Dokumentenanalyse $\rightarrow$ siehe Einheit 7
 
 $\rightarrow$ Verfahren sind nicht völlig distinkt, sondern weisen Überschneidungen auf (z.B. gibt es psychologische Tests als computerbasierte Verfahren)
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
@@ -206,7 +231,7 @@ class: top, left
 $\rightarrow$ Viele der auf der vorherigen Folie genannten Methoden gibt es in quantitativen und qualitativen Varianten
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
 #### Auswahl und Einsatz von Erhebungsmethoden
@@ -219,12 +244,12 @@ class: top, left
 
 ##### Perspektive der Einzelstudie
 
-* häufig nicht möglich oder sinnvoll (ökonomischen oder versuchsplanerische Gründe), innerhalb einer einzigen Studie verschiedene Methoden einzusetzen
+* häufig nicht möglich oder sinnvoll, innerhalb einer einzigen Studie verschiedene Methoden einzusetzen (ökonomische oder versuchsplanerische Gründe)
 
 * konkrete einzelne Untersuchung $\rightarrow$ gezielte Auswahl weniger Methoden
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: kriterien
 
 ### Erhebungsmethoden der psychologischen Forschung
@@ -238,7 +263,7 @@ name: kriterien
 
 * Skalierung manchmal auch als Teilaspekt der Validität ("Strukturelle Validität") oder als Nebengütekriterium
 
-* Für Gütekriterien von qualitativen Methoden $\rightarrow$ siehe Einheit 5
+* Für Gütekriterien von qualitativen Methoden $\rightarrow$ siehe Einheit 7
 ]
 
 
@@ -249,7 +274,7 @@ knitr::include_graphics("bilder/Guetekriterien_Buehner.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -268,7 +293,7 @@ Eine Erhebungsmethode ist objektiv, wenn sie das Merkmal unabhängig von Testlei
 3. Interpretationsobjektivität (Interpretationseindeutigkeit)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -290,7 +315,7 @@ Standardisierung wird optimiert durch:
 * Bei Verhaltensbeobachtung: Training von Beobachtern
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -315,7 +340,7 @@ Auswertungsobjektivität wird optimiert durch:
 * Training von Beurteilern
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -335,20 +360,36 @@ Interpretationsobjektivität kann erhöht werden durch:
 
 ---
 class: top, left
+<div class="footer"><span>Schmidt-Atzert, L., & Amelang, M. (2012). Psychologische Diagnostik. Springer Science & Business Media.</div>
+
+### Erhebungsmethoden der psychologischen Forschung
+
+#### Gütekriterien von Erhebungsmethoden
+
+##### Objektivität
+
+```{r, echo=FALSE, out.width = "40%", fig.show='hold',fig.caption="Schmidt-Atzert & Amelang, 2012, S.296", fig.align='center'}
+knitr::include_graphics("bilder/bsp-obj.jpg")
+``` 
+
+---
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
 
 ##### Reliabilität
 
-**Definition:** Eine Erhebungsmethode ist (vollständig) reliabel (zuverlässig), wenn sie das Merkmal ohne Messfehler misst $\rightarrow$ Reliabilität gibt den Grad der Genauigkeit an, mit der eine Erhebungsmethode misst
+**Definition:** Eine Erhebungsmethode ist (vollständig) reliabel (zuverlässig), wenn sie das Merkmal ohne Messfehler misst 
 
-* Formal: Anteil der Varianz der wahren Werte an der Gesamtvarianz (siehe Vorlesung Testtheorie)
+* Anders ausgedrückt: Reliabilität gibt den Grad der Genauigkeit an, mit der eine Erhebungsmethode misst
 
-* Wichtige Einflussgröße auf Breite der Konfidenzintervalle in der Einzelfalldiagnostik (wie sicher kann ich mir bei einer einzelnen Messung sein)
+* Formal: Anteil der Varianz der wahren Werte an der Gesamtvarianz der Beobachtungsdaten (siehe Vorlesung Testtheorie)
+
+* Wichtige Einflussgröße auf Breite der Konfidenzintervalle in der Einzelfalldiagnostik ( $\rightarrow$ wie sicher kann ich mir bei einer einzelnen Messung sein)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -367,6 +408,20 @@ Es lassen sich verschiedene Arten zur Schätzung der Reliabilität unterscheiden
 
 ---
 class: top, left
+<div class="footer"><span>Schmidt-Atzert, L., & Amelang, M. (2012). Psychologische Diagnostik. Springer Science & Business Media.</div>
+
+### Erhebungsmethoden der psychologischen Forschung
+
+#### Gütekriterien von Erhebungsmethoden
+
+##### Reliabilität
+
+```{r, echo=FALSE, out.width = "70%", fig.show='hold',fig.caption="Schmidt-Atzert & Amelang, 2012, S.296", fig.align='center'}
+knitr::include_graphics("bilder/bsp-rel.jpg")
+``` 
+
+---
+class: top, left, hide_logo
 <div class="footer"><span>Borsboom, D., Mellenbergh, G. J., & Van Heerden, J. (2004). The concept of validity. <i>Psychological Review, 111</i>(4), 1061–1071. https://doi.org/10.1037/0033-295X.111.4.1061.</div>
 
 ### Erhebungsmethoden der psychologischen Forschung
@@ -392,7 +447,7 @@ Zwei wichtige Aspekte:
 * Beispiel: Depressionsfragebogen sollte alle relevanten Depressionssymptome und keine nicht für Depression relevanten Symptome enthalten
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -407,10 +462,10 @@ Häufig angewandte **Validierungsmöglichkeiten** auf Basis von Korrelationen:
   
   * Erhebungsmethode erzeugt Daten, die mit Daten anderer Erhebungsmethoden, die *nicht* dasselbe messen sollen, weniger stark zusammenhängen (**divergente/diskriminante Validität**)
   
-  * (Teilweise wird hier auch **Faktorielle Validität** verordnet: Erwartungsgemäße statistische Faktorenstruktur des Tests $\rightarrow$ siehe Vorlesung Testtheorie)
+  * (Teilweise wird hier auch faktorielle Validität verordnet: Erwartungsgemäße statistische Faktorenstruktur des Tests $\rightarrow$ siehe Vorlesung Testtheorie)
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Schmidt-Atzert, L., & Amelang, M. (2012). Psychologische Diagnostik. Springer Science & Business Media.</div>
 
 ### Erhebungsmethoden der psychologischen Forschung
@@ -438,7 +493,7 @@ knitr::include_graphics("bilder/multitrait-multimethod.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -487,9 +542,22 @@ knitr::include_graphics("bilder/yeom2023.PNG")
 ``` 
 ]
 
-
 ---
 class: top, left
+<div class="footer"><span>Schmidt-Atzert, L., & Amelang, M. (2012). Psychologische Diagnostik. Springer Science & Business Media.</div>
+
+### Erhebungsmethoden der psychologischen Forschung
+
+#### Gütekriterien von Erhebungsmethoden
+
+##### Reliabilität
+
+```{r, echo=FALSE, out.width = "70%", fig.show='hold',fig.caption="Schmidt-Atzert & Amelang, 2012, S.296", fig.align='center'}
+knitr::include_graphics("bilder/bsp-val.jpg")
+``` 
+
+---
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -503,7 +571,7 @@ knitr::include_graphics("bilder/Guetekriterien.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -511,7 +579,7 @@ class: top, left
 
 ##### Skalierung
 
-Bei der Skalierung geht es um die **statistische Modellierung von Antwortprozessen**: Ein psychologischer Test gilt als skalierbar, wenn die Zuordnung der Messwerte zu den Personen auf der Basis eines empirisch nachgewiesenen testtheoretischen Modells geschieht.
+Bei der Skalierung geht es um die **statistische Modellierung von Messprozessen**: Ein psychologischer Test gilt als skalierbar, wenn die Zuordnung der Messwerte zu den Personen auf der Basis eines empirisch nachgewiesenen testtheoretischen Modells geschieht.
 
 **Zwei Aspekte:**
 * Empirischer "Nachweis" , dass ein bestimmtes testtheoretisches Modell gilt, also das "Richtige" ist 
@@ -520,7 +588,7 @@ Bei der Skalierung geht es um die **statistische Modellierung von Antwortprozess
 Die meisten psychologischen Fragebögenskalen und Tests basieren auf der klassischen Testtheorie (daher werden Sie dazu bereits im Bachelor eine eigene Vorlesung hören)
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -528,7 +596,7 @@ class: top, left
 
 ##### Skalierung
 
-**Klassische Testtheorie:**
+**Klassische Testtheorie (KTT):**
 
 * Anwendung auf Ratingskalen möglich (aber eigentlich für stetige Variablen entwickelt, z.B. Reaktionszeiten)
 
@@ -552,7 +620,7 @@ class: top, left
 * Es existieren verschiedene testtheoretische Modelle je nach Annahme wie sich die Items in Hinblick auf die Messung der latenten Variable unterscheiden
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -560,18 +628,22 @@ class: top, left
 
 ##### Skalierung
 
-**Klassische Testtheorie:**
+**Klassische Testtheorie (KTT):**
 
 * **Ziel:** möglichst direkte und präzise Schätzung des wahren Werts auf einem Item, um darauf basierend einen Rückschluss auf eine latente Variable machen zu können
 
-* Die KTT stellt verschiedene Axiome (definitorische Festlegungen/Annahmen) auf, darunter die Annahme, dass der mittlere Messfehler gleich null ist (**Existenzaxiom**). Bei wiederholten Testanwendungen gleichen sich die verschiedenen Messfehler sozusagen aus $\rightarrow$ **mit Messfehler werden in der KTT damit nur unsystematische Messfehler gemeint/berücksichtigt. Es kann jedoch auch systematische Messfehler geben**... 
+* **Verbreitetste Analysemethode zur Überprüfung: Faktorenanalyse**
+
+* Die KTT stellt verschiedene Axiome (definitorische Festlegungen/Annahmen) auf, darunter die Annahme, dass der mittlere Messfehler gleich null ist. Bei wiederholten Testanwendungen gleichen sich die verschiedenen Messfehler sozusagen aus 
+
+$\rightarrow$ **mit Messfehler werden in der KTT damit nur unsystematische Messfehler gemeint/berücksichtigt. Es kann jedoch auch systematische Messfehler geben**... 
 
 * Durch den Einsatz mehrerer Testitems in einem Fragebogen soll der Fehleranteil insgesamt minimiert werden, oder anders ausgedrückt: Mehrere Items ermöglichen eine bessere Annäherung an die latente Variable einer Person
 
 <!-- klassische Testtheorie setzt somit voraus, dass wahre Werte und Fehlerwerte (und ihre jeweiligen Varianzen in Stichproben) getrennt bestimmt werden können $\rightarrow$ wertvoll zur Bestimmung der Reliabilität -->
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -611,7 +683,7 @@ Beispiel für eine Anwendung der KTT: Selbstwert, Messung über **Multidimension
 
 * Mehr-Facettenmodell: es werden verschiedene Bereiche der Selbstwertschätzung unterschieden
 
-* 32 Items, 6 Subskalen, 1 Gesamtwert, Durchführungsdauer ca. 15 min, Auswertungsdauer ca. 10 min
+* 32 Items, 6 Subskalen, 1 Gesamtwert
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "900px"}
@@ -674,7 +746,7 @@ df %>%
   kable_classic(full_width = T, position = "left")
 ```
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -692,7 +764,7 @@ class: top, left
   * Inhaltliche Bezeichnung der Subskalen/Faktoren nehmen die Autoren anhand der Items vor, die auf sie laden (z.B. Frage zu Aussehen und Frage zu Attraktivität laden auf selben Faktor --- Also nennen wir ihn "Selbstwertschätzung Physische Attraktivität")
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Erhebungsmethoden der psychologischen Forschung
 
@@ -711,7 +783,7 @@ class: top, left
   * Ausführliche Behandlung im Masterstudium
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -733,29 +805,57 @@ Eigenschaft systematisch benachteiligt
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: reaktivitaet
-<div class="footer"><span>Adair, J. G. (1984). The Hawthorne effect: A reconsideration of the methodological artifact. <i>Journal of Applied Psychology, 69</i>(2), 334–345. https://doi.org/10.1037/0021-9010.69.2.334 <br> Jones, S. R. (1992). Was there a Hawthorne effect?. <i>American Journal of Sociology, 98</i>(3), 451-468. <br> Roethlisberger, F., & Dickson, W. J (1939). <i>Management and the Worker</i>. Harvard University Press.</span></div>
+<div class="footer"><span>https://www.thekirkwoodcall.com/art/2018/02/13/youre-being-watched/</span></div>
 
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Problem der Reaktivität
 
+.pull-left[
 **Definition**: Veränderung/Verzerrung der erhobenen Daten aufgrund der Kenntnis der untersuchten Person darüber, dass sie Gegenstand einer Untersuchung ist $\rightarrow$ Reaktivität ist häufig ein systematischer Messfehler
 
-**Mögliche Ursachen**: Veränderte Aufmerksamkeitslenkung, Relevanz sozialer Erwünschtheit (Selbstdarstellerisches, sozial konformes (Antwort-)Verhalten)
+**Mögliche Ursachen**: 
+* Veränderte Aufmerksamkeitslenkung
+* Relevanz sozialer Erwünschtheit (Selbstdarstellerisches, sozial konformes (Antwort-)Verhalten)
+* Aufforderungscharakteristika der Untersuchungssituation (**demand effects**)
+]
+
+.pull-right[
+```{r, echo=FALSE,out.width="70%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/reactivity.jpg")
+``` 
 
 $\rightarrow$ Datenerhebungen in Psychologie verändern oft bereits den Gegenstand
-
-**Beispiel: Hawthorne-Effekt**
-
-* klassische Studie in den Hawthorne-Werken der Western Electric Company (Roethlisberger und Dickson, 1939)
-* Aussage: bloße wissenschaftliche Untersuchung der Arbeiter:innen führte zu Steigerung der Produktivität, Produktivitätssteigerung war **unabhängig** von den durch die Forscher implementierten Veränderungen der Arbeitsbedingungen
-* Es folgte methodische Kritik an dieser Studie (z.B. Adair, 1984; Jones, 1992)
-* Trotzdem: Mögliche **Bewertungserwartung** der untersuchten Personen aka **Aufforderungscharakteristika** der Untersuchung bekam dadurch Aufmerksamkeit
+]
 
 ---
 class: top, left
+<div class="footer"><span>Adair, J. G. (1984). The Hawthorne effect: A reconsideration of the methodological artifact. <i>Journal of Applied Psychology, 69</i>(2), 334–345. https://doi.org/10.1037/0021-9010.69.2.334 <br> Jones, S. R. (1992). Was there a Hawthorne effect?. <i>American Journal of Sociology, 98</i>(3), 451-468. <br> Roethlisberger, F., & Dickson, W. J (1939). <i>Management and the Worker</i>. Harvard University Press. <br> Bildquelle: Kheel Center. https://www.interaction-design.org/literature/article/light-up-your-user-research-understanding-the-hawthorne-effect </span></div>
+
+### Erhebungsmethoden der psychologischen Forschung
+
+.pull-left[
+**Beispiel: Hawthorne-Effekt**
+
+* klassische Studie in den Hawthorne-Werken der Western Electric Company (Roethlisberger und Dickson, 1939)
+
+* Aussage: bloße wissenschaftliche Untersuchung der Arbeiter:innen führte zu Steigerung der Produktivität, Produktivitätssteigerung war **unabhängig** von den durch die Forscher implementierten Veränderungen der Arbeitsbedingungen
+
+* Es folgte methodische Kritik an dieser Studie (z.B. Adair, 1984; Jones, 1992)
+]
+
+.pull-right[
+```{r, echo=FALSE,out.width="80%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/hawthorne.jpg")
+``` 
+]
+
+* Trotzdem: Mögliche Bewertungserwartung der untersuchten Personen bekam dadurch Aufmerksamkeit
+
+---
+class: top, left, hide_logo
 <div class="footer"><span>Milgram, S., Mann, L., & Harter, S. (1965). The lost-letter technique: A tool of social research. <i>Public Opinion Quarterly, 29</i>(3), 437-442. <br> Campbell, D. T., Kruskal, W. H., & Wallace, W. P. (1966). Seating aggregation as an index of attitude. <i>Sociometry</i>, 1-15. <br> Clack, B., Dixon, J., & Tredoux, C. (2005). Eating together apart: Patterns of segregation in a multi‐ethnic cafeteria. <i>Journal of Community & Applied Social Psychology, 15</i>(1), 1-16.</span></div>
 
 ### Erhebungsmethoden der psychologischen Forschung
@@ -779,7 +879,7 @@ Beispiel für Typ 5: Spontane Nähe-vs. Distanzregulation im Hörsaal (Campbell,
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Erhebungsmethoden der psychologischen Forschung
 
 ####  Maßnahmen zur Reduktion von Reaktivität
@@ -810,6 +910,8 @@ class: top, left
 
 ### Warum ist das für mich wichtig?
 
+<br>
+<br>
 "*Methoden, mit denen die Psychologie ihre Daten gewinnt und auswertet, gehören zu den* ***»Regeln der Kunst«,*** *auf die uns die* ***ethischen Richtlinien unserer Profession*** *verpflichten (Deutsche Gesellschaft für Psychologie und Berufsverband Deutscher Psychologinnen und Psychologen, 2005).* 
 
 *Es ist ein verbreitetes Missverständnis, dass gute Methodenkenntnisse nur in der psychologischen Forschung benötigt werden.* ***Auch in der psychologischen Anwendungspraxis ist gutes Methodenwissen unverzichtbar.*** *Nur wer über dieses Wissen verfügt, ist beispielsweise in der Lage, die wissenschaftliche Literatur kritisch zu beurteilen, zu entscheiden, welches diagnostische Verfahren welche Gütekriterien wie gut erfüllt und wie die psychologische Praxis zur Generierung von Wissen und somit für den wissenschaftlichen Fortschritt genutzt werden kann.*
@@ -819,7 +921,7 @@ class: top, left
 (Eid, Gollwitzer & Schmitt, S.37)
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: take-away
 
 ### Take-Aways
@@ -841,7 +943,7 @@ name: take-away
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: words
 
 ### Schlüssel-/Fachbegriffe der heutigen Vorlesung
@@ -855,6 +957,8 @@ name: words
 **manifest**
 
 **latent**
+
+**Indikator**
 
 **Konstrukt**
 
@@ -879,9 +983,9 @@ name: words
 
 **Skalierung**
 
-**Existenzaxiom**
+**unsystematische Messfehler**
 
-**unsystematische / systematische Messfehler**
+**systematische Messfehler**
 ]
 ]
 
@@ -912,18 +1016,18 @@ name: words
 
 **Kriteriumsvalidität**
 
-**Faktorielle Validität**
-
 **Multitrait-Multimethod-Methode**
 
 **Reaktivität**
+
+**demand effects**
 ]
 ]
 ]
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/3GwtenBw5tGyTyvF9)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/wbrZFWtcinLvRYHa9)**
 
 
 ---
@@ -938,7 +1042,7 @@ name: literatur
 
 * Bitte laden Sie sich aus dem Verzeichnis bisheriger TBS-TK-Rezensionen eine Rezensionen Ihrer Wahl herunter und lesen Sie sie durch. Schreiben Sie einen jeweils positiven und einen jeweils negativen Aspekt heraus, der bei Objektivität, Zuverlässigkeit oder Gültigkeit (Validität) genannt wird. 
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 2"](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=32894) unter "Literatur-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 2"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_42178.html) unter "Literatur-Aufgabe" ab.
 
 
 ---

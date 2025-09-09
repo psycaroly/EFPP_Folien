@@ -1,9 +1,9 @@
 ---
 title: "Einheit 1"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/10/14 (updated: `r Sys.Date()`)"
+date: "2025/04/09 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -51,15 +51,24 @@ knitr::opts_chunk$set(
 ```
 
 name: Title slide
-class: middle, left
+class: middle, left, hide_logo
 <br><br><br><br><br><br><br>
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 1: Psychologie als Wissenschaft
-##### 16.10.2024 | Dr. Caroline Zygar-Hoffmann
+##### 10.04.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
+class: hide_logo
 <div class="footer"><span>Belinda Fewings, ttps://unsplash.com/de/fotos/6wAGwpsXHE0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash</div>
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
 
 ### Schön, dass Sie hier sind!
 
@@ -68,19 +77,21 @@ knitr::include_graphics("bilder/welcome.jpg")
 ``` 
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: Contact Slide
 
 ### Kontakt
 
 .pull-left[
-Dr. Caroline Zygar-Hoffmann
+Prof. Dr. Caroline Zygar-Hoffmann
 
 Psychologische Methodenlehre
 
 Infanteriestraße 11a · 80797 München ·
 
 [caroline.zygar-hoffmann@charlotte-fresenius-uni.de](mailto:caroline.zygar-hoffmann@charlotte-fresenius-uni.de)
+
+**Bitte schreiben Sie mir eine E-Mail um mich zu kontaktieren (bitte nutzen Sie also *nicht* die Nachrichtenfunktion von studynet)**
 
 <br>
 
@@ -97,23 +108,24 @@ Infanteriestraße 11a · 80797 München ·
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>https://ichbinhanna.wordpress.com/  https://mittelbau.net/tag/ichbinreyhan/</div>
 
 ### Representation matters!
 
 #### Was Sie über mich wissen können (wenn Sie beobachten und recherchieren):
 
-* Promovierte Wissenschaflerin
+* Promovierte Wissenschaftlerin
+* Professorin an der CFH
 * Arbeitet in der Psychologischen Methodenlehre
 * Forscht zu Partnerschaften und Motiven
-* Arbeitet gleichzeitig an LMU und CFH
+* Ist mit der Ludwig-Maximilians-Universität (LMU) München affiliert
 * Verheiratet (Doppelname!)
 * Relativ jung?
 
 #### Was Sie über mich nicht wissen können (bis ich es Ihnen erzähle):
 
-* Mutter eines 2-jährigen Sohns
+* Mutter eines fast 3-jährigen Sohns
 * "First-Generation-Academic"
 * Migrationshintergrund der Eltern
 
@@ -121,36 +133,54 @@ $\rightarrow$ **Wissenschaft ist für alle da. Methodenlehre ist für alle da.**
 $\rightarrow$ **Es ist trotzdem alles andere als einfach. Glück spielt eine große Rolle. Das Wissenschaftssystem gehört reformiert.** Vereinbarkeit könnte noch viel besser sein. #IchBinHanna #IchBinReyhan
 
 ---
-class: top, left
-<div class="footer"><span>Oliver Kepka, https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=531071</div>
+class: top, left, hide_logo
+<div class="footer"><span>https://xkcd.com/1827/  https://www.reddit.com/r/technicallythetruth/comments/oshzoi/yep_i_gotta_agree_with_this_one/?rdt=44446</div>
 
-### Nun zu Ihnen...
+### Survivorship bias
 
-.center[
-**Wer von Ihnen möchte Psychotherapeut:in werden?**
+.pull-left[
+```{r, echo=FALSE,out.width="60%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/survivorshipbias2.png")
+``` 
 ]
 
-```{r, echo=FALSE,out.width="50%",fig.show='hold',fig.align='center'}
-knitr::include_graphics("bilder/psychotherapie.jpg")
+.pull-right[
+```{r, echo=FALSE,out.width="80%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/survivorshipbias1.png")
 ``` 
-
+]
 
 ---
-class: top, left
-<div class="footer"><span>Fauxels, https://www.pexels.com/photo/photo-of-pen-on-top-of-notebook-3183170/</div>
+class: top, left, hide_logo
+<div class="footer"><span>Bild von <a href="https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7010438">Gerd Altmann</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7010438">Pixabay</a></div>
 
 ### Nun zu Ihnen...
 
 .center[
-**Wer von Ihnen könnte sich vorstellen beruflich zu forschen?**
+**Wer von Ihnen hat schonmal studiert?**
 ]
 
 ```{r, echo=FALSE,out.width="60%",fig.show='hold',fig.align='center'}
-knitr::include_graphics("bilder/science.jpg")
+knitr::include_graphics("bilder/studium.jpg")
+``` 
+
+
+---
+class: top, left, hide_logo
+<div class="footer"><span>https://concept.paloaltou.edu/resources/business-of-practice-blog/developmental-psychology</div>
+
+### Nun zu Ihnen...
+
+.center[
+**Wer von Ihnen hat schonmal an einer psychologischen Studie teilgenommen?**
+]
+
+```{r, echo=FALSE,out.width="80%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/study.png")
 ``` 
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Nun zu Ihnen...
 
@@ -167,41 +197,41 @@ knitr::include_graphics("bilder/Karriereperspektiven.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Übersicht Lehrveranstaltung 
 
-**14 Termine:** Mittwoch 14:45 - 16:15 (Raum: Audimax)
+**12 Termine:** Donnerstag 11:35 - 13:05 (Raum: Audimax)
 
 **Begleitende Vorlesung:**
-* "Einführung in die Psychologie und ihre Geschichte" blockweise freitags 13:50 - 17:10 im Audimax
+* "Einführung in die Psychologie und ihre Geschichte" freitags im Audimax
 * Dozentin: Patricia Garatva ([patricia.garatva@charlotte-fresenius-uni.de](mailto:patricia.garatva@charlotte-fresenius-uni.de))
 
 **Materialien:**
-* Folien werden auf [studynet](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=31904) bereitgestellt in 2 Varianten: html (Links zwischen Folien funktionieren) und PDF (Platz für Notizen)
+* Folien werden auf [studynet](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=39930) bereitgestellt in 2 Varianten: html (Links zwischen Folien funktionieren) und PDF (Platz für Notizen)
 * Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
 
 **Prüfungsleistung:**
-* Zeitraum für die Prüfungsanmeldung: 06.01.25 - 03.02.25
+* Zeitraum für die Prüfungsanmeldung: 23.06.25 - 14.07.25
 * Schriftliche Prüfung, 120 Minuten (beide Vorlesungen gemeinsam)
 
 **Vorlesungsaufbau:** Theorie + vereinzelte interaktive Elemente + 1 Literatursuch-Aufgabe pro Einheit
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Termine
 
 ```{r echo = F}
-df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:17, 1:3]
+df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
 df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
 df %>%
   kbl() %>%
   kable_styling(font_size = 16) %>%
   kable_classic(full_width = T) %>% 
-  row_spec(c(8,11,12), background = "lightgray")
+  row_spec(c(4,8,11), background = "lightgray")
 ```
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Ziele der Veranstaltung
 
 #### Vermittelte Inhalte
@@ -220,19 +250,22 @@ $\rightarrow$ Sie sollen hier nicht detailliertes inhaltliches Wissen über konk
   * mit welchen Erhebungs- und Forschungsmethoden die psychologische Wissenschaft arbeitet
   * wie Sie selbst wissenschaftliche Forschung betreiben und beurteilen können
 
-$\rightarrow$ Sie hören bei mir eine Methodenvorlesung, die ich inhaltlich veranschaulichen möchte. 
+$\rightarrow$ **Sie hören bei mir eine Methodenvorlesung, die ich inhaltlich veranschaulichen möchte. **
 
 ---
 class: top, left
+<div class="footer"><span>Beispiel Icon erstellt von kerismaker - Flaticon: <a href="https://www.flaticon.com/de/kostenlose-icons/beispiel">https://www.flaticon.com/de/kostenlose-icons/beispiel</a></div>
+
 ### Prüfungsstoff
 
 **Prinzipiell sind alle Folien prüfungsrelevant.**
 
 Bestimmte Details sind nicht prüfungsrelevant:
-* Details zu veranschaulichenden Beispielen (z.B. einzelne Biases aus der Übersicht über alle Biases, die wir gleich kennenlernen werden oder Inhalte von Studien-Screenshots) $\rightarrow$ Sie sollten Beispiele nennen können, müssen die Beispiele aber nicht im Detail kennen
+* Details zu veranschaulichenden Beispielen (z.B. einzelne Biases aus der Übersicht über alle Biases, die wir gleich kennenlernen werden oder Inhalte von Studien-Screenshots) $\rightarrow$ Sie sollten Beispiele nennen können, müssen die Beispiele aber nicht im Detail kennen; gekennzeichnet mit dem Glühbirnen-Symbol, das Sie auf dieser Folie sehen (sind auf einer Folie prüfungsrelevante Sachen UND Beispiele entfällt das Glühbirnen-Symbol)
 * Jahreszahlen zu Lebenszeiten
 * Wörtliche Zitate
 * Quellenangaben, Literatur-, Video- oder Podcasthinweise: Sie müssen sich kein zusätzliches Wissen aneignen, wenn Sie verstehen, was ich während der Vorlesung zu den Folien erzähle $\rightarrow$ es macht aber Sinn Aspekte nachzulesen, wenn Sie sie nicht verstanden haben
+* Nachbesprechungen der Literatur-Such-Aufgaben
 
 ---
 class: top, left
@@ -262,7 +295,7 @@ Sie lernen in dieser Vorlesung viel Faktenwissen, aber sollen auch viel Verstehe
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: content
 ### Heutige Themen
 
@@ -316,7 +349,7 @@ David G. Myers (2015)
 ChatGPT dazu: *"Diese Beispiele zeigen, wie Sprichwörter unterschiedliche Perspektiven und Weisheiten vermitteln können, die sich in bestimmten Situationen widersprechen können."*
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
@@ -400,7 +433,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: Beispiel Hingsight Bias (Rückschaufehler)
+#### Alltagspsychologie: Beispiel Hindsight Bias (Rückschaufehler)
 
 .center[
 *"Wir leben das Leben vorwärts, aber wir verstehen es rückwärts."*
@@ -424,17 +457,7 @@ knitr::include_graphics(c("bilder/hindsightbias.png"))
 ]
 
 ---
-class: top, left
-<div class="footer"><span>https://psychosophcomic.de/2022/01/30/was-ist-psychologie/</span></div>
-
-### Wissenschaftliches Herangehen an Fragestellungen
-
-```{r, echo=FALSE,out.width="35%",fig.cap=" ",fig.show='hold',fig.align='center'}
-knitr::include_graphics(c("bilder/psychosophie1.png","bilder/psychosophie2.png"))
-``` 
-
----
-class: top, left
+class: top, left, hide_logo
 name: methoden
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -458,7 +481,7 @@ name: methoden
 > **Welche Erhebungsmethoden der Psychologie fallen Ihnen bereits jetzt ein?**
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Kapitel 1.1 in Döring, N. & Bortz, J. (2016). <i>Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften.</i> Pearson.</span></div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -489,7 +512,7 @@ Argumentation mit Berufung auf ...
 <!-- Immer, wenn Menschen oder Gruppen nicht rational handeln: Es wäre logisch, mit dem Rauchen aufzuhören, wenn man lange leben möchte (trotzdem rauchen Menschen, die lange leben möchten). Es wäre nicht logisch, sich geeignete Bewerberinnen durch die Lappen gehen zu lassen (trotzdem scheint das zu passieren). -->
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Kapitel 1.1 in Döring, N. & Bortz, J. (2016). <i>Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften.</i> Pearson. </span></div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -519,7 +542,7 @@ class: top, left
 *Punkte mit $\rightarrow$ sind Fokus dieser Vorlesung.*
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Kapitel 2.1.4 und 2.1.5 in Myers, D.G. (2015). <i>Psychologie.</i> Springer. </span></div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -528,7 +551,6 @@ class: top, left
 
 .center[
 **Die wissenschaftliche Haltung: Neugierig, skeptisch und bescheiden**
-
 Denn: "Wer nichts weiß, muss alles glauben" (Marie Freifrau Ebner von Eschenbach)
 ]
 
@@ -559,7 +581,7 @@ Denn: "Wer nichts weiß, muss alles glauben" (Marie Freifrau Ebner von Eschenbac
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Kapitel 2.1.4 und 2.1.5 in Myers, D.G. (2015). <i>Psychologie.</i> Springer. </span></div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -580,7 +602,7 @@ knitr::include_graphics("bilder/McKay2023-2.PNG")
 ``` 
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 name: begriffe
 <div class="footer"><span>Kapitel 2.2.1 in Myers, D.G. (2015). <i>Psychologie.</i> Springer.<br> Glossar in Eid, M., Gollwitzer, M., & Schmitt, M. (2017). <i>Statistik und Forschungsmethoden.</i> Beltz. </div>
 
@@ -636,7 +658,7 @@ knitr::include_graphics("bilder/theorie.PNG")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
@@ -657,7 +679,7 @@ knitr::include_graphics("bilder/determinismus_vs_probabilismus.png")
 $\rightarrow$ Wissenschaftliche Hypothesen/Gesetzesaussagen in der Psychologie sind **Wahrscheinlichkeitsaussagen**!
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Dörner, D. & Selg, H. (1985). <i>	Psychologie - Eine Einführung in ihre Grundlagen und Anwendungsfelder.</i> Kohlhammer.</div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
@@ -682,7 +704,7 @@ $\downarrow$ $\uparrow$
 Grundkonzeption empirischer Wissenschaften: Empirische Prüfbarkeit ihrer Sätze (Dörner & Selg, 1985)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Wissenschaftliches Herangehen an Fragestellungen
 
 #### Begriffe einer empirischen Wissenschaft
@@ -705,7 +727,7 @@ knitr::include_graphics("bilder/Population.png")
 ```
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 ### Wissenschaftliches Herangehen an Fragestellungen
 
 #### Begriffe einer empirischen Wissenschaft
@@ -730,7 +752,7 @@ knitr::include_graphics("bilder/blackswan.jpg")
 
 ---
 name: definition
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>https://www.dgps.de/psychologie-studieren/infos-zum-studium/psychologie-was-ist-das/</span></div>
 
 ### Was ist Psychologie?
@@ -754,7 +776,7 @@ Wissenschaftlich ausgedrückt:
 "*Psychologie ist die Wissenschaft, die sich mit den Gedanken, Gefühlen und dem Verhalten des Menschen beschäftigt. Dabei geht es einerseits um Gesetzmäßigkeiten, die alle Menschen betreffen, andererseits aber auch um individuelle Unterschiede und darum, was unser Erleben und Handeln beeinflusst.*"
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Was ist Psychologie?
 
@@ -779,7 +801,7 @@ Gegenstand der Psychologie:
   - äußere (in der Umwelt lokalisierte)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Was ist Psychologie?
 
 #### Was macht Psychologie einzigartig? 
@@ -809,7 +831,7 @@ class: top, left
 **Annahme der meisten Psychologen:** Menschliches Verhalten ist ohne mentale/kognitive Prozesse (Erleben, Bewusstsein) nicht verständlich.
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: ziele
 
 ### Was ist Psychologie?
@@ -827,7 +849,7 @@ name: ziele
 ... menschlichen Verhaltens und Erlebens (Gegenstand der Psychologie).
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Was ist Psychologie?
 
 #### Ziele der Psychologie
@@ -837,7 +859,8 @@ class: top, left
 Merkmale des menschlichen Verhaltens und Erlebens...
 * ...benennen
 * ...definieren
-* ...als zusammenhängend deskriptiv beschreiben
+* ...quantifizieren
+* ...deskriptiv als zusammenhängend beschreiben (hier ist die Trennung zum Ziel der Vorhersage unscharf)
 
 **Beschreibungsebenen:** behavioral, kognitiv, emotional, physiologisch
 
@@ -967,7 +990,7 @@ class: top, left
 <iframe src="https://lpac-database.shinyapps.io/Data/" style="width: 100%; height: 500px; border-style:none"></iframe>
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Was ist Psychologie?
 
@@ -976,9 +999,9 @@ class: top, left
 #####  Erklärung
 
 .pull-left[
-* **Regelhafte Muster** in Verhalten und mentalen Prozessen finden
+* **Regelhafte Muster** in Verhalten und mentalen Prozessen finden, die auf Ursache-Wirkungs-Beziehung zurückzuführen sind
 
-* Erklärungen gehen über das Beobachtbare hinaus
+* Erklärungen gehen über das Beschreibende hinaus
 
 * Ideal:
   - Identifizieren von **Kausalitäten**, d.h. Verstehen, "wie etwas funktioniert" und "warum es so passiert"
@@ -992,7 +1015,7 @@ class: top, left
   - internale/innere/organismische/dispositionelle Variablen
   - externale/äußere/situationale/Umwelt- Variablen
   
-* **Determinanten / Prädiktoren** = bedingende Faktoren
+* **Determinanten** = bedingende Faktoren
   - Bei Kausalität wird eher von "Determinante" gesprochen
   - Bei rein korrelativer Vorhersagekraft wird eher von "Prädiktor" gesprochen (siehe Ziel "Vorhersage")
 ]
@@ -1054,7 +1077,7 @@ knitr::include_graphics("bilder/yarkoni2017.PNG")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Was ist Psychologie?
 
@@ -1073,7 +1096,7 @@ $\rightarrow$ Es geht um Wahrscheinlichkeiten und um mittlere Effekte. Simplifiz
 $\rightarrow$ Kein angenommener Determinismus!
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Sutton, S. (1994). The past predicts the future: Interpreting behaviour-behaviour relationships in social psychological models of health behaviour. In D. R. Rutter & L. Quine (Eds.), <i>Social psychology and health: European perspectives</i> (pp. 71-88). Avebury Press.</div>
 
 ### Was ist Psychologie?
@@ -1099,7 +1122,7 @@ $\rightarrow$ Vergangenes Verhalten ist meist nicht die kausale Ursache für jet
 
 ---
 class: top, left
-<div class="footer"><span>Joel, S., Eastwick, P. W., Allison, C. J., Arriaga, X. B., Baker, Z. G., Bar-Kalifa, E., ... & Wolf, S. (2020). Machine learning uncovers the most robust self-report predictors of relationship quality across 43 longitudinal couples studies. Proceedings of the National Academy of Sciences, 117(32), 19061-19071. https://doi.org/10.1073/pnas.1917036117</span></div>
+<div class="footer"><span>Joel, S., Eastwick, P. W., Allison, C. J., Arriaga, X. B., Baker, Z. G., Bar-Kalifa, E., ... & Wolf, S. (2020). Machine learning uncovers the most robust self-report predictors of relationship quality across 43 longitudinal couples studies. <i>Proceedings of the National Academy of Sciences, 117</i>(32), 19061-19071. https://doi.org/10.1073/pnas.1917036117</span></div>
 
 ### Was ist Psychologie?
 
@@ -1145,7 +1168,7 @@ knitr::include_graphics("bilder/Koutsouleris2021-2.PNG")
 ``` 
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 ### Was ist Psychologie?
 
 #### Ziele der Psychologie
@@ -1191,7 +1214,10 @@ knitr::include_graphics("bilder/Breedvelt2024-1.PNG")
 knitr::include_graphics("bilder/Breedvelt2024-2.PNG")
 ``` 
 ]
+
 ---
+class: top, left, hide_logo
+
 ### Was ist Psychologie?
 
 #### Psychologie als Wissenschaft?
@@ -1206,7 +1232,7 @@ $\rightarrow$ Wir werden im weiteren Verlauf der Vorlesung kennenlernen, welche 
 
 ---
 name: take-away
-class: top, left
+class: top, left, hide_logo
 
 ### Take-Aways
 .content-box-gray[
@@ -1226,7 +1252,7 @@ class: top, left
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: literatur
 
 ### Literaturaufgabe
@@ -1242,10 +1268,27 @@ name: literatur
   - Können Sie einordnen, ob es in der Studie um Beschreibung, Erklärung oder Vorhersage geht?
   - Stimmen die Ergebnisse der Studie ganz oder zum Teil oder gar nicht mit dem Sprichwort überein?
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 1"](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=32894) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 1"](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=40734) unter "Literatursuch-Aufgabe" ab.
 
 ---
-class: top, left
+class: top, left, hide_logo
+
+### Literaturaufgabe
+
+**Woran erkenne ich einen wissenschaftlichen Artikel?**
+
+* In einer Fachzeitschrift ("Journal") publiziert (ob die Zeitschrift peer-reviewed ist muss eigentlich separat geprüft werden)
+
+* Fast immer: Summary / Zusammenfassung / Abstract
+
+* In der Psychologie: Struktur folgt Einleitung, Methode, Ergebnisse, Diskussion
+
+* Oft: doi (digital object identifier)
+
+* Literaturverzeichnis
+
+---
+class: top, left, hide_logo
 name: words
 
 ### Schlüssel-/Fachbegriffe der heutigen Vorlesung
@@ -1309,6 +1352,8 @@ name: words
 
 **Prädiktor** 
 
+**Evaluationsforschung**
+
 **manifestes Merkmal**
 
 **latentes Merkmal**
@@ -1320,10 +1365,10 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/KN5f1FS6CxoZ1T9X7)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/SxBrfVLj2j4sZg6o6)**
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Literatur für die heutige Sitzung
 
 .center[
@@ -1333,41 +1378,52 @@ knitr::include_graphics("bilder/gerrig.jpg")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
-### Einladung zur Podiumsdiskussion: „Entwicklung und Lernen von Kindern und Jugendlichen im digitalen Wandel“, 05.11.24, 16:30 – 18:00 Uhr
+### Einladung zu den Lunch Lectures Positive Psychology im Sommersemester 2025
 
-Wie verändert der digitale Wandel das Aufwachsen und das Lernen unserer Kinder? Welche Chancen und Herausforderungen bringt die zunehmende Digitalisierung mit sich?
-Expert*innen aus dem Raum Zürich, werden die Auswirkungen der digitalen Medien auf die kognitive und soziale Entwicklung von Kindern und Jugendlichen beleuchten und darüber diskutieren, wie Bildungseinrichtungen und Eltern diesen Veränderungen begegnen können. 
+.pull-left[
+Die DGPs-Interessengruppe Positive Psychologie lädt in Kooperation mit der Deutschen Gesellschaft für Positiv-Psychologische Forschung (DGPPF e.V.) zu Lunch Lectures ein. Ziel der Vorlesungsreihe ist, über die Positive Psychologie zu informieren und ausgewählte Themen aus dem Themenspektrum vorzustellen. 
 
-*Podiumsteilnehmende* (alphabetisch): 
-* [Prof. Dr. Ingo Bosse](https://www.hfh.ch/person/ingo-bosse) (Institut für Lernen unter erschwerten Bedingungen, HfH)
-* [Prof. Dr. Silvia Brem](https://www.med.uzh.ch/de/UeberdieFakultaet/fakultaetsmitglieder/bremsilvia.html) (UFSP Plastische Hirnnetzwerke für Entwicklung und Lernen und Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, UZH)
-* [Prof. Dr. Fabio Sticca](https://www.hfh.ch/person/fabio-sticca) (Institut für Verhalten, sozio-emotionale und psychomotorische Entwicklungsförderung, HfH)
-* [Prof. Dr. Daniel Süss](https://www.zhaw.ch/de/ueber-uns/person/suss/) (Psychologisches Institut, ZHAW)
+Die Einladung richtet sich an Wissenschaftler:innen, Praktiker:innen und Studierende der Psychologie und der Nachbardisziplinen sowie alle anderen Interessierten. 
 
-*Moderation*: [Prof. Dr. Alexandra Freund](https://www.psychologie.uzh.ch/de/bereiche/dev/lifespan/team/freund.html) (Psychologisches Institut, UZH), *Kontakt*: Letizia Ventre (info@dsn.uzh.ch)
+Die Lunch Lectures finden donnerstags (10.04., 08.05., 12.06., 26.06. und 10.07.) von 13:00-14:00 Uhr online hier 
+https://uni-luebeck.webex.com/uni-luebeck/j.php?MTID=m3583316f0cd34e3f4768e6358b5dbf35 statt.
+]
 
-*Link zur kostenlosen Anmeldung*: https://uzh.zoom.us/webinar/register/WN_4SW_5ZiCToaufIraKxz_dw#/registration 
-
-*Mehr Information*: https://www.developmentalscience.uzh.ch/de/aktivit%C3%A4ten/Podiumsdiskussion.html
-
+.pull-right[
+```{r eval = TRUE, echo = F, fig.align='center'}
+knitr::include_graphics("bilder/vortragsreihe_pp.PNG")
+```
+]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
-### Einladung zur Lesung und Diskussionsrunde: „Rätsel des Unbewussten", 08.11.24, 14-15.30 Uhr
+### Einladung zur Onlineveranstaltung Karriereperspektiven
 
-Wir laden Sie herzlich zur Lesung und Diskussionsrunde „Rätsel des Unbewussten“ einladen, die am Freitag, den 8. November 2024, von 14:00 bis 15:30 Uhr im Hörsaal 2U01, Leopoldstr. 13, 80802 München stattfinden wird.
+Zielgruppe: Die Onlineveranstaltung richtet sich an Studierende im Bachelor sowie Master. Aufgrund der Tätigkeitsbereiche der Speaker*innen sind die Einblicke insbesondere für Studierende aus den Studiengängen Psychologie; BWL;  sowie Management, Economics and Social Sciences interessant.
 
-Dr. Cécile Loetz und Dr. Jakob Müller, die Köpfe hinter dem Podcast „Rätsel des Unbewussten – Podcast zur Psychoanalyse und Psychotherapie“, werden aus ihrem aktuellen Buch „Mein größtes Rätsel bin ich selbst – Die Geheimnisse der Psyche verstehen“ lesen. Das Buch erzählt aus Perspektive der Therapeut:innen Fallgeschichten aus der Welt der psychodynamischen Verfahren und macht sichtbar, wie psychische Veränderungsprozesse in Therapien möglich werden. Begleitet von Dr. Larissa Vierl (Klinische Psychologie und Psychotherapie, LMU) und Dr. Christian Woll-Weber (Klinische Psychologie des Kindes- und Jugendalters & Beratungspsychologie, LMU) als Moderator:innen möchten wir gemeinsam mit Ihnen – Studierende der Psychologie, Teilnehmer:innen der Aus- und Weiterbildung sowie alle Interessierte – ausgewählte Passagen diskutieren. So bekommen Sie einen spannenden und lebendigen Einblick in die
-Prozesse der tiefenpsychologisch fundierten und analytischen Psychotherapie.
+Programm mit mehr Informationen: https://cd.wiso.uni-koeln.de/de/team/juniorprofessur-fuer-organizational-behavior/j-prof-dr-annabelle-hofer/onlineveranstaltung-karriereperspektiven
 
-Die Veranstaltung findet in Kooperation zwischen den beiden genannten Lehreinheiten der LMU und dem Psychoanalytischen Forum München (PFM), einem Verbund der Münchener Aus- und Weiterbildungsinstitute mit tiefenpsychologisch fundierter und analytischer
-Psychotherapieausrichtung, statt. Ziel ist es, einen offenen Raum für den Austausch über die vielfältigen Rätsel der Psyche, der Psychoanalyse und der Aus- und Weiterbildung zu schaffen. Die Teilnahme ist kostenlos und erfordert keine Anmeldung.
+Zeit: Jeweils von 14:15-15:45 Uhr
+28.04.2025, 30.04.2025, 05.05.2025, 07.05.2025, 12.05.2025, 14.05.2025, 15.05.2025
+
+Zoom: https://fernuni-hagen.zoom-x.de/j/67800478651?pwd=dUCsaJbhBSizka7rYkDt2b3LLbyFJU.1
+
+Meeting-ID: 678 0047 8651
+Kenncode: 23020259
+
+Moderation: Dr. Verena Eichel (FernUniversität in Hagen)
+
+Sprache: Deutsch
+
+Die SpeakerInnen verfügen alle über ein abgeschlossenes Studium in Psychologie. Sie sind in Bereichen wie beispielsweise Consulting, Data Analytics, Gesundheitsmanagement, und Personalmanagement tätig.
+
+Ansprechpartner: Merlin Trümpener (Universität zu Köln), E-Mail: fosteryourcareer@wiso.uni-koeln.de
   
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Einladung zur PES-Studie
 
@@ -1382,32 +1438,7 @@ class: top, left
   - mind. 18 Jahre alt
   - deutsche Sprache in Wort und Schrift
   
-* Link zur Teilnahme: https://hochschulen-fresenius-unipark.de/uc/CFH_PES_01/74c4/?a=
-
----
-class: top, left
-
-### Einladung zur Onlineveranstaltung Karriereperspektiven
-
-Zielgruppe: Die Onlineveranstaltung richtet sich an Studierende im Bachelor sowie Master. Aufgrund der Tätigkeitsbereiche der Speaker*innen sind die Einblicke insbesondere für Studierende aus den Studiengängen Psychologie; BWL;  sowie Management, Economics and Social Sciences interessant.
-
-Programm mit mehr Informationen: https://cd.wiso.uni-koeln.de/de/team/juniorprofessur-fuer-organizational-behavior/j-prof-dr-annabelle-hofer/onlineveranstaltung-karriereperspektiven
-
-Zeit: Jeweils von 14:15-15:45 Uhr
-28.10.2024; 30.10.2024; 04.11.2024; 06.11.2024; 11.11.2024; 13.11.2024; 14.11.2024
-
-Zoom: https://fernuni-hagen.zoom-x.de/j/65955566890?pwd=bTZLSChMrGPd5MWAQwDK1b18UAXH4t.1
-
-Meeting‐ID: 659 5556 6890
-Kenncode: 64094237
-
-Moderation: Dr. Verena Eichel (FernUniversität in Hagen)
-
-Sprache: Deutsch
-
-Die SpeakerInnen verfügen alle über ein abgeschlossenes Studium in Psychologie. Sie sind in Bereichen wie beispielsweise Consulting, Data Analytics, Gesundheitsmanagement, und Personalmanagement tätig.
-
-Ansprechpartner: Merlin Trümpener (Universität zu Köln), E-Mail: fosteryourcareer@wiso.uni-koeln.de
+* Link zur Teilnahme: https://hochschulen-fresenius-unipark.de/uc/CFH_PES_01/74c4/
 
 <!-- library(renderthis)  -->
 <!-- to_pdf("EinfForsch_01_PsychologieAlsWissenschaft.Rmd", complex_slides = TRUE) -->

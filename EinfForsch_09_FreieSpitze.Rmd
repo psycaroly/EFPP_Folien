@@ -1,0 +1,790 @@
+---
+title: "Einheit 9"
+subtitle: "⚔<br/>with xaringan"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
+institute: "RStudio, PBC"
+date: "2025/07/16 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: [xaringan-themer.css, style.css, "hygge"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+library(MASS)
+library(ggpubr)
+library(xaringanthemer)
+library(xaringanExtra)
+
+style_duo_accent(
+  primary_color = "#621C37",
+    link_color = "#7da5f5",
+  secondary_color = "#EE0071",
+  background_image = "blank.png"
+)
+
+xaringanExtra::use_xaringan_extra(c("tile_view"))
+
+use_scribble(
+  pen_color = "#EE0071",
+  pen_size = 4
+  )
+
+knitr::opts_chunk$set(
+  fig.retina = TRUE,
+  warning = FALSE,
+  message = FALSE
+)
+
+```
+
+name: Title slide
+class: middle, left, hide_logo
+<br><br><br><br><br><br><br>
+# Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
+
+### Einheit 9: Freie Spitze und Fragen
+##### 17.07.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+
+---
+class: top, left, hide_logo
+name: content
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
+
+### Heutige Themen
+
+#### [Lehrevaluation](#eval)
+
+#### [Hinweise zur Prüfung](#exam)
+
+#### [Zusammenfassung: Forschungsstrategien](#forschungsstrategien)
+
+#### [Zusammenfassung zu jeder Einheit](#summary)
+
+#### [Weitere Fragen](#fragen)
+
+---
+class: top, left, hide_logo
+name: eval
+
+### Lehrevaluation
+
+**Bitte nehmen Sie an der Lehrevaluation teil: https://hsf.click/Eval-CFH**
+
+.center[
+
+```{r eval = TRUE, echo = F, out.width="80%"}
+knitr::include_graphics("bilder/eval.jpg")
+```
+]
+
+
+---
+class: top, left, hide_logo
+name: exam
+
+### Hinweise zur Prüfung
+
+* Meine Aussagen zu Prüfungsfragen gelten für diese Vorlesung -- für die Vorlesung von Patricia Garatva gelten die Sachen, die sie gesagt hat
+
+* Es wird Wissen (z.B. Fachbegriffe) UND Verständnis (z.B. Beschreibung von Konzepten) abgefragt
+
+* Fragen sind auch über Vorlesungseinheiten hinweg möglich
+
+---
+class: top, left, hide_logo
+
+### Prüfungsfragen
+
+* **Lückentexte**: "Objektivität kann bei der Verhaltensbeobachtung durch Kennzahlen zur \_\_______________\_\_ erfasst werden."
+
+* **Offene Fragen**: "Nennen Sie die vier Ziele der wissenschaftlichen Psychologie."
+
+* **MC-Fragen**: Frage die den Kontext beschreibt, 3 Aussagen dazu $\rightarrow$ jede Aussage als richtig oder falsch markieren.
+
+"Was trifft auf Gütekriterien zu?"
+
+[] Reliabilität ist ein Nebengütekriterium.
+
+[] Wenn ein Messinstrument reliabel ist, kann man auch davon ausgehen, dass es valide ist.
+
+[] Es gibt konkrete Maßnahmen, um die Güte von Indikatoren in einer Verhaltensbeobachtung zu verbessern.
+
+oder
+
+[] Keine der Antworten ist richtig.
+
+
+
+---
+class: top, left, hide_logo
+name: summary
+
+### Zusammenfassung
+
+.pull-left[
+**Themen**
+
+* Einheit 1: Psychologie als Wissenschaft
+* Einheit 2: Messen in der Psychologie
+* Einheit 3: Verhaltensbeobachtung
+* Einheit 4: Befragungen & Tests
+* Einheit 5: Gastvortrag (~ Biopsychologische Methoden)
+* Einheit 6: Kausalität, Experiment und Studiendesigns
+* Einheit 7: Forschungsethik und Open Science
+* Einheit 8: Qualitative Methoden: Verstehen des Einzelfalls (bis Folie 20)
+]
+
+.pull-right[
+**Vermittelte Inhalte:**
+
+* Herausforderungen und Möglichkeiten der Datenerhebung in der Psychologie, Gütekriterien
+* Datenauswertung, Präsentation und Publikation wissenschaftlicher Forschungsergebnisse 
+* Besonderheiten der Forschung im klinisch-psychologischen Kontext
+*	Gute wissenschaftliche Praxis, ethische Prinzipien
+]
+
+---
+class: top, left, hide_logo
+name: forschungsstrategien
+
+### Zusammenfassung: Forschungsstrategien
+
+#### Grundlegende Entscheidungen
+
+* Längsschnittlicher vs. Querschnittlicher Ansatz
+
+* Qualitative vs. quantitative Herangehensweise
+
+* Experimenteller vs. Quasi-experimenteller Ansatz vs. Assoziativer/korrelativer Ansatz
+
+---
+class: top, left, hide_logo
+### Zusammenfassung: Forschungsstrategien
+
+#### Längsschnittlicher vs. querschnittlicher Ansatz
+
+.pull-left[
+**Längsschnittstudien**
+
+* aka longitudinal; Messwiederholung
+
+* Personen werden **mehrfach/zu unterschiedlichen Zeitpunkten** gemessen
+* Empfehlenswert bei Variablen mit Schwankungen (z.B. Stimmung), da **Veränderungen** abgebildet werden können
+
+* **"Pre-Post" Vergleich** nach Intervention (z.B. Therapie) / Ereignis (z.B. Pandemie) möglich 
+
+* Bei Leistungstests: Vorsicht **Trainingseffekte!**
+
+* Häufiges Problem: **Dropout** (d.h. systematischer Wegfall von Versuchspersonen über die Zeit hinweg)
+]
+
+
+.pull-right[
+**Querschnittstudien:**
+
+* aka cross-sectional
+
+* Personen werden einmalig **zum gleichen Zeitpunkt** untersucht
+
+* Oft geringere **interne Validität** (z.B. Kohorteneffekte konfundieren u.U. Alterseffekte)
+
+* gut um große Stichproben zu realisieren (z.B. Umfragen)
+]
+
+
+---
+class: top, left, hide_logo
+### Zusammenfassung: Forschungsstrategien
+
+#### Qualitative vs. quantitative Herangehensweise
+
+.pull-left[
+**Quantitativ:**
+
+* **Vorrangiges Ziel:** soziale Phänomene messbar machen und statistisch auswerten
+* **Voraussetzungen:** Vorliegen von Hypothesen und Theorien, die statistisch/mathematisch überprüft werden können
+* **Methode:** eher standardisiert
+* **Typische Fragestellungen: **
+  * A mehr als B?
+  * Wenn viel X, dann viel/wenig Y?
+* **Typische Verfahren der Datenerhebung: **
+  * standardisierter Fragebogen 
+  * Experiment
+]
+.pull-right[
+**Qualitativ:**
+
+* **Vorrangiges Ziel:**  soziale Phänomene rekonstruieren; Hypothesen und Theorien generieren
+* **Voraussetzungen:** offener, explorativer Zugriff auf das soziale Phänomen
+* **Methode:** weniger Standardisierung
+* **Typische Fragestellungen: **
+  * Welche Einstellungen liegen bei ... vor? 
+  * Gibt es Gemeinsamkeiten zwischen..  
+  * Was heißt es, ... zu sein?
+* **Typische Verfahren der Datenerhebung: **
+  * Interview
+  * Gruppenbefragungen
+  * Verhaltensbeobachtung
+]
+
+---
+class: top, left, hide_logo
+### Zusammenfassung: Forschungsstrategien
+
+#### Experimenteller vs. Assoziativer Ansatz
+
+.pull-left[
+**Experimenteller Ansatz:**
+
+* „Königsweg“, um kausale Zusammenhänge zu prüfen
+
+* Vergleich von Bedingungen (z.B. Experimentalgruppe vs. Kontrollgruppe)
+
+* Kontrollierter Aufbau: 
+
+  * Kovariation von AV und UV systematisch herbeiführen
+
+  * Sicherstellung zeitliche Vorgeordnetheit der UV 
+
+* Randomisierung: Störeinflüsse durch zufälliges Zuteilen zu Gruppen ausschließen
+]
+
+.pull-right[
+**Assoziativer Ansatz**
+
+* pragmatischer/retrospektiver Weg zu Prüfung von Zusammenhängen
+
+* Prüfen gemeinsamen variierens (Korrelation)
+
+* Störeinflüsse: Hoffen auf Wegmittelung durch Gruppengröße
+
+* Möglichkeit: Matching Verfahren (z.B. Propensity Score Matching)
+]
+
+---
+class: top, left, hide_logo
+### Zusammenfassung: Forschungsstrategien
+
+#### Experimenteller vs. Assoziativer Ansatz
+
+Beispiel: Koffein und Intelligenz
+
+.pull-left[
+**Experimenteller Ansatz:**
+
+1. Intelligenzmessung (AV = Leistung)
+
+2. Zufällige Gruppenzuweisung
+
+3. Intervention (UV = Gruppe)
+
+  * Experimentalgruppe: Kaffee 
+  * Kontrollgruppe: Placebo koffeinfreier Kaffee 
+
+4. Intelligenzmessung
+
+]
+.pull-right[
+**Assoziativer Ansatz**
+
+* Erfragen des täglichen Koffeeinkonsums (UV)
+
+* Intelligenztest durchführen (AV = Leistung)
+
+* Prüfen gemeinsamen variierens (Korrelation)
+
+* Störeinflüsse: Hoffen auf Wegmittelung durch Gruppengröße
+
+* Gefahr von Scheinzusammenhängen ("spurious correlations")
+]
+
+
+---
+class: top, left, hide_logo
+### Zusammenfassung: Forschungsstrategien
+
+#### Quasi-Experimenteller Ansatz
+
+* Zentraler Unterschied zum Experiment: keine zufällige Zuteilung zu den Untersuchungsbedingungen
+
+* Auch hier Manipulation der UV und Beobachtung der Folgen für AV
+
+* Zuteilung erfolgt nach anderem Prinzip (z.B. Wunsch der TN, natürliche Gruppen)
+
+* Reduziert die interne Validität einer Untersuchung, ist aber in manchen Forschungskontexten nicht zu ändern
+
+* Wichtige Folge bei der Durchführung von Quasi-Experimenten: Maximale Erfassung von möglichen Störvariablen und explizites Berücksichtigen von Alternativerklärungen
+
+---
+class: top, left
+
+### Zusammenfassung
+
+* Im Folgenden werden Sie pro Einheit ein paar Fragen sehen
+
+* Diese Fragen sollen Ihnen einen zusammenfassenden Überblick geben, zu welchen großen Themen Sie nach dem Lernen dieser Einheit etwas wissen sollten
+
+* **Wenn in den Einheiten Folien sind, die nicht unter diese Fragen passen, heißt das nicht, dass diese Folien nicht prüfungsrelevant sind; die Folien sind trotzdem prüfungsrelevant!**
+
+* Diese Fragen sind zudem auch nicht prototypisch für Prüfungsfragen, weil sie sehr offen und breit gestellt sind; Prüfungsfragen sind i.d.R. konkreter und spezifischer formuliert ("Nennen Sie 3...", "Beschreiben Sie ein Beispiel...", "Erklären Sie warum..." )
+
+* **Idee dieser Zusammenfassung: Sie können anhand dieser Fragen prüfen, ob Sie mit Ihrem Wissensstand die wichtigen Themen abdecken**
+
+* **Außerdem, falls es keine studentische Frage zu der Einheit gab: Kurze(!), nicht vollständige(!), ggf. nicht richtige(!) Antworten von ChatGPT $\rightarrow$ keine Musterlösung oder ähnliches, kein Anspruch darauf, dass wir das im Rahmen der Fragestunde vollständig durchsprechen $\rightarrow$ zum Lernen die tatsächlichen Folien der jeweiligen Einheit nutzen**
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 1: Psychologie als Wissenschaft
+
+.pull-left[
+$\rightarrow$ Was kennzeichnet Wissenschaft (im Arbeiten, Wissensproduktion, Erkenntnisgewinn, Haltung)?
+
+$\rightarrow$ Was sind wichtige Begriffe einer empirischen Wissenschaft?
+
+$\rightarrow$ Mit welchen Themen und Zielen beschäftigt sich die Psychologie?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit1.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung
+
+#### Einheit 1: Psychologie als Wissenschaft
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+
+**Was kennzeichnet Wissenschaft (im Arbeiten, Wissensproduktion, Erkenntnisgewinn, Haltung)?**
+Systematisches, methodisches Vorgehen zur Gewinnung überprüfbarer und nachvollziehbarer Erkenntnisse; kritisch-reflektierende, offene Haltung gegenüber Ergebnissen.
+
+**Was sind wichtige Begriffe einer empirischen Wissenschaft?**
+Hypothese, Theorie, Operationalisierung, Messung, Experiment, Validität, Reliabilität.
+
+**Mit welchen Themen und Zielen beschäftigt sich die Psychologie?**
+Untersuchung, Beschreibung, Erklärung und Vorhersage menschlichen Erlebens und Verhaltens; Anwendung des Wissens zur Förderung von Gesundheit, Wohlbefinden und Leistungsfähigkeit.
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 2: Messen in der Psychologie
+
+.pull-left[
+$\rightarrow$ Was sind Qualitätskriterien für psychologische Erhebungsmethoden und wie werden sie gewährleistet/überprüft?
+
+$\rightarrow$ Was sind zentrale Elemente der klassischen Testtheorie?
+
+$\rightarrow$ Was ist Reaktivität (im Rahmen von Forschung) und wie kann man damit umgehen?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit2.png")
+```
+]
+
+---
+class: top, left
+
+### Zusammenfassung --- Übung
+
+#### Einheit 2: Messen in der Psychologie
+
+studentische Frage: **Validität: besonders Inhalts-, Konstrukts- & Kriteriumsvalidität, was ist damit gemeint?**
+
+--
+
+* Validität: Gibt an, ob ein Messinstrument tatsächlich das misst, was er zu messen vorgibt
+
+* Inhaltsvalidität: Gibt an, ob die Inhalte eines Messinstruments alle relevanten Aspekte des zu messenden Merkmals abdecken
+
+* Konstruktvalidität: Gibt an, ob sich die Ergebnisse eines Messinstruments in Korrelationen erwartungsgemäß zu den Ergebnissen anderer Messinstrumente verhalten.
+
+* Kriteriumsvalidität: Gibt an, ob die Ergebnisse eines Messinstruments sich erwartungsgemäß zu manifesten Variablen (= externe Kriterien) verhält.
+
+---
+class: top, left
+<div class="footer"><span>https://dorsch.hogrefe.com/stichwort/skalierung-testtheoretisches-guetekriterium <br> https://www.slideserve.com/karim/programm </div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 2: Messen in der Psychologie
+
+studentische Frage: **Skalierung, was ist damit gemeint?**
+
+--
+
+.pull-left[
+* Skalierung gibt an, ob die aus Verrechnungsvorschriften resultierenden Testwerte (= Zusammenfassung mehrerer Messwerte, z.B. Itemantworten) die empirischen Verhaltensrelationen adäquat abbilden
+
+Das ist der Fall, wenn es
+
+a) ein empirisch nachgewiesenes testtheoretisches Modell gibt, das beschreibt wie der Zusammenhang zwischen einer latenten Variable und Messwerten ist
+
+b) dieses testtheoretische Modell benutzt wird um einen Testwert für eine Person zu berechnen
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/relativ.jpg")
+```
+]
+
+---
+class: top, left
+
+### Zusammenfassung --- Übung
+
+#### Einheit 2: Messen in der Psychologie
+
+studentische Frage: **Faktorenanalyse, wie hängt das mit Skalierung zusammen?**
+
+--
+
+* Faktorenanalyse ist eine Methode, um ein testtheoretisches Modell empirisch zu überprüfen (ein Ziel der Skalierung!)
+
+* d.h. sie erlaubt uns zu prüfen ob/welche Messwerte in welchem Zusammenspiel welche latente Variable messen
+
+* Basiert auf der klassischen Testtheorie
+
+* Erlaubt die Bildung von Subskalen bei mehrdimensionalen latenten Variablen, z.B. Aggresivität als latente Variable hat als untergeordnete latente Variablen physische und psychische Aggressivität
+
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 3: Verhaltensbeobachtung
+
+.pull-left[
+$\rightarrow$ Wie können Beobachtungspläne aussehen und worauf muss man dabei achten?
+
+$\rightarrow$ Was sind Beispiele für Beobachtungsfehler und -verzerrungen in einer Verhaltensbeobachtung und was sind Gegenmaßnahmen?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit4.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 3: Verhaltensbeobachtung
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf beide Fragen geben?
+
+**Wie können Beobachtungspläne aussehen und worauf muss man dabei achten?**
+Beobachtungspläne können strukturiert (mit festen Kriterien und Skalen) oder unstrukturiert (offene, flexible Beobachtung) sein. Wichtig ist die klare Definition der Beobachtungsziele, die Schulung der Beobachter und die Berücksichtigung von Faktoren wie Beobachterbias und Kontext der Beobachtung.
+
+**Was sind Beispiele für Beobachtungsfehler und -verzerrungen in einer Verhaltensbeobachtung und was sind Gegenmaßnahmen?**
+Beispiele für Beobachtungsfehler und -verzerrungen in einer Verhaltensbeobachtung sind unter anderem Beobachterbias (Vorurteile des Beobachters) und das Hawthorne-Effekt (Veränderung des Verhaltens aufgrund der Beobachtung selbst). Gegenmaßnahmen umfassen Schulung der Beobachter für objektive und konsistente Beobachtungen, Nutzung von standardisierten Protokollen und gegebenenfalls verdeckte Beobachtungen.
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 4: Befragungen & Tests
+
+.pull-left[
+$\rightarrow$ Welche Methoden des Selbstberichts gibt es?
+
+$\rightarrow$ Worauf ist bei der Konstruktion von Befragungen/Fragebögen zu achten?
+
+$\rightarrow$ Was ist ein psychologischer Test und was für psychologische Testverfahren gibt es?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit5.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 4: Befragungen & Tests
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+
+**Welche Methoden des Selbstberichts gibt es?**
+Methoden des Selbstberichts sind Fragebögen, Interviews, Tagebuchmethoden und Experience Sampling. Sie unterscheiden sich in ihrer Strukturierung (offen vs. geschlossen) und Erhebungsform (schriftlich, mündlich, digital).
+
+**Worauf ist bei der Konstruktion von Befragungen/Fragebögen zu achten?**
+Bei der Konstruktion von Befragungen/Fragebögen sind Verständlichkeit, Eindeutigkeit, Skalenniveau, soziale Erwünschtheit und Antworttendenzen zu beachten. Zudem sollten sie reliabel, valide und an die Zielgruppe angepasst sein.
+
+**Was ist ein psychologischer Test und was für psychologische Testverfahren gibt es?**
+Ein psychologischer Test ist ein standardisiertes Verfahren zur Erfassung psychischer Merkmale. Es gibt Leistungstests (z. B. Intelligenztests), Persönlichkeitstests (z. B. Big Five), projektive Tests (z. B. Rorschach-Test) und neuropsychologische Tests.
+
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 5: Gastvortrag
+
+.pull-left[
+$\rightarrow$ Welche Elemente gibt es im Bayes Theorem?
+
+$\rightarrow$ Was ist der Prediction Error beim Predictive Coding mit Bayesianischer Inferenz?
+
+$\rightarrow$ Was sind jeweils Magnetresonanzspektroskopie und Elektroenzephalographie (wofür werden diese Methoden jeweils verwendet und was sind Vor- und Nachteile)?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit8.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 5: Gastvortrag
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+
+**Welche Elemente gibt es im Bayes Theorem?**
+Prior (Vorwissen), Likelihood (die „eintreffende Information“ aus den Daten) und Posterior (aktualisierte Wahrscheinlichkeit der Hypothese nach den Daten).
+
+**Was ist der Prediction Error beim Predictive Coding mit Bayesianischer Inferenz?**
+Der Prediction Error ist die Differenz zwischen der aktuellen Vorhersage (Prior) und der durch neue Daten aktualisierten Schätzung (Posterior); er zeigt also, wie stark sich Erwartungen und Beobachtungen unterscheiden.
+
+**Was sind jeweils Magnetresonanzspektroskopie und Elektroenzephalographie (wofür werden diese Methoden jeweils verwendet und was sind Vor- und Nachteile)?**
+MRS misst chemische Zusammensetzung und Stoffwechsel im Gehirn (gut für metabolische Prozesse, aber geringe zeitliche Auflösung); EEG misst elektrische Aktivität an der Kopfoberfläche (exzellente zeitliche, aber schlechte räumliche Auflösung).
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 6: Kausalität, Experiment und Studiendesigns
+
+.pull-left[
+$\rightarrow$ Was versteht man unter Kausalität und inwiefern unterscheidet sich das von Korrelation/Zusammenhängen?
+
+$\rightarrow$ Was kennzeichnet ein Experiment?
+
+$\rightarrow$ Was sind Störvariablen, was sind Ursachen und Konsequenzen von jeweils systematischen und unsystematischen Störvariablen und welche Möglichkeiten hat man damit umzugehen?
+
+$\rightarrow$ Was für nicht-experimentelle, quasi-experimentelle und experimentelles Versuchspläne haben Sie kennengelernt und wodurch sind sie gekennzeichnet?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit6.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>https://dorsch.hogrefe.com/stichwort/kausalitaet</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 6: Kausalität, Experiment und Studiendesigns
+
+
+studentische Frage: **INUS Bedingung, was soll mir das sagen?**
+
+--
+
+* INUS auf Deutsch: Unzureichender, aber notwendiger Teil einer unnötigen aber hinreichenden Bedingung
+
+* Hintergrund: 
+- Es gibt mehrere Möglichkeiten (~ Bedingungen) unter denen eine Wirkung erzeugt wird
+- Jede Bedingung besteht aus mehreren Teilen (~ Variablen)
+
+* Wir bezeichnen eine Variable als Ursache, wenn es inhaltlich INUS erfüllt:
+Für eine von vielen Bedingungen, die dazu in der Lage ist die Wirkung zu erfüllen ...
+... ist diese Variable eine von mehreren notwendigen Teilen der Bedingung
+
+* Psychologisches Beispiel: Genetische Vulnerabilität als Ursache von Depressionen
+
+Insufficient: Es braucht auch (z.B.) situative Auslöser
+Necessary: Es braucht eine Vulnerabilität
+Unnecessary: Vulnerabilität durch Lebensgeschichte geht auch (z.B. schwere Kindheit)
+Sufficient: Vulnerabilität + situative Auslöser + weitere Teile der Bedingung zusammen hinreichend
+
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 7: Forschungsethik und Open Science
+
+.pull-left[
+$\rightarrow$ Welche forschungsethischen Prinzipien haben Sie kennengelernt? 
+
+$\rightarrow$ Wodurch zeichnet sich ein informiertes Einverständnis (informed consent) aus?
+
+$\rightarrow$ Zu welchen Themen machen die berufsethischen Richtlinien von BDP und DGPs welche Aussagen?
+
+$\rightarrow$ Welche Ziele und Bereiche von Open Science gibt es?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit10.png")
+```
+]
+
+---
+class: top, left
+
+### Zusammenfassung --- Übung
+
+#### Einheit 7: Forschungsethik und Open Science
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf alle 4 Fragen geben?
+
+.small[
+**Welche forschungsethischen Prinzipien haben Sie kennengelernt?**
+Forschungsethische Prinzipien umfassen Integrität, Vertraulichkeit, Fairness und Respekt gegenüber Probanden sowie die Verpflichtung zur Vermeidung von Schaden.
+
+**Wodurch zeichnet sich ein informiertes Einverständnis (informed consent) aus?**
+Ein informiertes Einverständnis bedeutet, dass Probanden vor ihrer Teilnahme an einer Studie umfassend über die Ziele, Risiken und Nutzen informiert werden und freiwillig zustimmen, ohne Zwang oder Täuschung.
+
+**Zu welchen Themen machen die berufsethischen Richtlinien von BDP und DGPs welche Aussagen?**
+Die berufsethischen Richtlinien von BDP und DGPs behandeln Themen wie Vertraulichkeit, professionelles Verhalten, Supervision und die Beziehung zwischen Psychologen und ihren Klienten.
+
+**Welche Ziele und Bereiche von Open Science gibt es?**
+Open Science zielt darauf ab, Forschung transparenter, zugänglicher und kooperativer zu gestalten. Dies umfasst offenen Zugang zu Publikationen und Daten, reproduzierbare Forschung und gemeinsame Zusammenarbeit.
+]
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+---
+class: top, left, hide_logo
+
+### Zusammenfassung
+
+#### Einheit 8: Qualitative Methoden: Verstehen des Einzelfalls
+
+.pull-left[
+$\rightarrow$ In welchen Aspekten und Zielen unterscheiden sich qualitative und quantitative Methoden?
+
+$\rightarrow$ Welche qualitativen Datenerhebungsmethoden gibt es und wodurch sind sie charakterisiert?
+
+$\rightarrow$ Worauf ist bei der Konzeption von Interviews und Interviewfragen zu achten?
+
+$\rightarrow$ Wie werden qualitative Daten in etwa ausgewertet?
+]
+
+.pull-right[
+```{r eval = TRUE, echo = F, out.width = "90%"}
+knitr::include_graphics("bilder/Einheit7.png")
+```
+]
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 8: Qualitative Methoden: Verstehen des Einzelfalls
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+
+**In welchen Aspekten und Zielen unterscheiden sich qualitative und quantitative Methoden?**
+Qualitative vs. quantitative Methoden unterscheiden sich in ihrem Erkenntnisziel (Verstehen vs. Messen), ihrer Datengrundlage (nicht-standardisierte vs. numerische Daten) und ihrer Auswertung (interpretativ vs. statistisch). Während qualitative Methoden tiefgehende Einblicke ermöglichen, streben quantitative Methoden Objektivität und Generalisierbarkeit an.
+
+**Welche qualitativen Datenerhebungsmethoden gibt es und wodurch sind sie charakterisiert?**
+Qualitative Datenerhebungsmethoden sind Interviews (offen, leitfadengestützt), Gruppendiskussionen, teilnehmende Beobachtungen und Dokumentenanalysen. Sie sind meist explorativ, flexibel und kontextbezogen.
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
+
+### Zusammenfassung --- Übung
+
+#### Einheit 8: Qualitative Methoden: Verstehen des Einzelfalls
+
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+
+**Worauf ist bei der Konzeption von Interviews und Interviewfragen zu achten?**
+Bei der Konzeption von Interviews sollten offene, verständliche und neutrale Fragen formuliert werden. Der Leitfaden sollte flexibel sein, um spontane Vertiefungen zu ermöglichen, und soziale Erwünschtheitseffekte sollten minimiert werden.
+
+**Wie werden qualitative Daten in etwa ausgewertet?**
+Qualitative Daten werden durch Verfahren wie die thematische Analyse, Grounded Theory oder qualitative Inhaltsanalyse ausgewertet. Dabei werden Muster, Kategorien und Bedeutungen systematisch aus dem Material herausgearbeitet.
+
+
+$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+---
+class: top, left
+name: fragen
+
+### Weitere Fragen
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "550px"}
+knitr::include_graphics("bilder/qa.png")
+```
+]
+
+<!-- library(renderthis)  -->
+<!-- to_pdf("EinfForsch_09_FreieSpitze.Rmd", complex_slides = TRUE) -->
+
+
+```{r eval=FALSE, include=FALSE}
+# https://rviews.rstudio.com/2021/11/18/deploying-xaringan-slides-a-ten-step-github-pages-workflow/
+```

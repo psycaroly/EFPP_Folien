@@ -1,9 +1,9 @@
 ---
 title: "Einheit 3"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/11/05 (updated: `r Sys.Date()`)"
+date: "2025/05/21 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -54,12 +54,36 @@ knitr::opts_chunk$set(
 ```
 
 name: Title slide
-class: middle, left
+class: middle, left, hide_logo
 <br><br><br><br><br><br><br>
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 3: Verhaltensbeobachtung
-##### 06.11.2024 | Dr. Caroline Zygar-Hoffmann
+##### 22.05.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+
+---
+class: top, left, hide_logo
+
+### Termine
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
+
+```{r echo = F}
+df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
+df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
+df %>%
+  kbl() %>%
+  kable_styling(font_size = 16) %>%
+  kable_classic(full_width = T) %>% 
+  row_spec(c(3,4,8,11), background = "lightgray")%>% 
+  row_spec(c(6,7,9,10,12), background = "yellow")%>% 
+  row_spec(c(2,5,14), background = "white")
+```
 
 ---
 class: top, left
@@ -71,7 +95,7 @@ class: top, left
 > Was beobachten Sie?
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: content
 ### Heutige Themen
 
@@ -79,7 +103,6 @@ name: content
 * [Alltagsbeobachtung vs. wissenschaftliche Beobachtung](#abgrenzung)
 * [Beobachtungsplan](#beobachtungsplan)
 * [Beobachtungsfehler und -verzerrungen](#fehler)
-* [Beobachterübereinstimmung](#Beobachterübereinstimmung)
 
 #### Take-Aways und Schlüssel-/Fachbegriffe
 * [Take-Aways](#take-away)
@@ -87,7 +110,7 @@ name: content
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: abgrenzung
 
 ### Verhaltensbeobachtung
@@ -102,38 +125,13 @@ Herausforderungen für Beobachtungen:
 * **Selektivität**
   * Informationen müssen aus komplexem, sich ständig veränderndem Strom von ständig eintreffenden visuellen Daten ausgewählt werden 
 * **Konstruktivität**
-  * Selektierte Informationen müssen zu bedeutungsvollen, stabilen Einheiten zusammengefügt werden
-  * Konstruktion abhängig von  Einstellungen, Erwartungen und Vorerfahrungen der Beobachter:in
+  * Selektierte Informationen müssen zu bedeutungsvollen, stabilen Einheiten zusammengefügt werden, um damit nicht nur manifeste Indikatoren, sondern auch latente Konstrukte valide zu messen
+  * Konstruktion abhängig von Einstellungen, Erwartungen und Vorerfahrungen der Beobachter:in, wenn nicht konkret definiert (meist durch eine darauffolgende Verhaltens*beurteilung*)
 
 **Lösung:** Wissenschaftliche Beobachtung nach a priori festgelegtem Beobachtungsplan, um intersubjektiv nachvollziehbare Erkenntnisse zu gewinnen
 
 ---
-class: top, left
-### Verhaltensbeobachtung
-
-#### Alltagsbeobachtung vs. wissenschaftliche Beobachtung
-
-* Verhalten ist erstmal direkt beobachtbar, und kann dadurch direkt als manifeste Variable ausgewertet werden.
-* Verhaltensbeobachtung kann aber auch zur Messung von latenten Variablen dienen (meist durch eine darauffolgende Verhaltens*beurteilung*). 
-
-**Annahmen der Verhaltensbeobachtung zur Messung latenter Variablen**:
-
-1. **Typisches Verhalten** einer Person wird durch **Eigenschaften der Person** bewirkt. 
-
-2. Eine höhere Ausprägung einer bestimmten Eigenschaft macht das Auftreten des von ihr bewirkten Verhaltens wahrscheinlicher.
-
-3. Es gibt interindividuelle Unterschiede im Verhalten.
-
-4. Beobachtungsraum = „Bildausschnitt“ (Verhaltensstichprobe)
-
-5. Interindividuelle Unterschiede sind über die Zeit hinweg stabil.
-
-6. Interindividuelle Unterschiede sind über verschiedene Situationen hinweg konsistent.
-
-$\rightarrow$ Gewohnheiten sind auf die Wirkung von einer oder mehreren Eigenschaften zurückzuführen
-
----
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Döring, N. & Bortz, J. (2016). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften. Pearson.<br>Schmidt-Atzert, L., & Amelang, M. (2012). <i>Psychologische Diagnostik.</i> Springer Science & Business Media.</div>
 
 ### Verhaltensbeobachtung
@@ -155,7 +153,7 @@ class: top, left
 * Eine gute Wahrnehmung und Registrierung setzt voraus, dass genau definiert wird, was und wie etwas beobachtet (und später beurteilt) werden soll
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: beobachtungsplan
 
 ### Verhaltensbeobachtung
@@ -180,7 +178,7 @@ name: beobachtungsplan
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Haney, C., Banks, W.C. & Zimbardo, P.G. (1973). A study of prisoners and guards in a simulated prison. <i>Naval Research Review</i>, 30, 4–17. <br> Zimbardo, P. & Haney, C. (2008). Stanford prison experiment. In B.L. Cutler (Ed.), <i>Encyclopedia of psychology and law</i> (pp.756–757). Thousand Oaks, CA: Sage. <br> Le Texier, T. (2019). Debunking the stanford prison experiment. <i>American Psychologist</i>, 74(7), 823.</div>
 
 ### Verhaltensbeobachtung
@@ -201,13 +199,13 @@ Unstrukturierte Beobachtung findet ohne genauen Beobachtungsplan statt
 + Beispiel: Stanford Prison Experiment (Haney et al., 1973; Zimbardo & Haney, 2008; welches aber aus heutiger Perspektive wegen methodischer Mängel stark kritisiert wird, vgl. Le Texier, 2019)
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
 
-##### Beobachtungseinheiten
+##### Formen und Rahmenbedingungen für Beobachtungen
 
 **Was wird beobachtet? - Definition von Beobachtungseinheiten = Indikatoren:**
 
@@ -217,19 +215,17 @@ class: top, left
 
 * Abgrenzung der Dauer der Beobachtung: kurz/einmalig vs. lang/wiederholt
 
-* Definition von Anfang, Ende und Inhalt einer Beobachtungseinheit:
-
-  * Wann beginnt / endet ein Verhalten?
+* Definition von Anfang, Ende und Inhalt einer Beobachtungseinheit: Wann beginnt / endet ein Verhalten?
   
-  * Welches Verhalten gibt Hinweis auf latentes Merkmal?
+* Welches Verhalten gibt Hinweis auf latentes Merkmal?
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
 
-##### Beobachtungseinheiten
+##### Formen und Rahmenbedingungen für Beobachtungen
 
 **Was wird beobachtet? -  Kriterien für gute Beobachtungseinheiten = Indikatoren:**
 
@@ -244,49 +240,17 @@ class: top, left
 .pull-right[
 * Jeder Beobachtende kann Beobachtungseinheit **zuverlässig identifizieren** (Reliabilität).
 
-* Liste der Beobachtungseinheiten kann von Beobachtenden während der Beobachtung **überblickt** werden (Reliabilität). **Grenzwerte** für Beobachtende: max. 3 Eigenschaften, max. 10  Einzelverhaltensweisen, max. 20 Minuten pro Beobachtung (abhängig von Erfahrung der Beobachtenden)
+* Liste der Beobachtungseinheiten kann von Beobachtenden während der Beobachtung **überblickt** werden (Reliabilität). 
 
 * Zu beobachtendes Merkmal wird von Beobachtungseinheiten in **allen Facetten** erfasst (Inhaltsvalidität).
-]
 
 **Tipp:** Beobachtungsplan in einem „Probedurchgang“ testen
+]
+
 
 
 ---
-class: top, left
-### Verhaltensbeobachtung
-
-#### Beobachtungsplan
-
-##### Beobachtungseinheiten
-
-.pull-left[
-**Kategoriesystem:** Gliederung des beobachtbaren Verhaltens in Kategorien als Indikatoren $\rightarrow$ Kritik an Vollständigkeit, Eindeutigkeit und Überschendigungsfreiheit der Kategorien
-
-.center[
-"*Mithilfe von Kategoriensystemen will man ein Verhalten vollständig anstatt über ausgewählte Verhaltensweisen erfassen. Das Verhalten wird dazu in mehrere klar definierte und voneinander abgrenzbare Kategorien unterteilt. Die Kriterien Vollständigkeit, Eindeutigkeit und Überschneidungsfreiheit sind jedoch schwer zu erfüllen; Kategoriensysteme spielen daher in der diagnostischen Praxis praktisch keine Rolle.*"
-
-(Schmidt-Atzert & Amelang, 2012, S.309)
-]
-]
-
-.pull-right[
-**Beispiel: Aggressives Verhalten von Kindergartenkindern**
-
-1. schlägt, tritt
-2. schlägt zurück
-3. wirft mit Gegenstand
-4. wirft mit Gegenstand zurück
-5. droht, beschimpft
-6. droht, schimpft zurück
-7. zerstört beim Partner
-8. zerstört Eigenes
-9. zerstört beim Partner als Reaktion
-10. zerstört Eigenes als Reaktion
-]
-
----
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
@@ -307,7 +271,7 @@ Nicht-teilnehmende Beobachtung:
 ggf. Anschlussfragen: verdeckte vs. offene Beobachtung (siehe Einheit zu qualitativen Methoden); Selbstbeobachtung vs. Fremdbeobachtung
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Ainsworth, M.D.S. & Wittig, B.A. (1969). Attachment and the exploratory behavior of one-year-olds in a strange situation. Hillsdale, NJ: Erlbaum. <br> Mischel, W., Shoda, Y., & Rodriguez, M. L. (1989). Delay of gratification in children. Science, 244(4907), 933-938.</div>
 
 ### Verhaltensbeobachtung
@@ -336,7 +300,7 @@ Beispiele für Laborbeobachtungen:
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
@@ -358,7 +322,7 @@ Indirekte Beobachtung: zeitversetzte „Beobachtung”
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
@@ -370,7 +334,7 @@ class: top, left
 .pull-left[
 **Event Sampling** (Ereignisstichprobe):
 
-Registrierung von Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerkmals **über den gesamten Beobachtungszeitraum hinweg**
+Registrierung von Auftreten, Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerkmals **über den gesamten Beobachtungszeitraum hinweg**
   * es werden eher auch seltene Ereignisse erfasst, weil es keine Unterbrechungen gibt
   * erlaubt bessere Überprüfung von Hypothesen zum Zusammenhang aufeinanderfolgender Ereignisse (**Kontingenz**) als Time Sampling
 ]
@@ -379,7 +343,7 @@ Registrierung von Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerk
 **Time Sampling** (Zeitstichprobe):
 
   * Unterteilung des Beobachtungszeitraums in gleich lange **Zeitintervalle**
-  * Registrierung ob/wie lange Verhaltensmerkmal im Zeitintervall gezeigt wird
+  * Registrierung ob/wie häufig/lange Verhaltensmerkmal im Zeitintervall gezeigt wird
   * Möglichkeit für **Pausen** (z.B. nur in jedem 2. Zeitintervall beobachten)
   * **Beobachterrotation** möglich (z.B. Beobachtender 1 im 1.Intervall,  Beobachtender 2 im 2.Intervall)
   * bietet sich für häufig auftretendes Verhalten an, oder wenn Verhalten nur in bestimmten Intervallen eine relevante Bedeutung hat
@@ -400,7 +364,7 @@ knitr::include_graphics("bilder/timesampling.png")
 ```
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
@@ -437,7 +401,7 @@ freundlich |-------------| feindselig
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
@@ -456,7 +420,7 @@ knitr::include_graphics("bilder/Verhaltensverankerung.png")
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: fehler
 
 ### Verhaltensbeobachtung
@@ -495,7 +459,7 @@ df %>%
 ```
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Verhaltensbeobachtung
 
 #### Verringern von Beobachtungsfehlern und -verzerrungen 
@@ -527,76 +491,64 @@ df %>%
 * Mittelung über die Beobachtungen mehrerer Beobachter:innen verbessert die Reliabilität der Messung (da zumindest unsystematische Messfehler rausgemittelt werden)
 
 ---
-class: top, left
-name: beobachterübereinstimmung
+class: top, left, hide_logo
 
 ### Verhaltensbeobachtung
 
 #### Maße für die Beobachter- und Beurteilerübereinstimmung
 
+.pull-left[
 * Um die Übereinstimmung im Rahmen einer Verhaltensbeobachtung oder -beurteilung zu bestimmen gibt es eine Vielzahl von Maßen
 
-* Wahl des angemessenen Übereinstimmungs- bzw. Zuverlässigkeitsmaßes abhängig vom Skalenniveau der Daten
+* Wahl des angemessenen Übereinstimmungs- bzw. Zuverlässigkeitsmaßes abhängig vom Skalenniveau der Daten (z.B. nominales Urteil (rechts oben) oder metrisches Urteil (rechts unten))
+
+* Diese Maße können verwendet werden um die Objektivität und/oder Reliabilität einer Verhaltensbeobachtung und/oder Verhaltensbeurteilung zu bestimmen
 
 * Die wichtigsten Maße lernen Sie in der Vorlesung zu psychologischer Diagnostik im 3.Semester genauer kennen
+]
 
----
-class: top, left
-### Verhaltensbeobachtung
-
-####  Maße für die Beobachter- und Beurteilerübereinstimmung
-
-Beispiel: nominales Urteil (ja/nein), Beobachterübereinstimmung z.B. über Cohen's Kappa oder Fleiss' Kappa berechenbar
-
+.pull-right[
+Registrierung des Auftretens (ja oder nein):
 ```{r echo = F}
-df = data.frame(Vehalten = c("1. schlägt, tritt",
-"2. schlägt zurück",
-"3. wirft mit Gegenstand",
-"4. wirft mit Gegenstand zurück",
-"5. droht, beschimpft",
-"6. droht, schimpft zurück",
-"7. zerstört beim Partner",
-"8. zerstört Eigenes",
-"9. zerstört beim Partner als Reaktion",
-"10. zerstört Eigenes als Reaktion"))
-
-df$Rater1 = c("Ja", "Ja", "Nein", "Ja", "Ja", "Ja", "Nein", "Ja", "Nein", "Nein")
-df$Rater2 = c("Nein", "Ja", "Nein", "Ja", "Ja", "Ja", "Ja", "Ja", "Nein", "Nein")
+df <- data.frame(
+  Verhalten = c(
+    "1. senkt den Blick beim Sprechen",
+    "2. dreht dem Gesprächspartner den Rücken zu",
+    "3. antwortet nach mehr als 5 Sekunden Schweigen",
+    "4. verlässt einen Gesprächskreis ohne Kommentar",
+    "5. setzt sich auf einen Einzelplatz in der Ecke"
+  ),
+  Rater1 = c("Ja", "Ja", "Nein", "Ja", "Ja"),
+  Rater2 = c("Ja", "Nein", "Ja", "Ja", "Ja")
+)
 
 df %>%
   kbl() %>%
   kable_styling(font_size = 16) %>%
-  kable_classic(full_width = T)
+  kable_classic(full_width = TRUE)
 ```
+<br> 
 
----
-class: top, left
-### Verhaltensbeobachtung
-
-#### Maße für die Beobachter- und Beurteilerübereinstimmung
-
-Beispiel: metrisches Urteil (Skala 1-6), Beobachterübereinstimmung z.B. über Intra-Class-Korrelationen (ICC) berechenbar
-
+Beurteilung auf einer Skala von 1-6:
 ```{r echo = F}
-df = data.frame(Vehalten = c("1. schlägt, tritt",
-"2. schlägt zurück",
-"3. wirft mit Gegenstand",
-"4. wirft mit Gegenstand zurück",
-"5. droht, beschimpft",
-"6. droht, schimpft zurück",
-"7. zerstört beim Partner",
-"8. zerstört Eigenes",
-"9. zerstört beim Partner als Reaktion",
-"10. zerstört Eigenes als Reaktion"))
-
-df$Rater1 = c(3, 3, 5, 1, 4, 1, 6, 5, 2, 1)
-df$Rater2 = c(4, 2, 5, 2, 5, 1, 6, 3, 2, 1)
+df <- data.frame(
+  Verhalten = c(
+    "1. senkt den Blick beim Sprechen",
+    "2. dreht dem Gesprächspartner den Rücken zu",
+    "3. antwortet nach mehr als 5 Sekunden Schweigen",
+    "4. verlässt einen Gesprächskreis ohne Kommentar",
+    "5. setzt sich auf einen Einzelplatz in der Ecke"
+  ),
+Rater1 = c(3, 3, 5, 1, 4),
+Rater2 = c(4, 2, 5, 2, 5)
+)
 
 df %>%
   kbl() %>%
   kable_styling(font_size = 16) %>%
-  kable_classic(full_width = T)
+  kable_classic(full_width = TRUE)
 ```
+]
 
 ---
 class: top, left
@@ -606,7 +558,7 @@ class: top, left
 
 Überlegen Sie sich geeigenete Beobachtungseinheiten bei einer Event Sampling Beobachtung (wie oft wird Verhalten gezeigt) für **Werbungsverhalten von Säuglingen um die Aufmerksamkeit ihrer Eltern** (in der Beobachtungssituation sitzt das Baby in einer Wippe neben den Eltern)
 
-[Link zur Beobachtungssituation](https://www.youtube.com/watch?v=bOR7jId8wYk&t)
+[Link zur Beobachtungssituation](https://www.youtube.com/watch?v=bOR7jId8wYk&t): https://www.youtube.com/watch?v=bOR7jId8wYk&t
 
 Fragen zum realisierten Beobachtungsplan:
 
@@ -621,7 +573,7 @@ Fragen zum realisierten Beobachtungsplan:
 Überlegen Sie sich, inwiefern Sie die Hauptgütekritierien für Ihre Verhaltensbeobachtung erfüllt sehen. Wie würden Sie das jeweils überprüfen?
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: take-away
 
 ### Take-Aways
@@ -655,10 +607,10 @@ name: literatur
   - Welche Variable sollte mit der Verhaltensbeobachtung operationalisiert werden?
   - Welche Charakteristika des Beobachtungsplans können Sie herauslesen?
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 3"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_34598.html) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 3"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_44021.html) unter "Literatursuch-Aufgabe" ab.
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: words
 
 ### Schlüssel-/Fachbegriffe der heutigen Vorlesung
@@ -731,10 +683,6 @@ name: words
 **Recency Effekt**
 
 **Kontrasteffekt**
-
-**Cohen's / Fleiss' Kappa**
-
-**Intra-Class-Korrelation**
 ]
 ]
 ]
@@ -742,7 +690,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/MddF4mC5CphEvGfW7)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/cmKh8BTRCuhyFNJaA)**
 
 ---
 class: top, left

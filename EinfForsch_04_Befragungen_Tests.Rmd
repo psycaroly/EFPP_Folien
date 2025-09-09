@@ -1,9 +1,9 @@
 ---
 title: "Einheit 4"
 subtitle: "⚔<br/>with xaringan"
-author: "Dr. Caroline Zygar-Hoffmann"
+author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/11/08 (updated: `r Sys.Date()`)"
+date: "2024/05/21 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -53,17 +53,26 @@ knitr::opts_chunk$set(
 ```
 
 name: Title slide
-class: middle, left
+class: middle, left, hide_logo
 <br><br><br><br><br><br><br>
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 4: Befragungen und Tests
-##### 13.11.2024 | Dr. Caroline Zygar-Hoffmann
+##### 29.05.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: content
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
+
 ### Heutige Themen
 
 #### Selbstberichtsverfahren: Befragung und Rating
@@ -81,7 +90,7 @@ name: content
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: intro
 <div class="footer"><span>Echterhoff, G. (2013). Quantitative Erhebungsmethoden. In W. Hussy, M. Schreier & G. Echterhoff (Hrsg.). Forschungsmethoden in Psychologie und Sozialwissenschaften für Bachelor (S.71-90). Springer. </div>
 
@@ -106,7 +115,7 @@ Selbstauskünfte in Befragungen beinhalten **drei elementare kognitive bzw. ment
 3. Übersetzung in eine kommunizierte Auskunft
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Echterhoff, G. (2013). Quantitative Erhebungsmethoden. In W. Hussy, M. Schreier & G. Echterhoff (Hrsg.). Forschungsmethoden in Psychologie und Sozialwissenschaften für Bachelor (S.71-90). Springer. </div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -137,7 +146,7 @@ knitr::include_graphics("bilder/ohren.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: befragung
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -161,7 +170,7 @@ name: befragung
   * Survey (Umfrage mit großer Zahl an Befragten, wobei i.d.R. jede Person einzeln befragt wird)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Selbstberichtsverfahren: Befragung und Rating
 
 #### Befragung - Varianten und Prinzipien der Konstruktion
@@ -242,7 +251,7 @@ knitr::include_graphics("bilder/standardisierte_interviews.png")
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Pelham, B. W., & Blanton, H. (2007). Conducting research in psychology. Measuring the Weight of Smoke. SAGE.</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -252,7 +261,7 @@ class: top, left
 * Meist Formulierung des Items als Frage oder Aussage (manchmal auch nur ein zu beurteilendes Adjektiv)
 * zeitlicher Bezug kann variieren (z.B. "im Moment" vs. "im letzten Monat", vs. "im Allgemeinen") - je nachdem ob man eine stabile Eigenschaft (**trait**) oder einen aktuellen Zustand (**state**) erhebt
 
-**Ein guter Fragebogen ist gekennzeichnet durch (Pelham und Blanton, 2007)**:
+**Ein guter Fragebogen ist u.a. gekennzeichnet durch (Pelham und Blanton, 2007)**:
 
 * einfache Formulierung und gute Verständlichkeit
 * keine zu hohen Anforderungen an die mentale oder kognitive Leistungsfähigkeit der Befragten
@@ -262,11 +271,10 @@ class: top, left
 * keine »Forced Choice« Antworten bei unabhängig beantwortbaren Aspekten (z.B. "Sind Sie eher gewissenhaft oder offen?" $\rightarrow$ schließt sich nicht aus!)
 * keine Fragen, die sehr ähnlich klingen
 * Einsatz mehrerer Items zur Messung eines Konstrukts
-* Beachtung der Ausgewogenheit in der Reihenfolge der Fragen
 * eine klare und informative Instruktion
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: ratings
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -289,7 +297,7 @@ Ratingskalen sind ein sehr häufiges Format in schriftlichen Befragungen:
 **Vorsicht:** Intervallskalenniveau ist nicht genuin aus dem Format der Skala, sondern nur inhaltlich (psychologisch/empirisch) zu begründen (wird aber i.d.R. bei Ratingskalen akzeptiert)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Selbstberichtsverfahren: Befragung und Rating
 
 #### Ratings: Beurteilungen auf Skalen
@@ -298,12 +306,21 @@ class: top, left
 
 **Verwendung unipolarer oder bipolarer Endpunkte**
 
+.pull-left[
+**Bipolare Skalen**: bezeichnen in ihren Enden den negativen und positiven Pol eines Kontinuums (z.B. „lehne ab“ vs. „stimme zu“) oder gegensätzliche Eigenschaften eines Merkmals (z.B. "weich" vs. "hart")
+  * Vorteil: Begriffe an den Endpunkten der Skala definieren einander wechselseitig
+  * Vorsicht: Nicht angemessen, um zwei distinkte Merkmale mit einem Item zu erfassen
+]
 
-* **Unipolare Skalen**: beginnen mit einem Nullpunkt (z.B. „nie“, "stimme überhaupt nicht zu") und nehmen dann in der Ausprägung in eine Richtung zu (z.B. bis „immer“, "stimme voll und ganz zu").
+.pull-right[
+**Unipolare Skalen**: beginnen mit einem Nullpunkt (z.B. „nie“, "stimme überhaupt nicht zu") und nehmen dann in der Ausprägung in eine Richtung zu (z.B. bis „immer“, "stimme voll und ganz zu").
+  * Vorteil: Gegensatz eines Begriffs muss nicht klar sein (z.B. bei "schüchtern"); das ist häufig der Fall, daher sind unipolare Skalen auch häufiger
+  * Eignen sich gut zur Beurteilung von Merkmalen mit einem natürlichen Nullpunkt (z.B. bei Abfragen von Häufigkeiten)
+  ]
+  
 
-* **Bipolare Skalen**: bezeichnen in ihren Enden den negativen und positiven Pol eines Kontinuums (z.B. „lehne ab“ vs. „stimme zu“) oder gegensätzliche Eigenschaften eines Merkmals (z.B. "weich" vs. "hart")
 
-* **Maßnahme:** Darbietung einer Nummerierung, die zu den verbalen Bezeichnungen passt, wirkt sich positiv auf die Reliabilität der Messungen aus (Rammstedt & Krebs, 2007).
+* **Maßnahme:** Darbietung einer Nummerierung (= numerische Anker), die zu den verbalen Bezeichnungen (= verbalen Ankern) passt, wirkt sich positiv auf die Reliabilität der Messungen aus (Rammstedt & Krebs, 2007).
 
 ---
 class: top, left
@@ -331,31 +348,8 @@ knitr::include_graphics("bilder/bipolar.png")
 Döring & Bortz (2016), S.256
 ]
 
-
 ---
-class: top, left
-### Selbstberichtsverfahren: Befragung und Rating
-
-#### Ratings: Beurteilungen auf Skalen
-
-##### Aspekte bei der Konstruktion von Ratingskalen
-
-**Verwendung unipolarer oder bipolarer Endpunkte**
-
-.pull-left[
-  **Bipolare Skalen:** 
-  * Vorteil: Begriffe an den Endpunkten der Skala definieren einander wechselseitig
-  * Vorsicht: Nicht angemessen, um zwei distinkte Merkmale mit einem Item zu erfassen
-]
-
-.pull-right[
-  **Unipolare Skalen: **
-  * Vorteil: Gegensatz eines Begriffs muss nicht klar sein (z.B. bei "schüchtern"); das ist häufig der Fall, daher sind unipolare Skalen auch häufiger
-  * Eignen sich gut zur Beurteilung von Merkmalen mit einem natürlichen Nullpunkt (z.B. bei Abfragen von Häufigkeiten)
-  ]
-
----
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Lewis, J. & Sauro, J. (2021). https://measuringu.com/do-too-many-options-confuse/ <br> Preston, C. C., & Colman, A. M. (2000). Optimal number of response categories in rating scales: reliability, validity, discriminating power, and respondent preferences. <i>Acta psychologica, 104</i>(1), 1-15.<br>Revilla, M. A., Saris, W. E., & Krosnick, J. A. (2014). Choosing the number of categories in agree–disagree scales. <i>Sociological Methods & Research, 43</i>(1), 73-97.</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -375,7 +369,7 @@ class: top, left
   * In der Praxis i.d.R. 4- bis 9-stufige Ratingskalen, wobei es empirische Befunde gibt, dass die Reliabilität bei 5 (Revilla et al., 2014) bis 7 Stufen (Preston & Coleman, 2000) besonders gut ist
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Selbstberichtsverfahren: Befragung und Rating
 
@@ -394,7 +388,7 @@ class: top, left
   * **Problem neutrales Urteil**: nicht eindeutig interpretierbar (**Ambivalenz-Indifferenz-Problem**) $\rightarrow$ ggf. sinnvoll eine weitere Antwortoption neben der Mittelkategorie zur Angabe von Meinungslosigkeit zu ermöglichen (z.B. "ich weiß es nicht", "keine Meinung", "keine Angabe")
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Selbstberichtsverfahren: Befragung und Rating
 
@@ -404,12 +398,12 @@ class: top, left
 
 **Bezeichnung der Abstufungen einer Skala**
 
-**Zahlen (numerische Marker)**
+**Zahlen (numerische Anker)**
 * Vorteil: Stufen sind eindeutig
 * Vorteil: Abstände zwischen den Stufen der Ratingskala sind gleich 
 
-**Wörter (verbale Marker) oder sprachfreie Zeichen (grafische Marker, z.B. Smileys oder Frownies)**
-* Vorteil: leichter verständlich (forschungssnaive Personen, Kinder)
+**Wörter (verbale Anker) oder sprachfreie Zeichen (grafische Anker, z.B. Smileys oder Frownies)**
+* Vorteil: leichter verständlich (forschungssnaive Personen, Kinder), wirkt extremen Antworttendenzen entgegen
 * Nachteil: Verständnis variiert, gleicher Abstand zwischen den Stufen unklar
 
 > Frage 1) Wie oft (verbal beschrieben) haben Sie in der letzten Woche Fragen gestellt oder zu einer Diskussion auf andere Art beigetragen? Auswahl: Nie, manchmal, oft, sehr oft
@@ -463,7 +457,7 @@ knitr::include_graphics("bilder/menge.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Weijters, B., Cabooter, E., & Schillewaert, N. (2010). The effect of rating scale format on response styles: The number of response categories and response category labels. International Journal of Research in Marketing, 27(3), 236-247. <br> Saris, W. E., & Gallhofer, I. (2007). Estimation of the effects of measurement characteristics on the quality of survey questions. In Survey research methods (Vol. 1, No. 1, pp. 29-43).</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -497,7 +491,7 @@ knitr::include_graphics("bilder/tendenz_zur_mitte.png")
 ```
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>Swain, S. D., Weathers, D., & Niedrich, R. W. (2008). Assessing three sources of misresponse to reversed Likert items. Journal of marketing research, 45(1), 116-131. <br> Weijters, B., & Baumgartner, H. (2012). Misresponse to reversed and negated items in surveys: A review. <i>Journal of Marketing Research, 49</i>(5), 737-747.</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
@@ -517,7 +511,7 @@ class: top, left
   * Umpolung der Fragerichtung als alternative Gegenmaßnahme ist umstritten (Swain et al., 2008; Weijters & Baumgartner, 2012)
 
 ---
-class: top, left
+class: top, left, hide_logo
 ### Selbstberichtsverfahren: Befragung und Rating
 
 #### Ratings: Beurteilungen auf Skalen
@@ -573,7 +567,7 @@ knitr::include_graphics("bilder/Kjell2019-2.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: merkmale
 <div class="footer"><span>S.431 in Döring, N. & Bortz, J. (2016). Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften. Pearson.</div>
 
@@ -594,7 +588,7 @@ name: merkmale
 
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Testverfahren
 
@@ -615,7 +609,7 @@ class: top, left
 $\rightarrow$ kann also auch ein Fragebogen sein ("Persönlichkeitstests"; ein Fragebogen wird meist erst dann als Test bezeichnet, wenn er in der Einzelfalldiagnostik eingesetzt werden kann und nicht nur in der Forschung, z.B. weil die Gütekriterien entsprechend gut sind und Normen vorliegen)
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: leistungstests
 
 ### Testverfahren
@@ -637,7 +631,7 @@ Beispiele:
 * Eignungstests
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>https://www.testzentrale.de/shop/test-d2-aufmerksamkeits-belastungs-test.html</div>
 
 ### Testverfahren
@@ -665,7 +659,7 @@ knitr::include_graphics("bilder/d2.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 <div class="footer"><span>https://www.testzentrale.de/shop/wechsler-adult-intelligence-scale-fourth-edition.html</div>
 
 ### Testverfahren
@@ -762,7 +756,7 @@ knitr::include_graphics("bilder/hawie3.png")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: perstests
 
 ### Testverfahren
@@ -771,9 +765,10 @@ name: perstests
 
 * Persönlichkeitstests liefern Daten im Hinblick auf emotional, motivational und sozial relevante Persönlichkeitseigenschaften
 
-* Es wird zwischen **subjektiven** und **objektiven **Persönlichkeitstests unterschieden, je nachdem ob sie auf Selbst- oder Fremdauskunft auf Fragebogenitems basieren ( $\rightarrow$ subjektiv) oder nicht ( $\rightarrow$ objektiv)
-  * Bei subjektiven Persönlichkeitstests ist der Zweck des Tests für die getesteten Personen leicht durchschaubar
-  * Bei objektiven Persönlichkeitstests wird versucht, den Zweck zu verschleiern, um so die Reaktivität der Datenerhebung zu minimieren und die Validität der Ergebnisse zu erhöhen $\rightarrow$ es ist nicht erforderlich, dass die Personen eine explizite Repräsentation von dem zu messenden Konstrukt haben
+* Es wird zwischen **subjektiven** und **objektiven **Persönlichkeitstests unterschieden, 
+
+* Subjektiv: basieren auf Selbst- oder Fremdauskunft auf Fragebogenitems $\rightarrow$ Zweck des Tests für die getesteten Personen leicht durchschaubar
+* Objektiv: basieren *nicht* auf Selbst- oder Fremdauskunft auf Fragebogenitems, stattdessen wird versucht den Zweck zu verschleiern, um so die Reaktivität der Datenerhebung zu minimieren und die Validität der Ergebnisse zu erhöhen $\rightarrow$ es ist nicht erforderlich, dass die Personen eine explizite Repräsentation von dem zu messenden Konstrukt haben
 
 
 ---
@@ -813,6 +808,7 @@ class: top, left
 * 'Implizit' (vs. explizit) bedeutet, dass ein Prozess ohne bewusste Verhaltenssteuerung abläuft
 
 * Kritik an Validität
+
 ]
 
 .pull-right[
@@ -849,7 +845,7 @@ knitr::include_graphics("bilder/olmt.png")
 ]
 ]
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Testverfahren
 
@@ -935,7 +931,7 @@ knitr::include_graphics("bilder/anvari2024-2.png")
 $\rightarrow$ Sinnhaftigkeit so vieler Fragebögen und Tests?
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: take-away
 
 ### Take-Aways
@@ -955,7 +951,7 @@ name: take-away
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: literatur
 
 ### Literatursuchaufgabe
@@ -967,13 +963,13 @@ name: literatur
 * Beantworten Sie die folgenden Fragen (dafür müssen Sie in den Artikel reinschauen, der Abstract wird i.d.R. nicht reichen):
   - Welche Variable sollte mit dem Befragungsinstrument erhoben werden?
   - Werden die Antworten auf eine bipolare oder eine unipolare Antwortskala mit gerade oder ungerader Anzahl gegeben?
-  - Gibt es numerische, verbale oder grafische Marker?
+  - Gibt es numerische, verbale oder grafische Anker?
   - Gehen Sie die Merkmale eines guten Fragebogens durch (Folie 10) und überlegen Sie sich, ob es was an dem Fragebogen zu kritisieren gibt.
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 4"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_35034.html) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 4"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_44745.html) unter "Literatursuch-Aufgabe" ab.
 
 ---
-class: top, left
+class: top, left, hide_logo
 name: words
 
 ### Schlüssel-/Fachbegriffe der heutigen Vorlesung
@@ -1003,11 +999,11 @@ name: words
 
 **Ambivalenz-Indifferenz-Problem**
 
-**numerische Marker**
+**numerische Anker**
 
-**verbale Marker**
+**verbale Anker**
 
-**grafischer Marker** 
+**grafischer Anker** 
 
 **Tendenz zur Mitte**
 
@@ -1032,11 +1028,11 @@ name: words
 **Verfügbarkeitsheuristik**
 
 **traits** 
+
+**states**
 ]
 
 .pull-right[
-
-**states**
 
 **Leistungstests**
 
@@ -1058,7 +1054,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/pmpMjiXLh4aMUciV6)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/JDSddiWcd4LLFgSG6)**
 ---
 class: top, left
 ### Literatur für die heutige Sitzung
