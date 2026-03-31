@@ -3,7 +3,7 @@ title: "Einheit 9"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2025/07/16 (updated: `r Sys.Date()`)"
+date: "2026/02/02 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -59,7 +59,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 9: Freie Spitze und Fragen
-##### 17.07.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 03.02.2026 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left, hide_logo
@@ -120,7 +120,7 @@ class: top, left, hide_logo
 
 * **Lückentexte**: "Objektivität kann bei der Verhaltensbeobachtung durch Kennzahlen zur \_\_______________\_\_ erfasst werden."
 
-* **Offene Fragen**: "Nennen Sie die vier Ziele der wissenschaftlichen Psychologie."
+* **Offene Fragen**: "Nennen Sie die vier Ziele der wissenschaftlichen Psychologie. Nennen Sie dann für eines der vier Ziele eine konkrete psychologische Fragestellung."
 
 * **MC-Fragen**: Frage die den Kontext beschreibt, 3 Aussagen dazu $\rightarrow$ jede Aussage als richtig oder falsch markieren.
 
@@ -254,7 +254,7 @@ class: top, left, hide_logo
 class: top, left, hide_logo
 ### Zusammenfassung: Forschungsstrategien
 
-#### Experimenteller vs. Assoziativer Ansatz
+#### Experimenteller vs. Quasiexperimenteller vs. Assoziativer Ansatz
 
 .pull-left[
 **Experimenteller Ansatz:**
@@ -273,15 +273,19 @@ class: top, left, hide_logo
 ]
 
 .pull-right[
+**Quasi-Experimenteller Ansatz:** 
+
+* Auch hier Manipulation der UV und Beobachtung der Folgen für AV, aber keine Randomisierung (sondern z.B. Zuteilung per Präferenz, natürliche Gruppen)
+
+* Reduzierte interne Validität (daher besonders wichtig: maximale Erfassung von möglichen Störvariablen und explizites Berücksichtigen von Alternativerklärungen)
+
 **Assoziativer Ansatz**
 
-* pragmatischer/retrospektiver Weg zu Prüfung von Zusammenhängen
+* Weg zu Prüfung gemeinsamen variierens von Variablen (Korrelationen, Zusammenhänge)
 
-* Prüfen gemeinsamen variierens (Korrelation)
+* Möglicher Umgang mit Störvariablen: Matching, statistische Kontrolle bei großen Stichproben
 
-* Störeinflüsse: Hoffen auf Wegmittelung durch Gruppengröße
 
-* Möglichkeit: Matching Verfahren (z.B. Propensity Score Matching)
 ]
 
 ---
@@ -316,28 +320,11 @@ Beispiel: Koffein und Intelligenz
 
 * Prüfen gemeinsamen variierens (Korrelation)
 
-* Störeinflüsse: Hoffen auf Wegmittelung durch Gruppengröße
+* Störeinflüsse: Hoffnung auf Wegmittelung durch Gruppengröße
 
 * Gefahr von Scheinzusammenhängen ("spurious correlations")
+
 ]
-
-
----
-class: top, left, hide_logo
-### Zusammenfassung: Forschungsstrategien
-
-#### Quasi-Experimenteller Ansatz
-
-* Zentraler Unterschied zum Experiment: keine zufällige Zuteilung zu den Untersuchungsbedingungen
-
-* Auch hier Manipulation der UV und Beobachtung der Folgen für AV
-
-* Zuteilung erfolgt nach anderem Prinzip (z.B. Wunsch der TN, natürliche Gruppen)
-
-* Reduziert die interne Validität einer Untersuchung, ist aber in manchen Forschungskontexten nicht zu ändern
-
-* Wichtige Folge bei der Durchführung von Quasi-Experimenten: Maximale Erfassung von möglichen Störvariablen und explizites Berücksichtigen von Alternativerklärungen
-
 ---
 class: top, left
 
@@ -426,13 +413,19 @@ class: top, left
 
 #### Einheit 2: Messen in der Psychologie
 
-studentische Frage: **Validität: besonders Inhalts-, Konstrukts- & Kriteriumsvalidität, was ist damit gemeint?**
+studentische Fragen: 
+
+**1) Können wir nochmal Validität wiederholen? 2) Was sind die Validitätsaskpekte Kausale Validität und Inhaltsvalidität und inwiefern unterscheiden sie sich zu Validierungsmethoden?**
 
 --
 
 * Validität: Gibt an, ob ein Messinstrument tatsächlich das misst, was er zu messen vorgibt
 
+* Kausale Validität: Gibt an, ob eine Veränderung des Merkmals zu einer Veränderung der Messwerte führt.
+
 * Inhaltsvalidität: Gibt an, ob die Inhalte eines Messinstruments alle relevanten Aspekte des zu messenden Merkmals abdecken
+
+**Validierungsmethoden**: Indirekte Möglichkeiten auf Validität zu schließen
 
 * Konstruktvalidität: Gibt an, ob sich die Ergebnisse eines Messinstruments in Korrelationen erwartungsgemäß zu den Ergebnissen anderer Messinstrumente verhalten.
 
@@ -446,7 +439,7 @@ class: top, left
 
 #### Einheit 2: Messen in der Psychologie
 
-studentische Frage: **Skalierung, was ist damit gemeint?**
+studentische Frage: **Was bedeuten die Aspekte der Skalierung? Könnten wir nochmal das Thema Skalierung durchgehen?** 
 
 --
 
@@ -473,18 +466,15 @@ class: top, left
 
 #### Einheit 2: Messen in der Psychologie
 
-studentische Frage: **Faktorenanalyse, wie hängt das mit Skalierung zusammen?**
+studentische Frage: **Wie genau müssen wir Nebengütekriterien wissen?**
 
 --
 
-* Faktorenanalyse ist eine Methode, um ein testtheoretisches Modell empirisch zu überprüfen (ein Ziel der Skalierung!)
+* 3-4 nennen können: Normierung, Vergleichbarkeit, Ökonomie, Zumutbarkeit, Fairness, Nicht-Verfälschbarkeit, Nutzen
 
-* d.h. sie erlaubt uns zu prüfen ob/welche Messwerte in welchem Zusammenspiel welche latente Variable messen
+* Jedes erklären / wiedererkennen / zuordnen können, z.B.:
 
-* Basiert auf der klassischen Testtheorie
-
-* Erlaubt die Bildung von Subskalen bei mehrdimensionalen latenten Variablen, z.B. Aggresivität als latente Variable hat als untergeordnete latente Variablen physische und psychische Aggressivität
-
+* "Wenn bei einer psychologischen Messung eine Testperson sich nicht absichtlich so verhalten kann, dass er/sie einen ungerechtfertigten Vorteil erlangt, spricht das positiv für das Nebengütekriterium \_\_______________\_\_ "
 
 ---
 class: top, left, hide_logo
@@ -507,21 +497,24 @@ knitr::include_graphics("bilder/Einheit4.png")
 
 ---
 class: top, left
-<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
 
 ### Zusammenfassung --- Übung
 
 #### Einheit 3: Verhaltensbeobachtung
 
-ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf beide Fragen geben?
+studentische Frage: **Könnten wir eventuell nochmal kurz das Thema Indikatoren aufgreifen, also was wir genau dazu wissen müssen, verwirrt mich leider immer wieder?**
 
-**Wie können Beobachtungspläne aussehen und worauf muss man dabei achten?**
-Beobachtungspläne können strukturiert (mit festen Kriterien und Skalen) oder unstrukturiert (offene, flexible Beobachtung) sein. Wichtig ist die klare Definition der Beobachtungsziele, die Schulung der Beobachter und die Berücksichtigung von Faktoren wie Beobachterbias und Kontext der Beobachtung.
+--
 
-**Was sind Beispiele für Beobachtungsfehler und -verzerrungen in einer Verhaltensbeobachtung und was sind Gegenmaßnahmen?**
-Beispiele für Beobachtungsfehler und -verzerrungen in einer Verhaltensbeobachtung sind unter anderem Beobachterbias (Vorurteile des Beobachters) und das Hawthorne-Effekt (Veränderung des Verhaltens aufgrund der Beobachtung selbst). Gegenmaßnahmen umfassen Schulung der Beobachter für objektive und konsistente Beobachtungen, Nutzung von standardisierten Protokollen und gegebenenfalls verdeckte Beobachtungen.
+* Indikatoren = Beobachtungseinheiten der Verhaltensbeobachtung, d.h. was konkret (manifest) beobachtet werden soll, z.B. um einen Rückschluss auf eine latente Variable zu machen
 
-$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+* Abgrenzung von Beobachtungsobjekt, relevanter Variable, Dauer, Anfang/Ende/Inhalt
+
+* Objektivität der Indikatoren kann u.a. durch verhaltensnahe, genaue, von anderen Indikatoren trennbare Beschreibung erreicht werden; für Interpretationsobjektivität braucht es klare Regeln zur Zuordnung zwischen beobachteten Indikatoren und Beurteilung der latenten Variable (z.B. über verhaltensverankerte Ratingskala)
+
+* Validität der Indikatoren kann u.a. durch Anpassung an Situation und Abdeckung aller relevanter Facetten einer Variable erreicht werden
+
+* Reliabilität der Indikatoren kann u.a. durch zuverlässige Identifikationsmöglichkeit (z.B. durch richtige Positionierung der Beobachter/Kamera im Raum) und begrenzte Gesamtmenge erreicht werden 
 
 ---
 class: top, left, hide_logo
@@ -546,25 +539,20 @@ knitr::include_graphics("bilder/Einheit5.png")
 
 ---
 class: top, left
-<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
 
 ### Zusammenfassung --- Übung
 
 #### Einheit 4: Befragungen & Tests
 
-ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
+studentische Frage: **Ich verstehe leider noch nicht genau, was damit gemeint ist: "Intervallskalenniveau ist nicht genuin aus dem Format der Skala, sondern nur inhaltlich (psychologisch/empirisch) zu begründen" **
 
-**Welche Methoden des Selbstberichts gibt es?**
-Methoden des Selbstberichts sind Fragebögen, Interviews, Tagebuchmethoden und Experience Sampling. Sie unterscheiden sich in ihrer Strukturierung (offen vs. geschlossen) und Erhebungsform (schriftlich, mündlich, digital).
+--
 
-**Worauf ist bei der Konstruktion von Befragungen/Fragebögen zu achten?**
-Bei der Konstruktion von Befragungen/Fragebögen sind Verständlichkeit, Eindeutigkeit, Skalenniveau, soziale Erwünschtheit und Antworttendenzen zu beachten. Zudem sollten sie reliabel, valide und an die Zielgruppe angepasst sein.
+* Dass Skalenwerte gleich große Abstände haben (Intervallskalenniveau), lässt sich nicht aus dem Zahlenformat oder der Beschriftung ableiten, sondern nur aus der Annahme, dass gleiche Zahlenunterschiede auch gleiche psychologische/empirische Unterschiede repräsentieren
 
-**Was ist ein psychologischer Test und was für psychologische Testverfahren gibt es?**
-Ein psychologischer Test ist ein standardisiertes Verfahren zur Erfassung psychischer Merkmale. Es gibt Leistungstests (z. B. Intelligenztests), Persönlichkeitstests (z. B. Big Five), projektive Tests (z. B. Rorschach-Test) und neuropsychologische Tests.
+* Ob Abstände tatsächlich äquidistant sind, muss inhaltlich begründet oder empirisch geprüft werden (siehe Beispiele in der Vorlesung zu Abständen zwischen "selten" und "manchmal") -> die Skala „erzwingt“ das Intervallniveau nicht
 
-
-$\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
+* Zahlen ≠ Bedeutung: Numerische Operationen (z.B. Mittelwerte, Differenzen) sind nur dann sinnvoll, wenn die Bedeutungsrelationen zwischen den Ausprägungen dies rechtfertigen; das Intervallskalenniveau ist daher eine theoretische Zuschreibung, keine formale Eigenschaft der Skala
 
 ---
 class: top, left, hide_logo
@@ -578,7 +566,7 @@ $\rightarrow$ Welche Elemente gibt es im Bayes Theorem?
 
 $\rightarrow$ Was ist der Prediction Error beim Predictive Coding mit Bayesianischer Inferenz?
 
-$\rightarrow$ Was sind jeweils Magnetresonanzspektroskopie und Elektroenzephalographie (wofür werden diese Methoden jeweils verwendet und was sind Vor- und Nachteile)?
+$\rightarrow$ Was sind jeweils Magnetresonanzspektroskopie, Elektroenzephalographie und Positronen-Emissions-Tomographie (wofür werden diese Methoden jeweils verwendet und was sind Vor- und Nachteile)?
 ]
 
 .pull-right[
@@ -604,7 +592,7 @@ Prior (Vorwissen), Likelihood (die „eintreffende Information“ aus den Daten)
 Der Prediction Error ist die Differenz zwischen der aktuellen Vorhersage (Prior) und der durch neue Daten aktualisierten Schätzung (Posterior); er zeigt also, wie stark sich Erwartungen und Beobachtungen unterscheiden.
 
 **Was sind jeweils Magnetresonanzspektroskopie und Elektroenzephalographie (wofür werden diese Methoden jeweils verwendet und was sind Vor- und Nachteile)?**
-MRS misst chemische Zusammensetzung und Stoffwechsel im Gehirn (gut für metabolische Prozesse, aber geringe zeitliche Auflösung); EEG misst elektrische Aktivität an der Kopfoberfläche (exzellente zeitliche, aber schlechte räumliche Auflösung).
+MRS misst chemische Zusammensetzung und Stoffwechsel im Gehirn (gut für metabolische Prozesse, aber geringe räumliche und zeitliche Auflösung); EEG misst elektrische Aktivität an der Kopfoberfläche (exzellente zeitliche, aber schlechte räumliche Auflösung, kostengünstig und nicht-invasiv); PET misst Stoffwechsel- oder Neurotransmitterprozesse mittels radioaktiver Tracer und bietet hohe molekulare Spezifität, ist aber teuer, invasiv und mit Strahlenbelastung verbunden.
 
 $\rightarrow$ **Frage**: Was fehlt/ist ggf. nicht (ganz) richtig? Was haben wir darüber hinaus alles kennengelernt? Was davon haben wir ggf. nicht kennengelernt?
 
@@ -633,34 +621,35 @@ knitr::include_graphics("bilder/Einheit6.png")
 
 ---
 class: top, left
-<div class="footer"><span>https://dorsch.hogrefe.com/stichwort/kausalitaet</span></div>
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
 
 ### Zusammenfassung --- Übung
 
 #### Einheit 6: Kausalität, Experiment und Studiendesigns
 
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
 
-studentische Frage: **INUS Bedingung, was soll mir das sagen?**
+**Was versteht man unter Kausalität und inwiefern unterscheidet sich das von Korrelation/Zusammenhängen?** Kausalität bedeutet, dass eine Variable eine andere direkt beeinflusst, während eine Korrelation nur eine statistische Beziehung zwischen zwei Variablen beschreibt, ohne eine Ursache-Wirkungs-Beziehung nachzuweisen.
 
---
+**Was kennzeichnet ein Experiment?**
+Ein Experiment ist eine systematische Untersuchung, bei der unabhängige Variablen gezielt manipuliert und deren Effekte auf abhängige Variablen unter kontrollierten Bedingungen gemessen werden.
 
-* INUS auf Deutsch: Unzureichender, aber notwendiger Teil einer unnötigen aber hinreichenden Bedingung
+**Was sind Störvariablen, was sind Ursachen und Konsequenzen von jeweils systematischen und unsystematischen Störvariablen und welche Möglichkeiten hat man damit umzugehen?**
+Störvariablen sind Einflussfaktoren, die das Ergebnis eines Experiments verfälschen können. Systematische Störvariablen beeinflussen gezielt eine Bedingung und gefährden die interne Validität, während
+unsystematische Störvariablen zufällig auftreten und die Messgenauigkeit verringern; sie können durch Randomisierung, Kontrollgruppen oder statistische Kontrolle reduziert werden.
 
-* Hintergrund: 
-- Es gibt mehrere Möglichkeiten (~ Bedingungen) unter denen eine Wirkung erzeugt wird
-- Jede Bedingung besteht aus mehreren Teilen (~ Variablen)
+---
+class: top, left
+<div class="footer"><span>Zur Prüfungsvorbereitung/zum Lernen bitte die Vorlesungsfolien der Einheiten nutzen! Die Antworten von ChatGPT auf dieser Folie dienen nur zu Übungszwecken im Rahmen der Fragestunde und können ggf. falsch sein.</span></div>
 
-* Wir bezeichnen eine Variable als Ursache, wenn es inhaltlich INUS erfüllt:
-Für eine von vielen Bedingungen, die dazu in der Lage ist die Wirkung zu erfüllen ...
-... ist diese Variable eine von mehreren notwendigen Teilen der Bedingung
+### Zusammenfassung --- Übung
 
-* Psychologisches Beispiel: Genetische Vulnerabilität als Ursache von Depressionen
+#### Einheit 6: Kausalität, Experiment und Studiendesigns
 
-Insufficient: Es braucht auch (z.B.) situative Auslöser
-Necessary: Es braucht eine Vulnerabilität
-Unnecessary: Vulnerabilität durch Lebensgeschichte geht auch (z.B. schwere Kindheit)
-Sufficient: Vulnerabilität + situative Auslöser + weitere Teile der Bedingung zusammen hinreichend
+ChatGPT: Kannst du kurze Antworten (1-2 Sätze) auf die Fragen geben?
 
+**Was für nicht-experimentelle, quasi-experimentelle und experimentelles Versuchspläne haben Sie kennengelernt und wodurch sind sie gekennzeichnet?**
+Nicht-experimentelle Designs (z. B. Korrelationsstudien) messen Zusammenhänge ohne Manipulation, quasiexperimentelle Designs enthalten eine Intervention, aber keine vollständige Kontrolle über Störvariablen, und experimentelle Designs (z. B. Randomisierte Kontrollstudien) manipulieren Variablen unter kontrollierten Bedingungen zur Prüfung von Kausalzusammenhängen.
 
 ---
 class: top, left, hide_logo
@@ -782,6 +771,7 @@ knitr::include_graphics("bilder/qa.png")
 ]
 
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_09_FreieSpitze.Rmd", complex_slides = TRUE) -->
 
 

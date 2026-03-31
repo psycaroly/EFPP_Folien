@@ -3,7 +3,7 @@ title: "Einheit 8"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2025/07/10 (updated: `r Sys.Date()`)"
+date: "2026/01/16 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -58,7 +58,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 8: Qualitative Methoden: Verstehen des Einzelfalls
-##### 10.07.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 20.01.2026 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left, hide_logo
@@ -74,47 +74,47 @@ position = xaringanExtra::css_position(top = "5em", right = "1em"))
 
 ### Heutige Themen
 
-#### [Quantitative vs. Qualitative Methoden](#vs)
+#### [Quantitative vs. qualitative Methoden](#vs)
 
 #### [Qualitative Datenerhebung](#qual)
-* [Qualitative Interviews](#interviews)
+* [qualitative Interviews](#interviews)
 * [Gruppenbefragungen](#gruppen)
-* [Non-reaktive Verfahren](#nonreaktiv)
-* [Historiographische und biographische Methoden](#bio)
-* [Teilnehmende Feldforschung (Ethongraphie)](#ff)
+* [nonreaktive Verfahren](#nonreaktiv)
+* [historiographische und biographische Methoden](#bio)
+* [teilnehmende Feldforschung (Ethongraphie)](#ff)
 
 #### [Qualitative Datenauswertung](#auswertung)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
 class: top, left, hide_logo
 name: vs
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-**Ziel quantitativer/naturwissenschaftlicher Methoden: **
+**Ziel quantitativer/naturwissenschaftlicher Methoden**:
 
 * Identifikation möglichst objektiv geltender Gesetzmäßigkeiten
 
-**Besonderheit Mensch als Untersuchungsobjekt:**
+**Besonderheit Mensch als Untersuchungsobjekt**:
 
 * Menschliches Verhalten und Empfinden ist sehr variabel (und es gibt viele Abweichungen von "im Mittel gefundenen Gesetzmäßigkeiten")
 
-* gültige (valide) Forschung muss das in Betracht ziehen
+* Gültige (valide) Forschung muss das in Betracht ziehen
 
-* qualitative Forschung führt häufig zu gültigen Ergebnissen mit hohem Informationsgehalt für den Einzelfall
+* Qualitative Forschung führt häufig zu gültigen Ergebnissen mit hohem Informationsgehalt für den Einzelfall
 
-* qualitative Forschung: eher geisteswissenschaftliche Ausrichtung statt naturwissenschaftlicher Ausrichtung 
+* qualitative Forschung: eher geisteswissenschaftliche statt naturwissenschaftliche Ausrichtung 
 
 
 ---
 class: top, left, hide_logo
 name: vs
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-Quantitative vs. qualitative Methoden als extreme Kontraste dargestellt (ist nicht immer so schwarz-weiß):
+Quantitative vs. qualitative Methoden als extreme Kontraste dargestellt (ist nicht immer so schwarzweiß):
 
 .pull-left[
 **Quantitative Methoden**
@@ -146,9 +146,9 @@ Quantitative vs. qualitative Methoden als extreme Kontraste dargestellt (ist nic
 
 ---
 class: top, left, hide_logo
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-**Nomothetisch vs. Idiographisch**
+**Nomothetisch vs. idiographisch**
 
 .pull-left[
 **Quantitative Methoden**
@@ -177,9 +177,9 @@ Von Windelband (1894) eingeführte Unterscheidung zur Charakterisierung natur- u
 
 ---
 class: top, left, hide_logo
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-**Partikulär vs. Holistisch**
+**Partikulär vs. holistisch**
 
 .pull-left[
 **Quantitative Methoden**
@@ -188,7 +188,7 @@ Partikulär
 
 * auf ein spezifisches Element eines Sachverhalts ausgerichtet
 
-* Ausklammern von sozialen, historischen, etc. Kontextbedingungen
+* Ausklammern von sozialen, historischen und weiteren Kontextbedingungen
 
 * geht davon aus, dass sich komplexe Zusammenhänge aus Teilbedingungen ergeben
 ]
@@ -208,33 +208,33 @@ Holistisch
 
 ---
 class: top, left, hide_logo
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-Die Wahl der Methode richtet sich
+Die Wahl der Methode richtet sich nach ...
 
-  1. nach dem Problem bzw. der **Forschungsfrage**
+  1. dem Problem bzw. der **Forschungsfrage**
 
-  2. nach dem **theoretischen Hintergrund**
+  2. dem **theoretischen Hintergrund**
 
-  3. nach den vorhandenen **Ressourcen**
+  3. den vorhandenen **Ressourcen**
 
-  4. nach dem eigenen **Ausbildungsstand**
+  4. dem eigenen **Ausbildungsstand**
   
 Merke:
 
-* Im Allgemeinen kann ein und dasselbe Problem mit unterschiedlichen Methoden bearbeitet werden.
+* Im Allgemeinen kann ein und dasselbe Problem mit unterschiedlichen Methoden bearbeitet werden
 
-* Die Wahl der Methode legt aber zugleich fest, was nicht  bearbeitet werden kann.
+* Die Wahl der Methode legt aber zugleich fest, was nicht  bearbeitet werden kann
 
-* Auch "**Mixed Methods**"-Ansätze die quantitative und qualitative Methoden vereinen sind möglich und können sehr lohnend sein
+* Auch "**Mixed Methods**"-Ansätze, die quantitative und qualitative Methoden vereinen, sind möglich und können sehr lohnend sein
 
 ---
 class: top, left
 <div class="footer"><span>Joel, S., MacDonald, G., & Page-Gould, E. (2018). Wanting to Stay and Wanting to Go: Unpacking the Content and Structure of Relationship Stay/Leave Decision Processes. Social Psychological and Personality Science, 9(6), 631-644. https://doi.org/10.1177/1948550617722834/ </span></div>
 
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-**Beispiel 1 für Einzelfallstudie, die quantitative und qualitative Forschung verbindet:**
+**Beispiel 1 für Einzelfallstudie, die quantitative und qualitative Forschung verbindet**:
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "50%"}
@@ -246,9 +246,9 @@ knitr::include_graphics("bilder/Joel2018.jpg")
 class: top, left
 <div class="footer"><span>Hulsmans, D. H., Otten, R., Poelen, E. A., van Vonderen, A., Daalmans, S., Hasselman, F., ... & Lichtwarck-Aschoff, A. (2024). A complex systems perspective on chronic aggression and self-injury: case study of a woman with mild intellectual disability and borderline personality disorder. <i>BMC psychiatry, 24</i>(1), 378</div>
 
-### Quantitative vs. Qualitative Methoden
+### Quantitative vs. qualitative Methoden
 
-**Beispiel 2 für Einzelfallstudie, die quantitative und qualitative Forschung verbindet:**
+**Beispiel 2 für Einzelfallstudie, die quantitative und qualitative Forschung verbindet**:
 
 .pull-left[
 ```{r eval = TRUE, echo = F}
@@ -264,39 +264,49 @@ knitr::include_graphics("bilder/hulsmans2.png")
 
 ---
 class: top, left, hide_logo
-name: qual
-### Qualitative Datenerhebung
+<div class="footer"><span>Smith, B. (2018). Generalizability in qualitative research: Misunderstandings, opportunities and recommendations for the sport and exercise sciences. Qualitative research in sport, exercise and health, 10(1), 137-149. <br> Dworkin, S. L. (2012). Sample size policy for qualitative studies using in-depth interviews. Archives of sexual behavior, 41(6), 1319-1320.</span></div>
 
-**Gütekriterien in qualitativer Forschung**:
+### Quantitative vs. qualitative Methoden
 
-* **Objektivität:**
+**Entsprechungen der quantitativen Gütekriterien in qualitativer Forschung:**
+
+.pull-left[
+* **Objektivität:** Nachvollziehbarkeit für Andere
   - Transparenz im Vorgehen
-  - interpersonaler Konsens
+  - Argumentierte und belegte Interpretation
 
-* **Reliabilität:** Nicht im Sinne von Wiederholbarkeit der Messung, aber im Sinne von inhaltlicher Zuverlässigkeit der produzierten Texte, vermischt sich mit Validität
+* **Reliabilität:** nicht im Sinne von Wiederholbarkeit der Messung, aber im Sinne von inhaltlicher Zuverlässigkeit der produzierten Texte, vermischt sich mit Validität
+  - Triangulation (Kombination verschiedener Datenquellen) um Interpretationssicherheit zu erhöhen (hinsichtlich Komplexität und möglicher Perspektiven)
+  - Reflexivität in Bezug auf die Rolle des Forschers und der Subjektivität bei der Auswertung
+]
 
-* **Validität:** 
-  - Authentizität der Äußerungen
-  - Angemessenheit der Darstellung in Protokollen
-  - Repräsentativität von Material und Interpretation für zu messende Variablen (~ Inhaltsvalidität)
-
+.pull-right[
+* **Validität** 
+  - Authentizität der Äußerungen und Angemessenheit der Darstellung in Protokollen, z.B. kommunikative Validierung mit der Versuchsperson 
+  - Passung von qualitativer Methode und Forschungsziel, Repräsentativität von Material für Phänomen (z.B. kein Leitfadeninterview, wenn narrative Tiefe notwendig, ~ interne Validität)
+  - Inhaltliche Sättigung durch Material (~ Inhaltsvalidität)
+  - Transferabilität: Ergebnisse sind übertragbar auf andere Settings, generalisiert werden Konzepte/Theorie, nicht "die Stichprobe" (~ externe Validität)
+  ]
+  
 ---
 class: top, left, hide_logo
+name: qual
+
 ### Qualitative Datenerhebung
 
-**Methoden:**
-* Einzelinterviews, z.B.
-  * Narratives Interview
-  * Problemzentriertes Interview
-  * Fokussiertes Interview
+**Methoden**:
+* Einzelinterviews, z. B.
+  * narratives Interview
+  * problemzentriertes Interview
+  * fokussiertes Interview
 * Gruppenbefragungen (kann auch Interview beinhalten)
-* Nonreaktive Verfahren
+* nonreaktive Verfahren
   * Archivstrategien
-  * Physische Spuren
-* Historiographische und biographische Methoden
-* Teilnehmende Feldforschung
+  * physische Spuren
+* historiographische und biographische Methoden
+* teilnehmende Feldforschung
 
-**Häufiges Vorgehen bei der Qualitativen Datenanalyse:**
+**Häufiges Vorgehen bei der Qualitativen Datenanalyse**:
 * Transkription
 * Codierung
 * Inhaltsanalyse
@@ -309,7 +319,7 @@ name: interviews
 
 #### Qualitative Interviews
 
-**Grad der Strukturierung von Interviews:**
+**Grad der Strukturierung von Interviews**:
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "600px"}
@@ -331,13 +341,13 @@ class: top, left, hide_logo
 
 * offenste Form des Interviews
 
-* Besteht hauptsächlich aus einer Stegreif– oder Spontanerzählung
+* besteht hauptsächlich aus einer Stegreif– oder Spontanerzählung
 
 * Interviewer:in initiiert Bericht durch Erzählaufforderung, die maximal offen sein sollte
 
-* Nachfragen (z.B. zum Verständnis von Situationen) sind möglich, ansonsten hält Interviewer:in sich zurück
+* Nachfragen (z. B. zum Verständnis von Situationen) sind möglich, ansonsten hält Interviewer:in sich zurück
 
-* Die Person hat monologisches Rederecht
+* Die interviewte Person hat monologisches Rederecht
 
 * Problemstellungen oder die Forschungsfragen werden nicht im Erzählanstoß angesprochen
 
@@ -351,13 +361,13 @@ class: top, left, hide_logo
 
 ##### Problemzentriertes Interview
 
-* Leitfaden*orientiertes* Interview mit Fragen und Nachfragen
+* leitfaden*orientiertes* Interview mit Fragen und Nachfragen
 
 * Diese dienen als Kontrolle und nicht zur Festlegung des Ablaufes
 
-* Dialogisch ( $\rightarrow$ Ablauf ist ähnlich einem natürlichen Gespräch), am Thema/Problem orientiert
+* dialogisch ( $\rightarrow$ Ablauf ist ähnlich einem natürlichen Gespräch), am Thema/Problem orientiert
 
-* essentielle Fragen und – wenn nötig – die vorformulierten Nachfragen sollen aber vorkommen
+* Essenzielle Fragen und – wenn nötig – die vorformulierten Nachfragen sollen aber vorkommen
 
 * Spontane Fragen sind möglich
 
@@ -392,7 +402,7 @@ class: top, left, hide_logo
 
 ##### Fokussiertes Interview
 
-* Leitfaden*orientiertes* Interview mit Fragen und Nachfragen
+* leitfaden*orientiertes* Interview mit Fragen und Nachfragen
 
 * Besonderheit: Es werden bestimmte Stimuli vorgegeben 
   * Fotos
@@ -401,9 +411,9 @@ class: top, left, hide_logo
   * Situationen
   * ...
 
-* Kann in unterschiedlichen Zusammenhängen eingesetzt werden (je nach Stimulus)
+* kann in unterschiedlichen Zusammenhängen eingesetzt werden (je nach Stimulus)
 
-* situationsspezifische Gesprächsführung: welche Bedeutung misst die befragte Person einzelnen Teilen oder Elementen bei? Assoziationen erwünscht
+* situationsspezifische Gesprächsführung: Welche Bedeutung misst die befragte Person einzelnen Teilen oder Elementen bei? Assoziationen sind erwünscht.
 
 
 ---
@@ -433,8 +443,8 @@ class: top, left, hide_logo
 ```{r echo = F}
 
 df = data.frame(
-  Phase = c("Inhaltliche Vorbereitung",
-            "Organisatorische Vorbereitung",
+  Phase = c("inhaltliche Vorbereitung",
+            "organisatorische Vorbereitung",
             "Prolog",
             "Durchführung",
             "Epilog",
@@ -442,10 +452,10 @@ df = data.frame(
             "Dokumentation"),
   Aufgaben = c("Festlegung des Befragungsthemas, theoretische Überlegungen zur Auswahl der Personen, Wahl der Befragungstechnik, Formulierung der Fragen",
                "Kontaktaufnahme, Zusammenstellung des Materials, Schulung der Interviewer",
-               "Vorstellung, Herstellen einer angenehmen Gesprächsatmosphäre, Überprüfung der Aufzeichnungsgeräte (Tonband, Video,...), Datenschutz",
+               "Vorstellung, Herstellen einer angenehmen Gesprächsatmosphäre, Überprüfung der Aufzeichnungsgeräte (Tonband, Video ...), Datenschutz",
                "Überwachung und Steuerung des Gesprächsablaufs",
                "Abschluss der Aufzeichnung, Feedback beachten, Verabschiedung, ggf. Infomaterial hinterlassen",
-               "Unmittelbar nach Interview Gedächtnisprotokoll anfertigen",
+               "unmittelbar nach Interview Gedächtnisprotokoll anfertigen",
                "Transkription, Materialzusammenstellung")
 )
 
@@ -470,10 +480,10 @@ class: top, left, hide_logo
 * überkomplexe statt einfache Fragen
 * Jargon statt allgemeinverständliche Wörter
 * Suggestivfragen
-  * "Sie werden doch wohl nicht behaupten..."
-* Induzierung knapper Antworten
+  * "Sie werden doch wohl nicht behaupten ..."
+* Induzieren knapper Antworten
   * "Geht es Ihnen am Wochenende besser?"
-* Unzulässige Voraussetzungen in der Frage
+* unzulässige Voraussetzungen in der Frage
   * "Wie gehen Sie mit Untreue in Ihrer Parterschaft um?"
 * zu starke Einengung auf die Problemstellung
 ]
@@ -490,33 +500,35 @@ class: top, left, hide_logo
 
 #### Qualitative Interviews
 
-##### Durchführung - Gesprächstechniken
+##### Durchführung – Gesprächstechniken
 
 .pull-left[
-* eigene Reaktionen beobachten, negative (non-)verbale Reaktionen vermeiden
+* eigene Reaktionen beobachten, negative (non)verbale Reaktionen vermeiden
 
 * aufmerksam zuhören
 
-* auf unausgesprochene Voraussetzungen achten (z.B. "Sie kennen das ja...")
+* auf unausgesprochene Voraussetzungen achten (z. B. "Sie kennen das ja ...")
 
 * auf unklare/abweichende Verwendung von Begriffen achten
 
 * keine Wertungen äußern
+
+* auch Schweigen zulassen
 ]
 
 .pull-right[
-* abgehandelte Theme mental notieren, fehlende im Auge behalten
+* abgehandelte Themen mental notieren, fehlende im Auge behalten
 
 * Person niemals unterbrechen
 
-* wenn Gespräch in unerwünschte Richtung geht, behutsam zurücklenken
+* Wenn Gespräch in unerwünschte Richtung geht, behutsam zurücklenken
 
-* starke emotionale Reaktionen der Person abgeschwächt spiegeln (z.B. Lachen $\rightarrow$ Lächeln, Weinen $\rightarrow$ ernste Miene)
+* starke emotionale Reaktionen der Person abgeschwächt spiegeln (z. B. Lachen $\rightarrow$ Lächeln, Weinen $\rightarrow$ ernste Miene)
 
 * zugewandte Körpersprache
 ]
 
-**Echo (Paraphrase):** Zusammenfassende Wiederholung des Gesagten (keine Interpretation!)
+**Echo (Paraphrase):** zusammenfassende Wiederholung des Gesagten (keine Interpretation!)
 
 ---
 class: top, left, hide_logo
@@ -524,7 +536,7 @@ class: top, left, hide_logo
 
 #### Qualitative Interviews
 
-##### Durchführung - 10 Gebote für den/die Interviewer:in (Berg, 2000)
+##### Durchführung – Zehn Gebote für den/die Interviewer:in (Berg, 2000)
 
 .pull-left[
 1) Nicht mit der Tür ins Haus fallen
@@ -564,13 +576,13 @@ name: gruppen
   * keine Bewertung
   
 * Fokusgruppen (Lewin, 1936; Lazarsfeld, 1946; Merton, 1955)
-  * Moderationsgeleitete Diskussion in kleinen Gruppen (vorgegebenes Thema)
+  * moderationsgeleitete Diskussion in kleinen Gruppen (vorgegebenes Thema)
   
 * Gruppeninterview (Abrams, 1949)
-  * Personen, meist natürlicher Gruppen (z.B. Familie) werden mit Leitfaden befragt
+  * Personen, meist natürlicher Gruppen (z. B. Familie), werden mit Leitfaden befragt
   
 * Moderationsmethode (Klebert et al., 1984)
-  * Moderierter Gruppenprozess unter Verwendung diverser Methoden (multimethodal: z.B. o.g. Brainstorming, Gruppendiskussionen, Visualisierungen)
+  * moderierter Gruppenprozess unter Verwendung diverser Methoden (multimethodal: z. B. o.g. Brainstorming, Gruppendiskussionen, Visualisierungen)
 
 ---
 class: top, left, hide_logo
@@ -580,15 +592,15 @@ name: nonreaktiv
 
 #### Nonreaktive Verfahren
 
-##### Definition
+##### Definition:
 
-* Methoden, bei deren Durchführung kein Einfluss auf die untersuchten Personen, Ereignisse oder Prozesse ausgeübt wird.
+* Methoden, bei deren Durchführung kein Einfluss auf die untersuchten Personen, Ereignisse oder Prozesse ausgeübt wird
 
 * Wie kann dies erreicht werden?
   * Vorgang der Datenerhebung wird nicht bemerkt
   * Es werden nur "Spuren" des Verhaltens beobachtet
 
-* Beobachter:in/Forscher:in kann keine störenden Reaktionen auslösen (Interviewer-, Versuchsleitereffekte) 
+* Beobachter:in/Forscher:in kann keine störenden Reaktionen auslösen (Interviewer-/Versuchsleitereffekte) 
 
 ---
 class: top, left, hide_logo
@@ -604,7 +616,7 @@ class: top, left, hide_logo
   * Geburts- und Sterbebücher 
   * Adoptionsregister
   * Krankenhausaufnahmen, Unfallstatistiken
-  * Wohnung-, Verkaufs- und Betriebsstatistiken
+  * Wohnungs-, Verkaufs- und Betriebsstatistiken
   * Entlehnungen (Bibliotheken etc.)
   * Fahrpläne, Tourismus- und Verkehrsstatistiken
   * Videoaufzeichnungen von Überwachungskameras
@@ -630,16 +642,16 @@ class: top, left
 **Beispiel: Abschiedsbriefe vor Suizid (Jacobs, 1967)**
 
 .pull-left[
-* Untersuchung von 112 Abschiedsbriefen verfasst von Personen aus dem Großraum Los Angeles
+* Untersuchung von 112 Abschiedsbriefen, verfasst von Personen aus dem Großraum Los Angeles
 
 * Kategorisierung:
   * Erlebnisse kurz vor Suizid
-  * Soziale Gründe für Nicht-Durchführung Suizid
+  * soziale Gründe für Nicht-Durchführung des Suizids
   * Wünsche/Regelungen für Hinterbliebene
 
-* Zusätzlich: Interviews mit Hinterbliebenen
+* zusätzlich: Interviews mit Hinterbliebenen
 
-* Bestimmte Regelmäßigkeiten (z.B. die Bitte um Verzeihung) konnten gefunden werden.
+* Bestimmte Regelmäßigkeiten (z. B. die Bitte um Verzeihung) konnten gefunden werden
 ]
 
 
@@ -669,7 +681,7 @@ knitr::include_graphics("bilder/storms2024.jpg")
 ]
 
 ---
-class: top, left
+class: top, left, hide_logo
 
 ### Qualitative Datenerhebung
 
@@ -679,9 +691,9 @@ class: top, left
 
 .pull-left[
 **Nutzungsspuren**: Bei dieser Methode werden Gegenstände, Materialien etc. auf den **Grad ihrer Nutzung oder auf Hinweise der Art der Nutzung** untersucht
-  * Abgetretene Teppiche als Indikator für häufig begangene Wege
+  * abgetretene Teppiche als Indikator für häufig begangene Wege
   * Abnutzung von Parkbänken als Indikator für angenehme Umweltbedingungen
-  * Abgegriffene Seiten, Randbemerkungen etc. in Büchern
+  * abgegriffene Seiten, Randbemerkungen etc. in Büchern
   * Untersuchung, auf welche Sender Radios oder Fernseher eingestellt sind
   * ...
 ]
@@ -691,13 +703,13 @@ class: top, left
   * Analyse von Müll und Abfall
   * Untersuchung von Graffiti
   * Tapetenschichten zur Untersuchung der Veränderung des ästhetischen Empfindens
-  * Verwendung bestimmter Symbole (Aufkleber, Abzeichen, etc.)
+  * Verwendung bestimmter Symbole (Aufkleber, Abzeichen etc.)
   * ...
 ]
 
 
 ---
-class: top, left, hide_logo
+class: top, left
 <div class="footer"><span>https://x.com/NotSoProf0und/status/1851066739406356995?t=RiCQk4h0l6GlAWb3wyV74A&s=19</span></div>
 
 ### Qualitative Datenerhebung
@@ -724,22 +736,22 @@ class: top, left, hide_logo
 ##### Verhaltensbeobachtung
 
 .pull-left[
-**Induziertes Verhalten:**
-* Personen nicht bewusst, dass ihr Verhalten direkt oder indirekt beobachtet wird
-* werden dazu gebracht, bestimmte Eigenschaften, Einstellungen etc. zu zeigen
-* Beispiel: Lost-Letter Technik (Milgram, 1965)
+**Induziertes Verhalten**:
+* Personen ist nicht bewusst, dass ihr Verhalten direkt oder indirekt beobachtet wird
+* Personen werden dazu gebracht, bestimmte Eigenschaften, Einstellungen etc. zu zeigen
+* Beispiel: Lost-Letter-Technik (Milgram, 1965)
   * Auslegen von Briefen, die an bestimmte Personen oder Einrichtungen gerichtet sind, als wären sie verloren gegangen
-  * Ermittelung, wie viele den (fingierten) Adressaten erreichen.
+  * Ermittelung, wie viele den (fingierten) Adressaten erreichen
   * Indikator für das Ansehen der Person oder Institution 
 ]
 
 .pull-right[
-**Spontanverhalten:**
-* Personen werden ohne ihr Wissen beobachtet
-* Beispiele
-  * Messung der Gehgeschwindigkeit in der Studie ‚Die Arbeitslosen von Marienthal‘
-  * Feldbeobachtung von Kundenverhalten in einer Warteschlange
-  * Beobachtung des Ausparkens in Abhängigkeit vom Parkplatzbedarf
+**Spontanverhalten**:
+* Personen ist nicht bewusst, dass ihr Verhalten direkt oder indirekt beobachtet wird
+* Beispiele:
+  * Messung der Gehgeschwindigkeit (Studie "Die Arbeitslosen von Marienthal", siehe später)
+  * Kunden-Verhalten in einer Warteschlange
+  * Auspark-Verhalten in Abhängigkeit vom Parkplatzbedarf
 ]
 
 ---
@@ -750,13 +762,13 @@ name: bio
 
 #### Historiographische und biographische Methoden
 
-* Methoden zur Entschlüsselung historiographischer (geschichtlicher) und biographischer (lebensgeschichtlicher), vergangener Ereignisse auf Basis von Quellen
+* Methoden zur Entschlüsselung historiographischer (geschichtlicher) und biographischer (lebensgeschichtlicher) vergangener Ereignisse auf Basis von Quellen
 
 * Biographische Methoden sind Spezialfälle der Historiographie
 
 * Untersuchung und Erklärung von Zusammenhängen und deren wirkungsgeschichtlicher Bedeutung (kein reines Aneinanderreihen von Fakten)
 
-* Sowohl idiografische Biographie-Forschung, als auch Vergleich von Biographien zur Erklärung personenbezogener und gesellschaftlicher Phänomene
+* sowohl idiografische Biographie-Forschung als auch Vergleich von Biographien zur Erklärung personenbezogener und gesellschaftlicher Phänomene
 
 Quellen:
 1. Primärquellen
@@ -774,15 +786,15 @@ name: ff
 
 #### Teilnehmende Feldforschung (Ethnographie)
 
-* Teilnehmende Beobachtung realer sozialer Situationen
+* teilnehmende Beobachtung realer sozialer Situationen
 
 * Historisch geht dieser Ansatz auf die Kulturanthropologie und Ethnologie zurück
 
-* Gehört zu den aufwendigsten Forschungsstrategien
+* gehört zu den aufwendigsten Forschungsstrategien
 
 * Ergebnis: möglichst umfassendes Verständnis der Funktionsweise eines sozialen Systems 
-  * **Makroethnographie:** Soziales System im Ganzen 
-  * **Mikroethnographie:** Soziales System in Teilaspekten
+  * **Makroethnographie**: soziales System im Ganzen 
+  * **Mikroethnographie**: soziales System in Teilaspekten
 
 ---
 class: top, left
@@ -790,14 +802,14 @@ class: top, left
 
 #### Teilnehmende Feldforschung (Ethnographie)
 
-**Beispiele:**
+**Beispiele**:
 
 * Untersuchung von Straßengangs, Obdachlosen und Ghettobewohnern seit den 20er Jahren
-(z.B. Street Corner Society, Whyte, 1943)
+(z. B. Street Corner Society, Whyte, 1943)
 
 * Gruppen von Drogenabhängigen (Agar, 1973)
 
-* Vernachlässigte Jugendliche (Dodge et al., 1982)
+* vernachlässigte Jugendliche (Dodge et al., 1982)
 
 * Untersuchung von Eliten (Hertz & Imber, 1993)
 
@@ -805,7 +817,7 @@ class: top, left
 
 * Schulcliquen (Peshkin, 1986)
 
-* Psychiatrische Klinik (Rosenhan, 1973)
+* psychiatrische Klinik (Rosenhan, 1973)
 
 ---
 class: top, left
@@ -813,7 +825,7 @@ class: top, left
 
 #### Teilnehmende Feldforschung (Ethnographie)
 
-**Beispiele: Die Arbeitslosen von Marienthal (Jahoda, Lazarsfeld & Zeisel, 1933)**
+**Beispiel: Die Arbeitslosen von Marienthal (Jahoda et al., 1933)**
 
 <small>
 .pull-left[
@@ -821,7 +833,7 @@ class: top, left
 
 * Langzeitarbeitslosigkeit führt nicht – wie vielfach angenommen – zu Revolte, sondern zu Einsamkeit und passiver Resignation 
 
-* Musterbeispiel der Theoriebildung in Kombination von quantitativen, qualitativen, vorgefundenen und erhobenen Daten (u.a. auch Archivstrategien in Form von Tagebüchern)
+* Musterbeispiel der Theoriebildung in Kombination von quantitativen, qualitativen, vorgefundenen und erhobenen Daten (u. a. auch Archivstrategien in Form von Tagebüchern)
 
 * 15 Forscher:innen:
   * Kontakt zu politischen und gesellschaftlichen Gruppen
@@ -843,33 +855,20 @@ class: top, left, hide_logo
 
 #### Teilnehmende Feldforschung (Ethnographie)
 
-**Rolle der Forscher:in:**
+**Rolle der Forscher:in**:
 
 * Möglichkeiten gehen von überwiegender Beobachtung bis zu voller Teilnahme
 
-* richtet sich u.a. nach der Art der Gruppe (z.B. Cliquen)
+* richtet sich u. a. nach der Art der Gruppe (z. B. Cliquen)
 
-* Teilnahme im öffentlichen Raum leichter als in geschlossenen Systemen (z.B. Arbeitsteams)
+* Teilnahme im öffentlichen Raum leichter als in geschlossenen Systemen (z. B. Arbeitsteams)
 
----
-class: top, left, hide_logo
-### Qualitative Datenerhebung
+**Unsichtbar werden**:
 
-#### Teilnehmende Feldforschung (Ethnographie)
-
-**Unsichtbar werden:**
-
-* Gewohnheit: 
-  * ständige Anwesenheit wird mit der Zeit zur Normalität
-
-* Anpassung: 
-  * wenn man sein Erscheinungsbild an die Umstände anpasst
-  
-* Aufbau persönlicher Beziehungen
-  * Sympathie für den Forscher $\rightarrow$ über seinen Status hinweg sehen
-  
-* Täuschung (vgl. verdeckte vs. offene Verhaltensbeobachtung):
-  * wahres Forschungsinteresse verschweigen
+* Gewohnheit: Ständige Anwesenheit wird mit der Zeit zur Normalität
+* Anpassung: z.B. des eigenen Erscheinungsbilds
+* Aufbau persönlicher Beziehungen: Sympathie für den Forscher $\rightarrow$ über seinen Status hinwegsehen
+* Täuschung (vgl. verdeckte vs. offene Verhaltensbeobachtung): wahres Forschungsinteresse verschweigen
 
 ---
 class: top, left, hide_logo
@@ -877,12 +876,12 @@ class: top, left, hide_logo
 
 #### Teilnehmende Feldforschung (Ethnographie)
 
-**Gefahren des verdeckten Arbeitens:**
+**Gefahren des verdeckten Arbeitens**:
 
 * Bei Angabe falscher Identität:
-  * Beispiel Rosenhan (1973): Forscher simulierten Schizophrenie, um verdeckt in die Psychiatrie zu gelangen, aber sie kamen nicht mehr so leicht hinaus (5-52 Tage + Entlassungsdiagnose)
+  * Beispiel Rosenhan (1973): Forscher simulierten Schizophrenie, um verdeckt in die Psychiatrie zu gelangen, aber sie kamen nicht mehr so leicht hinaus (fünf bis 52 Tage + Entlassungsdiagnose)
 
-* Mit gefangen mit gehangen:
+* Mit gehangen, mit gefangen:
   * Beispiel Lee (1995): Beim Angriff rivalisierender Banden wird nicht gefragt, ob man Forscher ist oder zur Bande gehört
 
 * Mehr Informationen bekommen, als einem lieb ist:
@@ -900,13 +899,13 @@ name: auswertung
 
 #### Transkription
 
-* Vor der weiteren Analyse müssen Ton- und Videoaufzeichnungen sowie Feldnotizen in lesbaren Text umgewandelt werden.
+* Vor der weiteren Analyse müssen Ton- und Videoaufzeichnungen sowie Feldnotizen in lesbaren Text umgewandelt werden
 
 * Dabei gehen immer bestimmte Aspekte des Originals verloren
 
-* Je nach Art der Forschung, den jeweiligen Forschungsfragen und Typ der Analyse ist Verlust mehr/weniger wichtig 
+* Je nach Art der Forschung, den jeweiligen Forschungsfragen und Typ der Analyse ist Verlust mehr oder weniger wichtig 
 
-**Prinzipien der Transkription:**
+**Prinzipien der Transkription**:
 1. Sparsamkeit
 2. Einfachheit
 3. Konsistenz
@@ -917,7 +916,7 @@ class: top, left
 
 #### Transkription
 
-**Beispiel: Transkription nach Jefferson (2004)**
+Beispiel: **Transkription nach Jefferson (2004)**
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "800px"}
@@ -931,7 +930,7 @@ class: top, left
 
 #### Transkription
 
-**Beispiel: Transkription nach Jefferson (2004)**
+Beispiel: **Transkription nach Jefferson (2004)**
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "800px"}
@@ -946,11 +945,11 @@ class: top, left, hide_logo
 
 #### Codierung
 
-* Beim Kodieren wird das gesamte Material (oder nur die als besonders wichtig erachteten Materialstellen) zunächst in sinnvolle Einheiten segmentiert.
+* Beim Codieren wird das gesamte Material (oder nur die als besonders wichtig erachteten Materialstellen) zunächst in sinnvolle Einheiten segmentiert
 
-* Dabei können sehr kleine Textsegmente bzw. Analyseeinheiten gebildet werden (z. B. einzelne Wörter oder Wortgruppen) oder auch größere Einheiten (z. B. ganze Sätze oder Absätze).
+* Dabei können sehr kleine Textsegmente bzw. Analyseeinheiten gebildet werden (z. B. einzelne Wörter oder Wortgruppen) oder auch größere Einheiten (z. B. ganze Sätze oder Absätze)
 
-* Auf die Codierung folgt häufig eine Kategorisierung der Codes.
+* Auf die Codierung folgt häufig eine Kategorisierung der Codes
 
 .center[
 ```{r eval = TRUE, echo = F, fig.cap="Döring & Bortz (2016), S.604", out.width = "85%"}
@@ -966,7 +965,7 @@ class: top, left
 
 #### Codierung 
 
-Beispiel aus der Studie "Ebbs and Flows of Desire: A Qualitative Exploration of Contextual Factors Affecting Sexual Desire in Bisexual, Lesbian, and Straight Women": 
+Beispiel aus der Studie "Ebbs and flows of desire: A qualitative exploration of contextual factors affecting sexual desire in bisexual, lesbian, and straight women": 
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "45%"}
@@ -984,7 +983,7 @@ class: top, left, hide_logo
 
 * Inhaltsanalyse baut auf der Kategorisierung auf: Interpretation der Bedeutung der Kategorien im Kontext der Forschungsfragen
 
-* Es existieren verschiedene Formen der Inhaltsanalyse, mit unterschiedlichen Zielen (z.B. Zusammenfassung oder Erweiterung von Textmaterial), oft auch in Kombination mit quantitativen Elementen ("quantitative Inhaltsanalyse")
+* Es existieren verschiedene Formen der Inhaltsanalyse, mit unterschiedlichen Zielen (z. B. Zusammenfassung oder Erweiterung von Textmaterial), oft auch in Kombination mit quantitativen Elementen ("quantitative Inhaltsanalyse")
 ]
 
 .pull-right[
@@ -993,25 +992,37 @@ knitr::include_graphics("bilder/Qual_Inhaltsanalyse.png")
 ```
 ]
 
+---
+class: top, left
+<div class="footer"><span>Eisele, G., Hiekkaranta, A., Kunkels, Y. K., van Ballegooijen, W., Bartels, S. L., Bastiaansen, J. A., ... Zygar-Hoffmann, C., Myin-Germeys, I. & Kirtley, O. J. (2025). ESM-Q: A consensus-based quality assessment tool for experience sampling method items. Behavior Research Methods, 57(4), 1-20. https://doi.org/10.3758/s13428-025-02626-1</span></div>
 
+### Qualitative Datenauswertung
+
+#### Inhaltsanalyse 
+
+.center[
+```{r eval = TRUE, echo = F, out.width = "44%"}
+knitr::include_graphics("bilder/delphi.png")
+```
+]
 
 ---
 class: top, left, hide_logo
 name: take-away
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 * Menschliches Verhalten und Empfinden ist **individuell und nicht immer objektiv erfassbar** $\rightarrow$ Methodenset zum Verstehen subjektiven Verhaltens und Erlebens von Einzelfällen wird benötigt
 
 * Die **Wahl der Methode** richtet sich nach dem Problem, dem theoretischen Hintergrund, den vorhandenen Ressourcen und dem eigenen Ausbildungsstand
 
-* **Interviews** können vollstrukturiert, halbstruktuiert und offen gestaltet werden, wobei vollstrukturierte Interviews klassisch für quantitative Forschung sind und offene Interviews klassisch für qualitative forschung 
+* **Interviews** können vollstrukturiert, halbstruktuiert und offen gestaltet werden, wobei vollstrukturierte Interviews klassisch für quantitative Forschung sind und offene Interviews klassisch für qualitative Forschung 
 
-* **Non-reaktive Verfahren** sind Methoden bei deren Durchführung kein Einfluss auf die untersuchten Personen, Ereignisse oder Prozesse ausgeübt wird
+* **Nonreaktive Verfahren** sind Methoden, bei deren Durchführung kein Einfluss auf die untersuchten Personen, Ereignisse oder Prozesse ausgeübt wird
 
 * Bei der **teilnehmenden Feldforschung** nehmen Forscher:innen am untersuchten Geschehen teil
 
-* Standardisierte **Transkription** ermöglicht die spätere Analyse von Beobachtungs- und Interviewsituationen. Zu den Prinzipien der Transkription gehören Sparsamkeit, Einfachheit und Konsistenz
+* Standardisierte **Transkription** ermöglicht die spätere Analyse von Beobachtungs- und Interviewsituationen; zu den Prinzipien der Transkription gehören Sparsamkeit, Einfachheit und Konsistenz
 ]
 
 ---
@@ -1037,14 +1048,17 @@ name: words
 
 **holistisch**
 
+**mixed-methods**
+
 **Transkription**
 
 **Codierung**
 
-**Inhaltsanalyse**
 ]
 
 .pull-right[
+**Inhaltsanalyse**
+
 **narratives Interview**
 
 **problemzentriertes Interview** 
@@ -1070,7 +1084,7 @@ name: words
 
 **Moderationsmethode**
 
-**Nonreaktive Verfahren**
+**nonreaktive Verfahren**
 
 **Archivstrategien**
 
@@ -1078,7 +1092,7 @@ name: words
 
 **private Archive**
 
-**Physische Spuren**
+**physische Spuren**
 
 **Nutzungsspuren**
 
@@ -1088,13 +1102,13 @@ name: words
 ]
 
 .pull-right[
-**Induziertes Verhalten**
+**induziertes Verhalten**
 
 **Spontanverhalten**
 
-**Historiographische und biographische Methoden**
+**historiographische und biographische Methoden**
 
-**Teilnehmende Feldforschung (Ethnographie)**
+**teilnehmende Feldforschung (Ethnographie)**
 
 **Makroethnographie**
 
@@ -1107,7 +1121,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/szihDsyWzu3pkDH49)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/oyM8ea1HbvGBnBp39)**
 
 ---
 class: top, left
@@ -1128,4 +1142,5 @@ knitr::include_graphics("bilder/doering.png")
 **Materialien:** Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
 
 <!-- library(renderthis)  -->
-<!-- to_pdf("EinfForsch_08_Qualitativ_Kurz.Rmd", complex_slides = TRUE) -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
+<!-- to_pdf("EinfForsch_08_Qualitativ.Rmd", complex_slides = TRUE) -->

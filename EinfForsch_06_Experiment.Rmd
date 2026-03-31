@@ -1,9 +1,9 @@
 ---
-title: "Einheit 6"
+title: "Einheit 5"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2025/06/11 (updated: `r Sys.Date()`)"
+date: "2025/12/15 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -58,7 +58,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 6: Kausalität, Experiment und Studiendesigns
-##### 26.06.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 16.12.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left, hide_logo
@@ -78,12 +78,14 @@ position = xaringanExtra::css_position(top = "5em", right = "1em"))
 
 #### [Kausalität](#kausalitaet)
 
-#### [Störvariablen und deren Kontrolle](#stoervars)
+#### [Arten von Störvariablen](#stoervars)
+
+#### [Kontrolle von Störvariablen](#kontrolle)
 
 #### [Versuchspläne](#versuchsplaene)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
 * [Schlüssel-/Fachbegriffe](#words)
 
 
@@ -92,33 +94,33 @@ class: top, left, hide_logo
 name: ziele
 ### Ziele von statistischen Analysen (Auswahl)
 
-**Beschreibung: Ausprägungen deskriptiv beschreiben oder statistisch schätzen:**
+**Beschreibung: Ausprägungen deskriptiv beschreiben oder statistisch schätzen**
 
-* Forschungsfragen zur Ausprägung einzelner Variablen (z.B. Häufigkeiten, Mittelwerte)
-* Wenn komplette Population erhoben wird (-> Deskriptivstatistik), wenn von Stichprobe auf Population geschlossen wird (-> Parameterschätzung)
-* Bsp.: Wie viel % aller Jugendlichen in Deutschland spielen täglich Computerspiele?
+* Forschungsfragen zur Ausprägung einzelner Variablen (z .B. Häufigkeiten, Mittelwerte)
+* wenn komplette Population erhoben wird ($\rightarrow$ Deskriptivstatistik), wenn von Stichprobe auf Population geschlossen wird ($\rightarrow$ Parameterschätzung)
+* Beispiel: Wie viel Prozent aller Jugendlichen in Deutschland spielen täglich Computerspiele?
 
-**Vorhersage: Zusammenhangsfragestellungen statistisch testen:**
+**Vorhersage: Zusammenhangsfragestellungen statistisch testen**
 
-* Zusammenhänge zwischen Merkmalen anhand korrelativer Versuchspläne aufdecken
-* Bsp.: Steht die Häufigkeit des Computerspielens bei Jugendlichen in einem positiven Zusammenhang mit ihrer Gewaltbereitschaft?
+* Zusammenhänge zwischen Merkmalen anhand* korrelativer* Versuchspläne aufdecken
+* Beispiel: Steht die Häufigkeit des Computerspielens bei Jugendlichen in einem positiven Zusammenhang mit ihrer Gewaltbereitschaft?
 
-**Erklärung: Kausalfragestellungen statistisch testen:**
+**Erklärung: Kausalfragestellungen statistisch testen**
 * Ursache‐Wirkungs‐Beziehungen (meist) anhand experimenteller Versuchspläne aufdecken
-* Bsp.: Erhöht Computerspielen die Gewaltbereitschaft von Jugendlichen?
+* Beispiel: Erhöht Computerspielen die Gewaltbereitschaft von Jugendlichen?
 
 ---
 class: top, left, hide_logo
 ### Ziel der Versuchsplanung (durch Festlegung des Studiendesigns)
 
-Das Ziel der Versuchsplanung ist eine empirische Untersuchung zu planen, sodass eine Hypothese **valide & ökonomisch** überprüft werden kann
+Das Ziel der Versuchsplanung ist, eine empirische Untersuchung so zu planen, dass eine Hypothese **valide** und **ökonomisch** überprüft werden kann.
 
-* Validität im Kontext der Versuchsplanung: Gültigkeit oder allgemeine Güte der Hypothesenprüfung
-* Ökonomie im Kontext der Versuchsplanung: notwendiger Aufwand (möglichst gering zu halten)
+* Validität im Kontext der Versuchsplanung: Gültigkeit oder allgemeine Güte der Hypothesenprüfung maximieren
+* Ökonomie im Kontext der Versuchsplanung: notwendigen Aufwand möglichst gering halten
 
-**Leitfrage:** Wie muss ich eine Untersuchung gestalten, damit sie mir neue Erkenntnisse über die Gültigkeit meiner Hypothese liefern kann?
+**Leitfrage**: Wie muss ich eine Untersuchung gestalten, damit sie mir neue Erkenntnisse über die Gültigkeit meiner Hypothese liefern kann (und gleichzeitig so ökonomisch wie möglich ist)?
 
-$\rightarrow$ Besonders knifflig, wenn man an Kausalfragestellungen interessiert ist
+$\rightarrow$ besonders knifflig, wenn man an Kausalfragestellungen interessiert ist
 
 ---
 class: top, left, hide_logo
@@ -130,12 +132,12 @@ Voraussetzungen für kausale Schlussfolgerungen:
 
 1) **Kovariation/Korrelation** = "Zusammenhang" (kann auch ein Unterschied zwischen Gruppen sein): Variation in UV muss mit Variation in AV einhergehen
 
-2) **Zeitliche Vorgeordnetheit der UV**: Veränderungen auf UV zeitlich vor Veränderungen der AV
+2) **zeitliche Vorgeordnetheit der UV**: Veränderungen auf UV zeitlich vor Veränderungen der AV
 
-3) **Ausschluss von Alternativerklärungen**: v.a. durch Kontrolle von Störvariablen
+3) **Ausschluss von Alternativerklärungen**: v. a. durch Kontrolle von Störvariablen
 
 
-$\rightarrow$	 **Korrelation alleine $\neq$ Kausalität** z.B. Die Sonne geht nicht auf, weil der Hahn kräht.
+$\rightarrow$	 **Korrelation alleine $\neq$ Kausalität** ("Die Sonne geht nicht auf, weil der Hahn kräht.")
 
 
 ---
@@ -144,22 +146,22 @@ class: top, left, hide_logo
 
 ### Kausalität
 
-#### Korrelation =/= Kausalität
+#### Korrelation $\neq$ Kausalität
 
-* Sachverhalt: Zusammenhang zwischen A & B
+* Sachverhalt: Zusammenhang zwischen A und B
 
-* Anders ausgedrückt: A wird häufig zusammen mit B beobachtet
+* anders ausgedrückt: A wird häufig zusammen mit B beobachtet
 
 .pull-left[
-**Mögliche Kausalbeziehungen:**
+**Mögliche Kausalbeziehungen**:
 
 1. A verursacht B
 
 2. B verursacht A
 
-3. Eine Drittvariable C (bzw. eine Menge von zusammenhängenden Variablen X1, ..., Xn) verursacht A & B
+3. Eine Drittvariable C (bzw. eine Menge von zusammenhängenden Variablen X1, ..., Xn) verursacht A und B
 
-**Folge:** Korrelation impliziert nicht Kausalität
+**Folge**: Korrelation impliziert nicht Kausalität
 ]
 
 .pull-right[
@@ -187,9 +189,9 @@ class: top, left, hide_logo
 
 ### Kausalität
 
-#### "Spurious Correlations" = "Scheinkorrelationen"
+#### "Spurious Correlations" / "Scheinkorrelationen"
 
-zufällig entstandende Zusammenhänge, die nicht auf eine Kausalität zwischen zwei Variablen zurückzuführen sind
+= zufällig entstandende Zusammenhänge, die nicht auf eine Kausalität zwischen zwei Variablen zurückzuführen sind
 
 .pull-left[
 ```{r eval = TRUE, echo = F}
@@ -212,11 +214,11 @@ class: top, left, hide_logo
 .center[
 *"...to think of a relation between events as causal is to think of it under the aspect of (possible) action. [...] that p is the cause of q [...] means that I could bring about q if I could do (so that) p.* 
 
-von Wright, 1971
+von Wright (1971)
 
 *The paradigmatic assertion in causal relationships is that manipulation of a cause will result in the manipulation of an effect. [...] Causation implies that by varying one factor I can make another factor vary.*
 
-Cook & Campbell, 1979
+Cook & Campbell (1979)
 ]
 
 Methodologische Implikation: **aktive Manipulation** der interessierenden Variablen
@@ -236,11 +238,13 @@ Ursachen sind sogenannte INUS‐Bedingungen:
 * N = Necessary parts of an
 * U = Unnecessary, but
 * S = Sufficient condition
+
+Deutsch: Eine Ursache ist ein unzureichender aber notwendiger Teil einer unnötigen aber hinreichenden Bedingung (um eine Wirkung zu erzeugen)
 ]
 
 .pull-right[
-Bsp.: Waldbrand verursacht durch Streichholz.
-* Insufficient: Es braucht auch (z.B.) Sauerstoff
+Beispiel: Waldbrand verursacht durch Streichholz
+* Insufficient: Es braucht auch (z. B.) Sauerstoff
 * Necessary: Eine Flammenquelle wird benötigt
 * Unnecessary: Feuerzeug geht auch
 * Sufficient: Sauerstoff, Streichholz, Trockenheit zusammen hinreichend
@@ -253,15 +257,15 @@ class: top, left, hide_logo
 
 #### X verursacht Y (INUS-Bedingungen)
 
-Ursachen sind sogenannte INUS‐Bedingungen (Insufficient, but necessary parts of an Unnecessary, but Sufficient Condition):
+Ursachen sind sogenannte INUS‐Bedingungen (Insufficient, but Necessary parts of an Unnecessary, but Sufficient condition):
 
-**Konzeptuelle Implikationen:**
+**Konzeptuelle Implikationen**:
 * **Ursachen sind nur als Teil einer Menge von ermöglichende Randbedingungen wirksam** $\rightarrow$	Ursachen können auch nur unter bestimmten Bedingungen wirksam sein
 * Konkret bedeutet dies trotzdem: Hätte es die Ursache *nicht* gegeben (und alles andere wäre gleich geblieben), wäre es nicht zur Wirkung gekommen
 * Theorien können sich auf unterschiedliche Teile der Bedingungsmenge beziehen 
 * Eine Wirkung kann auch durch andere Ursachen entstehen
 
-**Methodologische Implikationen:** Manipulation der interessierenden Variablen (= UVs), Konstanthaltung aller anderen Bedingungen/Faktoren $\rightarrow$ Experiment als Idealmodell für die Überprüfung von Kausalhypothesen
+**Methodologische Implikationen**: Manipulation der interessierenden Variablen (= UVs), Konstanthaltung aller anderen Bedingungen/Faktoren $\rightarrow$ Experiment als Idealmodell für die Überprüfung von Kausalhypothesen
 
 
 ---
@@ -269,26 +273,26 @@ class: top, left, hide_logo
 
 ### Kausalität
 
-#### Experiment - Kernelemente
+#### Experiment – Kernelemente
 
 .pull-left[
 1) **Kausalhypothese**
   * Vermutung über den Einfluss einer Variable (UV) auf eine andere Variable (AV)
-  * z.B. „Ego*Shooter verursachen erhöhte Gewaltbereitschaft“
+  * z. B. "Ego-Shooter verursachen erhöhte Gewaltbereitschaft"
   
 2) **Manipulation einer UV**
-  * 2 (oder mehr) Bedingungen herstellen, die sich nur bzgl. einer einzigen Variable (UV) unterscheiden
-  * z.B. Ego-Shooter spielen vs. Flugsimulation spielen
+  * zwei (oder mehr) Bedingungen herstellen, die sich nur bzgl. einer einzigen Variable (UV) unterscheiden
+  * z. B. Ego-Shooter spielen vs. Flugsimulation spielen
 ]
 
 .pull-right[
 3) **Randomisierung**
-  * jede Person (Untersuchungseinheit) wird per Zufall einer der Bedingungen zugewiesen
-  * z.B. per Münzwurf entscheiden, was eine Person spielen muss
+  * Jede Person (Untersuchungseinheit) wird per Zufall einer der Bedingungen zugewiesen
+  * z. B. per Münzwurf entscheiden, was eine Person spielen muss
   
 4) **Beobachtung (Messung) einer AV**
   * Ausprägung der interessierenden AV wird gemessen
-  * z.B. das Aggressivitätsniveau der Personen
+  * z. B. das Aggressivitätsniveau der Personen
 ]
 
 ---
@@ -299,17 +303,17 @@ name: stoervars
 #### Störvariablen und Konfundierung
 
 **Störvariablen (SV)**
-* Definition: alle Variablen (außer der UVs), die potentiell Einfluss auf das Ergebnis haben können $\rightarrow$ Variablen die einen Zusammenhang mit der AV aufweisen
-* Störvariablen sind besonders problematisch, wenn sie mit UVs assoziiert (konfundiert) = systematisch sind
+* Definition: alle Variablen (außer der UVs und deren kausale Konsequenzen), die potentiell Einfluss auf das Ergebnis haben können $\rightarrow$ Variablen die einen Zusammenhang mit der AV aufweisen und nicht zum Wirkmechanismus der UV gehören
+* Störvariablen sind besonders problematisch, wenn sie mit UVs assoziiert (konfundiert), d. h. systematisch sind
 
 **Konfundierung**
 * gemeinsame Variation einer vermuteten Ursache (UV) mit (mindestens) einer anderen Störvariable
 * Störvariable kann als Ursache für den beobachteten Sachverhalt nicht ausgeschlossen werden $\rightarrow$ UV kann nicht als Ursache interpretiert werden!
 
-**wichtigses Ziel der Versuchsplanung (nach Hager, 1987)**
+**Wichtigstes Ziel der kausalen Versuchsplanung** (nach Hager, 1987)
 * gemeinsame systematische Variation von möglichen Störfaktoren mit hypothesenrelevanter UV verhindern
-* bzw. statistische Assoziation zwischen den potentiellen Störfaktoren & der UV auf den Wert 0 bringen
-* in dem Ausmaß, in dem dies für einen der möglichen Störfaktoren gelingt, nennen wir diesen kontrolliert
+* bzw. statistische Assoziation zwischen den potentiellen Störfaktoren und der UV auf den Wert 0 bringen
+* In dem Ausmaß, in dem dies für einen der möglichen Störfaktoren gelingt, nennen wir diesen kontrolliert
 
 ---
 class: top, left, hide_logo
@@ -319,37 +323,39 @@ class: top, left, hide_logo
 
 **Methode: Experiment**
 * Vergleich von Bedingungskonstellationen, die sich nur im Hinblick auf das Vorhandensein der
-  vermuteten Ursache (UV = unabhängige Variable) unterscheiden $\rightarrow$ Aktive Manipulation der UV
-* Konstanthaltung anderer Faktoren (Kontrolle von Störvariablen), u.a. durch Randomisierung
+  vermuteten Ursache (UV = unabhängige Variable) unterscheiden $\rightarrow$ aktive Manipulation der UV
+  
+* Konstanthaltung anderer Faktoren (Kontrolle von Störvariablen), u. a. durch Randomisierung
+
 * Beobachtung, ob der zu erklärende Sachverhalt (AV = abhängige Variable) eintritt oder nicht
 
 **Kausale Interpretation**
-* Ergebnis: (k)ein Effekt in der AV (Unterschied zwischen 2 oder mehr Bedingungen)
-* Kausale Interpretation: UV ist (k)eine Ursache für den Effekt auf die AV
+* Ergebnis: (k)ein Effekt in der AV (Unterschied zwischen zwei oder mehr Bedingungen)
+* kausale Interpretation: UV ist (k)eine Ursache für den Effekt auf die AV
 
 
 ---
 class: top, left, hide_logo
 
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Systematische Störvariablen
 
-* **kovariieren mit UV** (d.h. in verschiedenen Versuchsbedingungen unterschiedlich stark ausgeprägt) $\rightarrow$ führen zu systematischen Unterschieden *zwischen* den Bedingungen
+* **kovariieren mit UV** (d. h. in verschiedenen Versuchsbedingungen unterschiedlich stark ausgeprägt) $\rightarrow$ führen zu systematischen Unterschieden *zwischen* den Bedingungen
 
 * können fälschlicherweise einen Effekt der UV auf die AV suggerieren
-  * bieten Alternativerklärungen warum man einen vermeintlichen Effekt von der UV auf die AV beobachtet
+  * bieten Alternativerklärungen, warum man einen vermeintlichen Effekt von der UV auf die AV beobachtet
   * **Beispiel**: Trainierte haben eine bessere Leistung (AV), aber nicht wegen Training (UV), sondern wegen höherer Motivation (SV)
 
-* können einen tatsächlich vorhandenen Effekt verschleiern:
-  * **Beispiel**: überwiegend unmotivierte Versuchspersonen in der Trainingsbedingung: positiver Effekt des Trainings (UV) wird durch negativen Effekt der Motivation (SV) verdeckt
+* können einen tatsächlich vorhandenen Effekt verschleiern
+  * **Beispiel**: Bei überwiegend unmotivierten Versuchspersonen in der Trainingsbedingung wird positiver Effekt des Trainings (UV) durch negativen Effekt der Motivation (SV) verdeckt
 
-**Konsequenz systematischer Störvariablen:** Falsche Schlussfolgerungen hinsichtlich des Effekts der UV auf die AV sind möglich, wenn Störvariable nicht berücksichtigt wird.
+**Konsequenz systematischer Störvariablen**: Falsche Schlussfolgerungen hinsichtlich des Effekts der UV auf die AV sind möglich, wenn Störvariable nicht berücksichtigt wird
 
 ---
 class: top, left, hide_logo
 
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Systematische Störvariablen
 
@@ -373,7 +379,7 @@ Die Störvariable könnte den nicht-vorhandenen kausalen Effekt suggerieren, da 
 
 ]
 
-Werden systematische Störvariablen nicht kontrolliert (z.B. durch fehlende Randomisierung) spricht man von Konfundierung, die Störvariable ist dann eine konfundierende Variable
+Werden systematische Störvariablen nicht kontrolliert (z. B. durch fehlende Randomisierung), spricht man von Konfundierung, die Störvariable ist dann eine **konfundierende Variable**
 ]
 
 
@@ -381,9 +387,11 @@ Werden systematische Störvariablen nicht kontrolliert (z.B. durch fehlende Rand
 ---
 class: top, left, hide_logo
 
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Systematische Störvariablen
+
+Alternative Darstellung dafür, dass eine systematische Störvariable einen nicht-vorhandenen kausalen Effekt suggerieren kann:
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "50%"}
@@ -394,43 +402,43 @@ knitr::include_graphics("bilder/systematischeSV_Konfundierung.png")
 ---
 class: top, left
 
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Systematische Störvariablen
 
 Beispiel: 
 * Untersuchung von Mathenachhilfe oder keine Mathenachhilfe (UV) auf Matheleistung (AV)
 
-* Systematische Störvariable "Interesse an Mathe" einer Person hängt damit zusammen, ob Personen sich für die Nachhilfe anmelden (d.h. in welcher Bedingung sie landen -> Zusammenhang mit UV) als auch welche Leistung sie zeigen (d.h. Zusammenhang mit AV)
+* Systematische Störvariable "Interesse an Mathe" einer Person hängt damit zusammen, ob Personen sich für die Nachhilfe anmelden (d. h. in welcher Bedingung sie landen $\rightarrow$ Zusammenhang mit UV) als auch welche Leistung sie zeigen (d. h. Zusammenhang mit AV)
 
-Treffen die folgenden Aussagen im Kontext des obigen Beispiels zu?
+**Übung: Treffen die folgenden Aussagen im Kontext des obigen Beispiels zu?**
 * Wenden wir keine Randomisierung an, dann ist "Interesse an Mathe" eine konfundierende Variable
 * Wenden wir Randomisierung an, ist die systematische Störvariable kontrolliert und keine konfundierende Variable mehr
-* Wenn wir die Störvariable nicht kontrollieren, und einen Unterschied in der Matheleistung entdecken zwischen denjenigen die in der Nachhilfe waren und denjenigen die es nicht waren, dann können wir nicht eindeutig sagen, ob die Mathenachhilfe einen kausalen Effekt auf die Matheleistung hat oder nicht
+* Wenn wir die Störvariable nicht kontrollieren und einen Unterschied in der Matheleistung entdecken zwischen denjenigen, die in der Nachhilfe waren, und denjenigen, die es nicht waren, dann können wir nicht eindeutig sagen, ob die Mathenachhilfe einen kausalen Effekt auf die Matheleistung hat oder nicht
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Unsystematische Störvariablen
 
-* **kovariieren nicht mit der UV** (d.h. in allen Versuchsbedingungen ungefähr gleich stark ausgeprägt) $\rightarrow$ führen zu *keinen* systematischen Unterschieden *zwischen* Bedingungen, aber erklären generelle Unterschiede auf der AV *innerhalb* von Bedingungen
+* **kovariieren nicht mit der UV** (d. h. in allen Versuchsbedingungen ungefähr gleich stark ausgeprägt) $\rightarrow$ führen zu *keinen* systematischen Unterschieden *zwischen* Bedingungen, aber erklären generelle Unterschiede auf der AV *innerhalb* von Bedingungen
 
-* erklären unter anderem warum nicht alle Personen denselben Wert auf der AV haben $\rightarrow$ gibt es in jeder Untersuchung; vergrößern die Varianz in der AV (Fehlervarianz; „Rauschen“; geringe Reliabilität der Messung; "zufällige Störvariablen")
+* erklären unter anderem, warum nicht alle Personen den gleichen Wert auf der AV haben $\rightarrow$ gibt es in jeder Untersuchung; vergrößern die Varianz in der AV (Fehlervarianz; "Rauschen")
 
 * können systematische Effekte der UV überdecken, aber können das Auftreten von Effekten (sichtbare Unterschiede/Zusammenhänge) nicht erklären
 
-$\rightarrow$ Beispiel: in beiden Veruchsbedingungen gibt es interindividuelle Unterschiede in der Sorgfalt der Beantwortung des Fragebogens mit dem die AV gemessen wird
+$\rightarrow$ Beispiel: In beiden Veruchsbedingungen gibt es interindividuelle Unterschiede in der Sorgfalt der Beantwortung des Fragebogens, mit dem die AV gemessen wird
 
-**Konsequenz unsystematischer Störvariablen:**
+**Konsequenz unsystematischer Störvariablen**:
 
-* Wenn kein Effekt beobachtet wird, kann dies an der erhöhten Fehlervarianz liegen.
+* Wenn kein Effekt beobachtet wird, kann dies an der erhöhten Fehlervarianz liegen
 
-* Aber: Wenn ein Effekt beobachtet wird, kann die unsystematische SV **nicht** dafür verantwortlich sein.
+* Aber: Wenn ein Effekt beobachtet wird, kann die unsystematische SV **nicht** dafür verantwortlich sein
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Arten von Störvariablen 
 
 #### Unsystematische Störvariablen
 
@@ -455,42 +463,63 @@ Die Störvariable könnte den nicht-vorhandenen kausalen Effekt **nicht** sugger
 ]
 
 
+---
+class: top, left, hide_logo
+
+### Heutige Themen
+
+#### [Ziele von statistischen Analysen und der Versuchsplanung](#ziele)
+
+#### [Kausalität](#kausalitaet)
+
+#### [Arten von Störvariablen](#stoervars)
+
+#### [Kontrolle von Störvariablen](#kontrolle)
+
+#### [Versuchspläne = Studiendesigns](#versuchsplaene)
+
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
+* [Schlüssel-/Fachbegriffe](#words)
+
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+name: kontrolle
+
+### Kontrolle von Störvariablen
 
 #### Interne und statistische Validität
 
-**Ziele in der Versuchsplanung:**
+**Ziele in der Versuchsplanung**:
 
-**1. Kontrolle systematischer Störvariablen**
+1. **Kontrolle systematischer Störvariablen**
   
-* die gemeinsame systematische Variation von möglichen Störfaktoren mit der hypothesenrelevanten UV (= "Konfundierung") zu verhindern 
-* anders ausgedrückt: die statistische Assoziation zwischen den potentiellen Störfaktoren und der UV auf den Wert Null zu bringen
+* gemeinsame systematische Variation von möglichen Störfaktoren mit der hypothesenrelevanten UV (= "Konfundierung") verhindern 
+* anders ausgedrückt: die statistische Assoziation zwischen den potenziellen Störfaktoren und der UV auf den Wert Null bringen
   
-  $\rightarrow$ erhöht sogenannte "interne Validität"
+  $\rightarrow$ erhöht sogenannte interne Validität
 
-**2. Reduktion unsystematischer Störvariablen**
+2. **Reduktion unsystematischer Störvariablen**
   
 * Reduktion der Fehlervarianz erhöht den Anteil der Effektvarianz an der Gesamtvarianz
     
-  $\rightarrow$ erhöht sogenannte "statistische Validität"
+  $\rightarrow$ erhöht sogenannte statistische Validität
   
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Quellen von Störvariablen
 
-* **Teilnehmer:innen**:
-  * Geschlecht, Intelligenz, Einkommen, Ängstlichkeit, Sucht, Haustier,...,
-  * alle Eigenschaften mit potentiellem (direktem oder indirektem) Einfluss auf die AV
-* **Versuchsleiter:innen**:
-  * Geschlecht, Alter, Autorität, Status, Attraktivität, Strenge,...
-  * Erwartungen bzgl. der Untersuchungsergebnisse...
-* **Situation**:
-  * Lärm, Beleuchtung, Tageszeit, Jahreszeit, Konjunktur, Publikum
+* **Teilnehmer:innen**
+  * Geschlecht, Intelligenz, Einkommen, Ängstlichkeit, Sucht, Haustier ...
+  * alle Eigenschaften mit potenziellem (direktem oder indirektem) Einfluss auf die AV
+* **Versuchsleiter:innen**
+  * Geschlecht, Alter, Autorität, Status, Attraktivität, Strenge ...
+  * Erwartungen bzgl. der Untersuchungsergebnisse ...
+* **Situation**
+  * Lärm, Beleuchtung, Tageszeit, Jahreszeit, Konjunktur, Publikum ...
   * Messinstrument, Reaktivität der Messung, demand characteristics (Aufforderungscharakter der Situation)
 * **Reihenfolge/Messwiederholung**
   * Positionseffekte
@@ -499,7 +528,7 @@ class: top, left, hide_logo
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Kontrolltechniken
 
@@ -553,7 +582,7 @@ df = data.frame(Quelle = c("Teilnehmer:innen",
                                     "",
                                     "",
                                     ""))
-names(df) = c("Quelle", "Technik", "Systematische Fehler", "Unsystematische Fehler")
+names(df) = c("Quelle", "Technik", "Systematische SV", "Unsystematische SV")
 
 df %>%
   kbl() %>%
@@ -563,52 +592,41 @@ df %>%
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Randomisierung
 
-**Definition:**
-* zufällige Zuweisung der Untersuchungseinheiten zu Bedingungen
+= zufällige Zuweisung der Untersuchungseinheiten (Versuchspersonen) zu Bedingungen
 * Technik zur Kontrolle in der Person liegender, unveränderlicher Störvariablen
-* vorhandene Störvariablen werden nach Zufall (gleichmäßig) auf die Gruppen verteilt
+* Vorhandene personenbezogene Störvariablen werden nach Zufall (gleichmäßig) auf die Gruppen verteilt
 
-Es gibt verschiedene Varianten der Randomisierung (vom einfachen "Münzwurf", über "Block-Randomisierung" zu Erreichung gleicher Gruppengrößen bis zu "stratifizierter Randomisierung" zu Erreichung einer möglichst großen Ähnlichkeit der Bedingungen hinsichtlich einer Drittvariable)
+Es gibt verschiedene Varianten der Randomisierung (vom einfachen "Münzwurf", über "Block-Randomisierung" für gleiche Gruppengrößen, bis zu "stratifizierter Randomisierung" für eine möglichst große Ähnlichkeit der Bedingungen hinsichtlich einer Drittvariable)
 
-**Ergebnis der Randomisierung:**
-* personenbezogene Störvariablen sind nicht mit Bedingungszugehörigkeit konfundiert (bis auf Zufallsschwankungen)
+**Ergebnis der Randomisierung**:
+* Personenbezogene Störvariablen sind nicht mit Bedingungszugehörigkeit konfundiert (bis auf Zufallsschwankungen)
 * Definition Experiment: Wenn bzgl. einer UV randomisiert wird, dann ist Untersuchung bzgl. dieser UV ein Experiment
 * Bedrohung der internen Validität durch Störeinflüsse wird verringert
 
 ---
 class: top, left, hide_logo
-
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Randomisierung
 
-##### Randomisierung $\neq$ Zufallsstichprobe
+**Randomisierung $\neq$ Zufallsstichprobe**
 
-**Zufallsstichprobe: **
+**Zufallsstichprobe**:
 * zufällige Auswahl aus der Population
 * Jeder hat die gleiche Chance, ausgewählt zu werden
 * erhöht Ähnlichkeit von Stichprobe und Population
 * führt zu sogenannter "externer Validität"
 
-**Randomisierung: **
+**Randomisierung**:
 * zufällige Zuweisung bereits ausgewählter Probanden zu Bedingungen/Gruppen
 * Jeder hat die gleiche Chance, in jede Bedingung zu gelangen
 * erhöht Ähnlichkeit der verglichenen Bedingungen/Gruppen
 * führt zu interner Validität
 
-<!-- --- -->
-<!-- class: top, left -->
-<!-- ### Versuchspläne -->
-
-<!-- #### Randomisierung -->
-
-<!-- ##### Varianten der Randomisierung -->
-
-<!-- <small> -->
 <!-- * Einfache Randomisierung (Münzwurf) -->
 <!--   * Kann zufällig zu unterschiedlichen Gruppengrößen führen -->
 
@@ -625,120 +643,120 @@ class: top, left, hide_logo
 
 <!-- * Minimisierung -->
 
-<!-- </small> -->
-
 <!-- [**Link zu Erklärvideo**](https://www.youtube.com/watch?v=EAGZ4dx5I00) -->
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Parallelisierung bzw. Matching
 
 * Vergleichbarkeit der Gruppen bzgl. einer bekannten Störvariable herstellen
-* Bei kleinen Stichproben zuverlässiger als Randomisierung – aber nur bzgl. einer SV!
+* bei kleinen Stichproben zuverlässiger als Randomisierung – aber nur bzgl. einer SV!
 
-**Umsetzung:**
+**Umsetzung**:
 * SV bei allen Teilnehmern des Experiments erfassen
 * Rangreihe bzgl. der SV bilden
-* jeweils benachbarte Rangplätze werden per Zufall auf die Bedingungen aufgeteilt
+* Jeweils benachbarte Rangplätze werden per Zufall auf die Bedingungen aufgeteilt
 
-**Voraussetzungen:**
-* reliable & valide Messbarkeit der zu kontrollierenden SV
+**Voraussetzungen**:
+* reliable und valide Messbarkeit der zu kontrollierenden SV
 * Verfügbarkeit der gesamten Stichprobe zur Erfassung der SV vor der eigentlichen Untersuchung
 * theoretische und/oder empirische Begründung der Bedeutsamkeit der SV
 
----
-class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
-
-#### Standardisierung, Versuchsleiter-Training, Automatisierung
-
-**Versuchsablauf standardisieren: **
-* Präzises und detailliertes Ablaufprotokoll festlegen
-* Systematische & unsystematische Störeinflüsse reduzieren, die durch Unterschiede im Ablauf
-entstehen können (z.B. unterschiedliche Erläuterungen/Instruktionen des Versuchsleiters)
-
-**Versuchsleiter trainieren: **
-* Einüben des Ablaufs (idealerweise anhand eines Ablaufprotokolls)
-* Systematische & unsystematische Störeinflüsse reduzieren, die durch fehlerhafte Durchführung des Versuchs entstehen können
-
-**Versuchsablauf automatisieren: **
-* Ersetzen des Versuchsleiters durch z.B. Computer
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Verblindung
 
 * Verblindung: Information über Versuchsbedingung vorenthalten
 
-* Verhindert systematische Effekte dieser Information (z.B. über Erwartungen der Versuchsperson oder des Versuchsleiters)
+* verhindert systematische Effekte dieser Information (z. B. über Erwartungen der Versuchsperson oder des Versuchsleiters)
 
-**3 Varianten:**
+**Drei Varianten**:
 
-* Einfache Verblindung: Versuchsperson hat keine Kenntnis über die Versuchsbedingung, der sie zugeordnet ist
+* einfache Verblindung: Versuchsperson hat keine Kenntnis über die Versuchsbedingung, der sie zugeordnet ist
 
-* Doppelte Verblindung: Versuchsperson & Versuchsleiter haben keine Kenntnis über Versuchsbedingung
+* doppelte Verblindung: Versuchsperson und Versuchsleiter haben keine Kenntnis über Versuchsbedingung
 
-* Dreifache Verblindung: Versuchsperson, Versuchsleiter & Auswerter haben keine Kenntnis über Versuchsbedingung
+* dreifache Verblindung: Versuchsperson, Versuchsleiter und Auswerter haben keine Kenntnis über Versuchsbedingung
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
-#### Konstanthaltung & Elimination
+#### Standardisierung, Versuchsleiter-Training, Automatisierung
 
-* Ausprägung der Störvariable in allen Bedingungen gleichhalten oder Einfluss der Störvariablen komplett verhindern
+**Versuchsablauf standardisieren**:
+* präzises und detailliertes Ablaufprotokoll festlegen
+* systematische und unsystematische Störeinflüsse reduzieren, die durch Unterschiede im Ablauf
+entstehen können (z .B. unterschiedliche Erläuterungen/Instruktionen des Versuchsleiters)
 
-* Verhindert systematische & unsystematische Störeinflüsse
+**Versuchsleiter trainieren**:
+* Ablauf einüben (idealerweise anhand eines Ablaufprotokolls)
+* systematische und unsystematische Störeinflüsse reduzieren, die durch fehlerhafte Durchführung des Versuchs entstehen können
+
+**Versuchsablauf automatisieren**:
+* Versuchsleiter z. B. durch Computer ersetzen
+
+
+---
+class: top, left, hide_logo
+### Kontrolle von Störvariablen
+
+#### Konstanthaltung und Elimination
+
+* Ausprägung der Störvariable in allen Bedingungen gleich halten oder Einfluss der Störvariablen komplett verhindern
+
+* verhindert systematische und unsystematische Störeinflüsse
 
 Konstanthaltung:
-  * z.B. Kontext: alle Versuchsbedingungen in gleicher Umgebung durchführen
-  * z.B. Temperatur: identisch klimatisierte Laborräume
-  * z.B. Instruktion: identische Wortwahl in allen Versuchsbedingungen
+  * z. B. Kontext: alle Versuchsbedingungen in gleicher Umgebung durchführen
+  * z. B. Temperatur: identisch klimatisierte Laborräume
+  * z. B. Instruktion: identische Wortwahl in allen Versuchsbedingungen
 
 Elimination:
-  * z.B. Lärm: Schallisolierung
-  * z.B. Licht: Fenster abdunkeln
-  * z.B. Anwesenheit anderer Personen: individuelle Datenerhebung
-  * z.B. Versuchsleiter: Automatisierung
+  * z. B. Lärm: Schallisolierung
+  * z. B. Licht: Fenster abdunkeln
+  * z. B. Anwesenheit anderer Personen: individuelle Datenerhebung
+  * z. B. Versuchsleiter: Automatisierung
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Kontrollfaktoren
 
-* Einbeziehen der Störvariable in das Untersuchungsdesign als Kontrollfaktor (d.h. wird miterhoben und/oder zusätzlich systematisch varriert)
+* Störvariable in das Untersuchungsdesign als Kontrollfaktor einbeziehen (d. h. miterheben und/oder zusätzlich systematisch varrieren)
 
-* Effekte der UV & der SV können analysiert werden
-  * z.B. UV Frustration: 2 Stufen (frustriert, nicht frustriert)
-  * z.B. SV Tageszeit als Kontrollfaktor: 2 Stufen (vor vs. nach Mittagessen)
+* Effekte der UV und SV können analysiert werden
+  * z. B. UV Frustration: zwei Stufen (frustriert, nicht frustriert)
+  * z. B. SV Tageszeit als Kontrollfaktor: zwei Stufen (vor vs. nach dem Mittagessen)
   
-* Untersuchung mit 4 Gruppen:
-  1. frustriert & vor dem Mittagessen
-  2. nicht frustriert & vor dem Mittagessen
-  3. frustriert & nach dem Mittagessen
-  4. nicht frustriert & nach dem Mittagessen
+* Untersuchung mit vier Gruppen:
+  1. frustriert + vor dem Mittagessen
+  2. nicht frustriert + vor dem Mittagessen
+  3. frustriert + nach dem Mittagessen
+  4. nicht frustriert + nach dem Mittagessen
   
 * Unterschied 1 vs. 2 $\rightarrow$ Frustration
 * Unterschied 1 vs. 3 $\rightarrow$ Tageszeit
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Täuschung
 
-* Versuchspersonen wollen Versuchsleitern „einen Gefallen tun“, indem sie der (wahren/vermuteten) Hypothese entsprechend reagieren $\rightarrow$ AV nicht valide, evtl. systematisch verfälscht
+* Versuchspersonen wollen Versuchsleitern "einen Gefallen tun", indem sie der (wahren/vermuteten) Hypothese entsprechend reagieren $\rightarrow$ AV nicht valide, evtl. systematisch verfälscht
 
 * Fehlinformation über einzelne Aspekte des Versuchs
-* Verhindert systematische Effekte einzelner Aspekte der Situation
+* verhindert systematische Effekte einzelner Aspekte der Situation
 
-* z.B. UV: Geschlecht des Versuchsleiters, Täuschung: UV verschweigen; „wir messen Kreativität“ $\rightarrow$ lenkt von UV ab
-* z.B. AV: Leistungstest, Täuschung: „Pilotversuch, Daten werden nicht gespeichert“ $\rightarrow$ reduziert Einfluss der Prüfungsängstlichkeit
+* z. B. UV: Geschlecht des Versuchsleiters, Täuschung: UV verschweigen; Wir messen Kreativität“ $\rightarrow$ lenkt von UV ab
+* z. B. AV: Leistungstest, Täuschung: "Pilotversuch, Daten werden nicht gespeichert" $\rightarrow$ reduziert Einfluss der Prüfungsängstlichkeit
 
 * besonders hilfreich bei demand characteristics: Aspekte der Situation, die 
 (a) die wahren Hypothesen der Untersuchung verraten oder 
@@ -748,35 +766,52 @@ class: top, left, hide_logo
 
 ---
 class: top, left, hide_logo
-### Störvariablen und deren Kontrolle
+### Kontrolle von Störvariablen
 
 #### Ausbalancieren
 
-* Reihenfolgeeffekte kontrollieren: alle möglichen Reihenfolgen realisieren; auf Effekte der Reihenfolge prüfen
+* Wenn alle Personen alle Bedingungen durchlaufen, spricht man von einem **"within-person"** Experiment im Gegensatz zu einem **"between-person"** Experiment, bei der jede Person nur eine Bedingung durchläuft
 
-* Vermeiden von Positions- & Sequenzeffekten bei Messwiederholung (Lernen, Ermüdung, Carry-Over-Effekte)
+* In diesem Fall gibt es auch keine personenbezogenen Störvariablen, aber dafür muss man auf Messwiederholung als Quelle von Störvariablen achten, d.h. Positions- und Sequenzeffekte (Lernen, Ermüdung, Carry-over-Effekte)
+
+* Ausbalancieren ist eine Maßnahme um Reihenfolgeeffekte zu kontrollieren: alle möglichen Reihenfolgen realisieren; auf Effekte der Reihenfolge prüfen
 
 * Beispiel: Effekte von Lärm (UV) auf kognitive Leistungen (AV: Konzentrationstest)
   * Versuchsablauf A: (1) Test mit Lärm; (2) Test ohne Lärm
   * Ergebnis: Leistung (2) > Leistung (1) $\rightarrow$ Interpretation? Lerneffekt?
   
-  $\rightarrow$ Ausbalancieren: zusätzlicher Versuchsablauf 
-  * Versuchsablauf B: (1) Test ohne Lärm; (2) Test mit Lärm
+  $\rightarrow$ Ausbalancieren: zusätzlicher Versuchsablauf B: (1) Test ohne Lärm; (2) Test mit Lärm
   
-Nachteil: 
-* Aufwand
+Nachteil: Aufwand, denn bei k Versuchsbedingungen sind k! Reihenfolgen notwendig (2! = 2; 3! = 6; 4! = 24; ...; 10! = 3.628.800)
 
-* Bei k Versuchsbedingungen sind k! Reihenfolgen notwendig (2! = 2; 3! = 6; 4! = 24; ...; 10! = 3.628.800)
+---
+class: top, left, hide_logo
+
+### Heutige Themen
+
+#### [Ziele von statistischen Analysen und der Versuchsplanung](#ziele)
+
+#### [Kausalität](#kausalitaet)
+
+#### [Arten von Störvariablen](#stoervars)
+
+#### [Kontrolle von Störvariablen](#kontrolle)
+
+#### [Versuchspläne = Studiendesigns](#versuchsplaene)
+
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
+* [Schlüssel-/Fachbegriffe](#words)
 
 ---
 class: top, left, hide_logo
 name: versuchsplaene
 
-### Versuchspläne
+### Versuchspläne = Studiendesigns 
 
 #### Notation von Versuchsplänen
 
-* O (Observation): Beobachtung, Messung einer oder mehrerer Maße; durchnummeriert bei mehrfachen Messungen (z.B. Messzeitpunkte, Gruppen)
+* O (Observation): Beobachtung, Messung einer oder mehrerer Maße; durchnummeriert bei mehrfachen Messungen (z. B. Messzeitpunkte, Gruppen)
 
 * X (Treatment, Intervention): kontrollierte Manipulation der UV
 
@@ -784,38 +819,38 @@ name: versuchsplaene
 
 * Zeitverlauf von links nach rechts
 
-* verschiedene Gruppen sind zeilenweise untereinander notiert, z.B. oben EG & unten KG
+* Verschiedene Gruppen sind zeilenweise untereinander notiert, z. B. oben EG und unten KG
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
-#### Nicht-Experimentelle Versuchspläne
+#### Nicht-experimentelle Versuchspläne
 
-„nur“ systematische Beobachtung einer/mehrerer Variablen
+"nur" systematische Beobachtung einer/mehrerer Variablen
 * keine Manipulation
 * keine randomisierte Zuweisung zu Bedingungen
 
-**Typische Versuchspläne:**
+**Typische Versuchspläne**:
 
-* One-shot-design
+* One-shot-Design
 * Korrelationsstudien
-* Einfache Gruppenvergleiche
+* einfache Gruppenvergleiche
 * Prä-Post-Vergleich
 
-$\rightarrow$ z.B. deskriptive Untersuchungen, Umfrageforschung (univariat); Korrelationsforschung (bi* oder multivariat)
+$\rightarrow$ z. B. deskriptive Untersuchungen, Umfrageforschung (univariat); Korrelationsforschung (bi- oder multivariat)
 * Interpretationsmöglichkeiten: Prüfung von Kausalhypothesen nicht (oder nur unter speziellen Annahmen) möglich!
 
-Studien mit Messwiederholung nennt man **Längsschnittstudien**, Studien ohne Messwiederholung **Querschnittstudien**
+Studien mit Messwiederholung nennt man **Längsschnittstudien** (within-person Designs), Studien ohne Messwiederholung **Querschnittstudien** (between-person Designs)
 
 ---
 class: top, left, hide_logo
 
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
-#### Nicht-Experimentelle Versuchspläne
+#### Nicht-experimentelle Versuchspläne
 
-##### One-shot Design
+##### One-shot-Design
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "1000px"}
@@ -825,56 +860,50 @@ knitr::include_graphics("bilder/oneshot.png")
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
-#### Nicht-Experimentelle Versuchspläne
+#### Nicht-experimentelle Versuchspläne
 
-##### One-shot Design
+##### One-shot-Design
 
 * Beobachtung einer AV an einer Stichprobe (mit/ohne Intervention)
-* „nur“ systematische Beobachtung einer Variablen; d.h. rein deskriptive Erhebung oder Schätzung des Ist-Zustands
-* nur 1 Variable (keine Unterscheidung UV/AV, keine Manipulation)
-* nur 1 Gruppe (keine Kontrollgruppe, keine Randomisierung)
-* z.B. Umfrageforschung, Studienreform (X) & Messung Studierendenzufriedenheit (O); Spendenkampagne (X) & Messung
+* "nur" systematische Beobachtung einer Variablen; d. h. rein deskriptive Erhebung oder Schätzung des Ist-Zustands
+* nur eine Variable (keine Unterscheidung UV/AV, keine Manipulation)
+* nur eine Gruppe (keine Kontrollgruppe, keine Randomisierung)
+* z. B. Umfrageforschung, Studienreform (X) und Messung Studierendenzufriedenheit (O); Spendenkampagne (X) und Messung
 Spendenaufkommen (O)
 
-**Interpretationsmöglichkeiten:**
+**Interpretationsmöglichkeiten**:
 * beschreibende Aussagen über Häufigkeiten oder Merkmalsverteilungen zum Zeitpunkt der Messung
 * Effekt des Treatments nicht quantifizierbar (kein Vergleichswert)
-* Zusammenhang X & O kann nicht untersucht werden
+* Zusammenhang von X und O kann nicht untersucht werden
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+<div class="footer"><span>Imbens, G. W., & Xu, Y. (2025). Comparing Experimental and Nonexperimental Methods: What Lessons Have We Learned Four Decades after LaLonde (1986)? <i>Journal of Economic Perspectives, 39</i>(4), 173-201.</div>
 
-#### Nicht-Experimentelle Versuchspläne
+
+### Versuchspläne = Studiendesigns
+
+#### Nicht-experimentelle Versuchspläne
 
 ##### Korrelationsstudien
 
-<small>
+* Beobachtung von zwei Variablen in einer Stichprobe
 
-* Beobachtung von 2 Variablen in einer Stichprobe
-* keine Kontrollgruppe, keine Randomisierung, keine Trennung von UV‐AV, Simultane Erhebung der Variablen, keine Manipulation (z.B. Geschäftserfolg & Extraversion)
+* keine Kontrollgruppe, keine Randomisierung, keine Trennung von UV und AV nötig, simultane Erhebung der Variablen, keine Manipulation (z. B. Zusammenhang von Geschäftserfolg und Extraversion)
 
-Bei theoretischer Trennung von UV‐AV:
-* Simultane Erhebung der Variablen; keine Manipulation
-* aber: theoretisch angenommene Kausalrichtung (z.B. je extrovertierter, desto erfolgreicher)
-
-Bei „UV‐AV‐Sequenz“ (Ex‐post‐facto‐Studien):
-* Simultane Erhebung der Variablen; keine Manipulation
-* Kausalitätsheuristik: Erhebung zeitlich zurückliegender „UV“ (AV folgt UV)
-
-**Interpretationsmöglichkeiten:**
-* Aussagen über Zusammenhang möglich
+**Interpretationsmöglichkeiten**:
+* Aussagen über Zusammenhang zwischen zwei Variablen möglich
 * Aussagen über Kausalität nicht (oder nur unter speziellen Annahmen) möglich
-
-</small>
+  * z.B. kann theoretisch angenommene Kausalrichtung formuliert werden (z. B. je extrovertierter, desto erfolgreicher) und auf Erhebung zeitlich zurückliegender "UV" (AV folgt UV) geachtet werden; dann braucht es noch Kontrolltechniken und eine Argumentation der Annahmen
+  * ohne konkrete, stichhaltige Argumentation für eine Kausalität, gilt als Grundannahme: keine Kausalitätsaussagen auf korrelativen Daten möglich!
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
-#### Nicht-Experimentelle Versuchspläne
+#### Nicht-experimentelle Versuchspläne
 
 ##### Einfacher Gruppenvergleich
 
@@ -884,35 +913,23 @@ knitr::include_graphics("bilder/einfachgruppe.png")
 ```
 ]
 
----
-class: top, left, hide_logo
-### Versuchspläne
-
-#### Nicht-Experimentelle Versuchspläne
-
-##### Einfacher Gruppenvergleich
-
-* Beobachtung einer AV in 2 (durch kategoriale UV definierten) Gruppen
-
+* Beobachtung einer AV in zwei (durch kategoriale UV definierten) Gruppen (Sonderfall Korrelationsstudie)
 * keine Manipulation, keine Randomisierung, UV‐AV‐Sequenz
+* z. B. UV Geschlecht, AV Aggression; Ergebnis: Geschlechtsunterschied
 
-* z.B. UV Geschlecht, AV Aggression; Ergebnis: Geschlechtsunterschied
-
-**Problem:** 
-
-Was ist für den Unterschied verantwortlich?
+**Problem**: Was ist für den Unterschied verantwortlich?
 
 **Interpretationsmöglichkeiten:**
-* Aussagen über Zusammenhang Gruppe (UV) & AV
+* Aussagen über Zusammenhang Gruppe (UV) und AV
 * Aussagen über Kausalität nicht (oder nur unter speziellen Annahmen) möglich
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
-#### Nicht-Experimentelle Versuchspläne
+#### Nicht-experimentelle Versuchspläne
 
-##### Prä-Post-Vergleich („vorexperimentelle Anordnung“)
+##### Prä-Post-Vergleich ("vorexperimentelle Anordnung")
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "1000px"}
@@ -920,67 +937,58 @@ knitr::include_graphics("bilder/prepost.png")
 ```
 ]
 
----
-class: top, left, hide_logo
-### Versuchspläne
+* Beobachtung einer AV in einer Stichprobe vor und nach *ein und derselben* Intervention
+* keine Kontrollgruppe/-bedingung, keine zufällige Zuordnung
+* z. B. Studierendenbefragung vor und nach einer Studienreform
 
-#### Nicht-Experimentelle Versuchspläne
+**Probleme**: alle personengebundenen und zeitgebundenen Störvariablen
 
-##### Prä-Post-Vergleich („vorexperimentelle Anordnung“)
-
-* Beobachtung einer AV in einer Stichprobe vor und nach einer Intervention
-* keine Kontrollgruppe, keine zufällige Zuordnung
-* z.B. Studierendenbefragung vor und nach einer Studienreform
-
-**Probleme: **
-* alle personengebundenen & zeitgebundenen Störvariablen
-
-**Interpretationsmöglichkeiten:**
-* Aussagen über Zusammenhang Intervention & AV
+**Interpretationsmöglichkeiten**:
+* Aussagen über Zusammenhang Intervention und AV
 * Aussagen über Kausalität nicht (oder nur unter speziellen Annahmen) möglich
 
 ---
 class: top, left, hide_logo
 
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Quasi-experimentelle Versuchspläne
 
-**Charakteristika:**
+**Charakteristika**:
 
 * Trennung UV/AV
 * systematische Beobachtung der AV
 * gezielte Manipulation der UV
 * **keine** randomisierte Zuweisung der Versuchspersonen zu den Bedingungen, stattdessen "natürlich vorgefundene Gruppen"
 
-**Interpretationsmöglichkeiten:**
+**Interpretationsmöglichkeiten**:
 * Aussagen über Zusammenhang UV und AV
 * Aussagen über Kausalität nur eingeschränkt möglich
 * nur verwenden, wenn Experiment nicht durchführbar
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Quasi-experimentelle Versuchspläne
 
 ##### Problem von Quasi-Experimenten:
 
-**Experiment: **
+**Experiment**:
 
-* alle möglichen/denkbaren **systematischen personenbezogenen** Störvariablen sind durch Randomisierung kontrolliert
+* Alle möglichen/denkbaren **systematischen personenbezogenen** Störvariablen sind durch Randomisierung kontrolliert
 
-* UV ist Ursache
+* UV ist Ursache, sofern keine anderen systematischen Störvariablen vorliegen
 
-**Quasi‐Experiment: **
+**Quasi‐Experiment**:
 
-* alle möglichen/denkbaren **systematischen personenbezogenen** Störvariablen können systematisch mit Bedingung (d.h. mit UV) konfundiert sein
+* Alle möglichen/denkbaren **systematischen personenbezogenen** Störvariablen können systematisch mit Bedingung (d. h. mit UV) konfundiert sein
 
 * UV und SV als mögliche Ursache
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Quasi-experimentelle Versuchspläne
 
@@ -992,30 +1000,18 @@ knitr::include_graphics("bilder/naekontroll.png")
 ```
 ]
 
----
-class: top, left
-### Versuchspläne
-
-#### Quasi-experimentelle Versuchspläne
-
-##### Nicht-äquivalenter Kontrollgruppenplan
-
-* Vorher‐Nachher‐Messung in 2 Bedingungen (mit Intervention)
-* Trennung & Sequenz UV‐AV, Kontrollgruppe, Manipulation
-* keine zufällige Zuordnun g$\rightarrow$  Vortest notwendig zur Korrektur der Vorher‐Unterschiede
+* Vorher‐Nachher‐Messung in zwei Bedingungen (mit Intervention)
+* Trennung und Sequenz UV‐AV, Kontrollgruppe, Manipulation
+* keine zufällige Zuordnung, d.h. Unterschiede im Ausgangsniveau plausibel $\rightarrow$ Vortest notwendig zur Korrektur der Vorher‐Unterschiede
 * weit verbreiteter Versuchsplan, wenn Randomisierung nicht möglich
 
 **Interpretationsmöglichkeiten**
-* Aussagen über Zusammenhang UV & AV
+* Aussagen über Zusammenhang von UV und AV
 * Aussagen über Kausalität eingeschränkt möglich
-
-**Zentrales Problem bei Veränderungsmessung (Vorher‐Nachher‐Messung)**: Unterschiede im Ausgangsniveau
-
-$\rightarrow$ Veränderungen im Bezug zum Ausgangsniveau beurteilen, z.B. Größe der Veränderung an Ausgangsniveau relativieren: prozentuale Veränderung statt Differenz
 
 ---
 class: top, left
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Quasi-experimentelle Versuchspläne
 
@@ -1023,57 +1019,57 @@ class: top, left
 
 Evaluation eines zusätzlichen Therapiemoduls in einer Rehaklinik 
 
-* **Hypothese:** Das neue Therapiemodul steigert den Therapieerfolg.
+* **Hypothese**: Das neue Therapiemodul steigert den Therapieerfolg.
 
 * Man kann nicht zur Therapie gezwungen werden 
 
-* **Selbstselektion** $\rightarrow$ „Verweigerer“ sind Kontrollgruppe
+* **Selbstselektion** $\rightarrow$ "Verweigerer" sind Kontrollgruppe
 
 * **Alternativerklärung** für mehr Erfolg in Experimentalgruppe: Therapiemotivation 
 
-* **Zentrale Möglichkeiten der Kontrolle von Störvariablen:**
+* **Zentrale Möglichkeiten der Kontrolle von Störvariablen**:
 
   * Ausgangsunterschiede durch einen Vortest statistisch kontrollieren
 
-  * Parallelisierung/ Matching
+  * Parallelisierung / Matching
   
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Experimentelle Versuchspläne
 
 .pull-left[
-**Charakteristika:**
-* Trennung & Sequenz UV-AV
+**Charakteristika**:
+* Trennung und Sequenz UV-AV
 * systematische Beobachtung der AV
 * gezielte Manipulation der UVs
 * randomisierte Zuweisung zu den Bedingungen
 
-**Interpretationsmöglichkeiten:**
-* Aussagen über Zusammenhang UV & AV
+**Interpretationsmöglichkeiten**:
+* Aussagen über Zusammenhang von UV und AV
 * Aussagen über Kausalität möglich, sofern alle nicht-personenbezogenen, systematischen Störvariablen kontrolliert wurden
 ]
 
 .pull-right[
-**Typische Versuchspläne:**
-* Randomisierter Kontrollgruppenplan mit/ohne Vortest
-* 1 oder 2 Treatments & eine Kontrollgruppe
-  - z.B. 1 oder 2 inhaltliche Varianten des neuen Treatments vs. KG
-  - z.B. unterschiedlich starke Ausprägungen des Treatments vs. KG
-* 2 Treatments, keine Kontrollgruppe
-  - z.B. neues Treatment im Vergleich zu Standardtreatment, das gut gegen KG abgesichert ist
-  - z.B. Vergleich unterschiedlicher Ausprägungen des Treatments
+**Typische Versuchspläne**:
+* randomisierter Kontrollgruppenplan mit / ohne Vortest
+* ein oder zwei Treatments sowie eine Kontrollgruppe (KG)
+  - z. B. eine oder zwei inhaltliche Varianten des neuen Treatments vs. KG
+  - z. B. unterschiedlich starke Ausprägungen des Treatments vs. KG
+* zwei Treatments, keine Kontrollgruppe
+  - z. B. neues Treatment im Vergleich zu Standardtreatment, das gut gegen KG abgesichert ist
+  - z. B. Vergleich unterschiedlicher Ausprägungen des Treatments
 ]
 
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Experimentelle Versuchspläne
 
-##### Das randomisiert-kontrollierte Trial (ranodmized-controlled trial, RCT)
+##### Das randomisiert-kontrollierte Trial (randomized-controlled trial, RCT)
 
 Standardparadigma der klinischen Wirksamkeitsforschung: Kontrollgruppenplan (meist mit Vortest)
 
@@ -1085,7 +1081,7 @@ knitr::include_graphics("bilder/RCT.png")
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Experimentelle Versuchspläne
 
@@ -1103,7 +1099,7 @@ $\rightarrow$ je nach Fragestellung andere Typen von Kontrollgruppen sinnvoll
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Experimentelle Versuchspläne
 
@@ -1121,57 +1117,57 @@ knitr::include_graphics("bilder/withpretest.png")
 ```
 ]
 
-**Vorteil des Vortests:** trotz Randomisierung bestehende zufällige Unterschiede zwischen den Gruppen können berücksichtigt werden, reduziert Fehlervarianz (erhöht statistische Validität)
+**Vorteil des Vortests**: Trotz Randomisierung bestehende zufällige Unterschiede zwischen den Gruppen können berücksichtigt werden, reduziert Fehlervarianz (erhöht statistische Validität)
 
-**Problem des Vortests:** Sensitivierung, Übungseffekte, oder andere Methodeneffekte durch Messwiederholung
+**Problem des Vortests**: Sensitivierung, Übungseffekte oder andere Methodeneffekte durch Messwiederholung
 
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Experimentelle Versuchspläne
 
-##### Labor- & Feldexperiment
+##### Labor- und Feldstudie
 
 .pull-left[
-**Laborexperiment:**
-* Beobachtung einer AV bei randomisierter Zuweisung zu Bedingungen der UV in „künstlicher“ Umgebung
+**Laborexperiment**:
+* Beobachtung einer AV bei randomisierter Zuweisung zu Bedingungen der UV in "künstlicher" Umgebung
 * Umgebung/Bedingungen/Störvariablen besser kontrollierbar $\rightarrow$ höhere interne Validität
 * Bedingungen können gut variiert, repliziert und manipuliert werden
 * Beispiele: 
-  * Sind Probanden eher bereit, noch einen zweiten FB auszufüllen, wenn man ihnen zuvor fröhliche Musik vorgespielt hat?
+  * Sind Probanden eher bereit, noch einen zweiten Fragebogen auszufüllen, wenn man ihnen zuvor fröhliche Musik vorgespielt hat?
   * Lernprozesse am Computer mit Eye-Tracker untersuchen
 ]
 
 .pull-right[
-**Feldexperiment:**
-* Beobachtung einer AV bei randomisierter Zuweisung zu Bedingungen der UV in der „natürlichen“ Umgebung
+**Feldexperiment**:
+* Beobachtung einer AV bei randomisierter Zuweisung zu Bedingungen der UV in der "natürlichen" Umgebung
 * Umgebung/Bedingungen/Störvariablen kaum kontrollierbar $\rightarrow$ geringere interne Validität
-* Weniger systematische Variation möglich
-* mehr Nähe zum Verhalten in Alltagssituationen $\rightarrow$ u.U. höhere ökologische Validität
+* weniger systematische Variation möglich
+* mehr Nähe zum Verhalten in Alltagssituationen $\rightarrow$ u. U. höhere ökologische Validität
 * Beispiele: 
-  * Sind Leute eher bereit, jemanden am Kopierer vorzulassen, wenn sie zuvor dort 2 Euro gefunden haben?
-  * Spielverhalten von Kindern am Spielplatz mit & ohne Anwesenheit der Eltern
+  * Sind Leute eher bereit, jemanden am Kopierer vorzulassen, wenn sie zuvor dort 2 € gefunden haben?
+  * Spielverhalten von Kindern am Spielplatz mit und ohne Anwesenheit der Eltern
 ]
 
 ---
 class: top, left, hide_logo
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 .center[
 ```{r eval = TRUE, echo = F, out.width="75%"}
 knitr::include_graphics("bilder/Behandlungsplaene.png")
 ```
 
-Nicht abgebildet: Korrelationsstudien
+nicht abgebildet: Korrelationsstudien
 ]
 
 ---
 class: top, left, hide_logo
 <div class="footer"><span>https://link.springer.com/referenceworkentry/10.1007/978-3-658-16937-4_7-1</span></div>
 
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 .center[
 ```{r eval = TRUE, echo = F, out.width="75%"}
@@ -1181,29 +1177,29 @@ knitr::include_graphics("bilder/Randomisierung.png")
 ]
 ---
 class: top, left
-### Versuchspläne
+### Versuchspläne = Studiendesigns
 
 #### Ausblick: Mehrfaktorielle Versuchspläne
 
-Faktorielles Design: Alle möglichen Kombinationen der Faktoren (=Gruppenausprägungen) sind realisiert
+Faktorielles Design: Alle möglichen Kombinationen der Faktoren (= Gruppenausprägungen) sind realisiert
 
-Beispiel: Pharmakologische Behandlung einer Depression
+Beispiel: pharmakologische Behandlung einer Depression
 * UV A: Medikament (A1: Verum vs. A2: Placebo)
 * UV B: Dosis (B1: niedrig vs. B2: hoch)
 
-2x2-Design: 4 Versuchsbedingungen als Kombination von A und B:
+2x2-Design: vier Versuchsbedingungen als Kombination von A und B:
   * A1-B1: Verum, niedrig
   * A1-B2: Verum, hoch
   * A2-B1: Placebo, niedrig
   * A2-B2: Placebo, hoch
 
 Vorteile:
-* Effizienter als eine Durchführung jeweils einzelner Experimente für jeden der Faktoren
+* effizienter als eine Durchführung jeweils einzelner Experimente für jeden der Faktoren
 * Untersuchung von Interaktionseffekten möglich
 
 <br>
 <!-- class: top, left -->
-<!-- ### Versuchspläne -->
+<!-- ### Versuchspläne = Studiendesigns -->
 
 <!-- #### Mehrfaktorielle Versuchspläne -->
 
@@ -1239,7 +1235,7 @@ Vorteile:
 
 <!-- --- -->
 <!-- class: top, left -->
-<!-- ### Versuchspläne -->
+<!-- ### Versuchspläne = Studiendesigns -->
 
 <!-- #### Mehrfaktorielle Versuchspläne -->
 
@@ -1275,7 +1271,7 @@ Vorteile:
 
 <!-- --- -->
 <!-- class: top, left -->
-<!-- ### Versuchspläne -->
+<!-- ### Versuchspläne = Studiendesigns -->
 
 <!-- #### Mehrfaktorielle Versuchspläne -->
 
@@ -1298,10 +1294,10 @@ Vorteile:
 ---
 class: top, left, hide_logo
 
-### Zusammenfassung: Validität im Kontext der Versuchsplanung & Güte der Hypothesenprüfung
+### Zusammenfassung: Validität im Kontext der Versuchsplanung
 
 .pull-left[
-* **Interne Validität** 
+* **interne Validität** 
 
   * eindeutige Schlussfolgerung bezüglich der Wirkbeziehung zwischen AV und UV
   
@@ -1309,13 +1305,13 @@ class: top, left, hide_logo
   
   * (+) Experiment
 
-* **Externe Validität**
+* **externe Validität**
 
   * Erkenntnisse können auf Population generalisiert werden
 ]
 
 .pull-right[
-* **Ökologische Validität** 
+* **ökologische Validität** 
 
   * Erkenntnisse können auf Wirklichkeit generalisiert werden
   
@@ -1323,7 +1319,7 @@ class: top, left, hide_logo
   
   * (-) Laborexperiment
   
-* **Statistische Validität**
+* **statistische Validität**
 
   * Reduktion der Fehlervarianz in der AV
   
@@ -1331,24 +1327,24 @@ class: top, left, hide_logo
 ]
   
 ---
-class: top, left
+class: top, left, hide_logo
 name: take-away
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 * Experiment gilt als Königsweg zur Kausalität
 
-* Systematische Konfundierungen nach Möglichkeit durch Studiendesign verhindern 
+* systematische Konfundierungen nach Möglichkeit durch Studiendesign verhindern 
 
 * Randomisierung ist ein effizienter Weg, systematische personenbezogene Konfundierungen aus dem Unterschied zwischen experimentellen Bedingungen herauszuhalten 
 
-* Durch Verblindung lassen sich Konfundierungen verursacht durch Versuchsteilnehmer und -leiter verringern
+* Durch Verblindung lassen sich Konfundierungen, verursacht durch Versuchsteilnehmer und -leiter, verringern
 
 * Problem Quasi-Experiment: keine Randomisierung, nur gezielte Manipulation der UV
 
-* Nich-experimentelle Versuchspläne ermöglichen Schlüsse über Zusammenhänge, Kausalitätsschlüsse nicht (oder nur unter speziellen Annahmen) möglich
+* Nicht-experimentelle Versuchspläne ermöglichen Schlüsse über Zusammenhänge, Kausalitätsschlüsse sind aber nicht (oder nur unter speziellen Annahmen) möglich
 
-* Klassischer Experimentaufbau: Kontrollgruppenplan (mit/ohne Pretest) mit randomisierter Gruppenzuweisung
+* klassischer Experimentaufbau: Kontrollgruppenplan (mit / ohne Pretest) mit randomisierter Gruppenzuweisung
 ]
 
 ---
@@ -1372,9 +1368,9 @@ name: words
 
 **Kausalhypothese**
 
-**Unabhängige Variable**
+**unabhängige Variable**
 
-**Abhängige Variable**
+**abhängige Variable**
 
 **Randomisierung**
 
@@ -1386,9 +1382,9 @@ name: words
 .pull-right[
 **Kontrolle von Störvariablen**
 
-**Systematische Störvariablen**
+**systematische Störvariablen**
 
-**Unsystematische Störvariablen**
+**unsystematische Störvariablen**
 
 **interne Validität** 
 
@@ -1416,11 +1412,11 @@ name: words
 
 **Ausbalancieren**
 
-**One-Shot Design**
+**One-shot-Design**
 
 **Korrelationsstudien**
 
-**Einfacher Gruppenvergleich**
+**einfacher Gruppenvergleich**
 ]
 
 .pull-right[
@@ -1428,23 +1424,21 @@ name: words
 
 **Quasi-Experimente**
 
-**Nicht-äquivalenter Kontrollgruppenplan**
+**nicht-äquivalenter Kontrollgruppenplan**
 
-**Randomisiert-kontrolliertes Trial (RCT)**
+**randomisiert-kontrolliertes Trial (RCT)**
 
-**Laborstudie**
+**Labor vs. Feldstudie**
 
-**Feldstudie**
+**Längsschnittstudie (within-person Design)**
 
-**Längsschnittstudie**
-
-**Querschnittstudie**
+**Querschnittstudie (between-person Design)**
 ]
 ]
 ]
 ]
 
-**[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** **[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/g3VpB55KCEyC9a8H6)**
+**[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** **[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/9FkoxCEYFb123voT6)**
 
 
 ---
@@ -1458,4 +1452,5 @@ knitr::include_graphics("bilder/eid.png")
 ]
 
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_06_Experiment.Rmd", complex_slides = TRUE) -->

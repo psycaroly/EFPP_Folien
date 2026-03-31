@@ -3,7 +3,7 @@ title: "Einheit 1"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2025/04/09 (updated: `r Sys.Date()`)"
+date: "2025/10/13 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -56,7 +56,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 1: Psychologie als Wissenschaft
-##### 10.04.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 14.10.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: hide_logo
@@ -91,7 +91,7 @@ Infanteriestraße 11a · 80797 München ·
 
 [caroline.zygar-hoffmann@charlotte-fresenius-uni.de](mailto:caroline.zygar-hoffmann@charlotte-fresenius-uni.de)
 
-**Bitte schreiben Sie mir eine E-Mail um mich zu kontaktieren (bitte nutzen Sie also *nicht* die Nachrichtenfunktion von studynet)**
+**Bitte schreiben Sie mir eine E-Mail, um mich zu kontaktieren (bitte nutzen Sie also *nicht* die Nachrichtenfunktion von studynet)**
 
 <br>
 
@@ -115,19 +115,19 @@ class: top, left, hide_logo
 
 #### Was Sie über mich wissen können (wenn Sie beobachten und recherchieren):
 
-* Promovierte Wissenschaftlerin
-* Professorin an der CFH
-* Arbeitet in der Psychologischen Methodenlehre
-* Forscht zu Partnerschaften und Motiven
-* Ist mit der Ludwig-Maximilians-Universität (LMU) München affiliert
-* Verheiratet (Doppelname!)
-* Relativ jung?
+* promovierte Wissenschaftlerin
+* Professorin an der CFH in der Psychologischen Methodenlehre
+* forscht zu Partnerschaften und Motiven
+* ist mit der Ludwig-Maximilians-Universität (LMU) München affiliert
+* verheiratet (Doppelname!)
+* relativ jung?
 
 #### Was Sie über mich nicht wissen können (bis ich es Ihnen erzähle):
 
-* Mutter eines fast 3-jährigen Sohns
+* Mutter eines fast dreijährigen Sohns
 * "First-Generation-Academic"
 * Migrationshintergrund der Eltern
+* in Teilzeit (50%) beschäftigt
 
 $\rightarrow$ **Wissenschaft ist für alle da. Methodenlehre ist für alle da.** Vereinbarkeit mit Familie ist *prinzipiell* möglich.<br>
 $\rightarrow$ **Es ist trotzdem alles andere als einfach. Glück spielt eine große Rolle. Das Wissenschaftssystem gehört reformiert.** Vereinbarkeit könnte noch viel besser sein. #IchBinHanna #IchBinReyhan
@@ -154,10 +154,10 @@ knitr::include_graphics("bilder/survivorshipbias1.png")
 class: top, left, hide_logo
 <div class="footer"><span>Bild von <a href="https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7010438">Gerd Altmann</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7010438">Pixabay</a></div>
 
-### Nun zu Ihnen...
+### Nun zu Ihnen ...
 
 .center[
-**Wer von Ihnen hat schonmal studiert?**
+**Wer von Ihnen hat schon mal studiert?**
 ]
 
 ```{r, echo=FALSE,out.width="60%",fig.show='hold',fig.align='center'}
@@ -167,22 +167,8 @@ knitr::include_graphics("bilder/studium.jpg")
 
 ---
 class: top, left, hide_logo
-<div class="footer"><span>https://concept.paloaltou.edu/resources/business-of-practice-blog/developmental-psychology</div>
 
-### Nun zu Ihnen...
-
-.center[
-**Wer von Ihnen hat schonmal an einer psychologischen Studie teilgenommen?**
-]
-
-```{r, echo=FALSE,out.width="80%",fig.show='hold',fig.align='center'}
-knitr::include_graphics("bilder/study.png")
-``` 
-
----
-class: top, left, hide_logo
-
-### Nun zu Ihnen...
+### Nun zu Ihnen ...
 
 .center[
 **Psychologie kann noch viel mehr!**
@@ -200,35 +186,49 @@ knitr::include_graphics("bilder/Karriereperspektiven.png")
 class: top, left, hide_logo
 ### Übersicht Lehrveranstaltung 
 
-**12 Termine:** Donnerstag 11:35 - 13:05 (Raum: Audimax)
+**13 Termine:** Dienstag 10:50 - 12:05 (Raum: P5 005)
 
 **Begleitende Vorlesung:**
 * "Einführung in die Psychologie und ihre Geschichte" freitags im Audimax
 * Dozentin: Patricia Garatva ([patricia.garatva@charlotte-fresenius-uni.de](mailto:patricia.garatva@charlotte-fresenius-uni.de))
 
 **Materialien:**
-* Folien werden auf [studynet](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=39930) bereitgestellt in 2 Varianten: html (Links zwischen Folien funktionieren) und PDF (Platz für Notizen)
+* Folien werden auf [studynet](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_fold_47935.html) bereitgestellt in zwei Varianten: html (Links zwischen Folien funktionieren) und PDF
 * Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
 
 **Prüfungsleistung:**
-* Zeitraum für die Prüfungsanmeldung: 23.06.25 - 14.07.25
-* Schriftliche Prüfung, 120 Minuten (beide Vorlesungen gemeinsam)
+* Zeitraum für die Prüfungsanmeldung: 05.01.26 - 02.02.26
+* Schriftliche Prüfung, voraussichtlich 120 Minuten (beide Vorlesungen gemeinsam) (ggf. nur 90 Minuten)
 
-**Vorlesungsaufbau:** Theorie + vereinzelte interaktive Elemente + 1 Literatursuch-Aufgabe pro Einheit
+**Vorlesungsaufbau**: Theorie + vereinzelte interaktive Elemente + eine Literatursuch-Aufgabe pro Einheit
 
 ---
 class: top, left, hide_logo
 ### Termine
 
 ```{r echo = F}
-df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
+df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:17, 1:3]
 df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
 df %>%
   kbl() %>%
   kable_styling(font_size = 16) %>%
   kable_classic(full_width = T) %>% 
-  row_spec(c(4,8,11), background = "lightgray")
+  row_spec(c(8,11:13), background = "lightgray")
 ```
+
+---
+class: top, left, hide_logo
+<div class="footer"><span>https://concept.paloaltou.edu/resources/business-of-practice-blog/developmental-psychology</div>
+
+### Nun zu Ihnen ...
+
+.center[
+**Wer von Ihnen hat schon mal an einer psychologischen Studie teilgenommen?**
+]
+
+```{r, echo=FALSE,out.width="80%",fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/study.png")
+``` 
 
 ---
 class: top, left, hide_logo
@@ -243,9 +243,9 @@ class: top, left, hide_logo
 
 #### Vermittelte Kompetenzen
 * Beschreibung der basalen Kompetenzen wissenschaftlichen Arbeitens 
-* Fundiertes Belegen von Aussagen, d.h. mit wissenschaftlichen Quellen
+* Fundiertes Belegen von Aussagen, d. h. mit wissenschaftlichen Quellen
 
-$\rightarrow$ Sie sollen hier nicht detailliertes inhaltliches Wissen über konkrete psychologische Subdisziplinen erhalten (dafür gibt es für jede Subdisziplin eine eigene Vorlesung). Stattdessen sollen Sie in der Lage sein zu erklären, ...
+$\rightarrow$ **Sie sollen hier** ***nicht*** **detailliertes inhaltliches Wissen über konkrete psychologische Subdisziplinen erhalten** (dafür gibt es für jede Subdisziplin eine eigene Vorlesung). Stattdessen sollen Sie in der Lage sein zu erklären, ...
   * wie die Psychologie als Wissenschaft funktioniert
   * mit welchen Erhebungs- und Forschungsmethoden die psychologische Wissenschaft arbeitet
   * wie Sie selbst wissenschaftliche Forschung betreiben und beurteilen können
@@ -261,11 +261,10 @@ class: top, left
 **Prinzipiell sind alle Folien prüfungsrelevant.**
 
 Bestimmte Details sind nicht prüfungsrelevant:
-* Details zu veranschaulichenden Beispielen (z.B. einzelne Biases aus der Übersicht über alle Biases, die wir gleich kennenlernen werden oder Inhalte von Studien-Screenshots) $\rightarrow$ Sie sollten Beispiele nennen können, müssen die Beispiele aber nicht im Detail kennen; gekennzeichnet mit dem Glühbirnen-Symbol, das Sie auf dieser Folie sehen (sind auf einer Folie prüfungsrelevante Sachen UND Beispiele entfällt das Glühbirnen-Symbol)
+* Details zu veranschaulichenden Beispielen (z. B. einzelne Biases aus der Übersicht über alle Biases, die wir gleich kennenlernen werden, oder Inhalte von Studien-Screenshots) $\rightarrow$ Sie sollten Beispiele nennen können, müssen die Beispiele aber nicht im Detail kennen; gekennzeichnet mit dem Glühbirnen-Symbol, das Sie auf dieser Folie sehen (sind auf einer Folie prüfungsrelevante Sachen UND Beispiele, entfällt das Glühbirnen-Symbol)
 * Jahreszahlen zu Lebenszeiten
-* Wörtliche Zitate
-* Quellenangaben, Literatur-, Video- oder Podcasthinweise: Sie müssen sich kein zusätzliches Wissen aneignen, wenn Sie verstehen, was ich während der Vorlesung zu den Folien erzähle $\rightarrow$ es macht aber Sinn Aspekte nachzulesen, wenn Sie sie nicht verstanden haben
-* Nachbesprechungen der Literatur-Such-Aufgaben
+* wörtliche Zitate
+* Quellenangaben, Literatur-, Video- oder Podcasthinweise: Sie müssen sich kein zusätzliches Wissen aneignen, wenn Sie verstehen, was ich während der Vorlesung zu den Folien erzähle $\rightarrow$ es ist aber sinnvoll, Aspekte nachzulesen, wenn Sie sie nicht verstanden haben
 
 ---
 class: top, left
@@ -281,18 +280,31 @@ Sie lernen in dieser Vorlesung viel Faktenwissen, aber sollen auch viel Verstehe
 * **Mitdenken**
 * **Nachfragen**
 * **Nachlesen** (Übung macht hier viel aus, um auch effizient relevante Informationen rauszulesen, vgl. [Rayner et al., 2016](https://doi.org/10.1177/1529100615623267))
-* **Notizen machen** (am besten auf den Folien, vgl. [Marsh & Sink, 2010](https://doi.org/10.1002/acp.1579); siehe [Friedman, 2014](https://www.issup.net/knowledge-share/resources/2020-09/notes-note-taking) für Tipps WIE man effizient Notizen macht)
+* **Notizen machen** (am besten auf den Folien, vgl. [Marsh & Sink, 2010](https://doi.org/10.1002/acp.1579); siehe [Friedman, 2014](https://www.issup.net/knowledge-share/resources/2020-09/notes-note-taking) für Tipps, WIE man effizient Notizen macht)
 * **Am Ball bleiben** ([Alexander & Hicks, 2016](https://research.bond.edu.au/en/publications/does-class-attendance-predict-academic-performance-in-first-year-))
-* **Auf sich selbst achten** (auch zu Hause bleiben, wenn man krank ist!)
+* **auf sich selbst achten** (auch zu Hause bleiben, wenn man krank ist!)
 ]
 
 .pull-right[
 * **Zeit für die Vorlesungsnacharbeitung planen:** Quizzes machen und Gelerntes in eigenen Worten zusammenfassen (vgl. [Donoghue & Hattie, 2021](https://doi.org/10.3389/feduc.2021.581216) und [Dunlosky et al., 2013](https://journals.sagepub.com/doi/abs/10.1177/1529100612453266?journalCode=psia) für Bewertung der Effizienz von Lernstrategien)
-* **Literatur-Such-Aufgaben machen**
+* **Literatursuch-Aufgaben machen**
 * **Geduld mit sich selbst haben**
-* Sich vor Augen führen (und im Zweifelsfall nachfragen), **warum die Inhalte für Sie als angehende Psycholog:innen relevant** sind
+* sich vor Augen führen (und im Zweifelsfall nachfragen), **warum die Inhalte für Sie als angehende Psycholog:innen relevant** sind
 * **Feedback geben**
 ]
+
+---
+class: top, left, hide_logo
+### Aus der Lehrevaluation letztes Semester...
+
+```{r, echo=FALSE,fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/eval_1.png")
+``` 
+
+```{r, echo=FALSE,fig.show='hold',fig.align='center'}
+knitr::include_graphics("bilder/eval_2.png")
+``` 
+
 
 ---
 class: top, left, hide_logo
@@ -308,9 +320,9 @@ name: content
 * [Definition wissenschaftlicher Psychologie](#definition)
 * [Ziele wissenschaftlicher Psychologie](#ziele)
 
-#### Take-Aways, Literaturaufgabe und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
-* [Literaturaufgabe](#literatur)
+#### Take-aways, Literatur-Aufgabe und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
+* [Literatur-Aufgabe](#literatur)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
@@ -320,7 +332,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: Alles bekannt?
+#### Alltagspsychologie: alles bekannt?
 
 .center[
 *"Manche Menschen sagen, Psychologie sei letztlich nichts anderes als in einen Fachjargon gepresstes Allgemeinwissen. »[...] Ihr werdet dafür bezahlt, dass ihr mit ausgefallenen Methoden das beweist, was meine Großmutter schon immer wusste.«"*
@@ -332,7 +344,7 @@ David G. Myers (2015)
 .pull-left[
 
 1a. Gegensätze ziehen sich an.<br>
-1b. Gleich und gleich gesellt sich gern.
+1b. Gleich und Gleich gesellt sich gern.
 
 2a. Beurteile ein Buch nie nach seinem Einband.<br>
 2b. Kleider machen Leute.
@@ -353,7 +365,7 @@ class: top, left, hide_logo
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und gleich gesellt sich gern."
+#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und Gleich gesellt sich gern."
 
 * Sie haben sicher *Meinungen* und *(Einzel-)Erfahrungen* dazu
 
@@ -361,7 +373,7 @@ class: top, left, hide_logo
 
 * Auch individuelle und situative Bedingungen können dabei berücksichtigt werden
 
-* Erst wenn sich in den Daten ein systematisches Muster zeigt (siehe Vorlesung Quantitative Methoden) können wir Schlüsse über das untersuchte Phänomen/die untersuchte Hypothese ziehen
+* Erst wenn sich in den Daten ein systematisches Muster zeigt (siehe Vorlesung Quantitative Methoden), können wir Schlüsse über das untersuchte Phänomen / die untersuchte Hypothese ziehen
 
 ---
 class: top, left
@@ -369,7 +381,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und gleich gesellt sich gern."
+#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und Gleich gesellt sich gern."
 
 .center[
 ```{r, echo=FALSE,out.width="43%",fig.show='hold',fig.align='center'}
@@ -384,7 +396,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und gleich gesellt sich gern."
+#### Alltagspsychologie: "Gegensätze ziehen sich an." vs. "Gleich und Gleich gesellt sich gern."
 
 .center[
 ```{r, echo=FALSE,out.width="43%",fig.show='hold',fig.align='center'}
@@ -398,7 +410,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: Kognitive Verzerrungen (Biases)
+#### Alltagspsychologie: kognitive Verzerrungen (Biases)
 
 .center[
 ```{r, echo=FALSE,out.width="55%",fig.cap=" ",fig.show='hold',fig.align='center'}
@@ -412,7 +424,7 @@ class: top, left
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Alltagspsychologie: Kognitive Verzerrungen (Biases)
+#### Alltagspsychologie: kognitive Verzerrungen (Biases)
 
 <br>
 .pull-left[
@@ -464,19 +476,19 @@ name: methoden
 
 #### Wissenschaftliche Methoden
 
-* **Generell**: Menge geordneter  Schritte  zur  Analyse  und  Beantwortung von  Fragestellungen
-* **Speziell empirische Methoden**: Nutzung möglichst  objektiv und systematisch erhobener bzw. gemessener  Informationen  (z.B. Beobachtungen, Erfahrungen, Befragungen) als  Faktenbasis  für  wissenschaftlich  korrekte Schlussfolgerungen
+* **generell**: Menge geordneter  Schritte  zur  Analyse  und  Beantwortung von  Fragestellungen
+* **speziell empirische Methoden**: Nutzung möglichst  objektiv und systematisch erhobener bzw. gemessener  Informationen  (z. B. Beobachtungen, Erfahrungen, Befragungen) als  Faktenbasis  für  wissenschaftlich  korrekte Schlussfolgerungen
 * **Empirische Wissenschaft** = "Erfahrungswissenschaft", **empirisches Wissen** = "Erfahrungswissen"
 
 #### Psychologische Methodenlehre
 
-* Instrumentarium zur systematischen Entwicklung und Überprüfung (**!**) psychologischer Theorien
+* Instrumentarium, um psychologische Theorien systematisch zu entwickeln und zu überprüfen 
 
-* Manchmal mehrere Zugänge zur Erkenntnis (**Methodenpluralismus**)
+* manchmal mehrere Zugänge zur Erkenntnis (**Methodenpluralismus**)
 
 * Wissenschaftliche Methodik unterscheidet Psychologie von Alltagspsychologie
 
-* Wissenschaftliche Systematik ermöglicht **vergleichbare** Erfassung individueller psychologischer Eigenschaften
+* Wissenschaftliche Systematik ermöglicht es, individuelle psychologische Eigenschaften **vergleichbar** zu erfassen
 
 > **Welche Erhebungsmethoden der Psychologie fallen Ihnen bereits jetzt ein?**
 
@@ -486,7 +498,7 @@ class: top, left, hide_logo
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
-#### Abgrenzung von wissenschaftlichem Erkenntnisgewinn zu anderen Zugängen
+#### Abgrenzung wissenschaftlichen Erkenntnisgewinns von anderen Zugängen
 
 Argumentation mit Berufung auf ...
 .pull-left[
@@ -496,9 +508,9 @@ Argumentation mit Berufung auf ...
 ]
 
 .pull-right[
-* **Gesunden Menschenverstand**
+* **gesunden Menschenverstand**
 * **Intuition**
-* **Anekdotische Evidenz**
+* **anekdotische Evidenz**
 * **Logik**
 ]
 
@@ -520,11 +532,11 @@ class: top, left, hide_logo
 #### Merkmale von wissenschaftlicher Wissensproduktion in human-/sozialwissenschaftlicher Forschung
 
 .pull-left[
-**1.** Formulierung empirisch untersuchbarer und gut begründeter **Forschungsfragen und -hypothesen**
+**1.** Formulieren empirisch untersuchbarer und gut begründeter **Forschungsfragen und -hypothesen** (wichtig für **Falsifizierbarkeit** der Forschung)
 
-**2.** Berücksichtigung des **Forschungsstandes** und ausdrücklicher **Theoriebezug**
+**2.** Berücksichtigen des **Forschungsstandes** und ausdrücklicher **Theoriebezug**
 
-**3.** $\rightarrow$ **Systematische Erhebung, Aufbereitung und Analyse von empirischen Daten** zum Forschungsproblem mithilfe wissenschaftlicher Methoden unter Einhaltung wissenschaftlicher Gütekriterien
+**3.** $\rightarrow$ **Systematisches Erheben, Aufbereiten und Analysieren von empirischen Daten** zum Forschungsproblem mithilfe wissenschaftlicher Methoden unter Einhaltung wissenschaftlicher Gütekriterien
 
 **4.** $\rightarrow$ Vorgehen gemäß **etablierter wissenschaftlicher Methodologie** unter Einhaltung wissenschaftlicher Gütekriterien
 ]
@@ -532,14 +544,16 @@ class: top, left, hide_logo
 .pull-right[
 **5.** $\rightarrow$ Vorgehen gemäß Prinzipien der **Forschungs-/Wissenschaftsethik** 
 
-**6.** $\rightarrow$ Ausführliche schriftliche **Dokumentation** des Forschungsprozesses und **Archivierung** des Datenmaterials zwecks Nachvollziehbarkeit und Nachprüfbarkeit
+**6.** $\rightarrow$ Ausführliche schriftliche **Dokumentation** des Forschungsprozesses und **Archivierung** des Datenmaterials zwecks Nachvollziehbarkeit und Nachprüfbarkeit (wichtig für **Transparenz und Replizierbarkeit** der Forschung)
 
-**7.** **Ausgewogene Ergebnisinterpretation** mit Hinweisen auf widersprüchliche Befunde und auf Grenzen der Aussagekraft einer Studie
+**7.** **Ausgewogene Ergebnisinterpretation** mit Hinweisen auf widersprüchliche Befunde und auf Grenzen der Aussagekraft einer Studie 
 
-**8.** **Wissenschaftliche Veröffentlichung** einer Studie - möglich nach fachkundiger Begutachtung (**peer-review**)
+**8.** **Wissenschaftliche Veröffentlichung** einer Studie – möglich nach fachkundiger Begutachtung (**Peer Review**)
 ]
 
+.center[
 *Punkte mit $\rightarrow$ sind Fokus dieser Vorlesung.*
+]
 
 ---
 class: top, left, hide_logo
@@ -550,7 +564,7 @@ class: top, left, hide_logo
 #### Kritisches Denken auf wissenschaftlicher Basis
 
 .center[
-**Die wissenschaftliche Haltung: Neugierig, skeptisch und bescheiden**
+**Die wissenschaftliche Haltung: neugierig, skeptisch und bescheiden**
 Denn: "Wer nichts weiß, muss alles glauben" (Marie Freifrau Ebner von Eschenbach)
 ]
 
@@ -561,20 +575,20 @@ Denn: "Wer nichts weiß, muss alles glauben" (Marie Freifrau Ebner von Eschenbac
 * Effekte in Relation stellen (verglichen wozu ist ein Effekt groß/klein?)
 
 ##### Bescheidenheit:
-* Eigene Anfälligkeit für Biases beachten
-* Komplexe Fragen: einfache Antworten selten
+* eigene Anfälligkeit für Biases beachten
+* komplexe Fragen: einfache Antworten selten
 * Wissenschaft ist ein iterativer Prozess: Viele Schlussfolgerungen sind unsicher und vorläufig
-* Wahrscheinlichkeit =/= Determinismus
+* Wahrscheinlichkeit ≠ Determinismus
 ]
 
 .pull-right[
 ##### Skepsis:
 * Vorannahmen hinterfragen
 * Falsifizierbarkeit (Widerlegbarkeit) prüfen
-* Empirische Evidenz prüfen
+* empirische Evidenz prüfen
 * Methodenauswahl prüfen
 * Alternativerklärungen prüfen
-* Schlussfolgerungen prüfen (z.B. Korrelation ≠ Kausalität; Die Sonne geht nicht auf, weil der Hahn kräht)
+* Schlussfolgerungen prüfen (z. B. Korrelation ≠ Kausalität; Die Sonne geht nicht auf, weil der Hahn kräht)
 
 > Was sind weitere plausible Beispiele für Korrelation ≠ Kausalität?
 ] 
@@ -612,16 +626,16 @@ name: begriffe
 
 **Hypothese** (griech.) = Unterstellung, Vermutung:  
 
-* Eine in Form einer logischen Aussage formulierte Annahme, deren Gültigkeit man zwar für möglich hält, die aber noch zu prüfen ist
+* eine in Form einer logischen Aussage formulierte Annahme, deren Gültigkeit man zwar für möglich hält, die aber noch zu prüfen ist
 * Hypothesen sollen prüfbare Vorhersagen machen (**empirisch testbar** und **falsifizierbar**).
-* Hypothesen werden meist aus Theorien abgeleitet.
+* Hypothesen werden meist aus Theorien abgeleitet
 
 **Theorie**:
 
-* Integration von Wissen in ein kohärentes (logisch widerspruchsfreies) theoretisches Gedankengebäude. 
-* Eine Theorie enthält in der Regel **beschreibende (deskriptive) und erklärende (kausale)** Aussagen über einen Teil der Realität.
+* Integration von Wissen in ein kohärentes (logisch widerspruchsfreies) theoretisches Gedankengebäude 
+* Eine Theorie enthält in der Regel **beschreibende (deskriptive)** und **erklärende (kausale)** Aussagen über einen Teil der Realität
 * Theorien sind nur Annähherungen an die Wirklichkeit: unvollständig, kontextabhängig und nicht endgültig
-* Auf Grundlage von Theorien werden Hypothesen abgeleitet und Vorhersagen getroffen. 
+* Auf Grundlage von Theorien werden Hypothesen abgeleitet und Vorhersagen getroffen 
 
 $\rightarrow$ Eine Theorie ist "mehr" als eine Hypothese, da sie ein Phänomen umfassend beschreibt und erklärt (höheres Erklärungsvermögen). Aus einer Theorie kann man mehrere Hypothesen ableiten.
 
@@ -664,11 +678,11 @@ class: top, left, hide_logo
 
 #### Begriffe einer empirischen Wissenschaft
 
-**Gesetz(mäßigkeit)**: Feststellungen über Zusammenhänge, die durch empirische Evidenz als relativ gut gesichert angenommen werden können. "Wenn x, dann y..."
+**Gesetz(mäßigkeit)**: Feststellungen über Zusammenhänge, die durch empirische Evidenz als relativ gut gesichert angenommen werden können. "Wenn x, dann y ..."
 
 **Besonderheiten psychologischer "Gesetzes"-aussagen:**
 
-* Keine Formulierung von Naturgesetzen, sondern Aussagen, die für viele Fälle zutreffen, aber nicht für alle, d.h. Vorhersagen für einen ganz konkreten Fall sind nicht (mit Sicherheit) möglich
+* keine Formulierung von Naturgesetzen, sondern Aussagen, die für viele Fälle zutreffen, aber nicht für alle, d. h. Vorhersagen für einen ganz konkreten Fall sind nicht (mit Sicherheit) möglich
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "70%"}
@@ -680,7 +694,7 @@ $\rightarrow$ Wissenschaftliche Hypothesen/Gesetzesaussagen in der Psychologie s
 
 ---
 class: top, left, hide_logo
-<div class="footer"><span>Dörner, D. & Selg, H. (1985). <i>	Psychologie - Eine Einführung in ihre Grundlagen und Anwendungsfelder.</i> Kohlhammer.</div>
+<div class="footer"><span>Dörner, D. & Selg, H. (1985). <i>	Psychologie – Eine Einführung in ihre Grundlagen und Anwendungsfelder.</i> Kohlhammer.</div>
 
 ### Wissenschaftliches Herangehen an Fragestellungen
 
@@ -689,19 +703,19 @@ class: top, left, hide_logo
 <br><br>
 
 .center[
-.content-box-gray[**Satzsysteme:** Theorien, Modelle, Gesetze]
+.content-box-gray[**Satzsysteme**: Theorien, Modelle, Gesetze]
 
 $\downarrow$ $\uparrow$
 
-.content-box-gray[**Einzelsätze:** Hypothesen = prüfbare Behauptungen über empirisch beobachtbare Sachverhalte]
+.content-box-gray[**Einzelsätze**: Hypothesen = prüfbare Behauptungen über empirisch beobachtbare Sachverhalte]
 
 $\downarrow$ $\uparrow$
 
-.content-box-gray[**Realität:** Bereich der empirisch beobachtbaren Phänomene]
+.content-box-gray[**Realität**: Bereich der empirisch beobachtbaren Phänomene]
 ]
 
 <br><br>
-Grundkonzeption empirischer Wissenschaften: Empirische Prüfbarkeit ihrer Sätze (Dörner & Selg, 1985)
+Grundkonzeption empirischer Wissenschaften: empirische Prüfbarkeit ihrer Sätze (Dörner & Selg, 1985)
 
 ---
 class: top, left, hide_logo
@@ -712,13 +726,13 @@ class: top, left, hide_logo
 ##### Verifikation
 
 .pull-left[
-* Wissenschaftliche Hypothesen in der Psychologie können meist nicht vollständig geprüft (**verifiziert**) werden.
+* Wissenschaftliche Hypothesen in der Psychologie können meist nicht vollständig geprüft (**verifiziert**) werden
 
-* Es ist in der Regel (!) nicht möglich alle Fälle einer Zielgruppe (**Population**) zu untersuchen, schon gar nicht für alle Zeiten.
+* Es ist in der Regel (!) nicht möglich, alle Fälle einer Zielgruppe (**Population**) zu untersuchen, schon gar nicht für alle Zeiten
 
-**Workaround:**
+**Workaround**:
 
-* Untersuchungen erfolgen anhand **repräsentativer Stichprobe**, von der auf Population geschlossen wird.
+* Untersuchungen erfolgen anhand **repräsentativer Stichprobe**, von der auf Population geschlossen wird
 ]
 
 .pull-right[
@@ -735,7 +749,7 @@ class: top, left, hide_logo
 ##### Falsifikation
 
 .pull-left[
-* Hypothesen als Wahrscheinlichkeitsaussagen können durch **Einzelfälle/Gegenbeispiele** (!), die der Hypothese widersprechen, nicht widerlegt (**falsifiziert**) werden. Das bedeutet: Konträre Einzelfälle sind explizit zugelassen.
+* Hypothesen als Wahrscheinlichkeitsaussagen können durch **Einzelfälle/Gegenbeispiele** (!), die der Hypothese widersprechen, nicht widerlegt (**falsifiziert**) werden. Das bedeutet: Konträre Einzelfälle sind explizit zugelassen
 ]
 
 .pull-right[
@@ -744,11 +758,39 @@ knitr::include_graphics("bilder/blackswan.jpg")
 ```
 ]
 
-* Der auf dem Falsifikationsprinzip basierende Erkenntnisfortschritt besteht dann in der Eliminierung **falscher bzw. schlecht bewährter Hypothesen** (oder ganzer Theorien) durch statistische Analysen auf Stichprobendaten. 
+* Der auf dem Falsifikationsprinzip basierende Erkenntnisfortschritt besteht dann in der Eliminierung **falscher** bzw. **schlecht bewährter Hypothesen** (oder ganzer Theorien) durch statistische Analysen von Stichprobendaten
 
 * Anders ausgedrückt: Um Wahrscheinlichkeitsaussagen falsifizierbar machen zu können, bedienen wir uns eines methodischen Kriteriums ( $\rightarrow$ Signifikanztest, siehe Vorlesung Quantitative Methoden) 
 
-* Nicht falsifizierte Hypothesen (oder Theorien) sind nicht wahr, sondern gelten nur als vorläufig angenommen.
+* Nicht falsifizierte Hypothesen (oder Theorien) sind nicht wahr, sondern gelten nur als vorläufig angenommen
+
+---
+class: top, left
+<div class="footer"><span>https://www.clearerthinking.org/post/does-astrology-work</span></div>
+
+### Wissenschaftliches Herangehen an Fragestellungen
+
+.center[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0wHs5Odzlto?si=XR8oqQVfjwmTgoVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+]
+
+---
+class: top, left, hide_logo
+### Heutige Themen
+
+#### Wissenschaftliches Herangehen an Fragestellungen
+* [Abgrenzung der Alltagspsychologie von wissenschaftlicher Psychologie](#abgrenzung)
+* [Merkmale wissenschaftlichem Erkentnissgewinns](#methoden)
+* [Begriffe einer empirischen Wissenschaft](#begriffe)
+
+#### Was ist Psychologie? 
+* [Definition wissenschaftlicher Psychologie](#definition)
+* [Ziele wissenschaftlicher Psychologie](#ziele)
+
+#### Take-Aways, Literaturaufgabe und Schlüssel-/Fachbegriffe
+* [Take-Aways](#take-away)
+* [Literaturaufgabe](#literatur)
+* [Schlüssel-/Fachbegriffe](#words)		  
 
 ---
 name: definition
@@ -760,7 +802,7 @@ class: top, left, hide_logo
 #### Was macht die Psychologie einzigartig?
 
 .center[
-**Frage:**
+**Frage**:
 
 „Womit befasst sich die Psychologie?“
 
@@ -771,7 +813,7 @@ Wissenschaftlich ausgedrückt:
 
 <br>
 
-**Definition der Deutschen Gesellschaft für Psychologie (2023):**
+**Definition der Deutschen Gesellschaft für Psychologie (2023)**:
 
 "*Psychologie ist die Wissenschaft, die sich mit den Gedanken, Gefühlen und dem Verhalten des Menschen beschäftigt. Dabei geht es einerseits um Gesetzmäßigkeiten, die alle Menschen betreffen, andererseits aber auch um individuelle Unterschiede und darum, was unser Erleben und Handeln beeinflusst.*"
 
@@ -784,17 +826,17 @@ class: top, left, hide_logo
 
 Gegenstand der Psychologie:
 
-* **Menschliches Erleben**
+* **menschliches Erleben**
   - Gedanken
   - Gefühle
-* **Menschliches Verhalten**
+* **menschliches Verhalten**
 
-...dabei relevant:
+... dabei relevant:
 
-* **Gesetzmäßigkeiten**, die alle Menschen betreffen (im Durchschnitt - d.h. probabilistisch)
-* **Individuelle Unterschiede** zwischen Menschen
+* **Gesetzmäßigkeiten**, die alle Menschen betreffen (im Durchschnitt – d. h. probabilistisch)
+* **individuelle Unterschiede** zwischen Menschen
 
-...sowie:
+... sowie:
 
 * **Bedingungen und Ursachen**
   - innere (im Individuum angesiedelte)
@@ -806,12 +848,12 @@ class: top, left, hide_logo
 
 #### Was macht Psychologie einzigartig? 
 
-**Gegenstand psychologischer Untersuchungen**: Individuum (Neugeborenes, Athlet, Student, Patient,...) oder Gruppen (Paare, Familien, Teams,...)
+**Gegenstand psychologischer Untersuchungen**: Individuum (Neugeborenes, Athlet, Student, Patient ...) oder Gruppen (Paare, Familien, Teams ...)
 
-**Verhalten:** Mittel durch welches sich ein Individuum an die Umwelt anpasst
+**Verhalten**: Mittel, durch welches sich ein Individuum an die Umwelt anpasst
 
 .pull-left[
-* Wesentlicher Teil der Psychologie: **Beobachtbares Verhalten**
+* wesentlicher Teil der Psychologie: **beobachtbares Verhalten**
   - Lachen
   - Weinen
   - Sprechen
@@ -828,7 +870,7 @@ class: top, left, hide_logo
   - ...
 ]  
 
-**Annahme der meisten Psychologen:** Menschliches Verhalten ist ohne mentale/kognitive Prozesse (Erleben, Bewusstsein) nicht verständlich.
+**Annahme der meisten Psychologen**: Menschliches Verhalten ist ohne mentale/kognitive Prozesse (Erleben, Bewusstsein) nicht verständlich.
 
 ---
 class: top, left, hide_logo
@@ -846,7 +888,7 @@ name: ziele
 
 **4. Beeinflussung**
 
-... menschlichen Verhaltens und Erlebens (Gegenstand der Psychologie).
+... menschlichen Verhaltens und Erlebens (Gegenstand der Psychologie)
 
 ---
 class: top, left, hide_logo
@@ -856,17 +898,17 @@ class: top, left, hide_logo
 
 ##### Beschreibung
 
-Merkmale des menschlichen Verhaltens und Erlebens...
-* ...benennen
-* ...definieren
-* ...quantifizieren
-* ...deskriptiv als zusammenhängend beschreiben (hier ist die Trennung zum Ziel der Vorhersage unscharf)
+Merkmale des menschlichen Verhaltens und Erlebens ...
+* benennen
+* definieren
+* quantifizieren
+* deskriptiv als zusammenhängend beschreiben: welche Variablen treten häufig gemeinsam auf? was geht häufig mit einem bestimmten Verhalten und Erleben einher? (hier ist die Trennung zum Ziel der Vorhersage insbesondere darin, dass paarweise nur zwei Variablen betrachtet werden)
 
-**Beschreibungsebenen:** behavioral, kognitiv, emotional, physiologisch
+**Beschreibungsebenen**: behavioral, kognitiv, emotional, physiologisch
 
-**Wahl von angemessenen Detailgrad nötig:** grob vs. spezifisch
+**Wahl von angemessenen Detailgrad nötig**: grob vs. spezifisch
 
-Unabhängig von Detailgrad: **So objektiv wie möglich.**
+Unabhängig von Detailgrad: **so objektiv wie möglich**
 
 ---
 class: top, left
@@ -878,7 +920,7 @@ class: top, left
 
 .pull-left[
 
-**Wahl von angemessenen Detailgrad nötig:** grob vs. spezifisch
+**Wahl von angemessenen Detailgrad nötig**: grob vs. spezifisch
 
 > **Sie wollen sich mit einem Freund vor diesem Gemälde verabreden. Wie würden Sie es beschreiben?**
 
@@ -902,12 +944,12 @@ class: top, left
 
 ##### Beschreibung
 
-**Wahl von angemessenen Detailgrad nötig:** grob vs. spezifisch
+**Wahl von angemessenen Detailgrad nötig**: grob vs. spezifisch
 
-**Beispielverhalten:** Jemanden überzeugen.
+**Beispielverhalten**: jemanden überzeugen
 
 .pull-left[
-**Beispiel Sprache:**
+**Beispiel Sprache**:
 
 * Gespräch
 * Aussage
@@ -918,7 +960,7 @@ class: top, left
 ]
 
 .pull-right[
-**Beispiel Physiologie:**
+**Beispiel Physiologie**:
 
 * Gehirn
 * Frontallappen
@@ -938,7 +980,7 @@ class: top, left
 
 ##### Beschreibung
 
-**Beispiel:** Prävalenz von psychischen Problemen in Canada bei Personen mit hohem und niedrigem Einkommen
+**Beispiel**: Prävalenz von psychischen Problemen in Kanada bei Personen mit hohem und niedrigem Einkommen
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold',fig.align='center'}
@@ -963,7 +1005,7 @@ class: top, left
 
 ##### Beschreibung
 
-**Beispiel:** Beschreibung von Stressoren am Arbeitsplatz von Pflegenden im mentalen Gesundheitsbereich und Beschreibung der Zusammenhänge von Resilienz und Wohlbefinden in dieser Zielgruppe
+**Beispiel**: Beschreibung von Stressoren am Arbeitsplatz von Pflegenden im mentalen Gesundheitsbereich und Beschreibung der Zusammenhänge von Resilienz und Wohlbefinden in dieser Zielgruppe
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold',fig.align='center'}
@@ -1001,17 +1043,17 @@ class: top, left, hide_logo
 .pull-left[
 * **Regelhafte Muster** in Verhalten und mentalen Prozessen finden, die auf Ursache-Wirkungs-Beziehung zurückzuführen sind
 
-* Erklärungen gehen über das Beschreibende hinaus
+* Erklärungen gehen über die Beschreibung hinaus
 
 * Ideal:
-  - Identifizieren von **Kausalitäten**, d.h. Verstehen, "wie etwas funktioniert" und "warum es so passiert"
+  - Identifizieren von **Kausalitäten**, d. h. Verstehen, "wie etwas funktioniert" und "warum es so passiert"
   - **Alternativerklärungen** ausschließen
   
-> **Was sind mögliche internale und externale Ursachen dafür, dass Menschen Rauchen?**
+> **Was sind mögliche internale und externale Ursachen dafür, dass Menschen rauchen?**
 ]
 
 .pull-right[
-* Für Verhalten und Erleben gibt es i.d.R. eine **Kombination** von Ursachen
+* Für Verhalten und Erleben gibt es i. d. R. eine **Kombination** von Ursachen
   - internale/innere/organismische/dispositionelle Variablen
   - externale/äußere/situationale/Umwelt- Variablen
   
@@ -1030,7 +1072,7 @@ class: top, left
 
 ##### Erklärung
 
-**Beispiel:** Diskriminierung als Determinante von mentaler Gesundheit
+**Beispiel**: Diskriminierung als Determinante von mentaler Gesundheit
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold',fig.align='center'}
@@ -1054,7 +1096,7 @@ class: top, left
 
 ##### Erklärung
 
-**Beispiel:** Ist Häufigkeit von Sex eine kausale Ursache von genereller Glücklichkeit?
+**Beispiel**: Ist Häufigkeit von Sex eine kausale Ursache von genereller Glücklichkeit?
 
 .center[
 ```{r, echo=FALSE,out.width="50%",fig.show='hold',fig.align='center'}
@@ -1107,15 +1149,18 @@ class: top, left, hide_logo
 
 * Vorhersage setzt häufig gute Erklärung voraus 
 
-* Wenn mehrere Erklärungen denkbar $\rightarrow$ die Wahrscheinlichste (beste Vorhersage) "gewinnt"
+* Wenn mehrere Erklärungen denkbar sind, "gewinnt" die wahrscheinlichste (beste Vorhersage)
 
-* Erklärungen sind aber auch nicht immer nötig: siehe Einheit zu Machine Learning ("Black Box" Vorhersagen)
+* Erklärungen sind aber auch nicht immer nötig: Siehe Einheit zu Machine Learning ("Black Box"-Vorhersagen)
+
+<br>
 
 .center[
 *"Vergangenes Verhalten ist der beste Prädiktor für zukünftiges Verhalten."*
 
 Sutton (1994)
 ]
+
 
 $\rightarrow$ Vergangenes Verhalten ist meist nicht die kausale Ursache für jetziges Verhalten, aber leistet in der Regel trotzdem eine gute Vorhersagekraft
 
@@ -1130,7 +1175,7 @@ class: top, left
 
 ##### Vorhersage
 
-**Beispiel:** Vorhersage von Partnerschaftsqualität
+**Beispiel**: Vorhersage von Partnerschaftsqualität
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold',fig.align='center'}
@@ -1154,7 +1199,7 @@ class: top, left
 
 ##### Vorhersage
 
-**Beispiel:** [PRONIA](https://nachrichten.idw-online.de/2021/01/28/pronia-projekt-entwickelt-prognosemodelle-fuer-die-psychiatrie) -  Studie zur Vorhersage von Psychose-Onset im Prodrom (Krise oder Erkrankungsbeginn)
+**Beispiel:** [PRONIA](https://nachrichten.idw-online.de/2021/01/28/pronia-projekt-entwickelt-prognosemodelle-fuer-die-psychiatrie) – Studie zur Vorhersage von Psychose-Onset im Prodrom (Krise oder Erkrankungsbeginn)
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold',fig.align='center'}
@@ -1177,16 +1222,16 @@ class: top, left, hide_logo
 
 * **Form, Stärke und Auftretenswahrscheinlichkeit** von Verhalten oder mentalen Prozessen beeinflussen
 
-* Verhalten und Erleben...
-  - ...auftreten lassen
-  - ...aufrechterhalten
-  - ...beenden
+* Verhalten und Erleben ...
+  - auftreten lassen
+  - aufrechterhalten
+  - beenden
   
 * Setzt häufig genaue Beschreibung/Erklärung/Vorhersage voraus
 
-* **Wirksame, evidenzbasierte Interventionen** für viele Psycholog:innen das zentralste Ziel (z.B. Psychotherapie)
+* **Wirksame, evidenzbasierte Interventionen** für viele Psycholog:innen das zentralste Ziel (z. B. Psychotherapie)
 
-* Prüfung der Wirksamkeit in **Evaluationsforschung**
+* Prüfung der Wirksamkeit von Interventionen in sogenannter **Evaluationsforschung**
 
 <!--<br>
 **[Note-Pad](https://docs.google.com/document/d/1QePMxyyP7yH1sTaqcPsYyM3Y7tXr-N8wS0v_p9oi4jQ/edit?usp=sharing):** Was fallen Ihnen für psychologische Möglichkeiten der **Einflussnahme** ein?-->
@@ -1201,7 +1246,7 @@ class: top, left
 
 ##### Vorhersage
 
-**Beispiel:** Beeinflussung der Wahrscheinlichkeit von Depressions-Rückfall durch Psychotherapie
+**Beispiel:** Beeinflussung der Wahrscheinlichkeit von Depressionsrückfall durch Psychotherapie
 
 .pull-left[
 ```{r, echo=FALSE,fig.show='hold'}
@@ -1226,7 +1271,7 @@ class: top, left, hide_logo
 
 * Rückgriff auf **Introspektion** (bewusstes Selbstbeobachten des psychischen Erlebens) als Forschungsmethode nicht unproblematisch (Objektivität?)
 
-$\rightarrow$ siehe Entwicklung der modernen Psychologie bei Frau Garatva für Kritik und Ansätze zur Lösung des Introspektionsproblems
+$\rightarrow$ Siehe Entwicklung der modernen Psychologie bei Frau Garatva für Kritik und Ansätze zur Lösung des Introspektionsproblems
 
 $\rightarrow$ Wir werden im weiteren Verlauf der Vorlesung kennenlernen, welche Methoden heutzutage sowohl für manifeste als auch latente psychologische Merkmale benutzt werden (auch auf Basis von Introspektion)
 
@@ -1234,7 +1279,7 @@ $\rightarrow$ Wir werden im weiteren Verlauf der Vorlesung kennenlernen, welche 
 name: take-away
 class: top, left, hide_logo
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 * Psychologie grenzt sich von Alltagspsychologie durch **wissenschaftliche Methoden zur Erkenntnisgewinnung** ab
 
@@ -1242,13 +1287,13 @@ class: top, left, hide_logo
 
 * Hypothesen zeichnen sich durch **empirische Überprüfbarkeit** und **Falsifizierbarkeit** aus
 
-* Eine Theorie enthält in der Regel **beschreibende (deskriptive) und erklärende (kausale) Aussagen** über einen Teil der Realität
+* Eine Theorie enthält in der Regel **beschreibende (deskriptive)** und **erklärende (kausale) Aussagen** über einen Teil der Realität
 
 * Psychologische Gesetzesaussagen sind **probabilistische Aussagen (Wahrscheinlichkeitsaussagen)**
 
 * Psychologie befasst sich mit **Verhalten und Erleben**
 
-* Ziele psychologischer Forschungsarbeit sind **Beschreibung, Erklärung, Vorhersage und Beeinflussung**
+* Ziele psychologischer Forschungsarbeit sind **Beschreibung, Erklärung, Vorhersage** und **Beeinflussung**
 ]
 
 ---
@@ -1257,18 +1302,18 @@ name: literatur
 
 ### Literaturaufgabe
 
-* Suchen Sie sich ein Sprichwort raus, das Sie häufig als zutreffend erlebt haben (falls Ihnen keins einfällt: Fragen Sie Ihren Partner, Freunde, Eltern, jemanden auf einer Party, ChatGPT...)
+* Suchen Sie sich ein Sprichwort raus, das Sie häufig als zutreffend erlebt haben (falls Ihnen keins einfällt: Fragen Sie Ihren Partner, Freunde, Eltern, jemanden auf einer Party, ChatGPT ...)
 
-* Nutzen Sie Google Scholar (https://scholar.google.de/) um mit **englischen Schlagwörtern** nach einer wissenschaftlichen Studie zu dem Thema des Sprichworts suchen
-  - Suchen Sie sich im Idealfall eine psychologische Studie raus (z.B. in dem Sie in das Suchfeld das Wort "psychology" mit einfügen)
-  - Lesen Sie den "Abstract" = Zusammenfassung einer Studie, um zu bestimmen, ob sie passend ist oder nicht
+* Nutzen Sie Google Scholar (https://scholar.google.de/), um mit **englischen Schlagwörtern** nach einer wissenschaftlichen Studie zu dem Thema des Sprichworts suchen
+  - Suchen Sie sich im Idealfall eine psychologische Studie raus (z. B. indem Sie in das Suchfeld das Wort "psychology" mit einfügen)
+  - Lesen Sie das "Abstract" (= Zusammenfassung) einer Studie, um zu bestimmen, ob sie passend ist oder nicht
 
 * Beantworten Sie die folgenden Fragen:
   - Würden Sie sagen, dass es sich um eine psychologische Studie handelt? Warum oder warum nicht?
   - Können Sie einordnen, ob es in der Studie um Beschreibung, Erklärung oder Vorhersage geht?
   - Stimmen die Ergebnisse der Studie ganz oder zum Teil oder gar nicht mit dem Sprichwort überein?
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 1"](https://studynet.hs-fresenius.de/ilias.php?baseClass=ilrepositorygui&ref_id=40734) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 1"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_49036.html) unter "Literatur-Aufgabe" ab.
 
 ---
 class: top, left, hide_logo
@@ -1277,9 +1322,9 @@ class: top, left, hide_logo
 
 **Woran erkenne ich einen wissenschaftlichen Artikel?**
 
-* In einer Fachzeitschrift ("Journal") publiziert (ob die Zeitschrift peer-reviewed ist muss eigentlich separat geprüft werden)
+* In einer Fachzeitschrift ("Journal") publiziert (ob die Zeitschrift peer-reviewed ist, muss eigentlich separat geprüft werden), im Zweifelsfall googlen
 
-* Fast immer: Summary / Zusammenfassung / Abstract
+* Fast immer am Anfang: Summary / Zusammenfassung / Abstract
 
 * In der Psychologie: Struktur folgt Einleitung, Methode, Ergebnisse, Diskussion
 
@@ -1301,13 +1346,17 @@ name: words
 
 **Methodenpluralismus**
 
+**Falsifizierbarkeit**
+
+**Replizierbarkeit**
+
+**Transparenz**
+
 **Hypothese**
 
 **Theorie**
 
-**peer-review**
-
-**Falsifizierbarkeit**
+**Peer Review**
 
 
 ]
@@ -1325,6 +1374,10 @@ name: words
 **deskriptiv** 
 
 **probabilistische Aussage**
+
+**Einzelsätze**
+
+**Satzsysteme**
 
 ]
 ]
@@ -1365,7 +1418,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/SxBrfVLj2j4sZg6o6)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/6YroyW18oJNXdahY6)**
 
 ---
 class: top, left, hide_logo
@@ -1380,26 +1433,6 @@ knitr::include_graphics("bilder/gerrig.jpg")
 ---
 class: top, left, hide_logo
 
-### Einladung zu den Lunch Lectures Positive Psychology im Sommersemester 2025
-
-.pull-left[
-Die DGPs-Interessengruppe Positive Psychologie lädt in Kooperation mit der Deutschen Gesellschaft für Positiv-Psychologische Forschung (DGPPF e.V.) zu Lunch Lectures ein. Ziel der Vorlesungsreihe ist, über die Positive Psychologie zu informieren und ausgewählte Themen aus dem Themenspektrum vorzustellen. 
-
-Die Einladung richtet sich an Wissenschaftler:innen, Praktiker:innen und Studierende der Psychologie und der Nachbardisziplinen sowie alle anderen Interessierten. 
-
-Die Lunch Lectures finden donnerstags (10.04., 08.05., 12.06., 26.06. und 10.07.) von 13:00-14:00 Uhr online hier 
-https://uni-luebeck.webex.com/uni-luebeck/j.php?MTID=m3583316f0cd34e3f4768e6358b5dbf35 statt.
-]
-
-.pull-right[
-```{r eval = TRUE, echo = F, fig.align='center'}
-knitr::include_graphics("bilder/vortragsreihe_pp.PNG")
-```
-]
-
----
-class: top, left, hide_logo
-
 ### Einladung zur Onlineveranstaltung Karriereperspektiven
 
 Zielgruppe: Die Onlineveranstaltung richtet sich an Studierende im Bachelor sowie Master. Aufgrund der Tätigkeitsbereiche der Speaker*innen sind die Einblicke insbesondere für Studierende aus den Studiengängen Psychologie; BWL;  sowie Management, Economics and Social Sciences interessant.
@@ -1407,9 +1440,9 @@ Zielgruppe: Die Onlineveranstaltung richtet sich an Studierende im Bachelor sowi
 Programm mit mehr Informationen: https://cd.wiso.uni-koeln.de/de/team/juniorprofessur-fuer-organizational-behavior/j-prof-dr-annabelle-hofer/onlineveranstaltung-karriereperspektiven
 
 Zeit: Jeweils von 14:15-15:45 Uhr
-28.04.2025, 30.04.2025, 05.05.2025, 07.05.2025, 12.05.2025, 14.05.2025, 15.05.2025
+20.10.2025; 22.10.2025; 27.10.2025; 29.10.2025; 03.11.2025; 05.11.2025; 06.11.2025
 
-Zoom: https://fernuni-hagen.zoom-x.de/j/67800478651?pwd=dUCsaJbhBSizka7rYkDt2b3LLbyFJU.1
+Zoom: https://fernuni-hagen.zoom-x.de/j/61887857920?pwd=mOeMHzdTaojKJ4xbZMImLtQETiiiqI.1
 
 Meeting-ID: 678 0047 8651
 Kenncode: 23020259
@@ -1421,7 +1454,30 @@ Sprache: Deutsch
 Die SpeakerInnen verfügen alle über ein abgeschlossenes Studium in Psychologie. Sie sind in Bereichen wie beispielsweise Consulting, Data Analytics, Gesundheitsmanagement, und Personalmanagement tätig.
 
 Ansprechpartner: Merlin Trümpener (Universität zu Köln), E-Mail: fosteryourcareer@wiso.uni-koeln.de
-  
+
+
+---
+class: top, left, hide_logo
+
+### Einladung zum rechtspsychologischen Kolloquium
+
+Sehr geehrte Kolleg:innen,
+
+die Medical School Berlin (MSB) lädt alle Interessierten zum rechtspsychologischen Kolloquium ein. In diesem Wintersemester wird es zwei Beiträge geben:
+
+20.10.2025 | 18.00 – 19.30 Uhr (hybrid)
+Lockerungsprognosen im Straf- und Maßregelvollzug: Eine besondere Form
+der Risikoeinschätzung im Spannungsfeld zwischen Resozialisierung und Sicherung
+Merten Neumann (Kriminologisches Forschungsinstitut Niedersachsen e. V.)
+
+01.12.2025 | 18.00 – 19.30 Uhr (hybrid)
+Pädophile Störung in der Allgemeinversorgung: Möglichkeiten und Grenzen
+Prof. Dr. Sara Jahnke (University of Bergen, Norwegen)
+
+Die beiden Termine erfolgen als Hybrid-Veranstaltungen (Medical School Berlin, Raum 1.03, Rüdesheimer Str. 50, 14197 Berlin und online über MS Teams).
+Bitte melden Sie sich für die jeweiligen Veranstaltungen unter https://www.medicalschool-berlin.de/veranstaltungen-msb/msb-kolloquium/ an. Unter dieser Adresse finden Sie auch weitere Informationen
+
+
 ---
 class: top, left, hide_logo
 
@@ -1443,3 +1499,4 @@ class: top, left, hide_logo
 <!-- library(renderthis)  -->
 <!-- to_pdf("EinfForsch_01_PsychologieAlsWissenschaft.Rmd", complex_slides = TRUE) -->
 <!-- wenn pdf nicht funktioniert, ist entweder das html noch offen, oder man muss die R session neu starten -->
+<!-- oder chromote::local_chrome_version(binary = "chrome-headless-shell") -->

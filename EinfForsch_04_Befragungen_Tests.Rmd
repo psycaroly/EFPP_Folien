@@ -3,7 +3,7 @@ title: "Einheit 4"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2024/05/21 (updated: `r Sys.Date()`)"
+date: "2024/11/17 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -58,8 +58,23 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 4: Befragungen und Tests
-##### 29.05.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 25.11.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
+
+---
+class: top, left, hide_logo
+
+## Termine
+
+```{r echo = F}
+df = readxl::read_xlsx("EFPP_Termine_neu.xlsx", sheet = "Tabelle1")[1:17, 1:3]
+df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
+df %>%
+  kbl() %>%
+  kable_styling(font_size = 16) %>%
+  kable_classic(full_width = T) %>% 
+  row_spec(c(8,11:13), background = "lightgray")
+```
 
 ---
 class: top, left, hide_logo
@@ -81,12 +96,12 @@ position = xaringanExtra::css_position(top = "5em", right = "1em"))
 * [Ratings](#ratings)
 
 #### Testverfahren
-* [Merkmale](#merkmale)
+* [Merkmale psychologischer Tests](#merkmale)
 * [Leistungstests](#leistungstests)
 * [Persönlichkeitstests](#perstests)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
@@ -98,7 +113,9 @@ name: intro
 
 #### Rahmenbedingungen
 
-Idee: Die Befragung ermöglicht einen Zugang zu psychischen Prozessen, Strukturen und Merkmalen, auch solchen die nicht direkt beobachtbar sind, also nicht sichtbar (d.h. nicht manifest, sondern latent)
+Idee: Die Befragung ermöglicht einen Zugang zu psychischen Prozessen, Strukturen und Merkmalen, auch wenn diese nicht direkt beobachtbar (also nicht sichtbar) sind  
+
+$\rightarrow$ d. h. Befragung erlaubt Zugang zu nicht manifesten, latenten Variablen
 
 **Drei Voraussetzungen:**
 
@@ -106,9 +123,9 @@ Idee: Die Befragung ermöglicht einen Zugang zu psychischen Prozessen, Strukture
 
 2. Untersuchte Personen müssen interessierende psychische Prozesse **kommunizieren** können
 
-3. Selbstauskünfte von Untersuchungsteilnehmer:innen müssen hinreichend **reliabel und valide** sein
+3. Selbstauskünfte von Untersuchungsteilnehmer:innen müssen hinreichend **reliabel** und **valide** sein
 
-Selbstauskünfte in Befragungen beinhalten **drei elementare kognitive bzw. mentale Prozesse**:
+Selbstauskünfte in Befragungen beinhalten **drei elementare kognitive** bzw. **mentale Prozesse**:
 
 1. Interpretation der Frage
 2. Bildung eines Urteils
@@ -127,11 +144,11 @@ class: top, left, hide_logo
 .pull-left[
 * Selbstbericht = Akt der Kommunikation
 * Person teilt sich bewusst mit (wendet sich an einen oder mehrere Adressaten)
-* Menschliche Kommunikation = Informationen + Absicht des Senders
+* menschliche Kommunikation = Informationen + Absicht des Senders
 
-$\rightarrow$ Einfluss auf die Validität: Was messe ich eigentlich? (z.B. ist ein Rückschluss auf das Merkmal basierend auf der gegebenen Information ggf. verzerrt, wenn sozial erwünschter geantwortet wird)
+$\rightarrow$ Einfluss auf die Validität: Was messe ich eigentlich? (z. B. ist ein Rückschluss auf das Merkmal basierend auf der gegebenen Information ggf. verzerrt, wenn sozial erwünscht geantwortet wird)
 
-$\rightarrow$ Beispiel 4-Seiten-Modell (F. Schulz von Thun): Oft ist man als Forscher daran interessiert, die Absicht des Senders auf die "Selbstkundgabe" und/oder "Sachebene" zu richten
+$\rightarrow$ Beispiel Vier-Seiten-Modell (F. Schulz von Thun): Oft ist man als Forscher daran interessiert, die Absicht des Senders auf die "Selbstkundgabe" und/oder "Sachebene" zu richten
 ]
 
 .pull-right[
@@ -151,37 +168,37 @@ name: befragung
 
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
-* **Schriftliche** (Fragebogen) vs. **mündliche** Befragung (Interview)
+* **schriftliche** (Fragebogen) vs. **mündliche** Befragung (Interview)
 
-* **Standardisierte** vs. **nichtstandardisierte** Befragung $\rightarrow$ relevant für Auswertungs- und Interpretationsobjektivität
-  * Standardisiert: Antwortmöglichkeiten vorgegeben (geschlossene Fragen)
-  * Nichtstandardisiert: Befragte Person kann Antwort in ihren eigenen Worten formulieren (offene Fragen)
+* **standardisierte** vs. **nicht-standardisierte** Befragung $\rightarrow$ relevant für Auswertungs- und Interpretationsobjektivität
+  * standardisiert: Antwortmöglichkeiten vorgegeben (geschlossene Fragen)
+  * nicht-standardisiert: Befragte Person kann Antwort in ihren eigenen Worten formulieren (offene Fragen)
 
-* **Strukturierte** vs. **unstrukturierte** Befragung $\rightarrow$ relevant für Durchführungsobjektivität
-  * (Voll-)Strukturiert: Wortlaut und Reihenfolge der Fragen bzw. Items genau vorgegeben 
-  * Halbstrukturiert: Leitfaden mit vorformulierten Fragen zur Orientierung
-  * Unstrukturiert: Keine Vorgaben hinsichtlich Frageformulierung und Reihenfolge der Items
+* **strukturierte** vs. **unstrukturierte** Befragung $\rightarrow$ relevant für Durchführungsobjektivität
+  * (voll)strukturiert: Wortlaut und Reihenfolge der Fragen bzw. Items genau vorgegeben 
+  * halbstrukturiert: Leitfaden mit vorformulierten Fragen zur Orientierung
+  * unstrukturiert: keine Vorgaben hinsichtlich Frageformulierung und Reihenfolge der Items
 
 * **Anzahl** der befragten Personen
-  * Einzelbefragung (1 Person)
+  * Einzelbefragung (eine Person)
   * Gruppenbefragung (kleine Gruppe)
-  * Survey (Umfrage mit großer Zahl an Befragten, wobei i.d.R. jede Person einzeln befragt wird)
+  * Survey (Umfrage mit großer Zahl an Befragten, wobei i. d. R. jede Person einzeln befragt wird)
 
 ---
 class: top, left, hide_logo
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
 **Unterschiede zwischen schriftlicher und mündlicher Befragung**
 
-* Bei schriftlichen Befragungen ist das Reaktivitätsproblem geringer (der face-to-face-Kontakt bei Interviews kann Beeinflussungseffekte haben und Mitteilungsabsichten können stärker ausgeprägt sein)
+* Bei schriftlichen Befragungen ist das Reaktivitätsproblem geringer (der Face-to-face-Kontakt bei Interviews kann Beeinflussungseffekte haben und Mitteilungsabsichten können stärker ausgeprägt sein)
 
 * Befragte äußern sich bisweilen eher und ausführlicher in mündlichen Befragungen, Mitteilungsabsichten können erörtert werden
 
-* Interviews i.d.R. aufwändiger und kostenintensiver, dafür ggf. weniger Vorwissen nötig (zumindest wenn Interviews weniger standardisiert sind)
+* Interviews i. d. R. aufwendiger und kostenintensiver, dafür ggf. weniger Vorwissen nötig (zumindest wenn Interviews weniger standardisiert sind)
 
 $\rightarrow$ Entscheidung nach Forschungsziel und Ressourcenverfügbarkeit
 
@@ -190,11 +207,11 @@ $\rightarrow$ Entscheidung nach Forschungsziel und Ressourcenverfügbarkeit
 class: top, left
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
 ##### Beispielthema: Warum sind Liebesbeziehungen oft nicht von Dauer?
 
-**Beispiel: Vollstrukturierte und standardisierte Befragung**
+**Beispiel: vollstrukturierte und standardisierte Befragung**
 
 1. Was kennzeichnet für Sie eine dauerhafte, funktionierende Beziehung?
 
@@ -219,17 +236,17 @@ class: top, left
 class: top, left
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
 ##### Beispielthema: Warum sind Liebesbeziehungen oft nicht von Dauer?
 
-**Beispiel: Unstrukturiertes ("offenes") und unstandardisiertes Interview**
+**Beispiel: unstrukturiertes ("offenes") und unstandardisiertes Interview**
 
-**Einstiegsfrage:** 
+**Einstiegsfrage**: 
 
 Denken Sie an ein Ihnen bekanntes Paar, das sich getrennt hat. Erzählen Sie mir, was Ihnen in der Zeit vor der Trennung aufgefallen ist (bzw. wie Sie sich in der Gegenwart des Paares gefühlt haben).
 
-**Potentielle Nachfragen (auch Verständnisfragen erlaubt):**
+**Potenzielle Nachfragen (auch Verständnisfragen erlaubt)**:
 
 * Beschreiben Sie eine Streitstituation des Ihnen bekannten Paares. 
 * Was hat Ihrer Meinung nach zur Trennung des Paares geführt?
@@ -241,7 +258,7 @@ $\rightarrow$ in der qualitativen Forschung üblich, siehe Einheit 5 für mehr D
 class: top, left
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "70%"}
@@ -252,26 +269,26 @@ knitr::include_graphics("bilder/standardisierte_interviews.png")
 
 ---
 class: top, left, hide_logo
-<div class="footer"><span>Pelham, B. W., & Blanton, H. (2007). Conducting research in psychology. Measuring the Weight of Smoke. SAGE.</div>
+<div class="footer"><span>Pelham, B. W., & Blanton, H. (2007). <i> Conducting research in psychology. Measuring the Weight of Smoke. </i> SAGE.</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
 
-#### Befragung - Varianten und Prinzipien der Konstruktion
+#### Befragung: Varianten und Prinzipien der Konstruktion
 
-* Meist Formulierung des Items als Frage oder Aussage (manchmal auch nur ein zu beurteilendes Adjektiv)
-* zeitlicher Bezug kann variieren (z.B. "im Moment" vs. "im letzten Monat", vs. "im Allgemeinen") - je nachdem ob man eine stabile Eigenschaft (**trait**) oder einen aktuellen Zustand (**state**) erhebt
+* meist Formulierung des Items als Frage oder Aussage (manchmal auch nur ein zu beurteilendes Adjektiv)
+* zeitlicher Bezug kann variieren (z. B. "im Moment" vs. "im letzten Monat" vs. "im Allgemeinen") – je nachdem, ob man eine stabile Eigenschaft (**trait**) oder einen aktuellen Zustand (**state**) erhebt
 
-**Ein guter Fragebogen ist u.a. gekennzeichnet durch (Pelham und Blanton, 2007)**:
+**Ein guter Fragebogen ist u. a. gekennzeichnet durch (Pelham & Blanton, 2007)**:
 
 * einfache Formulierung und gute Verständlichkeit
 * keine zu hohen Anforderungen an die mentale oder kognitive Leistungsfähigkeit der Befragten
 * adressatenorientierte Formulierung
 * keine (doppelten) Verneinungen in den Fragen
 * keine überfrachteten Fragen
-* keine »Forced Choice« Antworten bei unabhängig beantwortbaren Aspekten (z.B. "Sind Sie eher gewissenhaft oder offen?" $\rightarrow$ schließt sich nicht aus!)
+* keine "Forced Choice"-Antworten bei unabhängig beantwortbaren Aspekten (z. B. "Sind Sie eher gewissenhaft oder offen?" $\rightarrow$ schließt sich nicht aus!)
 * keine Fragen, die sehr ähnlich klingen
 * Einsatz mehrerer Items zur Messung eines Konstrukts
-* eine klare und informative Instruktion
+* klare und informative Instruktion
 
 ---
 class: top, left, hide_logo
@@ -285,16 +302,18 @@ Ratingskalen sind ein sehr häufiges Format in schriftlichen Befragungen:
 
 * Beurteilung von Aspekten eines bestimmten Merkmals auf einer Skala
 
-* Geben gleich große, geordnete, markierte Abschnitte des Merkmalskontinuums vor
+* geben gleich große, geordnete, markierte Abschnitte des Merkmalskontinuums vor
 
 * Personen sollen diejenige Stufe der Ratingskala ankreuzen, die persönlicher Auffassung am ehesten entspricht
 
-**Gründe für Beliebtheit in Psychologie:**
-1. liefern vergleichsweise direkt quantitative (in Zahlen übersetzte und damit statistisch auswertbare) Daten
+-- 
 
-2. unterteilen die Merkmalsausprägungen in gleich große Abschnitte $\rightarrow$ legen datenanalytisch günstiges Skalenniveau (Intervallskalenniveau) nahe
+**Gründe für Beliebtheit in Psychologie**:
+1. Ratingskalen liefern vergleichsweise direkt quantitative (in Zahlen übersetzte und damit statistisch auswertbare) Daten
 
-**Vorsicht:** Intervallskalenniveau ist nicht genuin aus dem Format der Skala, sondern nur inhaltlich (psychologisch/empirisch) zu begründen (wird aber i.d.R. bei Ratingskalen akzeptiert)
+2. Ratingskalen unterteilen die Merkmalsausprägungen in gleich große Abschnitte $\rightarrow$ legen datenanalytisch günstiges Skalenniveau (Intervallskalenniveau) nahe
+
+**Vorsicht**: Intervallskalenniveau ist nicht genuin aus dem Format der Skala, sondern nur inhaltlich (psychologisch/empirisch) zu begründen (wird aber i. d. R. bei Ratingskalen akzeptiert)
 
 ---
 class: top, left, hide_logo
@@ -307,20 +326,22 @@ class: top, left, hide_logo
 **Verwendung unipolarer oder bipolarer Endpunkte**
 
 .pull-left[
-**Bipolare Skalen**: bezeichnen in ihren Enden den negativen und positiven Pol eines Kontinuums (z.B. „lehne ab“ vs. „stimme zu“) oder gegensätzliche Eigenschaften eines Merkmals (z.B. "weich" vs. "hart")
+**Bipolare Skalen** bezeichnen in ihren Enden den negativen und positiven Pol eines Kontinuums (z. B. "lehne ab" vs. "stimme zu") oder gegensätzliche Eigenschaften eines Merkmals (z. B. "weich" vs. "hart")
   * Vorteil: Begriffe an den Endpunkten der Skala definieren einander wechselseitig
-  * Vorsicht: Nicht angemessen, um zwei distinkte Merkmale mit einem Item zu erfassen
+  * Vorsicht: nicht angemessen, um zwei distinkte Merkmale mit einem Item zu erfassen
 ]
 
+--
+
 .pull-right[
-**Unipolare Skalen**: beginnen mit einem Nullpunkt (z.B. „nie“, "stimme überhaupt nicht zu") und nehmen dann in der Ausprägung in eine Richtung zu (z.B. bis „immer“, "stimme voll und ganz zu").
-  * Vorteil: Gegensatz eines Begriffs muss nicht klar sein (z.B. bei "schüchtern"); das ist häufig der Fall, daher sind unipolare Skalen auch häufiger
-  * Eignen sich gut zur Beurteilung von Merkmalen mit einem natürlichen Nullpunkt (z.B. bei Abfragen von Häufigkeiten)
+**Unipolare Skalen** beginnen mit einem Nullpunkt (z. B. "nie", "stimme überhaupt nicht zu") und nehmen dann in der Ausprägung in eine Richtung zu (z. B. bis "immer", "stimme voll und ganz zu")
+  * Vorteil: Gegensatz eines Begriffs muss nicht klar sein (z. B. bei "schüchtern"); das ist häufig der Fall, daher sind unipolare Skalen auch häufiger
+  * eignen sich gut zur Beurteilung von Merkmalen mit einem natürlichen Nullpunkt (z. B. bei Abfragen von Häufigkeiten)
   ]
   
+--
 
-
-* **Maßnahme:** Darbietung einer Nummerierung (= numerische Anker), die zu den verbalen Bezeichnungen (= verbalen Ankern) passt, wirkt sich positiv auf die Reliabilität der Messungen aus (Rammstedt & Krebs, 2007).
+ **Maßnahme**: Darbietung einer Nummerierung (numerische Anker), die zu den verbalen Bezeichnungen (verbalen Ankern) passt, wirkt sich positiv auf die Reliabilität der Messungen aus (Rammstedt & Krebs, 2007)
 
 ---
 class: top, left
@@ -345,7 +366,7 @@ knitr::include_graphics("bilder/bipolar.png")
 ]
 
 .center[
-Döring & Bortz (2016), S.256
+Döring & Bortz (2016, S. 256)
 ]
 
 ---
@@ -366,7 +387,7 @@ class: top, left, hide_logo
   
   * **Problem hohe Anzahl**: Differenziertheit des Urteils nicht mehr möglich? (Gegenposition: Review von Lewis & Sauro, 2021)
   
-  * In der Praxis i.d.R. 4- bis 9-stufige Ratingskalen, wobei es empirische Befunde gibt, dass die Reliabilität bei 5 (Revilla et al., 2014) bis 7 Stufen (Preston & Coleman, 2000) besonders gut ist
+  * In der Praxis i. d. R. 4- bis 9-stufige Ratingskalen, wobei es empirische Befunde gibt, dass die Reliabilität bei fünf (Revilla et al., 2014) bis sieben Stufen (Preston & Coleman, 2000) besonders gut ist
 
 ---
 class: top, left, hide_logo
@@ -381,11 +402,11 @@ class: top, left, hide_logo
 
 **2. Gerade vs. ungerade Anzahl von Stufen**
 
-  * **Gerade Anzahl**: Urteil in Richtung des einen oder anderen Pols der Skala wird erzwungen
+  * **gerade Anzahl**: Urteil in Richtung des einen oder anderen Pols der Skala wird erzwungen
   
-  * **Ungerade Anzahl**: Mittelkategorie vorhanden, d.h. neutrale Urteilsmöglichkeit verfügbar
+  * **ungerade Anzahl**: Mittelkategorie vorhanden, d. h. neutrale Urteilsmöglichkeit verfügbar
   
-  * **Problem neutrales Urteil**: nicht eindeutig interpretierbar (**Ambivalenz-Indifferenz-Problem**) $\rightarrow$ ggf. sinnvoll eine weitere Antwortoption neben der Mittelkategorie zur Angabe von Meinungslosigkeit zu ermöglichen (z.B. "ich weiß es nicht", "keine Meinung", "keine Angabe")
+  * **Problem neutrales Urteil bei bipolaren Skalen**: nicht eindeutig interpretierbar: ist "sowohl als auch" gemeint (Ambivalenz) oder Neutralität/Meinungslosigkeit (Indifferenz) (**Ambivalenz-Indifferenz-Problem**) $\rightarrow$ ggf. sinnvoll, eine weitere Antwortoption neben der Mittelkategorie zur separaten Angabe von Indifferenz zu ermöglichen (z. B. "Ich weiß es nicht", "keine Meinung", "keine Angabe")
 
 ---
 class: top, left, hide_logo
@@ -402,11 +423,11 @@ class: top, left, hide_logo
 * Vorteil: Stufen sind eindeutig
 * Vorteil: Abstände zwischen den Stufen der Ratingskala sind gleich 
 
-**Wörter (verbale Anker) oder sprachfreie Zeichen (grafische Anker, z.B. Smileys oder Frownies)**
-* Vorteil: leichter verständlich (forschungssnaive Personen, Kinder), wirkt extremen Antworttendenzen entgegen
+**Wörter (verbale Anker) oder sprachfreie Zeichen (grafische Anker, z. B. Smileys oder Frownies)**
+* Vorteil: leichter verständlich (forschungsnaive Personen, Kinder), wirkt extremen Antworttendenzen entgegen
 * Nachteil: Verständnis variiert, gleicher Abstand zwischen den Stufen unklar
 
-> Frage 1) Wie oft (verbal beschrieben) haben Sie in der letzten Woche Fragen gestellt oder zu einer Diskussion auf andere Art beigetragen? Auswahl: Nie, manchmal, oft, sehr oft
+> Frage 1) Wie oft (verbal beschrieben) haben Sie in der letzten Woche Fragen gestellt oder zu einer Diskussion auf andere Art beigetragen? Auswahl: nie, manchmal, oft, sehr oft
 >
 > Frage 2) Wie oft (absolute Häufigkeiten) haben Sie in der letzten Woche Fragen gestellt oder zu einer Diskussion auf andere Art beigetragen? 
 
@@ -458,7 +479,7 @@ knitr::include_graphics("bilder/menge.png")
 
 ---
 class: top, left, hide_logo
-<div class="footer"><span>Weijters, B., Cabooter, E., & Schillewaert, N. (2010). The effect of rating scale format on response styles: The number of response categories and response category labels. International Journal of Research in Marketing, 27(3), 236-247. <br> Saris, W. E., & Gallhofer, I. (2007). Estimation of the effects of measurement characteristics on the quality of survey questions. In Survey research methods (Vol. 1, No. 1, pp. 29-43).</div>
+<div class="footer"><span>Weijters, B., Cabooter, E., & Schillewaert, N. (2010). The effect of rating scale format on response styles: The number of response categories and response category labels. <i> International Journal of Research in Marketing, 27</i>(3), 236-247. <br> Saris, W. E., & Gallhofer, I. (2007). <i> Estimation of the effects of measurement characteristics on the quality of survey questions. </i> In Survey research methods (Vol. 1, No. 1, pp. 29-43).</div>
 
 ### Selbstberichtsverfahren: Befragung und Rating
 
@@ -468,13 +489,14 @@ class: top, left, hide_logo
 
 * **Antworttendenzen von Teilnehmer:innen**
   
-  * **Tendenz zur Mitte**: Extremurteile werden vermieden (insbesondere wenn Skalen an den Endpunkten nicht verankert sind, d.h. die Extreme unklar bleiben)
+  * **Tendenz zur Mitte**: Extremurteile werden vermieden (insbesondere wenn Skalen an den Endpunkten nicht verankert sind, d. h. die Extreme unklar bleiben)
   
-  * **Extreme Antworttendenz**: Extremurteile werden bevorzugt
+  * **extreme Antworttendenz**: Extremurteile werden bevorzugt
   
-  * **"Ja-Sage-Tendenz“ (Akquieszenz)** oder **„Nein-Sage-Tendenz“**
+  * **"Ja-Sage-Tendenz" (Akquieszenz)** oder **"Nein-Sage-Tendenz"**
   
-  * Antworttendenzen sind besonders ausgeprägt, wenn Urteilsobjekte wenig bekannt sind $\rightarrow$ **Gegenmaßnahme:** Personen hinreichend über zu beurteilende Objekte informieren, alle Antwortkategorien verbal beschriften (Weijters et al., 2010; führt zu auch zu höherer Reliabilität: Saris & Gallhofer, 2007)
+  * Antworttendenzen sind besonders ausgeprägt, wenn Urteilsobjekte wenig bekannt sind  
+  $\rightarrow$ **Gegenmaßnahme**: Personen hinreichend über zu beurteilende Objekte informieren, alle Antwortkategorien verbal beschriften (Weijters et al., 2010; führt auch zu höherer Reliabilität, siehe Saris & Gallhofer, 2007)
 
 
 ---
@@ -486,7 +508,7 @@ class: top, left
 ##### Probleme bei der Beantwortung von Ratingskalen
 
 .center[
-```{r eval = TRUE, echo = F, out.width="75%", fig.cap="Döring & Bortz (2016), S.254"}
+```{r eval = TRUE, echo = F, out.width="75%", fig.cap="Döring & Bortz (2016, S. 254)"}
 knitr::include_graphics("bilder/tendenz_zur_mitte.png")
 ```
 ]
@@ -500,15 +522,15 @@ class: top, left, hide_logo
 
 ##### Probleme bei der Beantwortung von Ratingskalen
 
-* **Gedankenlose Reproduktion**
+* **gedankenlose Reproduktion**
 
-  * bei ähnlich erscheinenden Items nach erster Antwort bei folgenden Fragen den selben Wert angeben
+  * bei ähnlich erscheinenden Items nach erster Antwort bei folgenden Fragen den gleichen Wert angeben
   
-  * Stellt Validität der Antworten in Frage
+  * stellt Validität der Antworten in Frage
   
-  * Gegenmaßnahme: Mischung von Fragen
+  * Gegenmaßnahme: Fragen mischen
   
-  * Umpolung der Fragerichtung als alternative Gegenmaßnahme ist umstritten (Swain et al., 2008; Weijters & Baumgartner, 2012)
+  * Umpolung der Fragerichtung ("Ich bin gerne allein" statt "Ich bin gerne unter Leuten") als alternative Gegenmaßnahme ist umstritten (Swain et al., 2008; Weijters & Baumgartner, 2012)
 
 ---
 class: top, left, hide_logo
@@ -519,29 +541,31 @@ class: top, left, hide_logo
 ##### Probleme bei der Beantwortung von Ratingskalen
 
 .pull-left[
-* **Motivierte Verzerrungen**
-  * Selbstdarstellungstendenz
+* **(tendenziell) motivierte Verzerrungen**
+  * Selbstdarstellungstendenz: sich auf eine bestimmte Art und Weise darstellen, die von der Wahrheit abweicht
   
-  * Selbsttäuschung
+  * Selbsttäuschung: sich selbst nicht die Wahrheit eingestehen wollen und daher verzerrt darstellen
   
-  * Soziale Erwünschtheit
+  * soziale Erwünschtheit: gemäß sozialer Erwartungen antworten
   
-  * "faking good" (aber auch "faking bad")
+  * "faking good" (aber auch "faking bad"): sich besser oder schlechter als tatsächlich darstellen 
   
-  * provokativer Antwortstil
+  * provokativer Antwortstil: absichtlich provokant antworten
 ]
 
+--
+
 .pull-right[
-* **Unmotivierte Verzerrungen**
-  * soziale Vergleichsprozesse
+* **(tendenziell) unmotivierte Verzerrungen**
+  * soziale Vergleichsprozesse: aufgrund eines Vergleichs mit anderen anders antworten
   
-  * Verankerungseffekte
+  * Verankerungseffekte: anders antworten, da ein präsentierter Wert als Vergleich/Referenz vorhanden ist
   
-  * Verfügbarkeitsheuristik
+  * Verfügbarkeitsheuristik: anders antworten, da bestimmte Erfahrungen, Gefühle, Situationen gerade präsenter sind als andere
   
-  * falsche bzw. mangelhafte Repräsentation des zu messenden Merkmals
+  * falsche bzw. mangelhafte Repräsentation des zu messenden Merkmals: anders antworten, da man missversteht oder nicht versteht was gemessen werden soll
   
-  * Missverständnis des Fragebogens als Leistungstest
+  * Missverständnis des Fragebogens als Leistungstest: spezifisches Beispiel für falsche Repräsentation des zu messenen Merkmals, durch Annahme, dass bestimmte Antworten richtig oder falsch wären
 ]
 
 ---
@@ -566,6 +590,26 @@ knitr::include_graphics("bilder/Kjell2019-2.png")
 ```
 ]
 
+
+---
+class: top, left, hide_logo
+
+### Heutige Themen
+
+#### Selbstberichtsverfahren: Befragung und Rating
+* [Rahmenbedingungen](#intro)
+* [Befragung](#befragung)
+* [Ratings](#ratings)
+
+#### Testverfahren
+* [Merkmale psychologischer Tests](#merkmale)
+* [Leistungstests](#leistungstests)
+* [Persönlichkeitstests](#perstests)
+
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
+* [Schlüssel-/Fachbegriffe](#words)
+
 ---
 class: top, left, hide_logo
 name: merkmale
@@ -574,17 +618,19 @@ name: merkmale
 
 ### Testverfahren
 
-#### Merkmale Psychologischer Test
+#### Merkmale psychologischer Tests
 
 * **Definition Test**: wissenschaftliches Datenerhebungsverfahren, das aus mehreren Testaufgaben (Testbogen/Testmaterial) sowie festgelegten Regeln zu deren Anwendung und Auswertung (Testmanual) besteht 
 
-* **Ziel:** Eine möglichst genaue Aussage über den absoluten und/oder relativen Grad einer individuellen Merkmalsausprägung zu bekommen, v.a. zum Einsatz in psychologischer Diagnostik
+* **Ziel**: möglichst genaue Aussage über den absoluten und/oder relativen Grad einer individuellen Merkmalsausprägung bekommen, v. a. zum Einsatz in psychologischer (Einzelfall-)diagnostik
+
+* Daher sind für psychologische Tests **Normwerte** von besonderer Bedeutung
 
 *  **Annahme**: Aufgaben/Fragen des Tests werden von Menschen mit unterschiedlichen Fähigkeiten oder Eigenschaften unterschiedlich gelöst/beantwortet
 
 * **Testwert** = Aggregation über die Einzelitems/-aufgaben des Tests
 
-* Tests werden i.d.R. kommerziell vertrieben, bekannte Testanbieter im deutschsprachigen Raum sind der Hogrefe Verlag (http://www.testzentrale.de) und der SCHUHFRIED Verlag (http://www.schuhfried.at/)
+* Tests werden i. d. R. kommerziell vertrieben, bekannte Testanbieter im deutschsprachigen Raum sind der Hogrefe Verlag (http://www.testzentrale.de) und der Schuhfried Verlag (http://www.schuhfried.at/)
 
 
 ---
@@ -592,21 +638,21 @@ class: top, left, hide_logo
 
 ### Testverfahren
 
-#### Merkmale Psychologischer Test
+#### Merkmale psychologischer Tests
 
 **Für einen psychologischen Test gilt:**
 
-**a)** Es handelt sich um eine Messmethode, bei der Personen auf **standardisierte Reizvorlagen** (Aufgaben, Fragen etc.) reagieren.
+a) Es handelt sich um eine Messmethode, bei der Personen auf **standardisierte Reizvorlagen** (Aufgaben, Fragen etc.) reagieren
 
-**b)** Reaktionen werden durch die **spezifischen, im Test realisierten Bedingungen** hervorgerufen.
+b) Reaktionen werden durch die **spezifischen, im Test realisierten Bedingungen** hervorgerufen
 
-**c)** Die Reaktionen erlauben einen **wissenschaftlich begründbaren Rückschluss auf die individuelle Ausprägung** eines psychologischen Merkmals (oder auch mehrere Merkmale).
+c) Die Reaktionen erlauben einen **wissenschaftlich begründbaren Rückschluss auf die individuelle Ausprägung** eines psychologischen Merkmals (oder auch mehrere Merkmale)
 
-**d)** Das Vorgehen ist **standardisiert**.
+d) Das Vorgehen ist **standardisiert**
 
-**e)** Ziel ist eine **quantitative und/oder eine qualitative Aussage** über das psychologische Merkmal.
+e) Ziel ist eine **quantitative und/oder qualitative Aussage** über das psychologische Merkmal einer Person (Einzelfalldiagnostik!)
 
-$\rightarrow$ kann also auch ein Fragebogen sein ("Persönlichkeitstests"; ein Fragebogen wird meist erst dann als Test bezeichnet, wenn er in der Einzelfalldiagnostik eingesetzt werden kann und nicht nur in der Forschung, z.B. weil die Gütekriterien entsprechend gut sind und Normen vorliegen)
+$\rightarrow$ Test kann also auch ein Fragebogen sein ("Persönlichkeitstest"; ein Fragebogen wird meist erst dann als Test bezeichnet, wenn er in der Einzelfalldiagnostik eingesetzt werden kann und nicht nur in der Forschung, z. B. weil die Gütekriterien entsprechend gut sind und Normen vorliegen)
 
 ---
 class: top, left, hide_logo
@@ -618,7 +664,7 @@ name: leistungstests
 
 * Leistungstests erfassen Merkmale im Hinblick auf einen objektiven Maßstab zur Beurteilung der Güte der Antworten
 
-* Antworten können also »richtig« oder »falsch« sein
+* Antworten können also "richtig" oder "falsch" sein
 
 * Für Beantwortung sind kognitive Prozesse im weitesten Sinne und Leistungsmotivation entscheidend
 
@@ -668,15 +714,15 @@ class: top, left, hide_logo
 
 **Power-Tests**
 
-* Bei Power-Tests wird das Niveau der Aufgaben sukzessive gesteigert
+* Bei Power-Tests wird das Niveau der Aufgaben variiert, Zeitbegrenzung spielt eine untergeordnete Rolle (Aufgaben sind i.d.R. in der vorgegebenen Zeit bearbeitbar)
 
-* Spezialfall: **Adaptives Testverfahren**, welches eine Teilmenge von Aufgaben vorgibt bis maximales Leistungsniveau gefunden ist
+* Spezialfall von Power-Tests: **adaptives Testverfahren**, welches nur eine Teilmenge von Aufgaben vorgibt, bis maximales Leistungsniveau gefunden ist
 
 Beispiel: Wechsler-Intelligenz-Tests (HAWIE; seit 2013 WAIS-IV)
 
-* HAWIE umfasst insgesamt 11 Untertests (Subskalen)
+* HAWIE umfasst insgesamt elf Untertests (Subskalen)
 
-* Untertests sind Bereich der verbalen Intelligenz oder der Handlungsintelligenz zugeordnet
+* Untertests sind der verbalen Intelligenz oder der Handlungsintelligenz zugeordnet
 
 ---
 class: top, left
@@ -690,15 +736,15 @@ Beispiel: Wechsler-Intelligenz-Tests (HAWIE)
 
 Verbalteil:
 
-1. Allgemeines Wissen, z.B. »Was ist der Koran?«, »Wer erfand das Flugzeug?«
+1. allgemeines Wissen, z. B. "Was ist der Koran?", "Wer erfand das Flugzeug?"
 
-2. Zahlennachsprechen: Folgen von 3–9 Ziffern sind vorwärts und rückwärts nachzusprechen, z. B. »5-8-2« oder »4-2-7-3-1-8-2«
+2. Zahlennachsprechen: Folgen von drei bis neun Ziffern sind vorwärts und rückwärts nachzusprechen, z. B. "5-8-2" oder "4-2-7-3-1-8-2"
 
-3. Wortschatz: »Was ist die Bedeutung von ...?« z. B. »anonym, Prestige, konkordant«
+3. Wortschatz: "Was ist die Bedeutung von ...?" z. B. "anonym", "Prestige", "konkordant"
 
-4. Rechnerisches Denken, z. B. »Ein Zug fährt 275 km in 5h. Wie groß ist seine Durchschnittsgeschwindigkeit in km/h?«
+4. rechnerisches Denken, z. B. "Ein Zug fährt 275 km in 5 h. Wie groß ist seine Durchschnittsgeschwindigkeit in km/h?"
 
-5. Allgemeines Verständnis, z. B. »Was bedeutet das Sprichwort 'Stille Wasser sind tief'?«
+5. allgemeines Verständnis, z. B. "Was bedeutet das Sprichwort 'Stille Wasser sind tief'?"
 
 ---
 class: top, left
@@ -710,7 +756,7 @@ class: top, left
 
 Beispiel: Wechsler-Intelligenz-Tests (HAWIE)
 
-Bilder ordnen: »Ordnen Sie die Bilder bitte so, dass sich die sinnvollste Geschichte ergibt!«, z. B.
+Bilder ordnen: "Ordnen Sie die Bilder bitte so, dass sich die sinnvollste Geschichte ergibt!", z. B.:
 
 <br><br>
 .center[
@@ -729,7 +775,7 @@ class: top, left
 
 Beispiel: Wechsler-Intelligenz-Tests (HAWIE)
 
-Mosaik-Test: »Legen Sie die Würfel so zusammen, dass sie ein Muster zeigen, wie das auf der Karte«, z. B.
+Mosaik-Test: "Legen Sie die Würfel so zusammen, dass sie ein Muster zeigen wie das auf der Karte", z. B.:
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "400px"}
@@ -747,13 +793,27 @@ class: top, left
 
 Beispiel: Wechsler-Intelligenz-Tests (HAWIE)
 
-Figurenlegen: »Setzen Sie die Teile so zusammen, dass sie etwas darstellen!«, z. B.
+Figurenlegen: "Setzen Sie die Teile so zusammen, dass sie etwas darstellen!", z. B.:
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "500px"}
 knitr::include_graphics("bilder/hawie3.png")
 ```
 ]
+
+---
+class: top, left
+### Testverfahren
+
+#### Leistungstests
+
+.center[
+"Intelligenz ist das, was der Intelligenztest misst."
+
+Edward Boring (1923)
+]
+
+> Was ist die Aussage dieses Zitats (und was halten Sie davon)?
 
 ---
 class: top, left, hide_logo
@@ -765,10 +825,10 @@ name: perstests
 
 * Persönlichkeitstests liefern Daten im Hinblick auf emotional, motivational und sozial relevante Persönlichkeitseigenschaften
 
-* Es wird zwischen **subjektiven** und **objektiven **Persönlichkeitstests unterschieden, 
+* Es wird zwischen subjektiven und objektiven Persönlichkeitstests unterschieden 
 
-* Subjektiv: basieren auf Selbst- oder Fremdauskunft auf Fragebogenitems $\rightarrow$ Zweck des Tests für die getesteten Personen leicht durchschaubar
-* Objektiv: basieren *nicht* auf Selbst- oder Fremdauskunft auf Fragebogenitems, stattdessen wird versucht den Zweck zu verschleiern, um so die Reaktivität der Datenerhebung zu minimieren und die Validität der Ergebnisse zu erhöhen $\rightarrow$ es ist nicht erforderlich, dass die Personen eine explizite Repräsentation von dem zu messenden Konstrukt haben
+* **subjektiv**: basieren auf Selbst- oder Fremdauskunft auf Fragebogenitems $\rightarrow$ Zweck des Tests für die getesteten Personen leicht durchschaubar
+* **objektiv**: basieren *nicht* auf Selbst- oder Fremdauskunft auf Fragebogenitems, stattdessen wird versucht, den Zweck zu verschleiern, um so die Reaktivität der Datenerhebung zu minimieren und die Validität der Ergebnisse zu erhöhen $\rightarrow$ es ist nicht erforderlich, dass die Personen eine explizite Repräsentation von dem zu messenden Konstrukt haben
 
 
 ---
@@ -779,10 +839,10 @@ class: top, left
 #### Persönlichkeitstests
 
 .pull-left[
-**Beispiele für subjektive Persönlichkeitstests:**
-* NEO Persönlichkeitsinventar (NEO-PI-R; Costa & Macrae, 1985) oder Kurzform NEO Five Factor Inventory (NEO-FFI; Costa & Macrae, 1992) - *mit Variante als Fremdbericht über andere Personen*
+**Beispiele für subjektive Persönlichkeitstests**:
+* NEO-Persönlichkeitsinventar (NEO-PI-R; Costa & Macrae, 1985) oder Kurzform NEO Five Factor Inventory (NEO-FFI; Costa & McCrae, 1992) – *mit Variante als Fremdbericht über andere Personen*
 
-* Freiburger Persönlichkeitsinventar (FPI-R, Fahrenberg, Hampel & Selg, 1994)
+* Freiburger Persönlichkeitsinventar (FPI-R, Fahrenberg et al., 1994)
 ]
 
 .pull-right[
@@ -800,12 +860,12 @@ class: top, left
 
 #### Persönlichkeitstests
 
-**Beispiele für objektive Persönlichkeitstests:**
+**Beispiele für objektive Persönlichkeitstests**:
 
 .pull-left[
-* Implizite Assoziationtests (IAT) basieren auf Reaktionszeiten
+* Implizite Assoziationtests (IAT), basieren auf Reaktionszeiten
 
-* 'Implizit' (vs. explizit) bedeutet, dass ein Prozess ohne bewusste Verhaltenssteuerung abläuft
+* "Implizit" (vs. explizit) bedeutet, dass ein Prozess ohne bewusste Verhaltenssteuerung abläuft
 
 * Kritik an Validität
 
@@ -829,17 +889,17 @@ class: top, left
 
 #### Persönlichkeitstests
 
-**Beispiele für objektive Persönlichkeitstests:**
+**Beispiele für objektive Persönlichkeitstests**:
 
 .pull-left[
 * Objektiver Leistungsmotivationstest (OLMT, Schmidt-Atzert, 2007)
 
-* Idee: Wer leistungsmotivierter ist, strengt sich bei den dargestellten Aufgaben mehr an, und legt eine weitere Strecke zurück (= drückt öfters die notwendige Taste)
+* Idee: Wer leistungsmotivierter ist, strengt sich bei den dargestellten Aufgaben mehr an und legt eine weitere Strecke zurück (= drückt öfter die notwendige Taste)
 ]
 
 .pull-right[
 .center[
-```{r eval = TRUE, echo = F, fig.cap="Schmidt-Atzert et al. (2016), S.371", out.width = "75%"}
+```{r eval = TRUE, echo = F, fig.cap="Schmidt-Atzert et al., 2016, S. 371", out.width = "75%"}
 knitr::include_graphics("bilder/olmt.png")
 ```
 ]
@@ -854,22 +914,39 @@ class: top, left, hide_logo
 **Projektive Verfahren als Sonderform von objektiven Persönlichkeitstests**
 
 .pull-left[
-* Wie bisher: Standardisierte Testsituation
+* wie bisher: standardisierte Testsituation
 
-* Neu: Projektion auf diffuses Testmaterial
+* neu: Projektion auf diffuses Testmaterial
 
 * Es ist nicht erforderlich, dass Personen eine explizite Repräsentation von dem zu messenden Konstrukt haben $\rightarrow$ geringere Verfälschbarkeit
 
-* "Objektiver Persönlichkeitstest" weil nicht auf Selbst- oder Fremdbericht basierend, nicht weil Gütekriterium der Objektivität zwingend erfüllt (bei Interpretationsobjektivität eher im Gegenteil)
+* "objektiver Persönlichkeitstest", weil er nicht auf Selbst- oder Fremdbericht basiert und nicht, weil Gütekriterium der Objektivität zwingend erfüllt ust (bei Interpretationsobjektivität eher im Gegenteil)
 
-* Große Variation in der Gültigkeit der Gütekriterien!! z.B. mangelhaft beim Rorschach-Test
+* Große Variation in der Gültigkeit der Gütekriterien (z. B. mangelhaft beim Rorschach-Test)!!
 
 
 ]
 
 .pull-right[
-```{r eval = TRUE, echo = F, out.width="80%", fig.cap="Schmidt-Atzert et al. (2016), S.386", }
+```{r eval = TRUE, echo = F, out.width="80%", fig.cap="Schmidt-Atzert et al. (2016, S. 386)", }
 knitr::include_graphics("bilder/rorschach.png")
+```
+]
+
+---
+class: top, left
+
+### Testverfahren
+
+#### Persönlichkeitstests
+
+**Projektive Verfahren als Sonderform von objektiven Persönlichkeitstests**
+
+> Würden Sie sich anhand eines projektiven Verfahrens wie dem Rorschach-Test eine Persönlichkeitseigenschaft attestieren lassen? Warum (nicht)?
+
+.center[
+```{r eval = TRUE, echo = F, out.width="100%"}
+knitr::include_graphics("bilder/rorschach_auswahl.png")
 ```
 ]
 
@@ -899,7 +976,7 @@ class: top, left
 
 Beispiel: Picture Story Exercise (PSE) zur Messung von impliziten (nicht bewusst zugänglichen) Motiven *in der Forschung* (für diagnostische Praxis nicht reliabel genug)
 
-```{r eval = TRUE, echo = F, out.width="60%", fig.cap="Schmidt-Atzert et al. (2016), S.395", }
+```{r eval = TRUE, echo = F, out.width="60%", fig.cap="Schmidt-Atzert et al. (2016, S. 395)", }
 knitr::include_graphics("bilder/pse.png")
 ```
 
@@ -934,12 +1011,12 @@ $\rightarrow$ Sinnhaftigkeit so vieler Fragebögen und Tests?
 class: top, left, hide_logo
 name: take-away
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 
-* Befragungen unterscheiden sich in ihrer **Darbietung** (schriftlich oder mündlich), **Standardisierung** (hinsichtlich der Antwortmöglichkeiten), **Strukturierung** (hinsichtlich der Vorgaben zur Fragenstellung), und der **Anzahl der befragten Personen**
+* Befragungen unterscheiden sich in ihrer **Darbietung** (schriftlich oder mündlich), **Standardisierung** (hinsichtlich der Antwortmöglichkeiten), **Strukturierung** (hinsichtlich der Vorgaben zur Fragenstellung) und der **Anzahl der befragten Personen**
 
-* Befragungen in Form von **schriftlichen, standardisierten, und strukturierten Selbstratings** sind in der Psychologie beliebte, kostengünstige Messverfahren, haben aber Probleme hinsichtlich der Verfälschbarkeit
+* Befragungen in Form von **schriftlichen**, **standardisierten** und **strukturierten Selbstratings** sind in der Psychologie beliebte, kostengünstige Messverfahren, haben aber Probleme hinsichtlich der Verfälschbarkeit
 
 * Die **Itemformulierung** und die **Antwortskala** von Fragebögen beeinflusst die Gütekriterien des Fragebogens (insbesondere Reliabilität und Validität)
 
@@ -956,17 +1033,17 @@ name: literatur
 
 ### Literatursuchaufgabe
 
-* Nutzen Sie Google Scholar (https://scholar.google.de/) um mit **englischen Schlagwörtern** nach einer psychologischen Fragebogen zu suchen, welcher Ratingskalen benutzt
+* Nutzen Sie Google Scholar (https://scholar.google.de/), um mit **englischen Schlagwörtern** nach einem psychologischen Fragebogen zu suchen, welcher Ratingskalen benutzt
 
 * Nutzen Sie dafür Wörter wie "questionnaire", "scale", "inventory", "test", "measure", "rating", "likert" in Kombination mit einem psychologischen Konstrukt
 
-* Beantworten Sie die folgenden Fragen (dafür müssen Sie in den Artikel reinschauen, der Abstract wird i.d.R. nicht reichen):
+* Beantworten Sie die folgenden Fragen (dafür müssen Sie in den Artikel reinschauen, das Abstract wird i. d. R. nicht reichen):
   - Welche Variable sollte mit dem Befragungsinstrument erhoben werden?
-  - Werden die Antworten auf eine bipolare oder eine unipolare Antwortskala mit gerade oder ungerader Anzahl gegeben?
+  - Werden die Antworten auf eine bipolare oder eine unipolare Antwortskala mit gerader oder ungerader Anzahl gegeben?
   - Gibt es numerische, verbale oder grafische Anker?
-  - Gehen Sie die Merkmale eines guten Fragebogens durch (Folie 10) und überlegen Sie sich, ob es was an dem Fragebogen zu kritisieren gibt.
+  - Gehen Sie die Merkmale eines guten Fragebogens durch (Folie 10) und überlegen Sie sich, ob es was an dem Fragebogen zu kritisieren gibt
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 4"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_44745.html) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse in [studynet im Ordner "Einheit 4"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_53324.html) unter "Literatursuchaufgabe" ab.
 
 ---
 class: top, left, hide_logo
@@ -983,11 +1060,11 @@ name: words
 
 **unstandardisierte Befragung**
 
-**(Voll-)strukturierte Befragung**
+**(voll)strukturierte Befragung**
 
-**Teil-/Halbstrukturierte Befragung**
+**teil-/halbstrukturierte Befragung**
 
-**Forced Choice Antworten**
+**Forced-Choice-Antworten**
 
 **Ratingskalen**
 
@@ -1007,21 +1084,21 @@ name: words
 
 **Tendenz zur Mitte**
 
-**Extreme Antworttendenz**
+**extreme Antworttendenz**
 
-**Ja-Sage-Tendenz = Akquieszenz**
+**Ja-Sage-Tendenz (Akquieszenz)**
 ]
 ]
 
 .pull-right[
 .pull-left[
-**Gedankenlose Reproduktion** 
+**gedankenlose Reproduktion** 
 
-**Motivierte Verzerrungen**
+**motivierte Verzerrungen**
 
-**Unmotivierte Verzerrungen**
+**unmotivierte Verzerrungen**
 
-**Soziale Erwünschtheit**
+**soziale Erwünschtheit**
 
 **faking good / faking bad**
 
@@ -1040,7 +1117,7 @@ name: words
 
 **Power-Tests**
 
-**Adaptive Tests**
+**adaptive Tests**
 
 **subjektive Persönlichkeitstests**
 
@@ -1054,7 +1131,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/JDSddiWcd4LLFgSG6)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/u1qFqqTUG5AwEEuv5)**
 ---
 class: top, left
 ### Literatur für die heutige Sitzung
@@ -1071,8 +1148,9 @@ knitr::include_graphics("bilder/schmidt-atzert.png")
 ``` 
 ]
 
-**Materialien:** Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
+**Materialien**: Vielen Dank an Prof. Dr. Stephan Goerigk für Bereitstellung der Grundlage für die Materialien
 
 
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_04_Befragungen_Tests.Rmd", complex_slides = TRUE) -->

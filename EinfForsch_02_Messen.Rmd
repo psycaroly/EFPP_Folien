@@ -59,31 +59,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 2: Messen in der Psychologie
-##### 24.04.2025 | Prof. Dr. Caroline Zygar-Hoffmann
-
----
-class: top, left, hide_logo
-### Termine
-
-```{r xaringan-logo, echo=FALSE}
-xaringanExtra::use_logo(
-image_url = "bilder/referenz.png",
-exclude_class = c("title-slide", "hide_logo"),
-height = "80px",
-position = xaringanExtra::css_position(top = "5em", right = "1em"))
-```
-
-```{r echo = F}
-df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
-df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
-df %>%
-  kbl() %>%
-  kable_styling(font_size = 16) %>%
-  kable_classic(full_width = T) %>% 
-  row_spec(c(4,8,11), background = "lightgray")%>% 
-  row_spec(c(7,9,10,12), background = "yellow")%>% 
-  row_spec(c(2,6,14), background = "white")
-```
+##### 28.10.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left, hide_logo
@@ -96,8 +72,8 @@ name: content
 
 #### [Reaktivität](#reaktivitaet)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
 * [Literatursuchaufgabe](#literatur)
 * [Schlüssel-/Fachbegriffe](#words)
 
@@ -105,14 +81,22 @@ name: content
 class: top, left, hide_logo
 name: intro
 
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+image_url = "bilder/referenz.png",
+exclude_class = c("title-slide", "hide_logo"),
+height = "80px",
+position = xaringanExtra::css_position(top = "5em", right = "1em"))
+```
+
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
-Frage nach der sogenannten **Operationalisierung** (das "messbar Machen" von Merkmalen) von psychologischen Variablen: Wie kann und möchte ich die psychologische Variable abbilden, die mich interessiert?
+Frage nach der sogenannten **Operationalisierung** (das "Messbar-Machen" von Merkmalen) von psychologischen Variablen: Wie kann und möchte ich die psychologische Variable abbilden, die mich interessiert?
 
-**Variablen in der Psychologie unterscheiden sich in ihrer empirischen Zugänglichkeit:**
+**Variablen in der Psychologie unterscheiden sich in ihrer empirischen Zugänglichkeit**:
 
 .pull-left[
-**Manifeste Variablen**: 
+**manifeste Variablen**: 
 * der Sinneserfahrung direkt zugänglich, direkt beobachtbar
 * Beispiele: sichtbares Verhalten, Gesichtsausdruck, Blutdruck, Reaktionszeiten, Inhalt von Aussagen/Antworten, Anzahl gelöster Aufgaben
 
@@ -120,14 +104,14 @@ $\rightarrow$ leicht feststellbar, theoretische Bedeutung meist direkt ersichtli
 ]
 
 .pull-right[
-**Latente Variablen = Konstrukte**: 
+**latente Variablen = Konstrukte**: 
 * nur indirekt mit Beobachtungssachverhalten in Verbindung zu bringen, nicht direkt beobachtbar
 * Beispiele: Persönlichkeit, Intelligenz, Emotion, Depression
 
-$\rightarrow$ man schließt von manifesten **Indikatoren** auf das latente Merkmal auf Basis von theoretischen Überlegungen (Annahme: latente Variable beeinflusst den manifesten Indikator)
+$\rightarrow$ Man schließt von manifesten **Indikatoren** auf das latente Merkmal auf Basis von theoretischen Überlegungen (Annahme: Latente Variable beeinflusst den manifesten Indikator)
 ]
 
-> Was für weitere manifeste oder latente Variablen fallen Ihnen ein?
+> Welche manifesten Indikatoren könnte man für die latente Variable Stimmung erheben?
 
 <!-- manifest: grün, Alter, schlechtes Wetter, Haarfarbe, Deutschnote 2, Porschefahrerin
 latent: Messfehler, geringes Selbstwertgefühl, schlechtes Gewissen, Belastbarkeit -->
@@ -138,20 +122,20 @@ class: top, left, hide_logo
 
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
-**Was heißt dann „Messen“ in der Psychologie?**
+**Was heißt dann "Messen" in der Psychologie?**
 
-* Zuordnung von Zahlen zu Objekten (z.B. Beobachtungsdaten) nach festen Regeln 
+* Zuordnung von Zahlen zu Objekten (z. B. Beobachtungsdaten) nach festen Regeln 
 
-* In der Relation der Messwerte muss sich die Relation der gemessenen Objekte widerspiegeln (d.h. wenn z.B. A und B hinsichtlich der gemessenen Variablen gleich sind, sollten sie auch dieselben Zahlen erhalten; wenn A > B, sollte Zahl für A > Zahl für B sein.)
+* In der Relation der Messwerte muss sich die Relation der gemessenen Objekte widerspiegeln (d. h. wenn z. B. A und B hinsichtlich der gemessenen Variablen gleich sind, sollten sie auch dieselben Zahlen erhalten; wenn A > B, sollte Zahl für A > Zahl für B sein)
 
 <br>
-Beispiel: „Messung“ von Intelligenz
+Beispiel: "Messung" von Intelligenz
 
 * Intelligenz nicht direkt beobachtbar (latente Variable, Konstrukt)
 
 * Intelligenz wird über Ergebnis in Leistungstests operationalisiert (Indikatoren)
 
-$\rightarrow$ von Anzahl gelöster Aufgaben wird auf die "dahinter liegende" Intelligenz geschlossen
+$\rightarrow$ von Anzahl gelöster Aufgaben wird auf die "dahinterliegende" Intelligenz geschlossen
 
 * Unterschiedlichen Ausprägungen von Intelligenz werden unterschiedliche Zahlen zugeordnet 
 
@@ -161,21 +145,22 @@ $\rightarrow$ von Anzahl gelöster Aufgaben wird auf die "dahinter liegende" Int
 class: top, left
 ### Unterteilung, Auswahl und Einsatz von psychologischen Erhebungsmethoden
 
-**Was heißt dann „Messen“ in der Psychologie?**
+**Was heißt dann "Messen" in der Psychologie?**
 
-Beispiel: „Messung“ von Angst
+Beispiel: "Messung" von Angst
 
 * Angst nicht direkt beobachtbar (latente Variable, Konstrukt)
 
-* Verschiedene Theorien zu Bestandteilen der Angst
+* verschiedene Theorien zu Bestandteilen der Angst
 
-* Angst wird z.B. erhoben mittels Fragebogen, in dem eine Person sich bzgl. der Prüfungsangst einschätzt. -> Anzahl an Fragen, denen Person zustimmt (JA/ NEIN) oder Ausmaß der Zustimmung
+* Angst wird z. B. erhoben mittels Fragebogen, in dem eine Person sich bzgl. Prüfungsangst einschätzt  
+$\rightarrow$ Anzahl an Fragen, denen Person zustimmt (Ja / Nein) oder Ausmaß der Zustimmung
 
-* ODER: man lässt offen erzählen, im Interview
+* ODER: Man lässt offen erzählen, im Interview
 
-* ODER: man misst in Prüfungssituation physiologische Parameter
+* ODER: Man misst in Prüfungssituation physiologische Parameter
 
-Konkrete Operationalisierung hängt immer vom Kontext, den Ressourcen und der zugrundeliegenden Theorie ab
+Konkrete Operationalisierung hängt immer vom Kontext, den Ressourcen und der zugrunde liegenden Theorie ab
 
 ---
 class: top, left, hide_logo
@@ -184,23 +169,23 @@ class: top, left, hide_logo
 
 #### Unterteilung von Erhebungsmethoden
 
-**1. Unterscheidung nach Vorgehen bei der Methode:**
+**1. Unterscheidung nach Vorgehen bei der Methode**
 
 * Verhaltensbeobachtungsverfahren $\rightarrow$ siehe Einheit 3
 
 * Verfahren des Selbst- bzw. Fremdberichts (Fragebögen, Interviews) $\rightarrow$ siehe Einheit 4
 
-* Psychologische Tests (z.B. Leistungstests) $\rightarrow$ siehe Einheit 4
+* psychologische Tests (z. B. Leistungstests) $\rightarrow$ siehe Einheit 4
 
-* Biopsychologische bzw. neurowissenschaftliche Messungen $\rightarrow$ siehe Einheit 6
+* computerbasierte Verfahren $\rightarrow$ siehe Einheit 4
 
-* Computerbasierte Verfahren $\rightarrow$ siehe Einheit 4
+* implizite Verfahren $\rightarrow$ siehe Einheit 4
 
-* Implizite Verfahren $\rightarrow$ siehe Einheit 4
+* biopsychologische bzw. neurowissenschaftliche Messungen $\rightarrow$ siehe Einheit 6
 
 * Dokumentenanalyse $\rightarrow$ siehe Einheit 7
 
-$\rightarrow$ Verfahren sind nicht völlig distinkt, sondern weisen Überschneidungen auf (z.B. gibt es psychologische Tests als computerbasierte Verfahren)
+$\rightarrow$ Verfahren sind nicht völlig distinkt, sondern weisen Überschneidungen auf (z. B. gibt es psychologische Tests als computerbasierte Verfahren)
 
 ---
 class: top, left, hide_logo
@@ -209,22 +194,22 @@ class: top, left, hide_logo
 
 #### Unterteilung von Erhebungsmethoden
 
-**2. Unterscheidung nach Art der Daten, die generiert werden:**
+**2. Unterscheidung nach Art der Daten, die generiert werden**
 
 .pull-left[
 **Quantitative** Erhebungsmethoden: 
 * Erfahrungsrealität wird in Zahlen erfasst bzw. übersetzt
 * Ergebnis: primär numerische Daten 
-* Beispiele: Antworten auf eine Frage mit einer Antwortskala von 1-5, Anzahl gelöster Aufgaben, Ampulitudenhöhe bei einer EEG-Messung
-* Häufig stark standardisiert
-* Dominante Erhebungsmethode in der Psychologie
+* Beispiele: Antworten auf eine Frage mit einer Antwortskala von 1 bis 5, Anzahl gelöster Aufgaben, Ampulitudenhöhe bei einer EEG-Messung
+* häufig stark standardisiert
+* dominante Erhebungsmethode in der Psychologie
 ]
 
 .pull-right[
 **Qualitative** Erhebungsmethoden: 
-* Erfahrungsrealität wird in Wörtern oder anderen nicht-numerischen Repräsentationen (z.B. Abbildungen) erfasst bzw. übersetzt
+* Erfahrungsrealität wird in Wörtern oder anderen nicht-numerischen Repräsentationen (z. B. Abbildungen) erfasst bzw. übersetzt
 * Ergebnis: primär verbale Daten
-* Häufig weniger stark bis gar nicht standardisiert
+* häufig weniger stark bis gar nicht standardisiert
 * Beispiele: gesprochene Inhalte, geschriebene Texte, Beobachtungsprotokolle
 ]
 
@@ -238,9 +223,9 @@ class: top, left, hide_logo
 
 ##### Übergeordnete Perspektive
 
-* **Ziel:** wissenschaftliche Fragestellungen in der Psychologie in Breite und Tiefe beantworten
+* **Ziel**: wissenschaftliche Fragestellungen in der Psychologie in Breite und Tiefe beantworten
 
-* **Lösung:** Prinzipiell anstreben, Fragestellungen mit mehreren Datenerhebungsverfahren bzw. basierend auf unterschiedlichen Datenquellen zu untersuchen ("**multimodale** Erfassung" oder "**multimethodale** Erfassung")
+* **Lösung**: prinzipiell anstreben, Fragestellungen mit mehreren Datenerhebungsverfahren bzw. basierend auf unterschiedlichen Datenquellen zu untersuchen (**multimodale** / **multimethodale** Erfassung)
 
 ##### Perspektive der Einzelstudie
 
@@ -257,13 +242,14 @@ name: kriterien
 #### Gütekriterien von Erhebungsmethoden
 
 .pull-left[
-* Zur Auswahl und Bewertung psychologischer Erhebungsmethoden müssen Qualitätskriterien berücksichtigt werden. 
+* Zur Auswahl und Bewertung psychologischer Erhebungsmethoden müssen Qualitätskriterien berücksichtigt werden
 
-* Für quantitative Methoden kann man rechtstehende Güterkriterien betrachten.
+* Für quantitative Methoden kann man rechts stehende Güterkriterien betrachten
 
 * Skalierung manchmal auch als Teilaspekt der Validität ("Strukturelle Validität") oder als Nebengütekriterium
 
-* Für Gütekriterien von qualitativen Methoden $\rightarrow$ siehe Einheit 7
+* Für Gütekriterien von qualitativen Methoden  
+$\rightarrow$ siehe Einheit 7
 ]
 
 
@@ -284,7 +270,7 @@ class: top, left, hide_logo
 **Definition:**
 Eine Erhebungsmethode ist objektiv, wenn sie das Merkmal unabhängig von Testleiter:in, Testauswerter:in und von Ergebnisinterpretation misst.
 
-3 Bereiche lassen sich unterscheiden:
+Drei Bereiche lassen sich unterscheiden:
 
 1. Durchführungsobjektivität (Testleiterunabhängigkeit) 
 
@@ -304,15 +290,15 @@ class: top, left, hide_logo
 
 **Definition**: Testergebnis soll nicht davon abhängen, welche Testleiter:in Test durchführt $\rightarrow$ Erhebung sollte unter möglichst standardisierten Bedingungen stattfinden, Testperson als einzige Variationsquelle
 
-Kann bei Verhaltensbeobachtung z.B. durch statistische Kennzahlen zur *Beobachtungs*übereinstimmung erfasst werden
+Kann bei Verhaltensbeobachtung z. B. durch statistische Kennzahlen zur *Beobachtungs*übereinstimmung erfasst werden
 
 Standardisierung wird optimiert durch:
 
-* Instruktionen der Testleiter und Ablauf schriftlich festhalten (z.B. auch durch Interviewleitfäden bei Interviews, oder Beobachtungsplan bei Verhaltensbeobachtung)
-* soziale (nicht-testbezogene) Interaktion zwischen Versuchsleiter und Testperson gering halten 
-* für möglichst ähnliche Untersuchungssituation sorgen (z.B. Einzel vs. Gruppentestung, Zeitbegrenzungen)
-* eindeutige Anweisungen für Umgang mit Nachfragen, Störungen im Testablauf
-* Bei Verhaltensbeobachtung: Training von Beobachtern
+* Instruktionen der Testleiter und schriftliches Festhalten des Ablaufs (z. B. auch durch Interviewleitfäden bei Interviews oder Beobachtungspläne bei Verhaltensbeobachtung)
+* möglichst geringe soziale (nicht-testbezogene) Interaktion zwischen Versuchsleiter und Testperson
+* möglichst ähnliche Untersuchungssituation (z. B. Einzel- vs. Gruppentestung, Zeitbegrenzungen)
+* eindeutige Anweisungen für Umgang mit Nachfragen und für Störungen im Testablauf
+* bei Verhaltensbeobachtung: Training von Beobachtern
 
 ---
 class: top, left, hide_logo
@@ -324,19 +310,19 @@ class: top, left, hide_logo
 
 **Auswertungsobjektivität**
 
-**Definition**: Beim Vorliegen der Antworten/Beobachtungen einer Person soll jede Auswerter:in zum selben Ergebnis kommen
+**Definition**: Beim Vorliegen der Antworten/Beobachtungen einer Person soll jede:r Auswerter:in zum selben Ergebnis kommen
 
-Kann z.B. durch statistische Kennzahlen zur *Beurteilungs*übereinstimmung erfasst werden
+Kann z. B. durch statistische Kennzahlen zur *Beurteilungs*übereinstimmung erfasst werden
 
 Auswertungsobjektivität wird optimiert durch:
 
 * Vermeiden freier Antwortformate
 * klare Auswertungsregeln
-* Hilfsmittel, wie z.B. Auswertungsschablonen oder computergestützte Auswertung
-* Festgelegte Ausschlusskriterien
+* Hilfsmittel wie Auswertungsschablonen oder computergestützte Auswertung
+* festgelegte Ausschlusskriterien
 * Informationen zum Umgang mit fehlenden Werten
-* Festlegung von Antwortmöglichkeiten z.B. bei Interviews
-* Verhaltensverankerte Ratingskalen, z.B. bei Verhaltensbeobachtungen
+* festgelegte Antwortmöglichkeiten, z. B. bei Interviews
+* verhaltensverankerte Ratingskalen, z. B. bei Verhaltensbeobachtungen
 * Training von Beurteilern
 
 ---
@@ -351,11 +337,11 @@ class: top, left, hide_logo
 
 **Definition**: Unterschiedliche Erheber:innen sollen beim Vorliegen der Ergebnisse zum selben Schluss kommen.
 
-Interpretationsobjektivität kann erhöht werden durch:
+Interpretationsobjektivität wird optimiert durch:
 
-* klare Regeln für die Interpretation, z.B. durch Vorgaben zur Benennung und Beschreibung des erhobenen Merkmals, sowie der Bedeutung seiner Ausprägungen
+* klare Regeln für die Interpretation, z. B. durch Vorgaben zur Benennung und Beschreibung des erhobenen Merkmals sowie der Bedeutung seiner Ausprägungen
 * Vorhandensein von Normen/Normwerten inkl. Informationen zu den darin verwendenten Stichproben
-* Hinweise auf Interpretation auf Basis von Konfidenzintervallen (Vertrauensbereiche, siehe VL Quantitative Methoden) und Klassifikation in Kategorien (z.B. „durchschnittlich“)
+* Hinweise auf Interpretation auf Basis von Konfidenzintervallen (Vertrauensbereiche, siehe Vorlesung Quantitative Methoden) und Klassifikation in Kategorien (z. B. "durchschnittlich")
 * Fallbeispiele
 
 ---
@@ -380,13 +366,13 @@ class: top, left, hide_logo
 
 ##### Reliabilität
 
-**Definition:** Eine Erhebungsmethode ist (vollständig) reliabel (zuverlässig), wenn sie das Merkmal ohne Messfehler misst 
+**Definition**: Eine Erhebungsmethode ist (vollständig) reliabel (zuverlässig), wenn sie das Merkmal ohne Messfehler misst.
 
-* Anders ausgedrückt: Reliabilität gibt den Grad der Genauigkeit an, mit der eine Erhebungsmethode misst
+* anders ausgedrückt: Reliabilität gibt den Grad der Genauigkeit an, mit der eine Erhebungsmethode misst
 
-* Formal: Anteil der Varianz der wahren Werte an der Gesamtvarianz der Beobachtungsdaten (siehe Vorlesung Testtheorie)
+* Wertebereich von 0 (keine Reliabilität) bis 1 (perfekte Reliabilität)
 
-* Wichtige Einflussgröße auf Breite der Konfidenzintervalle in der Einzelfalldiagnostik ( $\rightarrow$ wie sicher kann ich mir bei einer einzelnen Messung sein)
+* wichtige Einflussgröße auf Breite der Konfidenzintervalle in der Einzelfalldiagnostik ( $\rightarrow$ Wie sicher kann ich mir bei einer einzelnen Messung sein?)
 
 ---
 class: top, left, hide_logo
@@ -398,13 +384,15 @@ class: top, left, hide_logo
 
 Es lassen sich verschiedene Arten zur Schätzung der Reliabilität unterscheiden: 
 
-* **Retest-Reliabilität** $\rightarrow$ Erhebungsmethode kommt bei Wiederholung zum selben Ergebnis
+* **Retest-Reliabilität** $\rightarrow$ Erhebungsmethode kommt bei Wiederholung zum gleichen Ergebnis
 
-* **Paralleltest-Reliabilität** $\rightarrow$ Erhebungsmethode kommt unter vergleichbaren Bedingungen bzw. vergleichbaren Erhebungsmethoden (z.B. bei Durchführung mit einer Parallelform) zum selben Ergebnis
+> Für welche Konstrukte könnte die Retest-Reliabilität keine geeignete Schätzmethode sein?
 
-* **Innere Konsistenz** $\rightarrow$ Einzelteile der Erhebungsmethode (z.B. Items eines Fragebogens) kommen alle zu ähnlichen Ergebnissen
+* **Paralleltest-Reliabilität** $\rightarrow$ Erhebungsmethode kommt unter vergleichbaren Bedingungen bzw. vergleichbaren Erhebungsmethoden (z. B. bei Durchführung mit einer Parallelform) zum gleichen Ergebnis
 
-* **Testhalbierungs- (Split Half-)Reliabilität** $\rightarrow$ analog zur inneren Konsistenz: Trennung der Erhebungsmethode in genau zwei Hälften, und Vergleich der Ergebnisse
+* **innere Konsistenz** $\rightarrow$ Einzelteile der Erhebungsmethode (z. B. Items eines Fragebogens) kommen alle zu ähnlichen Ergebnissen
+
+* **Testhalbierungs-/Split-half-Reliabilität** $\rightarrow$ analog zur inneren Konsistenz: Trennung der Erhebungsmethode in genau zwei Hälften und Vergleich der Ergebnisse
 
 ---
 class: top, left
@@ -415,6 +403,8 @@ class: top, left
 #### Gütekriterien von Erhebungsmethoden
 
 ##### Reliabilität
+
+Beispiel der Bewertung der Reliabilität eines Intelligenztests:
 
 ```{r, echo=FALSE, out.width = "70%", fig.show='hold',fig.caption="Schmidt-Atzert & Amelang, 2012, S.296", fig.align='center'}
 knitr::include_graphics("bilder/bsp-rel.jpg")
@@ -430,13 +420,13 @@ class: top, left, hide_logo
 
 ##### Validität
 
-**Definition:** Eine Erhebungsmethode ist valide, wenn sie das Merkmal, das sie messen soll, auch wirklich misst (und nichts anderes).
+**Definition**: Eine Erhebungsmethode ist valide, wenn sie das Merkmal, das sie messen soll, auch wirklich misst (und nichts anderes).
 
 Zwei wichtige Aspekte:
 
 .pull-left[
 **Kausale Validität**
-* Verursache Variation im Merkmal eine Variation im Testwert?
+* Verursacht Variation im Merkmal eine Variation im Testwert?
 * Bei kausaler Validität geht es nicht um Korrelation (ungerichtete Zusammenhänge), sondern um Kausalität (gerichtete Zusammenhänge)
 * Kausale Validität ist das eigentliche Herzstück, wenn man von "Validität" spricht
 ]
@@ -448,6 +438,8 @@ Zwei wichtige Aspekte:
 ]
 ---
 class: top, left, hide_logo
+<div class="footer"><span>Wetzel, E., & Killisch, J. (2025). Testing Convergent and Discriminant Validity Using a Priori Defined Hypotheses. European Journal of Psychological Assessment, 41(4), 253–256. https://doi.org/10.1027/1015-5759/a000918</span></div>
+
 ### Erhebungsmethoden der psychologischen Forschung
 
 #### Gütekriterien von Erhebungsmethoden
@@ -458,11 +450,11 @@ Häufig angewandte **Validierungsmöglichkeiten** auf Basis von Korrelationen:
 
 1) Untersuchung der **Konstruktvalidität**
   
-  * Erhebungsmethode erzeugt Daten, die mit Daten anderer Erhebungsmethoden zusammenhängen, die dasselbe oder etwas sehr ähnliches messen sollen (**konvergente Validität**)
+  * Erhebungsmethode erzeugt Daten, die mit Daten anderer Erhebungsmethoden stark zusammenhängen, die das Gleiche oder etwas sehr Ähnliches messen sollen (**konvergente Validität**)
   
-  * Erhebungsmethode erzeugt Daten, die mit Daten anderer Erhebungsmethoden, die *nicht* dasselbe messen sollen, weniger stark zusammenhängen (**divergente/diskriminante Validität**)
+  * Erhebungsmethode erzeugt Daten, die mit Daten anderer Erhebungsmethoden, die *nicht* das Gleiche messen sollen, weniger stark und erwartungskonform zusammenhängen (**divergente/diskriminante Validität**)
   
-  * (Teilweise wird hier auch faktorielle Validität verordnet: Erwartungsgemäße statistische Faktorenstruktur des Tests $\rightarrow$ siehe Vorlesung Testtheorie)
+  * (Teilweise wird hier auch faktorielle Validität verordnet: erwartungsgemäße statistische Faktorenstruktur des Tests $\rightarrow$ siehe Vorlesung Testtheorie)
 
 ---
 class: top, left, hide_logo
@@ -476,7 +468,7 @@ class: top, left, hide_logo
 
 * Basis für Erwartungen im Rahmen der Konstruktvalidität sind theoretische Überlegungen, die a priori (vor Kenntnis der empirischen Zusammenhänge) aufgestellt werden sollten
 
-* Mit der sogenannten "**Multitrait-Multimethod-Methode**" können diese a priori Erwartungen systematisiert und entsprechende empirische Belege verordnet werden
+* Mit der sogenannten **Multitrait-Multimethod-Methode** können diese A-priori-Erwartungen systematisiert und entsprechende empirische Belege verordnet werden
 
 
 .pull-left[
@@ -505,12 +497,11 @@ Häufig angewandte **Validierungsmöglichkeiten** auf Basis von Korrelationen:
 
 2) Untersuchung der **Kriteriumsvalidität**
 
-* Erhebungsmethode erzeugt Daten, die mit relevanten, konkreten, externen Kriterien (außerhalb der unmittelbaren Testsituation) in Zusammenhang stehen (z.B. Intelligenztest mit Kriterien für Berfugserfolg, z.B. Gehalt, Karrierestufe, Abschluss)
+* Erhebungsmethode erzeugt Daten, die mit relevanten, konkreten (möglichst manifesten), externen Kriterien (außerhalb der unmittelbaren Testsituation) in Zusammenhang stehen
 
-* Auch Untersuchung über **(Extrem) -gruppenvergleiche**, die erwartungsmäße Muster zeigen, d.h. Studien zu Mittelwertsunterschieden zwischen Gruppen bei denen ein Unterschied erwartet wird (z.B. Test der Einstellung gegenüber der Kirche misst sollte bei Kirchengängern höher ausfallen als bei Nicht-Kirchengängern)
-  
-* **Inkrementelle (Kriteriums-)validität**: Beitrag einer Erhebungsmethode zur Verbesserung der Vorhersage eines Kriteriums über andere Erhebungsmethoden hinaus
-
+* wird durch **Korrelationen** und durch die nicht-experimentelle Untersuchung von **(Extrem-)Gruppenvergleichen** beurteilt, d. h. Studien zu Mittelwertsunterschieden zwischen Gruppen, bei denen ein Unterschied erwartet wird: Erzeugt Erhebungsmethode erwartungsmäße Muster? 
+  - z. B. Intelligenztest sollte mit Kriterien für Berfugserfolg wie Gehalt, Karrierestufe, Abschluss ... zusammenhängen
+  - z. B. Test, der Einstellung gegenüber der Kirche misst, sollte bei Kirchengängern höher ausfallen als bei Nicht-Kirchengängern
 
 ---
 class: top, left
@@ -550,7 +541,9 @@ class: top, left
 
 #### Gütekriterien von Erhebungsmethoden
 
-##### Reliabilität
+##### Validität
+
+Beispiel der Bewertung der Konstrukt- und Kriteriumsvalidität eines Intelligenztests:
 
 ```{r, echo=FALSE, out.width = "70%", fig.show='hold',fig.caption="Schmidt-Atzert & Amelang, 2012, S.296", fig.align='center'}
 knitr::include_graphics("bilder/bsp-val.jpg")
@@ -570,6 +563,13 @@ knitr::include_graphics("bilder/Guetekriterien.png")
 ``` 
 ]
 
+> Zu welcher Zielscheibe passt eine Körperwaage, die aufgrund eines technischen Defekts immer leicht unterschiedliche Werte liefert?  
+  
+> Zu welcher Zielscheibe passt ein Test, der hochpräzise Influenzaviren detektiert, aber als "Corona-"Test verkauft wird? 
+  
+> Was wäre ein Beispiel für einen psychologischen Test, der zur dritten Zielscheibe passt?
+
+
 ---
 class: top, left, hide_logo
 
@@ -579,13 +579,14 @@ class: top, left, hide_logo
 
 ##### Skalierung
 
-Bei der Skalierung geht es um die **statistische Modellierung von Messprozessen**: Ein psychologischer Test gilt als skalierbar, wenn die Zuordnung der Messwerte zu den Personen auf der Basis eines empirisch nachgewiesenen testtheoretischen Modells geschieht.
+* Bei der Skalierung geht es um die **statistische Modellierung von Messprozessen**
+* Ein psychologischer Test gilt als skalierbar, wenn die Zuordnung der Messwerte zu den Personen auf Basis eines empirisch nachgewiesenen testtheoretischen Modells geschieht
 
-**Zwei Aspekte:**
+**Zwei Aspekte**:
 * Empirischer "Nachweis" , dass ein bestimmtes testtheoretisches Modell gilt, also das "Richtige" ist 
-* Auf der Basis des "nachgewiesenen" testtheoretischen Modells Personen Werte auf den latenten Variablen zuweisen (und nicht irgendwie anders)
+* Auf Basis des "nachgewiesenen" testtheoretischen Modells: Personen Werte auf den latenten Variablen zuweisen (und nicht irgendwie anders)
 
-Die meisten psychologischen Fragebögenskalen und Tests basieren auf der klassischen Testtheorie (daher werden Sie dazu bereits im Bachelor eine eigene Vorlesung hören)
+Die meisten psychologischen Fragebögenskalen und Tests basieren auf der klassischen Testtheorie (daher werden Sie dazu bereits im Bachelor eine eigene Vorlesung hören).
 
 ---
 class: top, left, hide_logo
@@ -596,28 +597,28 @@ class: top, left, hide_logo
 
 ##### Skalierung
 
-**Klassische Testtheorie (KTT):**
+**Klassische Testtheorie (KTT)**
 
-* Anwendung auf Ratingskalen möglich (aber eigentlich für stetige Variablen entwickelt, z.B. Reaktionszeiten)
+* Anwendung auf Ratingskalen möglich (aber eigentlich für stetige Variablen entwickelt, z. B. Reaktionszeiten)
 
-* Zentrale Annahme: Jeder Testwert einer Person auf einem konkreten Item (z.B. einer Frage) ist aus zwei Komponenten zusammengesetzt:
+* zentrale Annahme: Jeder Testwert einer Person auf einem konkreten Item (z. B. einer Frage) ist aus zwei Komponenten zusammengesetzt:
 
 .pull-left[
-  **1. Wahrer Wert:**
+  **1. Wahrer Wert**
 
   * mittlerer Testwert, den eine Person in einer unendlichen Serie von Testwiederholungen erzielen würde (Erwartungswert)
-  * keine praktisch erzielbare, sondern eine theoretische Größe
+  * keine praktisch erzielbare, sondern theoretische Größe
   * kann aber durch die konkrete empirische Antwort einer Person geschätzt werden
 ]
 
 .pull-right[
-  **2. Fehleranteil (Messfehler):**
+  **2. Fehleranteil (Messfehler)**
 
   * Abweichung dieses empirischen Schätzwerts vom wahren Wert
-  * z.B. Störeinflüsse der Umwelt
+  * z. B. Störeinflüsse der Umwelt
 ]
 
-* Es existieren verschiedene testtheoretische Modelle je nach Annahme wie sich die Items in Hinblick auf die Messung der latenten Variable unterscheiden
+* Es existieren verschiedene testtheoretische Modelle, je nach Annahme, wie sich die Items im Hinblick auf die Messung der latenten Variable unterscheiden
 
 ---
 class: top, left, hide_logo
@@ -628,17 +629,17 @@ class: top, left, hide_logo
 
 ##### Skalierung
 
-**Klassische Testtheorie (KTT):**
+**Klassische Testtheorie (KTT)**
 
-* **Ziel:** möglichst direkte und präzise Schätzung des wahren Werts auf einem Item, um darauf basierend einen Rückschluss auf eine latente Variable machen zu können
+* **Ziel**: möglichst direkte und präzise Schätzung des wahren Werts auf einem Item, um darauf basierend einen Rückschluss auf eine latente Variable machen zu können
 
-* **Verbreitetste Analysemethode zur Überprüfung: Faktorenanalyse**
+* verbreitetste Analysemethode zur Überprüfung: **Faktorenanalyse**
 
-* Die KTT stellt verschiedene Axiome (definitorische Festlegungen/Annahmen) auf, darunter die Annahme, dass der mittlere Messfehler gleich null ist. Bei wiederholten Testanwendungen gleichen sich die verschiedenen Messfehler sozusagen aus 
+* KTT stellt verschiedene Axiome (definitorische Festlegungen/Annahmen) auf, darunter die Annahme, dass der mittlere Messfehler gleich null ist. Bei wiederholten Testanwendungen gleichen sich die verschiedenen Messfehler sozusagen aus 
 
-$\rightarrow$ **mit Messfehler werden in der KTT damit nur unsystematische Messfehler gemeint/berücksichtigt. Es kann jedoch auch systematische Messfehler geben**... 
+* Durch den Einsatz mehrerer Testitems in einem Fragebogen soll der Fehleranteil insgesamt minimiert werden. Oder anders ausgedrückt: Mehrere Items ermöglichen eine bessere Annäherung an die latente Variable einer Person
 
-* Durch den Einsatz mehrerer Testitems in einem Fragebogen soll der Fehleranteil insgesamt minimiert werden, oder anders ausgedrückt: Mehrere Items ermöglichen eine bessere Annäherung an die latente Variable einer Person
+$\rightarrow$ **Mit Messfehler werden in der KTT damit nur unsystematische Messfehler gemeint/berücksichtigt. Es kann jedoch auch systematische Messfehler geben** ... 
 
 <!-- klassische Testtheorie setzt somit voraus, dass wahre Werte und Fehlerwerte (und ihre jeweiligen Varianzen in Stichproben) getrennt bestimmt werden können $\rightarrow$ wertvoll zur Bestimmung der Reliabilität -->
 
@@ -659,13 +660,16 @@ class: top, left, hide_logo
 * Beispiel: vorübergehende, nicht systematisch auftretende Unaufmerksamkeit, die bei einem Mal zu einer höheren und beim anderen Mal zu einer niedrigeren Itemantwort führt
 ]
 
-.pull-left[
+.pull-right[
 **Systematische Messfehler**
 
 * spezifische Situations- oder Persönlichkeitseffekte, die die Antworten systematisch in eine bestimmte Richtung verzerren
 
 * Beispiele: extremer Antwortstil, sozial erwünschte Antworten, mangelnde Motivation bei der Bearbeitung des Tests, Methodeneffekte...
 ]
+  
+  
+> In der Nacht vor einem Konzentrationstest haben Sie schlecht geschlafen. Führt das eher zu systematischen oder unsystematischen Messfehlern?
 
 ---
 class: top, left
@@ -677,13 +681,13 @@ class: top, left
 
 ##### Skalierung
 
-Beispiel für eine Anwendung der KTT: Selbstwert, Messung über **Multidimensionale Selbstwertskala (MSWS)**
+Beispiel für eine Anwendung der KTT: Selbstwert-Messung über **Multidimensionale Selbstwertskala (MSWS)**
 
-* Erfassung der Selbstwertschätzung von Erwachsenen durch einen Selbstbeschreibungsfragebogen
+* Selbstbeschreibungsfragebogen, der Selbstwertschätzung von Erwachsenen erfasst
 
-* Mehr-Facettenmodell: es werden verschiedene Bereiche der Selbstwertschätzung unterschieden
+* Mehr-Facetten-Modell: Es werden verschiedene Bereiche der Selbstwertschätzung unterschieden
 
-* 32 Items, 6 Subskalen, 1 Gesamtwert
+* 32 Items, sechs Subskalen, ein Gesamtwert
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "900px"}
@@ -754,14 +758,13 @@ class: top, left, hide_logo
 
 ##### Skalierung
 
-**Frage:** Wie haben die Autor:innen entschieden, dass gerade diese Fragen sich zur Messung der 6 Subskalen eigenen? Es könnte ja auch sein, dass Item 1 eigentlich Soziale Selbstwertschätzung misst...
+**Frage**: Wie haben die Autor:innen entschieden, dass gerade diese Fragen sich zur Messung der sechs Subskalen eigenen? Es könnte ja auch sein, dass Item 1 eigentlich *soziale* Selbstwertschätzung misst ...
 
-**Antwort:** Statistisches Verfahren der **Faktorenanalyse** basierend auf der KTT
-  * Prüft sogenannte Ladungen der Einzelitems auf einen latenten Faktor (wie stark hängt das Item mit einem Faktor zusammen)
+**Antwort**: Statistisches Verfahren der **Faktorenanalyse** basierend auf der KTT
+  * Prüft wie stark die Items mit einem gemeinsamen Faktor zusammenhängen
   * So können einzelne Fragen in unterschiedliche Subskalen **sortiert** werden
-  * Anzahl und Zusammensetzung der Subskalen nennt man **Faktorstruktur** eines Fragebogens
-  * Fragebogen ohne Subskalen nennt man **eindimensional** mit mehrere Subskalen **mehrdimensional**
-  * Inhaltliche Bezeichnung der Subskalen/Faktoren nehmen die Autoren anhand der Items vor, die auf sie laden (z.B. Frage zu Aussehen und Frage zu Attraktivität laden auf selben Faktor --- Also nennen wir ihn "Selbstwertschätzung Physische Attraktivität")
+  * Fragebogen ohne Subskalen nennt man **eindimensional**, solche mit mehreren Subskalen **mehrdimensional**
+  * Die inhaltliche Bezeichnung der Subskalen/Faktoren nehmen die Autoren anhand der Items vor, die besonders stark mit dem Faktor zusammenhängen (z. B. Frage zu Aussehen und Frage zu Attraktivität laden auf selben Faktor, also nennen wir ihn "Selbstwertschätzung Physische Attraktivität")
 
 ---
 class: top, left, hide_logo
@@ -772,15 +775,15 @@ class: top, left, hide_logo
 
 ##### Skalierung
 
-**Zusammenfassung: Klassische Testtheorie**: 
-  * Schätzung des wahren Werts unter Berücksichtigung des (unsystematischen) Messfehlers
-  * Es existieren verschiedene testtheoretische Modelle je nach Annahme wie sich die Items in Hinblick auf die Messung der latenten Variable unterscheiden
+Zusammenfassung: **Klassische Testtheorie**
+  * Schätzen des wahren Werts unter Berücksichtigung des (unsystematischen) Messfehlers
+  * Es existieren verschiedene testtheoretische Modelle, je nach Annahme, wie sich die Items im Hinblick auf die Messung der latenten Variable unterscheiden
 
-**Ausblick: Probabilistische Testtheorie aka. Item-Response-Theorie** (IRT, Embretson & Reise, 2000; Rasch, 1980)
-  * Schätzung der Wahrscheinlichkeit, mit der eine Person mit einer bestimmten Merkmalsausprägung ein Item auf eine bestimmte Art beantwortet (bzw. ein Item löst)
-  * Es existieren verschiedene testtheoretische Modelle je nach Skalenniveau der Antworten (d.h. auch für dichotome Antworten einsetzbar, z.B. ja/nein, richtig/falsch)
-  * Detailliertere Abbildung des Antwortprozesses möglich als bei der KTT (z.B. Berücksichtigung von Ratewahrscheinlichkeiten)
-  * Ausführliche Behandlung im Masterstudium
+Ausblick: **Probabilistische Testtheorie oder Item-Response-Theorie** (IRT, Embretson & Reise, 2000; Rasch, 1980)
+  * Schätzung der Wahrscheinlichkeit, mit der eine Person mit einer bestimmten Merkmalsausprägung ein Item auf eine bestimmte Art beantwortet (bzw. löst)
+  * Es existieren verschiedene testtheoretische Modelle je nach Skalenniveau der Antworten (d. h. auch für dichotome Antworten wie Ja / Nein und richtig / falsch einsetzbar)
+  * detailliertere Abbildung des Antwortprozesses möglich als bei der KTT (z. B. Berücksichtigung von Ratewahrscheinlichkeiten)
+  * ausführliche Behandlung im Masterstudium
 
 ---
 class: top, left, hide_logo
@@ -791,17 +794,17 @@ class: top, left, hide_logo
 **Nebengütekriterien**
 
 .pull-left[
-* **Normierung:** Bezugssystem vorhanden, auf Basis aktueller, repräsentativer und großer Stichprobe, um die individuellen Testwerte vergleichend einordnen zu können
-* **Vergleichbarkeit:** Parallelform bzw. andere Verfahren mit gleichem Gültigkeitsbereich vorhanden
-* **Ökonomie:** Verfahren ist kurz, einfach in der Handhabung, für Gruppenuntersuchung geeignet, wenig materialintensiv und schnell auswertbar (Verhältnis von Kosten und Nutzen im Vergleich zu anderen Verfahren relevant)
+* **Normierung**: Es gibt ein Bezugssystem auf Basis aktueller, repräsentativer und großer Stichprobe, um individuelle Testwerte vergleichend einzuordnen
+* **Vergleichbarkeit**: Es gibt eine Parallelform bzw. andere Verfahren mit gleichem Gültigkeitsbereich
+* **Ökonomie**: Verfahren ist kurz, einfach in der Handhabung, für Gruppenuntersuchung geeignet, wenig materialintensiv und schnell auswertbar (Verhältnis von Kosten und Nutzen im Vergleich zu anderen Verfahren relevant)
 ]
 
 .pull-right[
-* **Zumutbarkeit:** Schonung der untersuchten Personen in zeitlicher, psychischer und körperlicher Hinsicht
-* **Fairness:** Einzelne Gruppen werden durch die erhaltenen Ergebnisse eines Verfahrens nicht diskriminiert, d.h. nicht aufgrund einer testirrelevanten
+* **Zumutbarkeit**: Untersuchte Personen werden in zeitlicher, psychischer und körperlicher Hinsicht geschont
+* **Fairness**: Einzelne Gruppen werden durch die erhaltenen Ergebnisse eines Verfahrens nicht diskriminiert, d. h. nicht aufgrund einer testirrelevanten
 Eigenschaft systematisch benachteiligt
-* **Nicht-Verfälschbarkeit:** keine willentliche Beeinflussung der Testleitung zum Erlangen eines ungerechtfertigten Vorteils
-* **Nutzen** (wird nicht immer aufgeführt): Erfüllung eines praktischen Bedürfnisses durch den Test (der nicht schon besser durch andere Verfahren abgedeckt ist)
+* **Nicht-Verfälschbarkeit**: Es ist keine willentliche Beeinflussung der Testleitung zum Erlangen eines ungerechtfertigten Vorteils möglich
+* **Nutzen** (wird nicht immer aufgeführt): Test erfüllt ein praktisches Bedürfnis (das nicht schon besser durch andere Verfahren abgedeckt ist)
 ]
 
 ---
@@ -817,8 +820,8 @@ name: reaktivitaet
 **Definition**: Veränderung/Verzerrung der erhobenen Daten aufgrund der Kenntnis der untersuchten Person darüber, dass sie Gegenstand einer Untersuchung ist $\rightarrow$ Reaktivität ist häufig ein systematischer Messfehler
 
 **Mögliche Ursachen**: 
-* Veränderte Aufmerksamkeitslenkung
-* Relevanz sozialer Erwünschtheit (Selbstdarstellerisches, sozial konformes (Antwort-)Verhalten)
+* veränderte Aufmerksamkeitslenkung
+* Relevanz sozialer Erwünschtheit (selbstdarstellerisches, sozial konformes (Antwort-)Verhalten)
 * Aufforderungscharakteristika der Untersuchungssituation (**demand effects**)
 ]
 
@@ -837,13 +840,13 @@ class: top, left
 ### Erhebungsmethoden der psychologischen Forschung
 
 .pull-left[
-**Beispiel: Hawthorne-Effekt**
+Beispiel: **Hawthorne-Effekt**
 
-* klassische Studie in den Hawthorne-Werken der Western Electric Company (Roethlisberger und Dickson, 1939)
+* klassische Studie in den Hawthorne-Werken der Western Electric Company (Roethlisberger & Dickson, 1939)
 
-* Aussage: bloße wissenschaftliche Untersuchung der Arbeiter:innen führte zu Steigerung der Produktivität, Produktivitätssteigerung war **unabhängig** von den durch die Forscher implementierten Veränderungen der Arbeitsbedingungen
+* Aussage: Bloße wissenschaftliche Untersuchung der Arbeiter:innen führte zu Steigerung der Produktivität, Produktivitätssteigerung war **unabhängig** von den durch die Forscher implementierten Veränderungen der Arbeitsbedingungen
 
-* Es folgte methodische Kritik an dieser Studie (z.B. Adair, 1984; Jones, 1992)
+* Es folgte methodische Kritik an dieser Studie (z. B. Adair, 1984; Jones, 1992). Trotzdem: Mögliche **Bewertungserwartung** der untersuchten Personen bekam dadurch Aufmerksamkeit
 ]
 
 .pull-right[
@@ -852,7 +855,6 @@ knitr::include_graphics("bilder/hawthorne.jpg")
 ``` 
 ]
 
-* Trotzdem: Mögliche Bewertungserwartung der untersuchten Personen bekam dadurch Aufmerksamkeit
 
 ---
 class: top, left, hide_logo
@@ -862,7 +864,7 @@ class: top, left, hide_logo
 
 #### Problem der Reaktivität
 
-Einschätzung des Ausmaßes der Reaktivität bzw. Nichtreaktivität abhängig von Informationslage der Versuchspersonen (Vpn)
+Einschätzung des Ausmaßes der Reaktivität / Nichtreaktivität abhängig von Informationslage der Versuchspersonen
 
 .pull-left[
 ```{r eval = TRUE, echo = F}
@@ -872,9 +874,12 @@ knitr::include_graphics("bilder/reaktivitaet_ausmass.png")
 
 .pull-right[
 
-Beispiel für Typ 4: "Lost-Letter-Technique", bei der Briefe frankiert an öffentlichen Orten fallen gelassen werden, und geprüft (und dadurch zeitversetzt "beobachtet" wird), ob sie abgesendet werden (Milgram, Mann & Harter, 1965)
+Beispiel für Typ 4: "Lost-Letter-Technique"  
+$\rightarrow$ Briefe werden frankiert an öffentlichen Orten fallen gelassen; dann wird geprüft, (und dadurch zeitversetzt "beobachtet"), ob sie abgesendet werden (Milgram et al., 1965)
 
-Beispiel für Typ 5: Spontane Nähe-vs. Distanzregulation im Hörsaal (Campbell, Kruskal & Wallace, 1966) oder in einer Cafeteria (Clack, Dixon & Tredoux, 2005)
+Beispiel für Typ 5: Spontane Nähe- vs. Distanzregulation  
+$\rightarrow$ im Hörsaal (Campbell et al., 1966)  
+$\rightarrow$ in einer Cafeteria (Clack et al., 2005)
 
 ]
 
@@ -890,11 +895,11 @@ df = data.frame(Maßnahme = c("Versuchspersonen in Unkenntnis darüber lassen, d
                              "Versuchspersonen Anonymität zusichern",
                              "Coverstory über den Untersuchungszweck entwickeln",
                              "Maße einsetzen, die von Versuchspersonen nicht kontrolliert oder beeinflusst werden können (nicht-reaktive Messverfahren)",
-                             "Indirekte/implizite Messverfahren einsetzen"),
-                Bewertung = c("Nur in Feld-, Archiv- oder Internetstudien praktikabel, nicht in Laborstudien; kann ethisch problematisch sein",
-                             "Besonders wichtig bei der Erhebung von persönlichen/sensiblen Daten; reduziert sozial-erwünschtes Antworten",
-                             "Wichtig in hypothesenprüfenden Studien, in denen die Versuchspersonen erforschtes Verhalten kontrollieren können; Täuschung ethisch zu reflektieren",
-                             "Angenommen für biopsychologische Maße, die kaum kontrollierbare physiologische Vorgänge erfassen (z.B. Messung von Hormonspiegeln oder  Verfahren zur Messung der Gehirnaktivität",
+                             "indirekte/implizite Messverfahren einsetzen"),
+                Bewertung = c("nur in Feld-, Archiv- oder Internetstudien praktikabel, nicht in Laborstudien; kann ethisch problematisch sein",
+                             "besonders wichtig bei der Erhebung von persönlichen/sensiblen Daten; reduziert sozial erwünschtes Antworten",
+                             "wichtig in hypothesenprüfenden Studien, in denen die Versuchspersonen erforschtes Verhalten kontrollieren können; Täuschung ist ethisch zu reflektieren",
+                             "angenommen für biopsychologische Maße, die kaum kontrollierbare physiologische Vorgänge erfassen (z. B. Messung von Hormonspiegeln oder Gehirnaktivität",
                              "Versuchspersonen können aus gemessenen Verhaltensweisen (oft Reaktionszeiten) nur schwer auf das untersuchte Konstrukt schließen"))
 
 df %>%
@@ -912,34 +917,34 @@ class: top, left
 
 <br>
 <br>
-"*Methoden, mit denen die Psychologie ihre Daten gewinnt und auswertet, gehören zu den* ***»Regeln der Kunst«,*** *auf die uns die* ***ethischen Richtlinien unserer Profession*** *verpflichten (Deutsche Gesellschaft für Psychologie und Berufsverband Deutscher Psychologinnen und Psychologen, 2005).* 
+"*Methoden, mit denen die Psychologie ihre Daten gewinnt und auswertet, gehören zu den* ***»Regeln der Kunst«***, *auf die uns die* ***ethischen Richtlinien unserer Profession*** *verpflichten (Deutsche Gesellschaft für Psychologie und Berufsverband Deutscher Psychologinnen und Psychologen, 2005).* 
 
 *Es ist ein verbreitetes Missverständnis, dass gute Methodenkenntnisse nur in der psychologischen Forschung benötigt werden.* ***Auch in der psychologischen Anwendungspraxis ist gutes Methodenwissen unverzichtbar.*** *Nur wer über dieses Wissen verfügt, ist beispielsweise in der Lage, die wissenschaftliche Literatur kritisch zu beurteilen, zu entscheiden, welches diagnostische Verfahren welche Gütekriterien wie gut erfüllt und wie die psychologische Praxis zur Generierung von Wissen und somit für den wissenschaftlichen Fortschritt genutzt werden kann.*
 
-*Da mit Psychologie auch Geld verdient wird, gibt es ein Spannungsverhältnis zwischen dem wirtschaftlichem Gewinn und der wissenschaftlichen Qualität einer psychologischen Dienstleistung.* ***Nur wer über methodisches Wissen verfügt, kann psychologische Dienstleistungsangebote in diesem Spannungsverhältnis verorten und unseriöse Angebote von seriösen unterscheiden.***"
+*Da mit Psychologie auch Geld verdient wird, gibt es ein Spannungsverhältnis zwischen dem wirtschaftlichen Gewinn und der wissenschaftlichen Qualität einer psychologischen Dienstleistung.* ***Nur wer über methodisches Wissen verfügt, kann psychologische Dienstleistungsangebote in diesem Spannungsverhältnis verorten und unseriöse Angebote von seriösen unterscheiden.***"
 
-(Eid, Gollwitzer & Schmitt, S.37)
+(Eid et al., 2017, S. 37)
 
 ---
 class: top, left, hide_logo
 name: take-away
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 
 * **Hauptgütekriterien** für psychologische Erhebungen sind Objektivität, Reliabilität und Validität (je nach Autor auch Skalierung)
 
-* **Objektivität:** Erhebung, Ergebnis und Interpretation unabhängig von Testleiter:in und Testauswerter:in
+* **Objektivität**: Erhebung, Ergebnis und Interpretation sind unabhängig von Testleiter:in und Testauswerter:in
 
-* **Reliabilität:** Messfehlerfreie und zuverlässige Erhebung des Merkmals
+* **Reliabilität**: Merkmal wird messfehlerfrei und zuverlässig erhoben
 
-* **Validität:** Methode erhebt wirklich das interessierende Merkmal und nicht etwas anderes
+* **Validität**: Methode erhebt wirklich das interessierende Merkmal und nicht etwas anderes
 
-* **Klassische Testtheorie:** Schätzung des wahren Werts unter Berücksichtigung des Messfehlers
+* **Klassische Testtheorie**: Schätzen des wahren Werts unter Berücksichtigung des Messfehlers
 
-* **Probabilistischen Testtheorie:** Schätzung der Wahrscheinlichkeit für eine bestimmte Itemantwort
+* **Probabilistische Testtheorie**: Schätzung der Wahrscheinlichkeit für eine bestimmte Item-Antwort
 
-* **Reaktivität:** Veränderung/Verzerrung der erhobenen Daten aufgrund der Kenntnis der untersuchten Person darüber, dass sie Gegenstand einer Untersuchung ist
+* **Reaktivität**: Veränderung/Verzerrung der erhobenen Daten aufgrund der Kenntnis der Versuchsperson, dass sie Gegenstand einer Untersuchung ist
 ]
 
 ---
@@ -962,11 +967,12 @@ name: words
 
 **Konstrukt**
 
-**quantitative**
+**quantitativ**
 
 **qualitativ**
 
-**multimodal / multimethodal**
+**multimodal/multi-**  
+**methodal**
 
 ]
 
@@ -983,40 +989,42 @@ name: words
 
 **Skalierung**
 
-**unsystematische Messfehler**
+**unsystematische und systematische Messfehler**
 
-**systematische Messfehler**
+**Faktorenanalyse**
 ]
 ]
 
 .pull-right[
 .pull-left[
 
-**Durchführungsobjektivität**
+**Durchführungs-**
+**objektivität**
 
 **Auswertungsobjektivität**
 
-**Interpretationsobjektivität**
+**Interpretations-**
+**objektivität**
 
 **Retest-Reliabilität**
 
 **Paralleltest-Reliabilität**
 
-**Innere Konsistenz**
+**innere Konsistenz**
 
-**Testhalbierungs-Reliabilität / Split-Half-Reliabilität**
+**Testhalbierungs-/Split-half-Reliabilität**
 ]
 
 .pull-right[
-**Kausale Validität**
+**kausale Validität**
 
 **Inhaltsvalidität** 
 
-**konvergente / divergente Konstruktvalidität**
+**konvergente und divergente Konstruktvalidität**
 
 **Kriteriumsvalidität**
 
-**Multitrait-Multimethod-Methode**
+**Multitrait-Multimethod-Ansatz**
 
 **Reaktivität**
 
@@ -1027,7 +1035,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/wbrZFWtcinLvRYHa9)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/9vdH2n28JUtTzkYu9)**
 
 
 ---
@@ -1036,13 +1044,13 @@ name: literatur
 
 ### Literaturaufgabe
 
-* Das Diagnostik- und Testkuratorium (https://psyndex.de/tests/testkuratorium/) wird vom Berufsverband Deutscher Psychologinnen und Psychologen (BDP) und von der Deutschen Gesellschaft für Psychologie (DGPs) getragen. 
+* Das Diagnostik- und Testkuratorium (https://psyndex.de/tests/testkuratorium/) wird vom Berufsverband Deutscher Psychologinnen und Psychologen (BDP) und von der Deutschen Gesellschaft für Psychologie (DGPs) getragen 
 
-* Die Hauptaufgabe besteht darin, die Öffentlichkeit vor unzulänglichen psychodiagnostischen Verfahren und unqualifizierter Anwendung solcher Verfahren zu schützen. In Zuge dieser Aufgabe veröffentlicht es regelmäßig Beurteilungen von Testverfahren nach dem TBS-TK – Testbeurteilungssystem des Testkuratoriums - das kann man sich als eine Art Stiftung Warentest für psychologische Testverfahren vorstellen.
+* Die Hauptaufgabe besteht darin, die Öffentlichkeit vor unzulänglichen psychodiagnostischen Verfahren und unqualifizierter Anwendung solcher Verfahren zu schützen. In Zuge dieser Aufgabe veröffentlicht es regelmäßig Beurteilungen von Testverfahren nach dem TBS-TK (Testbeurteilungssystem des Testkuratoriums). Das kann man sich als eine Art Stiftung Warentest für psychologische Testverfahren vorstellen
 
 * Bitte laden Sie sich aus dem Verzeichnis bisheriger TBS-TK-Rezensionen eine Rezensionen Ihrer Wahl herunter und lesen Sie sie durch. Schreiben Sie einen jeweils positiven und einen jeweils negativen Aspekt heraus, der bei Objektivität, Zuverlässigkeit oder Gültigkeit (Validität) genannt wird. 
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 2"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_42178.html) unter "Literatur-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse in [studynet im Ordner "Einheit 2"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_51349.html) unter "Literatur-Aufgabe" ab.
 
 
 ---
@@ -1061,7 +1069,8 @@ knitr::include_graphics("bilder/schmidt-atzert.png")
 ``` 
 ]
 
-**Materialien:** Vielen Dank an Prof. Dr. Stephan Goerigk, Prof. Dr. Mario Gollwitzer und den Lehrstuhl für Psychologische Methodenlehre und Diagnostik an der LMU für Bereitstellung der Grundlage für die Materialien
+**Materialien**: Vielen Dank an Prof. Dr. Stephan Goerigk, Prof. Dr. Mario Gollwitzer und den Lehrstuhl für Psychologische Methodenlehre und Diagnostik an der LMU für Bereitstellung der Grundlage für die Materialien.
 
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_02_Messen.Rmd", complex_slides = TRUE) -->

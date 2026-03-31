@@ -3,7 +3,7 @@ title: "Einheit 7"
 subtitle: "⚔<br/>with xaringan"
 author: "Prof. Dr. Caroline Zygar-Hoffmann"
 institute: "RStudio, PBC"
-date: "2025/07/02 (updated: `r Sys.Date()`)"
+date: "2026/01/08 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     self_contained: true
@@ -58,7 +58,7 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 7: Forschungsethik und Open Science
-##### 03.07.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 13.01.2026 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
 class: top, left, hide_logo
@@ -82,18 +82,19 @@ position = xaringanExtra::css_position(top = "5em", right = "1em"))
 
 #### [Open Science](#OS)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
 * [Schlüssel-/Fachbegriffe](#words)
 
 ---
 class: top, left, hide_logo
 name: Ethik
-<div class="footer"><span>https://www.akek.de/geschichte-der-forschungsethik/ <br> https://www.uniklinikum-jena.de/ethikkommission/Geschichte+der+Ethik_Kommission.html</span></div>
+<div class="footer"><span>https://www.akek.de/geschichte-der-forschungsethik/ <br> https://www.uniklinikum-jena.de/ethikkommission/Geschichte+der+Ethik_Kommission.html <br> https://www.buchenwald.de/geschichte/historischer-ort/konzentrationslager/hygiene-institut <br> 
+Döring (2021) 621f.</span></div>
 
 ### Forschungsethik
 
-* Es kann einen Konflikt des Forschungsinteresses mit Normen und Werten geben (z.B. Stammzellenforschung, Gentechnik, Forschung zu Rüstungszwecken, Datenschutz)
+* Es kann einen Konflikt des Forschungsinteresses mit Normen und Werten geben (z. B. Stammzellenforschung, Gentechnik, Forschung zu Rüstungszwecken, Datenschutz)
 
 .pull-left[
 * **Forschungsethik** beschreibt die geteilten Werte und Normen eines Fachs, die das Handeln von Forschenden leiten. Sie umfasst außerdem alle Maßnahmen zur Prüfung und Sicherstellung der Einhaltung dieser Normen. 
@@ -106,12 +107,25 @@ name: Ethik
 ]
 
 .pull-right[
-* Psychologische Beispiele mit forschungsethischen Problemen:
+* psychologische Beispiele mit forschungsethischen Problemen:
   - Konditionierungsversuche am "kleinen Albert" (Säugling) in den 20er Jahren (https://www.youtube.com/watch?v=-wtL5Io3sS8)
-  - Forschungsverbrechen während des Nationalsozialismus (https://www.youtube.com/watch?v=nnsUvaB_Ek4&t=550s)
+  - Forschungsverbrechen während des Nationalsozialismus: z.B. Kälteexperimente, "Heilungsversuche" von Homosexualität, Zwangssterilisationen, Impf-Experimente (https://www.youtube.com/watch?v=nnsUvaB_Ek4&t=550s)
   - Milgram-Experiment in den 60er/70er Jahren (https://www.youtube.com/watch?v=Kzd6Ew3TraA&t=56s)
 ]
 
+
+
+---
+class: top, left
+<div class="footer"><span>https://x.com/SponceyM/status/1980660198441447568</span></div>
+
+### Forschungsethik
+
+.center[
+```{r, echo=FALSE, fig.align='center', out.width = "30%"}
+knitr::include_graphics("bilder/CogPGT.png")
+``` 
+]
 
 ---
 class: top, left, hide_logo
@@ -120,10 +134,10 @@ class: top, left, hide_logo
 
 * Meilenstein: **Belmont Report (1976)** als Reaktion auf unethische klinische Forschung: https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html
 
-* 3 Prinzipien:
+* Drei Prinzipien:
   - **Achtung der Menschenwürde**: Studienteilnehmer als autonome, selbstbestimmte Individuen, die Information zur Zustimmung oder Ablehnung der Teilnahme benötigen
   
-  - **Benefizienz/Fürsorge**: Anderen nicht schaden, Risiken minimieren und Nutzen maximieren $\rightarrow$ Pflicht zu Nutzen-Risiko-Analyse (auf individueller und gesellschaftlicher Ebene)
+  - **Benefizienz/Fürsorge**: anderen nicht schaden, Risiken minimieren und Nutzen maximieren $\rightarrow$ Pflicht zu Nutzen-Risiko-Analyse (auf individueller und gesellschaftlicher Ebene)
   
   - **Gerechtigkeit**: gerechte Auswahl der Studienteilnehmer, faire Entschädigung, Forschungsergebnisse müssen für alle zugänglich sein
 
@@ -135,7 +149,7 @@ name: IC
 
 #### Definition
 
-* Das Einholen eines informierten Einverständnisses („informed consent“ = IC) für die Teilnahme an einer wissenschaftlichen Studie gehört zu den Standards guter wissenschaftlicher Praxis
+* Das Einholen eines informierten Einverständnisses ("informed consent", IC) für die Teilnahme an einer wissenschaftlichen Studie gehört zu den Standards guter wissenschaftlicher Praxis
 
 * Die Entscheidung, an einer Studie teilzunehmen, soll **freiwillig** und **unter Abwägung aller Risiken** alleinig von den potenziellen Teilnehmer:innen getroffen werden können
 
@@ -151,35 +165,43 @@ class: top, left, hide_logo
 
 #### Zu vermittelnde Informationen (BDP & DGPs, 2016)
 
-1. der Zweck der Forschung
-2. die erwartete Dauer der Untersuchung und das Vorgehen
-3. das Recht darauf, die Teilnahme abzulehnen oder zu beenden, auch wenn die Untersuchung schon begonnen hat
+1. Zweck der Forschung
+
+2. erwartete Dauer der Untersuchung und Vorgehen
+
+3. Recht darauf, die Teilnahme abzulehnen oder zu beenden, auch wenn die Untersuchung schon begonnen hat
+
 4. absehbare Konsequenzen der Nichtteilnahme oder der vorzeitigen Beendigung der Teilnahme
+
 5. absehbare Faktoren, von denen man vernünftigerweise erwarten kann, dass sie die Teilnahmebereitschaft beeinflussen (z. B. potenzielle Risiken, Zufallsbefunde)  
-6. der voraussichtliche Erkenntnisgewinn durch die Forschungsarbeit
-7. die Gewährleistung von Vertraulichkeit und Anonymität sowie ggf. deren Grenzen
+
+6. voraussichtlicher Erkenntnisgewinn durch die Forschungsarbeit
+
+7. Gewährleistung von Vertraulichkeit und Anonymität sowie ggf. deren Grenzen
+
 8. Bonus für die Teilnahme 
-9. An wen Proband:innen sich mit Fragen zum Forschungsvorhaben und zu ihren Rechten als Forschungsteilnehmerinnen und Forschungsteilnehmer wenden können.
+
+9. an wen Proband:innen sich mit Fragen zum Forschungsvorhaben und zu ihren Rechten als Forschungsteilnehmerinnen und Forschungsteilnehmer wenden können
 
 ---
 class: top, left, hide_logo
 ### Informed Consent
 
-#### Informed Consent bei Onlinestudien
+#### Informed Consent bei Online-Studien
 
-* Gewährleistung einer angemessenen Aufklärung besonders anspruchsvoll
+* Gewährleistung einer angemessenen Aufklärung bei Online-Studien besonders anspruchsvoll
 
-* direktes Beantworten aufkommender Fragen sowie das Wiederauffinden der Studie und der Kontaktinformationen ist erschwert
+* Direktes Beantworten aufkommender Fragen sowie das Wiederauffinden der Studie und der Kontaktinformationen ist erschwert
 
-* IC wird i.d.R. nur auf einer einzelnen Webseite eingeholt, wodurch Umsetzung des IC als andauerndem Prozess mit der Möglichkeit, Fragen zu stellen, nicht gewährleistet ist
+* Besonders aufwändig bei technisch komplexen Studien (z. B. verständliche Darstellung der Datenspeicherung, Verschlüsselung etc.)
 
-* Technisch komplexe Studien (z.B. Datenspeicherung, Verschlüsselung, etc.)
+* IC wird i. d. R. nur auf einer einzelnen Webseite eingeholt, wodurch Umsetzung des IC als andauerndem Prozess mit der Möglichkeit, Fragen zu stellen, nicht gewährleistet ist
   * IC-Dokumente werden häufig nicht vollständig gelesen
   * IC-Dokumente werden nur unzureichend verstanden
 
 $\rightarrow$ Zweifel, ob tatsächlich ein informiertes Einverständnis eingeholt wird
 
-$\rightarrow$ Besonderes Augenmerk bei digitaler Datenerhebung notwendig
+$\rightarrow$ besonderes Augenmerk bei digitaler Datenerhebung notwendig
 
 ---
 class: top, left, hide_logo
@@ -189,17 +211,35 @@ class: top, left, hide_logo
 
 Ethikkommissionen begutachten ICs kritisch auf Vollständigkeit und Verständlichkeit 
 
-**Eine Ethikkommission prüft darüber hinaus, ob:**
+**Eine Ethikkommission prüft darüber hinaus, ob**:
 
 * Vorkehrungen zur Minimierung des Probanden-Risikos getroffen wurden
 
 * ein angemessenes Verhältnis zwischen Nutzen und Risiken des Vorhabens besteht
 
-* die Durchführung des Vorhabens den einschlägigen gesetzlichen Bestimmungen (vor allem den Datenschutz-Bestimmungen) Rechnung trägt
+* die Durchführung des Vorhabens den einschlägigen gesetzlichen Bestimmungen (v. a. den Datenschutz-Bestimmungen) Rechnung trägt
 
-**Anfänge:**
-* 1972: Die DFG macht die Zuwendung von Forschungsmitteln von der Beurteilung des Forschungsvorhabens durch eine Ethik-Kommission abhängig
-* 1973: Die ersten deutschen Ethik-Kommissionen werden an den Universitäten Ulm und Göttingen eingerichtet.
+**Anfänge**:
+* 1986: Etablierung einer zentralen Ethikkommission durch die DGPs
+* 1972: Die Deutsche Forschungsgemeinschaft (DFG) macht die Zuwendung von Forschungsmitteln von der Beurteilung des Forschungsvorhabens durch eine Ethikkommission abhängig
+* 1973: Die ersten lokalen Ethikkommissionen werden an den Universitäten Ulm und Göttingen eingerichtet
+* erst ab 2003: flächendeckende Einrichtung lokaler Ethikkommissionen
+
+---
+class: top, left, hide_logo
+### Informed Consent
+
+#### Ethikkommissionen
+
+Konsequenzen bei Missachtung der Vorgaben einer Ethikkommission:
+
+* **institutionell**: Untersuchungsverfahren wegen wissenschaftlichen Fehlverhaltens, Disziplinarmßanhmen, Rufschädigung, Ausschluss aus Fachgesellschaften, Verlust der Forschungserlaubnis
+
+* **rechtlich**: juristische Strafen wegen Körper-/Freiheitsverletzung (z.B. Schmerzensgeld) oder Verstöße gegen DSGVO (z.B. Geldbußen)
+
+* **wissenschaftlich**: keine Veröffentlichung der Studie möglich (positives Votum ist häufig Voraussetzung), Rückzug einer Veröffentlichung bei Bekanntwerden, Ausschluss von Konferenzen
+
+* **finanziell**: Rückgabe von Forschungsgeldern, Sperrung für zukünftige Anträge
 
 ---
 class: top, left, hide_logo
@@ -219,7 +259,7 @@ knitr::include_graphics("bilder/bdp_dgps.png")
 
 $\rightarrow$ Wir betrachten genauer Abschnitt 7: Psychologie in Forschung und Lehre
 
-Dort geht es auch um **Wissenschaftsethik**: die Regeln guter wissenschaftlicher Praxis im Wissenschaftssystem
+Dort geht es auch um **Wissenschaftsethik**: die Regeln guter wissenschaftlicher Praxis im Wissenschaftssystem.
 
 ---
 class: top, left, hide_logo
@@ -232,7 +272,7 @@ name: richtlinien
 
 * Grundrecht der Wissenschaftsfreiheit (Art. 5, Abs. 3 GG) geht einher mit **Verantwortung** für Form und Inhalt der wissenschaftlichen Tätigkeit
 
-* Grenze dort, wo Grundrechte verletzt werden $\rightarrow$ Ethische Verantwortung gegenüber Mitmenschen und der natürlichen Umwelt
+* Grenze dort, wo Grundrechte verletzt werden $\rightarrow$ ethische Verantwortung gegenüber Mitmenschen und der natürlichen Umwelt
 
 * Forschung und Lehre von Fremdbestimmung und wissenschaftsfremder Parteilichkeit freihalten
 
@@ -254,11 +294,11 @@ class: top, left, hide_logo
 
 * Verfolgung allgemein gültiger Regeln methodischen Vorgehens und der Überprüfbarkeit von Ergebnissen
 
-* Wissenschaftliches Vorgehen darstellen, begründen und zu Kritik zugänglich zu machen $\rightarrow$ z.B. durch **peer-review** (Begutachtung durch andere Wissenschaftler:innen)
+* wissenschaftliches Vorgehen darstellen, begründen und zu Kritik zugänglich zu machen $\rightarrow$ z. B. durch **Peer Review** (Begutachtung durch andere Wissenschaftler:innen)
 
 * Bereits im Forschungsprozess alle verfügbaren Informationen und Gegenargumente angemessen berücksichtigen $\rightarrow$ **Offenheit für Kritik**
 
-* Dokumentation und Veröffentlichung der Forschungsergebnisse, unabhängig von Ergebnis (d.h. auch wenn sie der eigenen Theorie widersprechen) $\rightarrow$ **Open Science**
+* Dokumentation und Veröffentlichung der Forschungsergebnisse, unabhängig von Ergebnis (d. h. auch wenn sie der eigenen Theorie widersprechen) $\rightarrow$ **Open Science**
 
 * Beiträge anderer adäquat würdigen
 
@@ -270,15 +310,15 @@ class: top, left, hide_logo
 
 #### Kapitel 7.3. Grundsätze für Forschung und Publikation
 
-**(1) Forschung mit Menschen:**
+**(1) Forschung mit Menschen**:
 
-* Psychologische Forschung ist auf die Teilnahme von Menschen als Versuchspersonen angewiesen. 
+* Psychologische Forschung ist auf die Teilnahme von Menschen als Versuchspersonen angewiesen
 
-* Psychologinnen und Psychologen sind sich der Besonderheit der Rollenbeziehung zwischen Versuchsleiterin bzw. Versuchsleiter und Versuchsteilnehmerin bzw. Versuchsteilnehmer und der daraus resultierenden Verantwortung bewusst. 
+* Psychologinnen und Psychologen sind sich der Besonderheit der Rollenbeziehung zwischen Versuchsleiterin bzw. Versuchsleiter und Versuchsteilnehmerin bzw. Versuchsteilnehmer und der daraus resultierenden Verantwortung bewusst 
 
-* Sie stellen sicher, dass durch die Forschung **Würde und Integrität der teilnehmenden Personen** nicht beeinträchtigt werden. 
+* Sie stellen sicher, dass durch die Forschung **Würde und Integrität der teilnehmenden Personen** nicht beeinträchtigt werden
 
-* Sie treffen alle geeigneten Maßnahmen, um **Sicherheit und Wohl der an der Forschung teilnehmenden Personen** zu gewährleisten, und versuchen, Risiken auszuschließen.
+* Sie treffen alle geeigneten Maßnahmen, um **Sicherheit und Wohl der an der Forschung teilnehmenden Personen** zu gewährleisten, und versuchen, Risiken auszuschließen
 
 ---
 class: top, left, hide_logo
@@ -289,9 +329,9 @@ class: top, left, hide_logo
 
 #### Kapitel 7.3. Grundsätze für Forschung und Publikation
 
-**(2) Förmliche Bewilligungen:** falls ethische Unbedenklichkeit unklar, Ethikantrag an eine Ethikkommission und Durchführung des Projekts erst nach und gemäß Bewilligung
+**(2) Förmliche Bewilligungen**: falls ethische Unbedenklichkeit unklar, Ethikantrag an eine Ethikkommission und Durchführung des Projekts erst nach und gemäß Bewilligung
 
-**(3), (4), (5), (6): Richtlinien zum informierten Einverständnis (z.B. bei Aufnahmen, Abhängigkeitsverhältnissen, Täuschung)**
+**(3)**, **(4)**, **(5)**, **(6)**: **Richtlinien zum informierten Einverständnis (z. B. bei Aufnahmen, Abhängigkeitsverhältnissen, Täuschung)**
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "40%"}
@@ -307,13 +347,44 @@ class: top, left, hide_logo
 
 #### Kapitel 7.3. Grundsätze für Forschung und Publikation
 
-**(7) Anreize zur Teilnahme an Forschungsvorhaben:** Müssen angemessen sein. Falls Therapie die Gegenleistung ist, müssen Art der Dienstleistung, Risiken, Verpflichtungen und Grenzen erläutert werden.
+**(7) Anreize zur Teilnahme an Forschungsvorhaben**: müssen angemessen sein. Falls Therapie die Gegenleistung ist, müssen Art der Dienstleistung, Risiken, Verpflichtungen und Grenzen erläutert werden
 
-**(8) Täuschung in der Forschung:** Nur Täuschen, wenn wirklich notwendig, darf keine ernsthafte physische und/oder psychische Belastungen erzeugen, so früh wie möglich aufklären
+**(8) Täuschung in der Forschung**: nur Täuschen, wenn wirklich notwendig, darf keine ernsthafte physische und/oder psychische Belastungen erzeugen, so früh wie möglich aufklären
 
-**(9) Aufklärung der Forschungsteilnehmerinnen und Forschungsteilnehmer:** Psychologinnen und Psychologen informieren die an ihren Untersuchungen Teilnehmenden so bald wie möglich über das Ziel, die Ergebnisse und Schlussfolgerungen aus ihrer Forschungsarbeit, und sie unternehmen geeignete Schritte, um jedes Missverständnis, das teilnehmende Personen haben könnten und das ihnen bewusst ist, zu korrigieren.
+**(9) Aufklärung der Forschungsteilnehmerinnen und Forschungsteilnehmer**: über Ziel, Ergebnisse und Schlussfolgerungen aus ihrer Forschungsarbeit
 
-**(10) Verantwortungsvoller Umgang mit Tieren in der Forschung:** Beispiel: Pawlow's Hunde hatten Implantate, um den Speichel aufzufangen und das Volumen messen zu können. Ist das ethisch vertretbar?  
+**(10) Verantwortungsvoller Umgang mit Tieren in der Forschung** 
+
+---
+class: top, left
+
+### Berufsethische Richtlinien des BDP und der DGPs
+
+#### Kapitel 7.3. Grundsätze für Forschung und Publikation
+
+Einige grundlegende Erkenntnisse und Prozesse der Psychologie (z. B. Konditionierung, Bindungsverhalten) basieren auf tierexperimentellen Versuchen. Beispiel: Pawlows Hunde hatten Implantate, um den Speichel aufzufangen und das Volumen messen zu können. Ist das ethisch vertretbar? 
+
+> Sollten Tierversuche Ihrer Meinung nach auch in Zukunft weiter durchgeführt werden? Warum (nicht)?
+
+> Würden Sie eher einen Tierversuch mit Tauben oder mit Affen durchführen wollen? Warum?
+
+.pull-left[
+.center[
+```{r eval = TRUE, echo = F}
+knitr::include_graphics("bilder/pawlowsdog.jpg")
+```
+
+]
+]
+
+.pull-right[
+.center[
+```{r eval = TRUE, echo = F, out.width = "40%"}
+knitr::include_graphics("bilder/harlowmonkey.jpg")
+```
+]
+]
+
 
 ---
 class: top, left, hide_logo
@@ -323,27 +394,28 @@ class: top, left, hide_logo
 
 #### Kapitel 7.3. Grundsätze für Forschung und Publikation
 
-**(11) & (12) & (13) Darstellung von Forschungsergebnissen & Plagiate & Kennzeichnung des Leistungsanteils an einer Forschungsarbeit in Publikationen:** 
-  * Psychologinnen und Psychologen erfinden und fälschen keine Daten, und korrigieren Fehler. 
-  * Sie präsentieren keine Arbeiten oder Daten anderer als ihre eigenen.
-  * Sie beanspruchen die Verantwortlichkeit für eine Forschungsarbeit, inklusive der Autorenschaft, nur dann, wenn sie die Arbeit selbst durchgeführt haben oder maßgeblich daran beteiligt waren.
+**(11)**, **(12)**, **(13)** **Darstellung von Forschungsergebnissen, Plagiate und Kennzeichnung des Leistungsanteils an einer Forschungsarbeit in Publikationen** 
+  * Psychologinnen und Psychologen erfinden und fälschen keine Daten und korrigieren Fehler 
+  * Sie präsentieren keine Arbeiten oder Daten anderer als ihre eigenen
+  * Sie beanspruchen die Verantwortlichkeit für eine Forschungsarbeit inklusive der Autorenschaft nur dann, wenn sie die Arbeit selbst durchgeführt haben oder maßgeblich daran beteiligt waren
 
-**(14) Weitergabe von Forschungsdaten zum Zweck der Überprüfung:** Daten sollen zur Verfügung gestellt werden (= "Open Data"), aber Achtung: Datenschutzrichtlinien einhalten! $\rightarrow$ Lernen Sie im zweiten Semester in der Vorlesung "Wissenschaftliches Arbeiten"
+**(14) Weitergabe von Forschungsdaten zum Zweck der Überprüfung**: Daten sollen zur Verfügung gestellt werden (= "Open Data"), aber Achtung: Datenschutzrichtlinien einhalten! $\rightarrow$ lernen Sie im zweiten Semester in der Vorlesung "Wissenschaftliches Arbeiten"
 
-**(15) Gutachter:innen:** Vertraulichkeit respektieren
+**(15) Gutachter:innen**: Vertraulichkeit respektieren
 
-**(16) Online-Forschung:** Dies alles gilt auch für Online-Forschung, mit Besonderheiten
+**(16) Online-Forschung**: Dies alles gilt auch für Online-Forschung, mit Besonderheiten
 
 ---
+
 class: top, left, hide_logo
 name: OS
 
 ### Open Science 
 
-**Auswahl aktueller Probleme in der Psychologie (und in anderen Wissenschaftsdisziplinen):** https://www.youtube.com/watch?v=42QuXLucH3Q 
-* Hoher Anteil falscher Ergebnisse in der veröffentlichten Wissenschaft $\rightarrow$ **Replikationskrise**
-* Geringe statistische Power
-* Falsche Anreize die zu fragwürdigen Forschungspraktiken führen
+**Auswahl aktueller Probleme in der Psychologie (und in anderen Wissenschaftsdisziplinen)**: https://www.youtube.com/watch?v=42QuXLucH3Q 
+* hoher Anteil falscher Ergebnisse in der veröffentlichten Wissenschaft $\rightarrow$ **Replikationskrise**
+* geringe statistische Power
+* falsche Anreize durch Zeitschriften/Insitutionen (z.B. signifikante Ergebnisse zu erhalten), die zu fragwürdigen Forschungspraktiken führen (z.B. Datenmanipulation)
  
 **Open Science ist Teil guter wissenschaftlicher Praxis und eine Lösung für aktuelle Probleme**
 
@@ -360,20 +432,20 @@ class: top, left, hide_logo
 ### Open Science 
 
 .pull-left[
-```{r eval = TRUE, echo = F, out.width = "300px"}
+```{r eval = TRUE, echo = F, out.width = "300px", fig.align='center'}
 knitr::include_graphics("bilder/openscience_pillars.png")
 ```
 ]
 
 .pull-right[
-* **Open Access** von Veröffentlichungen für Zugang zur Wissenschaft $\rightarrow$ keine Bezahlung dafür Forschungsergebnisse lesen zu dürfen 
-* **Open Data** (offene Forschungsdaten, soweit unter Wahrung des Datenschutzes möglich) zur Prüfung der Reproduzierbarkeit, Finden von Fehlern, Nachnutzbarkeit
+* **Open Access** von Veröffentlichungen für Zugang zur Wissenschaft $\rightarrow$ keine Bezahlung dafür, Forschungsergebnisse lesen zu dürfen 
+* **Open Data** (offene Forschungsdaten, so weit unter Wahrung des Datenschutzes möglich) zur Prüfung der Reproduzierbarkeit, Finden von Fehlern, Nachnutzbarkeit
 * **Open Methodology** (auch **Open Materials** genannt) und **Open Research Software** zur Nachnutzbarkeit sowie Prüfung der Reproduzierbarkeit (an denselben Daten) und Replizierbarkeit (an neuen Daten)
 * **Open Peer Review** zur Prüfung des Qualitätssicherungsprozesses
 * **Open Educational Ressources** um Verständnis von Wissenschaft zu ermöglichen
 ]
 
-Außerdem **wichtig: Präregistrierung:** Planung der Studie (u.a. Hypothesen, Messinstrument, Analyse) vor der Datenerhebung öffentlich einsehbar festhalten
+Außerdem wichtig: **Präregistrierung** $\rightarrow$ Planung der Studie (u. a. Hypothesen, Messinstrument, Analyse) vor der Datenerhebung öffentlich einsehbar festhalten (um falsch motivierte Anpassungen zu verhindern)
 
 ---
 class: top, left, hide_logo
@@ -383,11 +455,11 @@ class: top, left, hide_logo
 
 **Ziele**
 
-* Öffentlich geförderte Forschung öffentlich zugänglich machen
+* öffentlich geförderte Forschung öffentlich zugänglich machen
 
 * Überprüfbarkeit von Forschungsqualität verbessern und Vertrauen steigern
 
-* Wissenschaftlichen Fortschritt beschleunigen
+* wissenschaftlichen Fortschritt beschleunigen
 
 * Ressourcenverschwendung vermeiden
 
@@ -396,18 +468,18 @@ class: top, left, hide_logo
 ---
 class: top, left, hide_logo
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 
-* Die 3 ethischen Prinzipien im Belmont-Report sind die **Achtung der Menschenwürde**, **Benefizienz** und **Gerechtigkeit**
+* Die drei ethischen Prinzipien im Belmont-Report sind die **Achtung der Menschenwürde**, **Benefizienz** und **Gerechtigkeit**
 
-* Eine informierte (!) Einwilligung stellt sicher, dass die Entscheidung, an einer Studie teilzunehmen **freiwillig** und **unter Abwägung aller Risiken** alleinig von den potenziellen Teilnehmer:innen getroffen werden kann
+* Eine informierte (!) Einwilligung stellt sicher, dass die Entscheidung, an einer Studie teilzunehmen, **freiwillig** und **unter Abwägung aller Risiken** alleinig von den potenziellen Teilnehmer:innen getroffen werden kann
 
 * Grundrecht der Wissenschaftsfreiheit geht einher mit **Verantwortung für Form und Inhalt der wissenschaftlichen Tätigkeit**
 
-* Die berufsethische Richtlinien des BDP und der DGPs legen **16 Grundsätze für Forschung und Publikation** fest
+* Die berufsethischen Richtlinien des BDP und der DGPs legen **16 Grundsätze für Forschung und Publikation** fest
 
-* **Open Science** ist Teil guter wissenschaftlicher Praxis, eine Lösung für aktuelle Probleme in der Psychologie und umfasst mehrere Teilbereich, wie z.B. **Open Data**, **Open Materials** und **Präregistrierung**
+* **Open Science** ist Teil guter wissenschaftlicher Praxis, eine Lösung für aktuelle Probleme in der Psychologie und umfasst mehrere Teilbereiche, z. B. **Open Data**, **Open Materials** und **Präregistrierung**
 ]
 
 ---
@@ -442,7 +514,7 @@ name: words
 
 **Wissenschaftsethik**
 
-**peer-review**
+**Peer Review**
 ]
 ]
 
@@ -480,7 +552,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/6M3MN4pgzR1JLEZL9)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/HYnPUYyGDqTPX1yy7)**
 
 <!-- --- -->
 <!-- class: top, left -->
@@ -509,5 +581,45 @@ knitr::include_graphics("bilder/doering.png")
 ``` 
 ]
 
+---
+class: top, left, hide_logo
+
+### Einladung: Nächstes Kolloquium Wissenschaftskommunikation der DGPs-Interessengruppe PsyComm
+
+.small[
+"Die AG Praxis und AG Forschung der fachgruppenübergreifenden DGPs-Interessengruppe „Wissenschaftskommunikation in der Psychologie (PsyComm)“ laden herzlich zur nächsten Ausgabe der Lunch-Talk-Reihe "Kolloquium Wissenschaftskommunikation" ein.
+
+Am Freitag, 16. Januar 2026, 12:00 - 12:45 Uhr, spricht Helena Hartman zum Thema "Science and Fiction - WissKomm mit fiktionalen Kurzgeschichten". 
+
+Darum geht es: "Das Projekt Science & Fiction verbindet Wissenschaftskommunikation mit fiktionalen Kurzgeschichten. Die Geschichten greifen unterschiedliche Genres auf – darunter Science-Fiction, Romantik und Thriller – und stellen Bezüge zu aktuellen Forschungsergebnissen her. So entsteht eine besondere Form der Wissenschaftskommunikation, die Wissensvermittlung mit literarischer Erzählkunst kombiniert."
+
+Die Online-Talkreihe findet jeden dritten Freitag im Monat statt. Ziel der Lunchtalks ist es, Einblicke in innovative WissKomm-Formate und aktuelle Forschungsthemen zu teilen und sich über konkrete Erfahrungen aus Praxis und Forschung der Wissenschaftskommunikation, insbesondere aus Perspektive der Psychologie auszutauschen. Die Online-Teilnahme ist über folgenden Link möglich:
+https://uni-trier.zoom-x.de/j/69135941316?pwd=r6m1pD17Gl9QgaiIglzHXbPUvgkHFS.1
+
+Die Einladung richtet sich an alle Wissenschaftler:innen, Praktiker:innen und Studierende der Psychologie und ihrer Nachbardisziplinen sowie alle anderen Interessierten an der Wissenschaftskommunikation in der Psychologie.
+
+Schon mal vormerken: Am 20.02.2026 holen wir den Termin mit Rainer Bromme nach, der im Dezember leider krankheitsbedingt ausfallen musste. Thema wird sein "Scientific Literacy 2.0: Vertrauen in Wissenschaft als Bildungsziel".
+
+Wir freuen uns auf Ihre Teilnahme und einen regen Austausch zu Kurzgeschichten und WissKomm!"
+]
+
+---
+class: top, left, hide_logo
+
+### Einladung: Rechtspsychologisches Kolloquium der MSB
+
+"Die Medical School Berlin (MSB) möchte noch einmal herzlich zum rechtspsychologischen Kolloquium einladen. 
+
+26.01.2026 | 18.00 – 19.30 Uhr (hybrid)
+Lockerungsprognosen im Straf- und Maßregelvollzug: Eine besondere Form
+der Risikoeinschätzung im Spannungsfeld zwischen Resozialisierung und Sicherung
+Merten Neumann (Kriminologisches Forschungsinstitut Niedersachsen e. V.)
+
+Der Termin erfolgt als Hybrid-Veranstaltungen (Medical School Berlin, Raum 1.03, Rüdesheimer Str. 50, 14197 Berlin und online über MS Teams).
+Bitte melden Sie sich für die jeweiligen Veranstaltungen unter https://www.medicalschool-berlin.de/veranstaltungen-msb/msb-kolloquium/ an. Unter dieser Adresse finden Sie auch weitere Informationen.
+
+Die Medical School Berlin bietet mit dem Masterstudiengang Psychologie mit Schwerpunkt Rechtspsychologie die Möglichkeit, sich auf verschiedene rechtspsychologische Tätigkeiten vorzubereiten. Zur Arbeitsgruppe gehören: Robert Lehmann, André Körner, Lennart May, Laura Quinten, Rebecca Reichel und Frederic Gnielka."
+
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_07_Ethik.Rmd", complex_slides = TRUE) -->

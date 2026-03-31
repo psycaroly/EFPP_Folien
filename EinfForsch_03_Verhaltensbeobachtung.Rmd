@@ -59,12 +59,12 @@ class: middle, left, hide_logo
 # Einführung in die Forschungsmethoden der Psychologie und Psychotherapie
 
 ### Einheit 3: Verhaltensbeobachtung
-##### 22.05.2025 | Prof. Dr. Caroline Zygar-Hoffmann
+##### 11.11.2025 | Prof. Dr. Caroline Zygar-Hoffmann
 
 ---
-class: top, left, hide_logo
+class: top, left
 
-### Termine
+### Verhaltensbeobachtung
 ```{r xaringan-logo, echo=FALSE}
 xaringanExtra::use_logo(
 image_url = "bilder/referenz.png",
@@ -72,23 +72,6 @@ exclude_class = c("title-slide", "hide_logo"),
 height = "80px",
 position = xaringanExtra::css_position(top = "5em", right = "1em"))
 ```
-
-```{r echo = F}
-df = readxl::read_xlsx("EFPP_Termine.xlsx", sheet = "Tabelle1")[1:15, 1:3]
-df$Datum = format(as.Date(df$Datum), "%d.%m.%Y")
-df %>%
-  kbl() %>%
-  kable_styling(font_size = 16) %>%
-  kable_classic(full_width = T) %>% 
-  row_spec(c(3,4,8,11), background = "lightgray")%>% 
-  row_spec(c(6,7,9,10,12), background = "yellow")%>% 
-  row_spec(c(2,5,14), background = "white")
-```
-
----
-class: top, left
-
-### Verhaltensbeobachtung
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bOR7jId8wYk?si=inF_-mGJHkDbTG-l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -104,10 +87,12 @@ name: content
 * [Beobachtungsplan](#beobachtungsplan)
 * [Beobachtungsfehler und -verzerrungen](#fehler)
 
-#### Take-Aways und Schlüssel-/Fachbegriffe
-* [Take-Aways](#take-away)
-* [Literatursuchaufgabe](#literatur)
+#### Take-aways und Schlüssel-/Fachbegriffe
+* [Take-aways](#take-away)
+* [Literaturaufgabe](#literatur)
 * [Schlüssel-/Fachbegriffe](#words)
+
+#### [Veranstaltungs-/Jobhinweise](#hinweis)
 
 ---
 class: top, left, hide_logo
@@ -117,7 +102,7 @@ name: abgrenzung
 
 #### Alltagsbeobachtung vs. wissenschaftliche Beobachtung
 
-Der Alltag aber auch jede Datenerhebung beinhaltet den Vorgang der visuellen Wahrnehmung, also Beobachtung (aber visuelle  Wahrnehmung $\neq$ wissenschaftliche Beobachtung)
+Der Alltag, aber auch jede Datenerhebung beinhaltet den Vorgang der visuellen Wahrnehmung, also Beobachtung (aber visuelle  Wahrnehmung $\neq$ wissenschaftliche Beobachtung)
 
 Herausforderungen für Beobachtungen:
 * **Perspektivität**
@@ -128,7 +113,7 @@ Herausforderungen für Beobachtungen:
   * Selektierte Informationen müssen zu bedeutungsvollen, stabilen Einheiten zusammengefügt werden, um damit nicht nur manifeste Indikatoren, sondern auch latente Konstrukte valide zu messen
   * Konstruktion abhängig von Einstellungen, Erwartungen und Vorerfahrungen der Beobachter:in, wenn nicht konkret definiert (meist durch eine darauffolgende Verhaltens*beurteilung*)
 
-**Lösung:** Wissenschaftliche Beobachtung nach a priori festgelegtem Beobachtungsplan, um intersubjektiv nachvollziehbare Erkenntnisse zu gewinnen
+**Lösung:** wissenschaftliche Beobachtung nach a priori festgelegtem Beobachtungsplan, um intersubjektiv nachvollziehbare Erkenntnisse zu gewinnen
 
 ---
 class: top, left, hide_logo
@@ -138,12 +123,12 @@ class: top, left, hide_logo
 
 #### Alltagsbeobachtung vs. wissenschaftliche Beobachtung
 
-**Definition wissenschaftliche Verhaltensbeobachtung und -beurteilung:** Zielgerichtete, systematische und regelgeleitete Erfassung, Dokumentation und Interpretation des Auftretens bzw. der Ausprägung von ausgewählten, psychologisch relevanten Merkmalen, Verhalten oder Ereignissen
+**Wissenschaftliche Verhaltensbeobachtung und -beurteilung** = zielgerichtete, systematische und regelgeleitete Erfassung, Dokumentation und Interpretation des Auftretens bzw. der Ausprägung von ausgewählten, psychologisch relevanten Merkmalen, Verhalten oder Ereignissen
 
 .center[
 "*Verhaltensbeobachtung liefert im Idealfall Fakten, die frei von Bewertungen sind.*" 
 
-(Schmidt-Atzert & Amelang, 2012, S.309)
+(Schmidt-Atzert & Amelang, 2012, S. 309)
 ]
 
 * Diese Zielsetzung impliziert eine wichtige Unterscheidung zwischen Beobachtung (Wahrnehmung und Registrierung) vs. Beurteilung
@@ -164,7 +149,7 @@ name: beobachtungsplan
 
 0. Wie wird beobachtet? (Grad der Strukturierung)
 
-1. Was wird beobachtet?  (Festlegung von Beobachtungseinheiten = Indikatoren)
+1. Was wird beobachtet?  (Festlegen von Beobachtungseinheiten = Indikatoren)
 
 2. Wer beobachtet?  (teilnehmend vs. nicht-teilnehmend)
 
@@ -179,72 +164,79 @@ name: beobachtungsplan
 
 ---
 class: top, left, hide_logo
-<div class="footer"><span>Haney, C., Banks, W.C. & Zimbardo, P.G. (1973). A study of prisoners and guards in a simulated prison. <i>Naval Research Review</i>, 30, 4–17. <br> Zimbardo, P. & Haney, C. (2008). Stanford prison experiment. In B.L. Cutler (Ed.), <i>Encyclopedia of psychology and law</i> (pp.756–757). Thousand Oaks, CA: Sage. <br> Le Texier, T. (2019). Debunking the stanford prison experiment. <i>American Psychologist</i>, 74(7), 823.</div>
+<div class="footer"><span>Haney, C., Banks, W.C. & Zimbardo, P.G. (1973). A study of prisoners and guards in a simulated prison. <i>Naval Research Review</i>, 30, 4–17. <br> Zimbardo, P. & Haney, C. (2008). Stanford prison experiment. In B.L. Cutler (Ed.), <i>Encyclopedia of psychology and law</i> (pp.756–757). Thousand Oaks, CA: Sage. <br> Le Texier, T. (2019). Debunking the stanford prison experiment. <i>American Psychologist</i>, 74(7), 823. <br> https://www.bps.org.uk/psychologist/time-change-story</div>
 
 ### Verhaltensbeobachtung
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wie wird beobachtet? - Strukturierte vs. unstrukturierte Beobachtung:**
+**Wie wird beobachtet? – Strukturierte vs. unstrukturierte Beobachtung**:
 
 Strukturierte Beobachtung wird anhand eines vorher festgelegten Beobachtungsplans durchgeführt
 + höhere Objektivität und Reliabilität
-+ Quantifizierung des beobachteten Verhaltens möglich
++ Beobachtetes Verhalten kann quantifiziert werden
 
 Unstrukturierte Beobachtung findet ohne genauen Beobachtungsplan statt
-+ exploratives Vorgehen wenn zu wenig Informationen zur Erstellung eines Beobachtungsplans vorliegen
-+ meist im Rahmen von qualitativer Forschung 
-+ Beispiel: Stanford Prison Experiment (Haney et al., 1973; Zimbardo & Haney, 2008; welches aber aus heutiger Perspektive wegen methodischer Mängel stark kritisiert wird, vgl. Le Texier, 2019)
-
----
-class: top, left, hide_logo
-
-### Verhaltensbeobachtung
-
-#### Beobachtungsplan
-
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Was wird beobachtet? - Definition von Beobachtungseinheiten = Indikatoren:**
-
-* Abgrenzung des Beobachtungsobjekts: z.B. einzelne Personen vs. Famile vs. Paare...
-
-* Abgrenzung der Variablen / Verhaltensmerkmale: umfassendes Bild vs. einzelnes Merkmal
-
-* Abgrenzung der Dauer der Beobachtung: kurz/einmalig vs. lang/wiederholt
-
-* Definition von Anfang, Ende und Inhalt einer Beobachtungseinheit: Wann beginnt / endet ein Verhalten?
-  
-* Welches Verhalten gibt Hinweis auf latentes Merkmal?
-
----
-class: top, left, hide_logo
-### Verhaltensbeobachtung
-
-#### Beobachtungsplan
-
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Was wird beobachtet? -  Kriterien für gute Beobachtungseinheiten = Indikatoren:**
-
 .pull-left[
-* Alle Beobachtende **verstehen** unter den Beobachtungseinheiten **dasselbe** $\rightarrow$ verhaltensnah, konkret bzw. genau definiert (Objektivität)
-
-* Beobachtungseinheiten können klar voneinander **abgegrenzt** werden („unterbricht andere“ vs. „redet dazwischen“) (Objektivität)
-
-* Das beschriebene Verhalten **kommt** in der Beobachtungssituation **vor** (Beachtung der Situationsabhängigkeit für Validität der Messung)
++ exploratives Vorgehen, wenn zu wenig Informationen für einen Beobachtungsplan vorliegen
++ meist im Rahmen von qualitativer Forschung 
 ]
 
 .pull-right[
-* Jeder Beobachtende kann Beobachtungseinheit **zuverlässig identifizieren** (Reliabilität).
+Beispiel: Stanford-Prison-Experiment (Haney et al., 1973; Zimbardo & Haney, 2008), welches aber aus heutiger Perspektive wegen methodischer Mängel stark kritisiert wird (vgl. Le Texier, 2019)
 
-* Liste der Beobachtungseinheiten kann von Beobachtenden während der Beobachtung **überblickt** werden (Reliabilität). 
+.center[
+```{r eval = TRUE, echo = F, out.width="30%"}
+knitr::include_graphics("bilder/spe.jpg")
+```
+]
+]
 
-* Zu beobachtendes Merkmal wird von Beobachtungseinheiten in **allen Facetten** erfasst (Inhaltsvalidität).
+---
+class: top, left, hide_logo
 
-**Tipp:** Beobachtungsplan in einem „Probedurchgang“ testen
+### Verhaltensbeobachtung
+
+#### Beobachtungsplan
+
+**Was wird beobachtet? – Definition von Beobachtungseinheiten = Indikatoren**:
+
+* Abgrenzung des **Beobachtungsobjekts**: z. B. einzelne Personen vs. Famile vs. Paare ...
+
+* Abgrenzung der **Variablen** / Verhaltensmerkmale: umfassendes Bild vs. einzelnes Merkmal
+
+* Abgrenzung der **Dauer** der Beobachtung: kurz / einmalig vs. lang / wiederholt
+
+* Definition von **Anfang, Ende und Inhalt** einer Beobachtungseinheit
+  - Wann beginnt / endet ein Verhalten?
+  - Welches Verhalten gibt Hinweis auf latentes Merkmal? 
+  - Geht es um Quantität, Qualität oder Intensität?
+  - Was ist irrelevant und kann ignoriert werden?
+
+---
+class: top, left, hide_logo
+### Verhaltensbeobachtung
+
+#### Beobachtungsplan
+
+**Was wird beobachtet? –  Kriterien für gute Beobachtungseinheiten = Indikatoren**:
+
+.pull-left[
+* Alle Beobachtenden **verstehen** unter den Beobachtungseinheiten **Dasselbe** $\rightarrow$ verhaltensnah, konkret bzw. genau definiert (Objektivität)
+
+* Beobachtungseinheiten sind klar voneinander **abgrenzbar** ("unterbricht andere" vs. "redet dazwischen") (Objektivität)
+
+* Das beschriebene Verhalten **kommt** in der Beobachtungssituation **vor** (Situationsabhängigkeit beachten für Validität der Messung)
+]
+
+.pull-right[
+* Jeder Beobachtende kann Beobachtungseinheit **zuverlässig identifizieren** (Reliabilität)
+
+* Liste der Beobachtungseinheiten kann von Beobachtenden während der Beobachtung **überblickt** werden (Reliabilität)
+
+* Zu beobachtendes Merkmal wird von Beobachtungseinheiten in **allen Facetten** erfasst (Inhaltsvalidität)
+
+**Tipp**: Beobachtungsplan in einem "Probedurchgang" testen
 ]
 
 
@@ -255,17 +247,15 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wer beobachtet? -  Teilnehmende vs. nicht-teilnehmende Beobachtung:**
+**Wer beobachtet? – Teilnehmende vs. nicht-teilnehmende Beobachtung**:
 
 Aktiv-teilnehmende Beobachtung vs. passiv-teilnehmende Beobachtung
 + keine Geräte für Beobachtung notwendig
 + bei passiv-teilnehmender Beobachtung: stummer Beobachter
-+ bei aktiv-teilnehmender Beobachtung: Beobachter Teil der Situation $\rightarrow$ "natürliche" Situation möglich
++ bei aktiv-teilnehmender Beobachtung: Beobachter ist Teil der Situation $\rightarrow$ "natürliche" Situation möglich
 
 Nicht-teilnehmende Beobachtung: 
-+ Beobachtende sind in der Situation nicht anwesend bzw. werden von Beobachtetem nicht gesehen, z.B. per Kamera, einseitig durchsichtige Scheibe
++ Beobachtende sind in der Situation nicht anwesend bzw. werden von Beobachtetem nicht gesehen, z. B. per Kamera oder einseitig durchsichtiger Scheibe
 + Situation wird nicht so stark verändert
 
 ggf. Anschlussfragen: verdeckte vs. offene Beobachtung (siehe Einheit zu qualitativen Methoden); Selbstbeobachtung vs. Fremdbeobachtung
@@ -278,25 +268,23 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wo wird beobachtet? - Feld- vs. Laborbeobachtung:**
+**Wo wird beobachtet? – Feld- vs. Laborbeobachtung:**
 
 .pull-left[
-Bei Beobachtung im Feld wird in der „natürlichen” Situation beobachtet
-+ Situation ist „echt”
+Bei Beobachtung im Feld wird in der "natürlichen" Situation beobachtet:
++ Situation ist "echt"
 + höhere **ökologische Validität** (Übertragbarkeit auf echtes Verhalten)
 
-Bei Beobachtung im Labor wird in einer „künstlich erzeugten” Situation beobachtet. Rahmen- bedingungen und Aufgaben sind genau geplant
+Bei Beobachtung im Labor wird in einer "künstlich erzeugten" Situation beobachtet. Rahmenbedingungen und Aufgaben sind genau geplant:
 + Kontrolle von Störfaktoren
 + höhere Vergleichbarkeit
 ]
 
 .pull-right[
 Beispiele für Laborbeobachtungen: 
-  * Fremde-Situations-Test zum Bindungsverhalten von Kindern, mit klarem Ablauf wann Bezugsperson den Raum verlässt, fremde Person hinzukommt etc. (Ainsworth & Wittig, 1969)
-  * Bandura's Bobo Doll ([Link](https://www.youtube.com/watch?v=dmBqwWlJg8U&t=11s)), eine der wichtigsten Studien zum Beobachtungslernen aka Modell-Lernen
-  * Das Marshmallow Experiment (Mischel, 1989) ([Link](https://www.youtube.com/watch?v=QX_oy9614HQ)): Experiment zum Belohnungsaufschub und zur Impulskontrolle
+  * Fremde-Situations-Test zum Bindungsverhalten von Kindern, mit klarem Ablauf, wann Bezugsperson den Raum verlässt, fremde Person hinzukommt etc. (Ainsworth & Wittig, 1969)
+  * Banduras Bobo Doll ([Link](https://www.youtube.com/watch?v=dmBqwWlJg8U&t=11s)), eine der wichtigsten Studien zum Beobachtungslernen aka Modell-Lernen
+  * das Marshmallow-Experiment (Mischel, 1989) ([Link](https://www.youtube.com/watch?v=QX_oy9614HQ)): Experiment zum Belohnungsaufschub und zur Impulskontrolle
 ]
 
 ---
@@ -305,20 +293,18 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wann wird beobachtet? - Direkte (gleichzeitige) vs. indirekte (zeitversetzte) Beobachtung** und damit z.T. verbunden: 
-**Wie wird Beobachtung wahrgenommen? - Vermittelte vs. unvermittelte Beobachtung**
+**Wann wird beobachtet? – Direkte (gleichzeitige) vs. indirekte (zeitversetzte) Beobachtung** und damit z. T. verbunden: 
+**Wie wird Beobachtung wahrgenommen? – Vermittelte vs. unvermittelte Beobachtung**
 
 Direkte Beobachtung: Verhalten wird direkt zum Zeitpunkt des Auftretens beobachtet
 + entweder vermittelt durch eine Kamera oder unvermittelt
-+ zielgerichtete Wahrnehmung auf bestimmte Aspekte der Situation durch Repositionierung des Beobachters oder Repositionierung einer Kamera möglich
++ zielgerichtete Wahrnehmung auf bestimmte Aspekte der Situation möglich, indem Beobachter oder Kamera repositioniert wird
 + Vorteil einer unvermittelten, direkten Beobachtung: keine Geräte notwendig, in allen Situationen möglich
 
-Indirekte Beobachtung: zeitversetzte „Beobachtung”
-+ setzt eine per Kamera vermittelte Beobachtung voraus, d.h. nachträgliche Verhaltensbeobachtung von auf Video aufgezeichnetem Verhalten
+Indirekte Beobachtung: zeitversetzte "Beobachtung"
++ Setzt eine per Kamera vermittelte Beobachtung voraus, d. h. nachträgliche Verhaltensbeobachtung von auf Video aufgezeichnetem Verhalten
 + längere Verhaltensausschnitte möglich, Fehlerminimierung durch wiederholtes Abspielen
-+ hierunter kann auch eine Dokumentenanalyse fallen, zur Beobachtung von Verhaltensspuren in jeglicher Art von untersuchbarem Material (von Akten über Briefen bis zu Fotos) $\rightarrow$ siehe Einheit zu Qualitativen Methoden
++ Hierunter kann auch eine Dokumentenanalyse fallen, zur Beobachtung von Verhaltensspuren in jeglicher Art von untersuchbarem Material (von Akten über Briefen bis zu Fotos) $\rightarrow$ siehe Einheit zu Qualitativen Methoden
 
 
 ---
@@ -327,26 +313,24 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wie wird Beobachtung registriert? - Time vs. Event Sampling**
+**Wie wird Beobachtung registriert? – Time vs. Event Sampling**
 
 .pull-left[
 **Event Sampling** (Ereignisstichprobe):
 
-Registrierung von Auftreten, Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerkmals **über den gesamten Beobachtungszeitraum hinweg**
-  * es werden eher auch seltene Ereignisse erfasst, weil es keine Unterbrechungen gibt
-  * erlaubt bessere Überprüfung von Hypothesen zum Zusammenhang aufeinanderfolgender Ereignisse (**Kontingenz**) als Time Sampling
+Registrieren von Auftreten, Häufigkeit und/oder Dauer des Verhaltens- oder Situationsmerkmals **über den gesamten Beobachtungszeitraum hinweg**
+  * eher auch seltene / kurze Ereignisse erfassbar, weil es keine Unterbrechungen gibt
+  * bessere Überprüfung von Hypothesen über **Kontingenz** möglich (Zusammenhang aufeinanderfolgender Ereignisse) als beim Time Sampling
 ]
 
 .pull-right[
 **Time Sampling** (Zeitstichprobe):
 
-  * Unterteilung des Beobachtungszeitraums in gleich lange **Zeitintervalle**
-  * Registrierung ob/wie häufig/lange Verhaltensmerkmal im Zeitintervall gezeigt wird
-  * Möglichkeit für **Pausen** (z.B. nur in jedem 2. Zeitintervall beobachten)
-  * **Beobachterrotation** möglich (z.B. Beobachtender 1 im 1.Intervall,  Beobachtender 2 im 2.Intervall)
-  * bietet sich für häufig auftretendes Verhalten an, oder wenn Verhalten nur in bestimmten Intervallen eine relevante Bedeutung hat
+  * Beobachtungszeitraum wird in gleich lange **Zeitintervalle** unterteilt
+  * Es wird registriert, ob/wie häufig/lange Verhaltensmerkmal im Zeitintervall gezeigt wird
+  * Möglichkeit für **Pausen** (z. B. nur in jedem zweiten Zeitintervall beobachten)
+  * **Beobachterrotation** möglich (z. B. Beobachtender 1 im ersten Intervall,  Beobachtender 2 im zweiten Intervall)
+  * besonders für häufig auftretendes Verhalten geeignet, oder wenn Verhalten nur in bestimmten Intervallen von Bedeutung ist
 ]
 
 ---
@@ -355,12 +339,25 @@ class: top, left
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wie wird Beobachtung registriert? - Beispiel für Time Sampling**
+**Wie wird Beobachtung registriert? – Beispiel für Time Sampling**
 
 ```{r eval = TRUE, echo = F, out.width="50%"}
 knitr::include_graphics("bilder/timesampling.png")
+```
+
+
+---
+class: top, left
+<div class="footer"><span>Overall, N. C., Simpson, J. A., & Struthers, H. (2013). Buffering attachment-related avoidance: softening emotional and behavioral defenses during conflict discussions. <i>Journal of Personality and Social Psychology, 104</i>(5), 854-871.</span></div>
+
+### Verhaltensbeobachtung
+
+#### Beobachtungsplan
+
+**Wie wird Beobachtung registriert? – Beispiel für Time Sampling**
+
+```{r eval = TRUE, echo = F, out.width="56%"}
+knitr::include_graphics("bilder/time_sampling.png")
 ```
 
 ---
@@ -369,14 +366,12 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wie wird Beobachtung beurteilt? - Konstruktion von Ratingskalen**
+**Wie wird Beobachtung beurteilt? – Konstruktion von Ratingskalen**
 
 * unipolare vs. bipolare Skala
 * Anzahl der Abstufungen: abhängig von Differenzierungsfähigkeit der Beobachter:in und Variation des Merkmals
-* Markierung und verbale Verankerung der Skalen: um Abstufungen der Skalen deutlich zu machen, sollten diese numerisch/grafisch markiert und verbal verankert werden
-* Viele Überschneidungen zur Konstruktion von Ratingskalen bei Befragungen (siehe nächste Einheit)
+* Markierung und verbale Verankerung der Skalen: Um Abstufungen der Skalen deutlich zu machen, sollten diese numerisch/grafisch markiert und verbal verankert werden
+* viele Überschneidungen zur Konstruktion von Ratingskalen bei Befragungen (siehe nächste Einheit)
 
 .pull-left[
 
@@ -406,9 +401,7 @@ class: top, left, hide_logo
 
 #### Beobachtungsplan
 
-##### Formen und Rahmenbedingungen für Beobachtungen
-
-**Wie wird Beobachtung beurteilt? - Konstruktion von Ratingskalen**
+**Wie wird Beobachtung beurteilt? – Konstruktion von Ratingskalen**
 
 * Ratingskalen für eine Verhaltensbeobachtung sollten zusätzlich grundsätzlich um Verhaltensanker ergänzt werden $\rightarrow$ **verhaltensverankerte Ratingsskala**
 
@@ -416,7 +409,7 @@ class: top, left, hide_logo
 knitr::include_graphics("bilder/Verhaltensverankerung.png")
 ```
 
-* Alternativ braucht es klare Regeln zur Zuordnung zwischen den beobachteten Indikatoren und der Zuordnung auf der Ratingskala
+* Alternativ braucht es klare Regeln für die Zuordnung zwischen den beobachteten Indikatoren und der Ratingskala
 
 
 ---
@@ -486,8 +479,8 @@ df %>%
 ```
 
 * Auch bei Berücksichtigung von Maßnahmen sind systematische und unsystematische Beobachtungsfehler nicht auszuschließen
-* Daher bei jeder Verhaltensbeobachtung Beobachter- bzw. Beurteilerübereinstimmung empirisch prüfen! 
-* Trotzdem: auch Beobachterübereinstimmung garantiert noch nicht, dass keine systematischen Beobachtungsfehler aufgetreten sind
+* Daher bei jeder Verhaltensbeobachtung: Beobachter- bzw. Beurteilerübereinstimmung empirisch prüfen! 
+* Trotzdem: Auch Beobachterübereinstimmung garantiert noch nicht, dass keine systematischen Beobachtungsfehler aufgetreten sind
 * Mittelung über die Beobachtungen mehrerer Beobachter:innen verbessert die Reliabilität der Messung (da zumindest unsystematische Messfehler rausgemittelt werden)
 
 ---
@@ -498,17 +491,17 @@ class: top, left, hide_logo
 #### Maße für die Beobachter- und Beurteilerübereinstimmung
 
 .pull-left[
-* Um die Übereinstimmung im Rahmen einer Verhaltensbeobachtung oder -beurteilung zu bestimmen gibt es eine Vielzahl von Maßen
+* Um die Übereinstimmung im Rahmen einer Verhaltensbeobachtung oder -beurteilung zu bestimmen, gibt es eine Vielzahl von Maßen
 
-* Wahl des angemessenen Übereinstimmungs- bzw. Zuverlässigkeitsmaßes abhängig vom Skalenniveau der Daten (z.B. nominales Urteil (rechts oben) oder metrisches Urteil (rechts unten))
+* Wahl des angemessenen Übereinstimmungs- bzw. Zuverlässigkeitsmaßes abhängig vom Skalenniveau der Daten (z. B. nominales Urteil (rechts oben) oder metrisches Urteil (rechts unten))
 
-* Diese Maße können verwendet werden um die Objektivität und/oder Reliabilität einer Verhaltensbeobachtung und/oder Verhaltensbeurteilung zu bestimmen
+* Diese Maße können verwendet werden, um die Objektivität und/oder Reliabilität einer Verhaltensbeobachtung/-beurteilung zu bestimmen
 
-* Die wichtigsten Maße lernen Sie in der Vorlesung zu psychologischer Diagnostik im 3.Semester genauer kennen
+* Die wichtigsten Maße lernen Sie in der Vorlesung zu psychologischer Diagnostik im dritten Semester genauer kennen
 ]
 
 .pull-right[
-Registrierung des Auftretens (ja oder nein):
+Registrierung des Auftretens (Ja oder Nein):
 ```{r echo = F}
 df <- data.frame(
   Verhalten = c(
@@ -529,7 +522,7 @@ df %>%
 ```
 <br> 
 
-Beurteilung auf einer Skala von 1-6:
+Beurteilung auf einer Skala von 1 bis 6:
 ```{r echo = F}
 df <- data.frame(
   Verhalten = c(
@@ -556,9 +549,9 @@ class: top, left
 
 **Übungsaufgabe**:
 
-Überlegen Sie sich geeigenete Beobachtungseinheiten bei einer Event Sampling Beobachtung (wie oft wird Verhalten gezeigt) für **Werbungsverhalten von Säuglingen um die Aufmerksamkeit ihrer Eltern** (in der Beobachtungssituation sitzt das Baby in einer Wippe neben den Eltern)
+Überlegen Sie sich geeigenete Beobachtungseinheiten bei einer Event-Sampling-Beobachtung (wie oft wird Verhalten gezeigt) für **Werbungsverhalten von Säuglingen um die Aufmerksamkeit ihrer Eltern** (in der Beobachtungssituation sitzt das Baby in einer Wippe neben den Eltern).
 
-[Link zur Beobachtungssituation](https://www.youtube.com/watch?v=bOR7jId8wYk&t): https://www.youtube.com/watch?v=bOR7jId8wYk&t
+Link zur Beobachtungssituation: https://www.youtube.com/watch?v=bOR7jId8wYk&t
 
 Fragen zum realisierten Beobachtungsplan:
 
@@ -566,9 +559,9 @@ Fragen zum realisierten Beobachtungsplan:
 
 * Feld vs. Labor?
 
-* Direkt vs. indirekt?
+* direkt vs. indirekt?
 
-* Vermittelt vs. unvermittelt?
+* vermittelt vs. unvermittelt?
 
 Überlegen Sie sich, inwiefern Sie die Hauptgütekritierien für Ihre Verhaltensbeobachtung erfüllt sehen. Wie würden Sie das jeweils überprüfen?
 
@@ -576,7 +569,7 @@ Fragen zum realisierten Beobachtungsplan:
 class: top, left, hide_logo
 name: take-away
 
-### Take-Aways
+### Take-aways
 .content-box-gray[
 
 * Wissenschaftliche Beobachtung erfolgt nach a priori festgelegtem **Beobachtungsplan**
@@ -587,7 +580,7 @@ name: take-away
 
 * Eine **Registrierung per Event Sampling oder Time Sampling** hat verschiedene Vor- und Nachteile
 
-* **Verhaltensverankerte Ratingskalen** sind unerlässig für eine gute Beurteilung
+* **Verhaltensverankerte Ratingskalen** sind unerlässlich für eine gute Beurteilung
 
 * **Beobachtungsfehler und -verzerrungen** sollten möglichst bewusst vermieden werden
 
@@ -599,15 +592,15 @@ name: take-away
 class: top, left
 name: literatur
 
-### Literatursuchaufgabe
+### Literaturaufgabe
 
-* Nutzen Sie Google Scholar (https://scholar.google.de/) um mit **englischen Schlagwörtern** nach einer psychologischen Studie zu suchen, die eine Verhaltensbeobachtung eingesetzt hat
+* Nutzen Sie Google Scholar (https://scholar.google.de/), um mit **englischen Schlagwörtern** nach einer psychologischen Studie zu suchen, die eine Verhaltensbeobachtung eingesetzt hat
 
 * Beantworten Sie anhand des Abstracts die folgenden Fragen:
   - Welche Variable sollte mit der Verhaltensbeobachtung operationalisiert werden?
   - Welche Charakteristika des Beobachtungsplans können Sie herauslesen?
 
-* Geben Sie Ihre Ergebnisse im [studynet im Ordner "Einheit 3"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_44021.html) unter "Literatursuch-Aufgabe" ab.
+* Geben Sie Ihre Ergebnisse in [studynet im Ordner "Einheit 3"](https://studynet.hs-fresenius.de/goto_STUDYNETHSF_exc_52675.html) unter "Literatur-Aufgabe" ab.
 
 ---
 class: top, left, hide_logo
@@ -674,13 +667,13 @@ name: words
 .pull-right[
 **Beobachterdrift**
 
-**Haloeffekt**
+**Halo-Effekt**
 
-**Logischer Fehler**
+**logischer Fehler**
 
-**Primacy Effekt**
+**Primacy-Effekt**
 
-**Recency Effekt**
+**Recency-Effekt**
 
 **Kontrasteffekt**
 ]
@@ -690,7 +683,7 @@ name: words
 
 **[zurück zur heutigen Übersicht der Vorlesung $\rightarrow$](#content)** 
 <br>
-**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/cmKh8BTRCuhyFNJaA)**
+**[zum Quiz zur Wissensprüfung $\rightarrow$](https://forms.gle/EYcu58oDTNxKSB9f7)**
 
 ---
 class: top, left
@@ -709,7 +702,68 @@ knitr::include_graphics("bilder/schmidt-atzert.png")
 ]
 
 
-**Materialien:** Vielen Dank an Prof. Dr. Stephan Goerigk und den Lehrstuhl für Psychologische Methodenlehre und Diagnostik an der LMU für Bereitstellung der Grundlage für die Materialien
+**Materialien**: Vielen Dank an Prof. Dr. Stephan Goerigk und den Lehrstuhl für Psychologische Methodenlehre und Diagnostik an der LMU für Bereitstellung der Grundlage für die Materialien.
+
+---
+class: top, left, hide_logo
+name: hinweis
+
+### Einladung zu den Lunch Lectures Positive Psychologie
+
+Die Lunch Lectures Positive Psychologie wird es auch in diesem Wintersemester geben.
+
+Die Lunch Lectures finden donnerstags (04.12., 08.01. und 05.02.) von 12:00-13:00 Uhr online hier
+https://uni-luebeck.webex.com/uni-luebeck/j.php?MTID=m3c90b6fa33483b1100542a628e438f1a statt.
+
+Die Aufnahmen der bisherigen Vorträge finden Sie im YouTube-Kanal https://www.youtube.com/@DGPPF_yt
+
+Wir freuen uns auf Ihr Kommen!
+
+Prof. Dr. Corinna Peifer (Universität zu Lübeck)
+
+Prof. Dr. Claudia Harzer (MSH Medical School Hamburg Hamburg)
+
+---
+class: top, left, hide_logo
+
+### Studierende zur Mitarbeit in der Bildungsforschung gesucht
+
+"Unser Institut, die IEA Hamburg befasst sich seit über als 25 Jahren mit der Organisation und Durchführung von Bildungsstudien. Zu den Auftraggeberinnen und Kooperationspartnern gehören unter anderem die OECD, das Bundesamt für Migration und Flüchtlinge (BAMF), das Institut zur Qualitätsentwicklung im Bildungswesen (IQB) sowie zahlreiche Forschungseinrichtungen [...]. Für die im Winter und im kommenden Frühjahr anstehenden Studien suchen wir nun wieder zuverlässige Studierende, die für uns als Testleiterinnen und Testleiter ins Feld gehen möchten. In Planung sind wichtige Erhebungen, z. B. im Rahmen der IQB-Basiskompetenztests und Bildungsstandards. Auch für das Startchancen-Programm des BMBF werden wir 2026 einen Teil der Evaluationen realisieren. Da es sich um groß angelegte, sehr umfangreiche Erhebungen mit vielen Testgruppen handelt, suchen wir für das erste Halbjahr 2026 besonders viel Unterstützung und freuen wir uns über jede einzelne Bewerbung!
+
+Aufgrund der flexiblen Einsatztage ist der Job als Testleitung für Studierende sehr gut geeignet. Die Materialien für die Einsätze erhalten die Testleiterinnen und Testleiter nach Hause und reisen von dort zu den Testsitzungen, die wir nach Möglichkeit wohnortnah vergeben. Ein eigener PKW (oder die Bereitschaft zur Nutzung von Carsharing) ist von Vorteil und kann die Zahl der Einsatzmöglichkeiten erhöhen.
+
+Die Mitarbeit wird mit mindestens 100,00 € pro Einsatz vergütet und erfolgt auf Basis einer selbstständigen Beschäftigung (Werkvertrag und Rechnungstellung). Entstehende Fahrtkosten erstatten wir in vollem Umfang; die Teilnahme an vorbereitenden Schulungen wird ebenfalls vergütet. Die Ausschreibung ist per Direktlink unter https://www.iea.nl/testleitung-2026 zu finden. Bereits ab Anfang November werden alle Bewerberinnen und Bewerber zu unverbindlichen Informations-Runden im Onlineformat (Dauer ca. 30 Minuten) eingeladen, in denen sie einen Einblick in die Tätigkeit als Testleitung erhalten können."
+
+---
+class: top, left, hide_logo
+
+### Einladung Online-Ringvorlesung Computational Psychiatry
+
+"Wir freuen uns, Sie zur interdisziplinären Ringvorlesung zum Thema »Computational Psychiatry: Mit mathematischen Modellen die Mechanismen psychischer Erkrankungen entschlüsseln« im Wintersemester 2025/26 einzuladen. Die etablierte Veranstaltungsreihe wird gemeinsam von der MSH Medical School Hamburg, der MSB Medical School Berlin, der HMU Health and Medical University mit ihren Standorten in Potsdam und Düsseldorf sowie der HMU Health and Medical University Erfurt organisiert.
+
+Die Vorlesungsreihe beschäftigt sich in diesem Semester mit den Kernfragen: Warum leiden Menschen unter Depressionen, Zwängen oder Psychosen – und was passiert dabei im Gehirn? Das Forschungsfeld »Computational Psychiatry« untersucht diese Fragen mit mathematischen Modellen – mit dem Ziel, die komplexen Prozesse im Gehirn zu verstehen und zu erklären, warum sie bei psychischen Erkrankungen aus dem Gleichgewicht geraten.
+
+Die Veranstaltung ist für alle Interessierten offen, auch außerhalb des Hochschulverbundes. Das ausführliche Programm sowie den Zugang zu den einzelnen Vorträgen finden Sie hier: https://www.health-and-medical-university.de/veranstaltungen/veranstaltungen/ringvorlesung/"
+
+
+---
+class: top, left, hide_logo
+
+### Webinar: Hybrid human-AI collective intelligence in medical diagnostics
+
+"We are proud to announce the fifth (and last) webinar of the HACID project, this time dedicated to hybrid human-AI collective intelligence in medical diagnostics.
+
+Join the Human Diagnosis Project (Human Dx) in this webinar as we explore how collective intelligence, from our prior work on human-only collectives in medicine to today’s research on human-AI hybrid collectives, is reshaping the way we approach intelligence now and into the future.
+
+WHAT: Webinar #5 — Hybrid Human-AI Collective Intelligence in Medical Diagnostics: Addressing Core Weaknesses and Advancing the Capabilities of Today’s LLMs
+
+WHEN: Wednesday, November the 12th at 5:30pm CET
+
+WHERE: https://events.teams.microsoft.com/event/8e607b3a-f68c-4628-9867-8a522ad722b6@34c64e9f-d27f-4edd-a1f0-1397f0c84f94
+
+More info about speakers and presentations here: https://www.hacid-project.eu/webinar-5-hybrid-ci-in-medical-diagnostics/ "
+
 
 <!-- library(renderthis)  -->
+<!-- chromote::local_chrome_version(binary = "chrome-headless-shell") -->
 <!-- to_pdf("EinfForsch_03_Verhaltensbeobachtung.Rmd", complex_slides = TRUE) -->
